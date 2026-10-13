@@ -130,11 +130,11 @@ def _search_tavily(query: str, max_results: int) -> dict:
 # --------------------------------------------------------------------------
 _STUB_RESULTS = [
     {
-        "title": "[STUB] Gimnasios híbridos publican retos de 21 días con progreso diario en Reels",
+        "title": "[STUB] Gimnasios híbridos publican retos de 21 días con carruseles de progreso",
         "url": "https://stub.invalid/resultado-1",
         "snippet": (
             "Resultado simulado. Cuentas de gimnasios boutique muestran retos de 21 días "
-            "con un video corto diario del progreso de los socios y un carrusel de cierre."
+            "con una historia diaria del progreso de los socios y un carrusel de cierre."
         ),
         "published": "2026-10",
     },

@@ -83,10 +83,10 @@ lo ocupa el AirPlay Receiver.
   dice cuándo buscar. El v2 agrega esas reglas; compara `n_tool_calls` y
   `pct_fuentes_url` entre las dos corridas (Clase 4: "un cambio por
   versión").
-- **`schema_valid` = 0:** revisa `validation.json`. Ojo: el prompt v1
-  define `formato_sugerido` como `post | historia | carrusel`, pero su
-  ejemplo few-shot usa `"reel"`. Si el modelo copia el ejemplo, el
-  validador lo marca.
+- **`schema_valid` = 0:** revisa `validation.json`. Los prompts v1 a v3
+  definen `formato_sugerido` como `post | historia | carrusel`, pero su
+  ejemplo few-shot usa `"reel"`; si el modelo lo copia, el validador lo
+  marca. El v4 corrige el ejemplo: el sistema no produce reels ni video.
 - **`pct_fuentes_stub`:** qué tanto de lo que reporta viene del stub. Con
   Tavily debe ser 0.
 - **Errores de búsqueda:** si Tavily falla (key inválida, sin créditos, sin
