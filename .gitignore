@@ -1,0 +1,20 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Variables de entorno reales (nunca el .env.example)
+.env
+
+# Python
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+
+# Sistema
+.DS_Store
+
+# MLflow local (corridas y artefactos; se ven con `mlflow ui`)
+mlruns/
+mlflow.db
