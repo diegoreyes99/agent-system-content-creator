@@ -31,7 +31,7 @@ pena corregir esa referencia en `GUIA_DE_IMPLEMENTACION.md` cuando se retome.
 | Archivo | Entrada principal | Salida (consumida por) |
 |---|---|---|
 | `orquestador_v1.md` | Brief mensual de Daniela | Coordina a los otros 5; reporte de cierre de ciclo |
-| `investigador_v1.md`, `investigador_v2.md` | Brief mensual | Estratega |
+| `investigador_v1.md` a `investigador_v3.md` | Brief mensual | Estratega |
 | `estratega_v1.md` | Hallazgos del Investigador | Copywriter + Diseñador (tras aprobación de Daniela) |
 | `copywriter_v1.md` | Pieza de la parrilla aprobada | Punto de aprobación 2 (junto con Diseñador) |
 | `disenador_v1.md` | Pieza con copy aprobado | Punto de aprobación 2 (junto con Copywriter) |
@@ -46,3 +46,4 @@ de la sección 10 de `GUIA_DE_IMPLEMENTACION.md` (Constitución → Especificaci
 | Versión | Cambio (uno por versión) | Hipótesis a medir en MLflow |
 |---|---|---|
 | `investigador_v2.md` | PROCESO pasa a 5 pasos con reglas de uso de `search_web`: cuántas búsquedas hacer, buscar antes de reportar, citar la URL exacta del resultado y qué hacer si la búsqueda falla. El ejemplo few-shot cita una URL en vez de "búsqueda en Instagram". | Sube `n_tool_calls` y `pct_fuentes_url` contra v1, sin romper el esquema. |
+| `investigador_v3.md` | PROCESO pasos 3-5 y la última restricción: los resultados de `search_web` (ya filtrados por relevancia) son fuentes válidas; se revisan uno por uno y se convierte en hallazgo cada uno que se conecte con el objetivo; se descartan resultados individuales, no búsquedas completas; `hallazgos` vacío solo si todas las búsquedas fallaron. Motivo: con v2 + tools v2 el modelo recibió 4 resultados relevantes (incl. "HYROX vs DEKA FIT 2026") y aun así entregó 0 hallazgos. | Sube `n_hallazgos` y `pct_fuentes_url` contra v2 (mismo trigger t2 y tools v2). Riesgo esperado: `schema_valid` puede bajar si copia el `"reel"` del ejemplo. |

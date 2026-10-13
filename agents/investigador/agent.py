@@ -31,7 +31,8 @@ MAX_SEARCH_CALLS = 5
 
 
 def model_id() -> str:
-    return os.environ.get("LM_STUDIO_MODEL_ID", "qwen3-4b-instruct-2507")
+    # Mismo default que el baseline (run_baseline_cycle.py), para comparar con el mismo modelo.
+    return os.environ.get("LM_STUDIO_MODEL_ID", "qwen/qwen3-vl-4b")
 
 
 def prompt_path(prompt_version: str) -> Path:
@@ -80,7 +81,9 @@ def build_agent(
 
     return Agent(
         name="investigador",
-        model=LiteLlm(model=f"openai/{model_id()}"),
+        # timeout: si LM Studio no responde en 5 min, la corrida falla con error
+        # en vez de quedarse esperando para siempre.
+        model=LiteLlm(model=f"openai/{model_id()}", timeout=300),
         # Se pasa como función (InstructionProvider) y no como string para que
         # ADK no intente sustituir {llaves} del brief o del JSON de ejemplo
         # con variables de sesión.

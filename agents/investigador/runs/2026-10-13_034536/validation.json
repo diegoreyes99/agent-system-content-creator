@@ -1,0 +1,19 @@
+{
+  "schema_errors": [
+    "hallazgos[0].formato_sugerido='reel' fuera del esquema"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_schema_errors": 1.0,
+    "n_hallazgos": 3.0,
+    "n_alta": 2.0,
+    "n_tendencias": 3.0,
+    "pct_fuentes_stub": 0.0,
+    "pct_fuentes_url": 1.0,
+    "n_tool_calls": 3.0,
+    "latency_s": 192.17,
+    "prompt_tokens": 7273.0,
+    "completion_tokens": 768.0
+  }
+}

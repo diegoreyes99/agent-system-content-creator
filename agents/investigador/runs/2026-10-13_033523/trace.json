@@ -1,0 +1,154 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días gimnasios Instagram noviembre 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "formatos de contenido para Deka/Hyrox en Instagram antes de evento 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "estrategias de captación directa en gimnasios con Reto 21 días 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "backend": "tavily",
+        "query": "retos de 21 días gimnasios Instagram noviembre 2026",
+        "results": [
+          {
+            "title": "Llega nuestro desafío de 21 días para iniciar el 2026",
+            "url": "https://www.instagram.com/p/DSkIGpGDATt",
+            "snippet": "Llega nuestro desafío de 21 días para iniciar el 2026: el 10' Workout Challenge. 21 días del año 🔥. Participar es 100% GRATIS. NOVIEMBRE —",
+            "published": ""
+          },
+          {
+            "title": "Vamos a hacer juntas este RETO de 21 dias!!! Nos ...",
+            "url": "https://www.instagram.com/reel/DcuGiEns63c",
+            "snippet": "August 31, 2026: RETO de 21 dias!!! Durante 21 días tendrás guía nutricional + guía de entrenamiento + suplementación,",
+            "published": ""
+          },
+          {
+            "title": "¡En la 6ta semana del Reto Satus 2026 realizamos el segundo ...",
+            "url": "https://www.instagram.com/reel/DeP9cuovgxx",
+            "snippet": "El 7 de noviembre lo viviremos en DESAFÍO FITNESS FEST 2026 — IV EDICIÓN. Baranoa será el escenario de una competencia que combina",
+            "published": ""
+          },
+          {
+            "title": "Ready to start 2026 right? 🔥 Come join our 21 day ...",
+            "url": "https://www.instagram.com/reel/DS_HogMERaA",
+            "snippet": "Come join our 21 day challenge and push yourself to become healthier, and win some money while you're at it! Message us to learn how to join!",
+            "published": ""
+          },
+          {
+            "title": "¡Está de regreso el Reto Healthy 21! 💙✨ No sabes la ...",
+            "url": "https://www.instagram.com/p/DXFlazhFS7y",
+            "snippet": "✨ Este lunes comienza nuestro nuevo Reto de 21 Días, diseñado para ayudarte a trabajar en tus hábitos con constancia, acompañamiento y",
+            "published": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "backend": "tavily",
+        "query": "formatos de contenido para Deka/Hyrox en Instagram antes de evento 2026",
+        "results": [
+          {
+            "title": "HYROX Official (@hyroxworld) • Instagram photos and videos",
+            "url": "https://www.instagram.com/hyroxworld?hl=en",
+            "snippet": "Video by Centr on October 03, 2026. May be an image of activewear, sportswear, barbell, dumbbell and text.\n\nVideo by HYROX Official on October 02, 2026. May be an image of one or more people, biceps, people bodybuilding, activewear and text.\n\nVideo by HYROX Official on September 30, 2026. May be an image of magazine, poster and text.\n\nVideo by HYROX Official on September 29, 2026. May be an image of sportswear, sports equipment and text. [...] Video by HYROX Official on October 10, 2026. May be a closeup of one or more people, people playing football and text.\n\nPhoto by HYROX Official on Octob",
+            "published": ""
+          },
+          {
+            "title": "Nos vemos en Fenicio eShow Paraguay 2026 🚀 Dinelco (Bepsa), Sponsor Platinum del evento, será parte de una jornada para descubrir nuevas tendencias, conectar con profesionales del sector y conocer… | Fenicio eCommerce",
+            "url": "https://es.linkedin.com/posts/fenicioecommerce_nos-vemos-en-fenicio-eshow-paraguay-2026-activity-7486027582547865602-YXvD",
+            "snippet": "Aceptar y unirse a LinkedIn\n\nAl hacer clic en «Continuar» para unirte o iniciar sesión, aceptas las Condiciones de uso, la Política de privacidad y la Política de cookies de LinkedIn.\n\nPasar al contenido principalLinkedIn\n   Contenido destacado\n   Personas\n   Learning\n   Empleos\n   Juegos\n\nIniciar sesiónUnirse ahoraImage 1\n\nVideo 1Play Video\n\nVideo Player is loading.\n\nLoaded: 0%\n\n0:00\n\nPlay Back to start\n\nStream Type LIVE\n\nTiempo actual 0:00\n\n/\n\nDuración-:-\n\n1x\n\nPlayback Rate\n\nShow Captions [...] Idioma \n\n[](\n\nImage 11\n## Inicia sesión para ver más contenido\n\nCrea tu cuenta gratuita o inicia s",
+            "published": ""
+          },
+          {
+            "title": "Forex Hoy: El Dólar se mantiene estable antes del último gran evento de la semana, las Nóminas no Agrícolas",
+            "url": "https://tradingkey.com/es/analysis/forex/usd/240042772-fxstreet",
+            "snippet": "IREN asegura un acuerdo de servicios en la nube con Anthropic, sus acciones se disparan casi un 9 % para liderar el sector de la computación\n\n¿Abre hoy el mercado bursátil de EE. UU.? Horario de negociación del Día de Colón de 2026 y lo que los inversores deben saber\n\nLas acciones del sector de memoria de EE. UU. caen en el premercado; Micron, SanDisk y Western Digital bajan más de un 2 % mientras los avances tecnológicos de CXMT despiertan preocupación por la competencia [...] Me gusta\n\nRegístrese para dar 'me gusta' a las publicaciones\n\n### Comentarios(0)\n\nHaga clic en el botón $, introduzc",
+            "published": ""
+          },
+          {
+            "title": "En la tercera edición del evento Fintech Day Bepsa se destacó en la categoría de Medios de Pagos.",
+            "url": "https://es.linkedin.com/posts/marinsandy_fintech-bepsa-dinelco-activity-7230610557433729024-OjCu",
+            "snippet": "LinkedIn© 2026\n   Acerca de\n   Accesibilidad\n   Condiciones de uso\n   Política de privacidad\n   Tus opciones de privacidad para California\n   Política de cookies\n   Política de copyright\n   Política de marca\n   Controles de invitados\n   Pautas comunitarias\n   \n        العربية (árabe) \n        বাংলা (bengalí) \n        Čeština (checo) \n        Dansk (danés) \n        Deutsch (alemán) \n        Ελληνικά (griego) \n        English (inglés) \n       Español\n        لاررل (persa) [...] Idioma \n\nImage 14\n## Inicia sesión para ver más contenido\n\nCrea tu cuenta gratuita o inicia sesión para continuar tu bú",
+            "published": ""
+          },
+          {
+            "title": "CITDEL a EUR: valor de precio de Citadel by Virtuals hoy en Euro | CoinGecko",
+            "url": "https://www.coingecko.com/es/monedas/citadel-by-virtuals/eur",
+            "snippet": "Cualquier utilización o dependencia que haga de nuestro contenido correrá exclusivamente por su cuenta y riesgo. Lo que usted debería hacer es llevar a cabo sus propias investigaciones, revisiones y análisis, y verificar nuestro contenido antes de basarse en él. El comercio es una actividad de alto riesgo que puede resultar en pérdidas importantes, por lo que debe consultar con su asesor financiero antes de tomar ninguna decisión. Ningún contenido de nuestro Sitio debe considerarse una [...] Czech Koruna\n\n DKK \n\nDanish Krone\n\n GBP \n\nBritish Pound Sterling\n\n GEL \n\nGeorgian Lari\n\n HKD \n\nHong Kon",
+            "published": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "backend": "tavily",
+        "query": "estrategias de captación directa en gimnasios con Reto 21 días 2026",
+        "results": [
+          {
+            "title": "Marketing para Gimnasios en 2026: 15 Estrategias que Realmente Funcionan | FitNova",
+            "url": "https://www.fitnova.eu/blog/marketing-para-gimnasios",
+            "snippet": "En la tercera semana toca retención: enviar la comunicación personalizada a socios en riesgo, organizar un evento o reto para la comunidad y revisar y responder todas las reseñas en Google.\n\nLa cuarta semana se dedica a análisis: revisar los KPIs del mes, ajustar estrategias según resultados y planificar las acciones del mes siguiente.\n\n## Presupuesto orientativo de marketing para gimnasios [...] Los gimnasios que crean comunidad retienen más. Las acciones que generan comunidad son retos colectivos (reto de 30 días, competiciones internas), grupos de WhatsApp por actividad o nivel, eventos soc",
+            "published": ""
+          },
+          {
+            "title": "Scotiabank en Colombia: Superfinanciera autoriza su regreso - ABC Economía",
+            "url": "https://abceconomia.co/2026/07/15/scotiabank-colombia-regresa-oficina-representacion-superfinanciera",
+            "snippet": "Con este movimiento regulatorio, el gigante canadiense podrá volver a promocionar y publicitar de forma directa en el territorio nacional sus productos y servicios financieros, así como los de tres de sus filiales extranjeras más importantes. [...] Bogotá, 15 de julio de 2026. El mapa de la banca internacional en el país vuelve a moverse. Mediante la Resolución 0925 de 2026, la Superintendencia Financiera de Colombia autorizó formalmente la apertura de una oficina de representación de The Bank of Nova Scotia (Scotiabank). [...] Foto: Latam. El código compartido de LATAM y Turkish Airlines inte",
+            "published": ""
+          },
+          {
+            "title": "FET cae un 5,81% en 24 horas y pierde su SMA de 7 días - DiarioBitcoin",
+            "url": "https://www.diariobitcoin.com/analisis/fet-cae-un-581-en-24-horas-y-pierde-su-sma-de-7-dias",
+            "snippet": "Señales bajistas: precio por debajo de la SMA-7 con volumen 21,74% superior al promedio (distribución); rechazo en el máximo de ayer de USD $0,1636; precio un 21% por debajo de la SMA-200, confirmando tendencia de fondo bajista. Señal neutral: el precio conserva la confluencia de soportes en USD $0,147-0,148. Señal alcista: la ganancia de 14 días del 22,41% indica que el capital especulativo sigue atendiendo al activo. [...] Publicidad\n\n se negocia a USD $0,152 tras perder un 5,81% en las últimas 24 horas, rompiendo por debajo de su apertura diaria de USD $0,161. El token abrió hoy con un huec",
+            "published": ""
+          },
+          {
+            "title": "Qué son las competencias: ejemplos y estrategias | Indeed.com",
+            "url": "https://www.indeed.com/orientacion-profesional/desarrollo-profesional/que-son-competencias-ejemplos-estrategias",
+            "snippet": "Una persona con competencias en seguridad digital es aquella con conocimientos avanzados en resguardo y seguridad informática. Esta competencia te permite proteger a una empresa de potenciales piratas informáticos o del robo de datos.\n\n### 8. Redacción [...] Toma la iniciativa de colaborar en proyectos que incluyan la participación de múltiples departamentos. De esta manera, interactuarás con colegas con competencias distintas a las tuyas. Observar a estos colegas en acción te permitirá identificar sus competencias e incorporarlas a tu propio repertorio de habilidades. Ahora que ya sabes qué s",
+            "published": ""
+          },
+          {
+            "title": "Precio, gráficos, capitalización de mercado de Axelrod by Virtuals (AXR) | CoinMarketCap",
+            "url": "https://coinmarketcap.com/es/currencies/axelrod-by-virtuals",
+            "snippet": "La integración de IA y tecnología blockchain de Axelrod va más allá de las estrategias de trading tradicionales. Al eliminar sesgos emocionales de las decisiones de trading, Axelrod ejecuta asignaciones basadas en estrategias y ajustadas al riesgo en plataformas DeFi. Este enfoque no solo mejora la eficiencia de las actividades de trading, sino que también se alinea con el panorama en evolución de las finanzas digitales, donde la automatización y las estrategias basadas en datos son cada vez [...] a Axelrod con otros agentes especializados como Gigabrain para análisis y Mamo para optimización ",
+            "published": ""
+          }
+        ]
+      }
+    }
+  ],
+  "latency_s": 132.24074620899046,
+  "prompt_tokens": 7593,
+  "completion_tokens": 272
+}

@@ -1,0 +1,7 @@
+```json
+{
+  "hallazgos": [],
+  "tendencias_de_formato": [],
+  "resumen_ejecutivo": "No se encontraron hallazgos confiables sobre temas relevantes para DOPA en el contexto del objetivo del mes. La falta de material visual del evento Deka y la necesidad de contenido educativo previo para Hyrox/Deka limitan la capacidad de generar oportunidades concretas. Se recomienda esperar la disponibilidad del material visual o realizar una búsqueda específica sobre el formato 'Reto 21 días' y su efectividad en Instagram."
+}
+```

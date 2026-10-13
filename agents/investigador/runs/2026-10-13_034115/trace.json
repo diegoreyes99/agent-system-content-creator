@@ -1,0 +1,114 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "Reto 21 días gimnasios Instagram noviembre 2026 formatos funcionando",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "contenidos educativos Deka Hyrox antes de evento 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "ejemplos de Instagram Reels con entrenamiento funcional Deka 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "El plan de ejercicios puedes hacerlo desde tu casa, al aire libre ...",
+            "url": "https://www.instagram.com/reel/DRVfrv8jNle",
+            "snippet": "RETO 21 DÍAS. Solo necesitas 30 minutos, September 01, 2026. RETO DE 21 DÍAS, diseñado especialmente para ayudarte a crear disciplina, bajar",
+            "published": "",
+            "relevance": 0.45
+          }
+        ],
+        "backend": "tavily",
+        "query": "Reto 21 días gimnasios Instagram noviembre 2026 formatos funcionando",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.262,
+          0.224,
+          0.178,
+          0.11
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "HYROX events 2026: The ultimate fitness racing calendar",
+            "url": "https://www.redbull.com/us-en/hyrox-event-calendar-fitness-racing",
+            "snippet": "HYROX returns to Ireland’s capital – a city defined by grit, passion and atmosphere. From the first step to the final wall ball, every second matters. Feel the energy of the crowd as each heat intensifies and pressure builds.\n\nTimo Zeilinger powers through on the rowing machine\n\n© Stefan Voitl/Red Bull Content Pool\n\nNovember 11-15: HYROX Düsseldorf – Düsseldorf, Germany [...] Relay is the most beginner-friendly HYROX division and is a great way for first-timers to get a taste of the action before moving onto doubles or even singles events. Completed in teams of four, each team member needs to ",
+            "published": "",
+            "relevance": 0.66
+          },
+          {
+            "title": "HYROX vs DEKA FIT 2026: Diferencias y Cuál Elegir | CorrerJuntos",
+            "url": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+            "snippet": "Comunes: SkiErg, Remo, Farmer's Carry, Wall Ball / Dead Ball, Sled Push / Tank Push, Burpees\n Solo HYROX: Sled Pull (50 m con cuerda), Sandbag Lunges (100 m), Burpee Broad Jumps (80 m)\n Solo DEKA FIT: Box Jump Over, Med Ball Sit-Up Throw, Assault Bike, Ram exercises [...] DEKA tiene más variedad de movimientos (10 zonas vs 8 estaciones), incluyendo ejercicios pliométricos (box jumps) y trabajo de core (med ball sit-ups) que HYROX no tiene. HYROX se centra más en fuerza bruta y resistencia (sleds pesados, lunges con sandbag).\n\n## Dificultad y exigencia física\n\n### Cardio [...] Eres runner con b",
+            "published": "",
+            "relevance": 0.56
+          },
+          {
+            "title": "Best HYROX Preparation | HYROX",
+            "url": "https://hyrox.com/best-hyrox-preparation",
+            "snippet": "During your training periods, in build up to the event, and on event day, don’t forget to rest, eat and stay hydrated. Specifically on the event day, you might be arriving a few hours before your start time to cheer on your friends, you get soaked up in the event excitement and before you know it, it is time to warm up and go to the Start Zone.  So make sure you drink plenty of water, you don’t use up too much energy so that you arrive at the Start Zone fresh and ready to go. [...] We see it over and over again! People running their Personal Best during the first kilometer and pushing hard thr",
+            "published": "",
+            "relevance": 0.5
+          }
+        ],
+        "backend": "tavily",
+        "query": "contenidos educativos Deka Hyrox antes de evento 2026",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.029,
+          0.015
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "ejemplos de Instagram Reels con entrenamiento funcional Deka 2026",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.323,
+          0.319,
+          0.233,
+          0.216,
+          0.129
+        ]
+      }
+    }
+  ],
+  "latency_s": 81.31097612500889,
+  "prompt_tokens": 5564,
+  "completion_tokens": 276
+}

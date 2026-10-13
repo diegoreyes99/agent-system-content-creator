@@ -22,9 +22,23 @@ from __future__ import annotations
 
 import os
 
+# Versión del contrato/comportamiento de la herramienta. Se registra en MLflow
+# (Clase 4: tools v1 → v2 es un experimento propio, igual que prompt v1 → v2).
+#   v1: resultados de Tavily tal cual.
+#   v2: descarta resultados con puntaje de relevancia bajo y le pasa el
+#       puntaje al modelo (corrida 2026-10-12: 8 de 15 resultados eran ruido).
+TOOLS_VERSION = "v2"
+
 VALID_BACKENDS = {"tavily", "stub"}
 DEFAULT_BACKEND = "tavily"
 SNIPPET_MAX_CHARS = 600  # el modelo local es de 4B: resultados cortos para no llenar su contexto
+# Puntaje mínimo de relevancia de Tavily (0 a 1) para pasarle un resultado al
+# modelo. Valor inicial: se calibra con los puntajes que quedan en trace.json.
+DEFAULT_MIN_SCORE = 0.4
+
+
+def get_min_score() -> float:
+    return float(os.environ.get("SEARCH_MIN_SCORE", DEFAULT_MIN_SCORE))
 
 
 def get_backend() -> str:
@@ -48,7 +62,8 @@ def search_web(query: str, max_results: int = 5) -> dict:
 
     Returns:
         Un dict con "status" ("success" o "error"), "backend" y "results":
-        una lista de resultados con "title", "url", "snippet" y "published".
+        una lista de resultados con "title", "url", "snippet", "published"
+        y "relevance" (0 a 1; solo llegan los relevantes).
         Si hay error, incluye "error_code" en vez de "results".
     """
     backend = get_backend()
@@ -87,18 +102,27 @@ def _search_tavily(query: str, max_results: int) -> dict:
         return {"status": "error", "error_code": "SEARCH_FAILED", "backend": "tavily",
                 "detail": f"{type(exc).__name__}: {exc}"[:300]}
 
+    raw_results = response.get("results", [])
+    min_score = get_min_score()
+    # Filtro en código, no en el prompt: el modelo nunca ve el ruido.
+    relevant = [r for r in raw_results if (r.get("score") or 0) >= min_score]
+    discarded_scores = [round(r.get("score") or 0, 3) for r in raw_results if r not in relevant]
+
     results = [
         {
             "title": r.get("title", ""),
             "url": r.get("url", ""),
             "snippet": (r.get("content") or "")[:SNIPPET_MAX_CHARS],
             "published": r.get("published_date", ""),
+            "relevance": round(r.get("score") or 0, 2),
         }
-        for r in response.get("results", [])
+        for r in relevant
     ]
+    base = {"backend": "tavily", "query": query, "min_score": min_score,
+            "discarded": len(discarded_scores), "discarded_scores": discarded_scores}
     if not results:
-        return {"status": "error", "error_code": "NO_RESULTS", "backend": "tavily", "query": query}
-    return {"status": "success", "backend": "tavily", "query": query, "results": results}
+        return {"status": "error", "error_code": "NO_RELEVANT_RESULTS", **base}
+    return {"status": "success", "results": results, **base}
 
 
 # --------------------------------------------------------------------------

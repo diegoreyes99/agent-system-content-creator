@@ -1,0 +1,7 @@
+```json
+{
+  "hallazgos": [],
+  "tendencias_de_formato": [],
+  "resumen_ejecutivo": "No se encontraron fuentes confiables y recientes sobre formatos de Instagram Reels con entrenamiento funcional Deka 2026. También no se encontraron ejemplos concretos de contenido educativo sobre Deka/Hyrox antes de evento 2026. Sin embargo, se identificó que el formato de 'Reto 21 días' ha funcionado previamente, aunque no hay evidencia de su implementación en Instagram en noviembre 2026."
+}
+```

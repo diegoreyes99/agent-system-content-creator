@@ -1,0 +1,156 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "Reto 21 días gimnasios Instagram noviembre 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "diferencias entre Deka y Hyrox fitness guías educativas 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "entrenamiento funcional híbrido DOPA CDMX Instagram octubre 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DSkIGpGDATt",
+            "snippet": "Llega nuestro desafío de 21 días para iniciar el 2026: el 10' Workout Challenge. Comenzando el 1 de enero, cada día tendrás una rutina corta de entre 5 y 15 minutos que puedes usar como tu entrenamiento del día si estás iniciando el hábito o como complemento a tu entrenamiento habitual para darle un extra de intensidad. Podrás elegir entre principiantes, intermedios, avanzados y en casa sin material. El desafío estará abierto para los usuarios gratuitos durante los primeros 21 días del año y [...] 21 días del año y luego quedará solo disponible para los usuarios PRO. Puedes unirte ya en la sec",
+            "published": "",
+            "relevance": 0.79
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DcuGiEns63c",
+            "snippet": "gabyespino Edited•\n\nVamos a hacer juntas este RETO de 21 dias!!! Nos acompañamos y asi no pega tan duro!!!! 🤓  \n- Comunidad  \n- Acompañamiento 24/7  \n- Guía de alimentación  \n- Guia de ejercicios  \n- Seguimiento de avance semanal  \n  \nEscribe la palabra RETO , te cuento todo y comenzamos!!!!! ❤️  \n-\n\nsilvia.perezm's profile picture\n\nsilvia.perezm\n\nReto\n\nReply\n\nsilvia.perezm's profile picture\n\nsilvia.perezm\n\nRETO\n\nReply\n\nirisvillegas73's profile picture\n\nirisvillegas73\n\nQuiero\n\nReply [...] Reply\n\nibry2009's profile picture\n\nibry2009\n\nNo soporto verla llena de aceite hasta la frente, quien se vi",
+            "published": "",
+            "relevance": 0.5
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DbKlepYNZhq",
+            "snippet": "Estos retos de 21 días, hay gente que los utiliza para bajar de peso; otros para mantener, tonificar y sentirse mejor de vitalidad; y otros para subir de peso! 🤗🤗  \n  \nA mi me ayudan a no descentrarme del todo, en esta época que además hay más excesos, me viene genial, para compensar y mantener💪🏻🤗  \n  \nOrgullosa de tod@s los participantes y vuestros logros🫶🏻aupa zuek♥️   \n  \nEl día 3 comenzamos nuevo reto💪🏻💪🏻💪🏻💪🏻💪🏻  \n  \n#reto #21dias #nutricion #ejercicio #habitos\n\njeus1691's profile picture [...] Video by Lorea Luzar on October 03, 2026. May be an image of one or more people, skirt, top, dres",
+            "published": "",
+            "relevance": 0.46
+          }
+        ],
+        "backend": "tavily",
+        "query": "Reto 21 días gimnasios Instagram noviembre 2026",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.291,
+          0.276
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "HYROX vs DEKA FIT 2026: Diferencias y Cuál Elegir | CorrerJuntos",
+            "url": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+            "snippet": "Resumen rápido: HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA FIT es más variado en ejercicios (10 zonas) y tiene menos carrera (5 km). Si eres runner, elige HYROX. Si quieres variedad, elige DEKA.\n\n## Formato: estructura comparada [...] ### Duración\n\nUna HYROX típica dura entre 60 y 105 minutos. DEKA FIT entre 30 y 60. Esto significa que HYROX requiere más resistencia aérobica sostenida, mientras que DEKA FIT permite mantener una intensidad más alta durante menos tiempo.\n\nNuestra valoración: HYROX es más difícil para la mayoría de personas, principalmente por la di",
+            "published": "",
+            "relevance": 0.89
+          },
+          {
+            "title": "HYROX vs. DEKA: What’s the Difference? - Raintree Athletic Club",
+            "url": "https://raintreeathleticclub.com/uncategorized/hyrox-vs-deka-what-s-the-difference",
+            "snippet": "logo\n\n## RAINTREE ATHLETIC CLUB\n\n Shop\n Schedule\n Join Online\n MY RAC ACCOUNT\n\n### HYROX vs. DEKA: What’s the Difference?\n\n18 September, 2026\n\nIf you’ve spent any time around the functional fitness world lately, you’ve probably heard the names HYROX and DEKA. Both combine strength, endurance, and functional movements into challenging fitness events, but they aren’t exactly the same. [...] Although HYROX and DEKA share plenty of similarities, their formats create very different challenges.\n\nOne of the biggest differences is running volume. A standard HYROX race includes 8 kilometers of running,",
+            "published": "",
+            "relevance": 0.81
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DZaFNw8lW8-",
+            "snippet": "💥 DEKA FIT vs HYROX – what’s the difference?   \n  \nBoth are popular fitness racing events, but they’re structured quite differently.   \n  \n⚡ Quick breakdown:   \n  \nHYROX = 8km total running + 8 stations   \n  \nDEKA FIT = 5km total running + 10 stations   \n  \nWith shorter 500m runs, more stations, and a quicker overall completion time, DEKA Fit keeps the intensity high and the running manageable. It’s also flexible, with options to split runs and stations in team formats. [...] 💥 Fancy trying DEKA Fit for yourself?   \nWe’ve got a DEKA FIT simulation on 13th June – the perfect chance to experienc",
+            "published": "",
+            "relevance": 0.79
+          },
+          {
+            "title": "Hyrox vs. Deka Fit: Which Race Should You Try First?",
+            "url": "https://www.trxtraining.com/blogs/news/hyrox-vs-deka-fit",
+            "snippet": "According to the official Hyrox race calendar, the series runs in more than 20 countries across over 60 city events in 2026, with a world championship pathway for age-group qualifiers. Entry pricing for 2026 starts around $120 for Open Individual divisions and climbs past $230 for Pro Doubles and championship-tier races.\n\nHyrox is built for endurance-leaning athletes who want the biggest global stage.\n\n## The Deka Fit Format Explained [...] Hybrid fitness is no longer a trend. It's the direction the whole industry is moving. The 2026 Worldwide Fitness Trends report from the American College of",
+            "published": "",
+            "relevance": 0.76
+          },
+          {
+            "title": "DEKA vs Hyrox: How the Two Races Compare | Battle Bunker",
+            "url": "https://thebattlebunker.com/blogs/logbook/deka-vs-hyrox",
+            "snippet": "The honest differences come down to three things. First, running volume: HYROX demands a real running base, DEKA STRONG demands none. Second, the machines: DEKA leans on the air bike, which HYROX does not use at all. Third, the implements: HYROX uses a sandbag for its 100 m lunges, while DEKA uses a weighted RAM roller for both its lunges and its burpees, plus a dead ball for the wall overs. [...] Short answer: HYROX is a single fixed race, eight 1 km runs alternating with eight functional stations, held in arenas and identical everywhere in the world. DEKA is Spartan's indoor racing family bu",
+            "published": "",
+            "relevance": 0.75
+          }
+        ],
+        "backend": "tavily",
+        "query": "diferencias entre Deka y Hyrox fitness guías educativas 2026",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Tu nuevo estudio favorito en CDMX. Entrenamiento híbrido, ...",
+            "url": "https://www.instagram.com/reel/DcWev0ohMuO",
+            "snippet": "August 21, 2026: Entrenamiento híbrido, funcional, social Run, además somos HYROX Training Club. Sábados de 7:30 AM a 12:00 PM. WhatsApp: 📲 +52",
+            "published": "",
+            "relevance": 0.68
+          },
+          {
+            "title": "ATENCIÓN CDMX! Certificación en Entrenamiento Híbrido ...",
+            "url": "https://www.instagram.com/p/DduRWGZDm4f",
+            "snippet": "10 y 11 de octubre | Modalidad Presencial en Ciudad de México. Lugar: Cross F4 ¿Qué vas a dominar en esta doble jornada intensiva? ✓ Día",
+            "published": "",
+            "relevance": 0.56
+          },
+          {
+            "title": "DOPAMX (@dopa.mx) · Mexico City",
+            "url": "https://www.instagram.com/dopa.mx?hl=en",
+            "snippet": "OCTUBRE ROSA | JUNTAS SOMOS MÁS FUERTES Hay cosas que se disfrutan más juntas… y entrenar es una de ellas. ✨ Este octubre queremos celebrar la fuerza",
+            "published": "",
+            "relevance": 0.5
+          }
+        ],
+        "backend": "tavily",
+        "query": "entrenamiento funcional híbrido DOPA CDMX Instagram octubre 2026",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.289,
+          0.014
+        ]
+      }
+    }
+  ],
+  "latency_s": 192.16991575004067,
+  "prompt_tokens": 7273,
+  "completion_tokens": 768
+}
