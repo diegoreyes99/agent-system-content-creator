@@ -1,0 +1,7 @@
+```json
+{
+  "hallazgos": [],
+  "tendencias_de_formato": [],
+  "resumen_ejecutivo": "No se encontraron hallazgos confiables sobre contenido relevante para el objetivo del mes, ya que no hay material visual del evento Deka (fotografía/video) disponible y no se dispone de fuentes verificables para el formato de Reto 21 días en el contexto de noviembre 2026. La falta de material visual impide generar contenido basado en evidencia, y no hay datos sobre formatos funcionando en Instagram o blogs en el sector que coincidan con el calendario y el objetivo específico del mes."
+}
+```

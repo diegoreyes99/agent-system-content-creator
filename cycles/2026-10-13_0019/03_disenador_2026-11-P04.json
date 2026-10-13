@@ -1,0 +1,17 @@
+{
+  "pieza_id": "2026-11-P04",
+  "tipo_de_pieza": "grafico_de_texto",
+  "formato_instagram": "post_vertical",
+  "composicion": "1080×1350px, diseño centrado con texto en dos columnas, con espacio de 200px entre el contenido y el borde, logotipo en la esquina superior izquierda, fondo con degradado Morado DOPA → Coral DOPA, con tipografía Poppins (títulos) y Inter (texto)",
+  "logotipo_a_usar": "Horizontal a color",
+  "paleta_aplicada": [
+    "Morado DOPA",
+    "Magenta DOPA",
+    "Coral DOPA",
+    "Dorado DOPA"
+  ],
+  "referencias": [
+    "Estilo de blog de DOPA en el sitio web, con uso de iconos de equipo real y elementos de entrenamiento en la parte inferior"
+  ],
+  "notas_para_produccion": "Evita el uso de imágenes de entrenamiento en el texto — el foco es el mensaje educativo. Si se usa gráfico, asegúrate de que el texto sea legible en el tamaño de 1080×1350px y que el tipo de letra sea claro en todos los dispositivos."
+}

@@ -1,0 +1,10 @@
+{
+  "pieza_id": "2026-11-P01",
+  "tipo_de_pieza": "foto",
+  "formato_instagram": "post_vertical",
+  "composicion": "1080×1350px, fondo con degradado Morado DOPA → Coral DOPA, texto centrado en la parte superior con tipografía Poppins, cuerpo del mensaje en Inter con espacio de 250px entre el logo y el texto, espacio libre en la parte inferior para el CTA y el link en bio",
+  "logotipo_a_usar": "Horizontal a color, centrado en la parte superior, sobre fondo ligeramente transparente para no obstruir el mensaje",
+  "paleta_aplicada": ["Morado DOPA", "Coral DOPA", "Dorado DOPA"],
+  "referencias": ["Fotos reales de entrenamiento Deka en DOPA, con equipo real y coach visible, ambiente cálido y natural; tomas en luz natural o cálida artificial, diversidad de cuerpos y edades"],
+  "notas_para_produccion": "Priorizar imágenes con un coach real ofreciendo orientación en el entrenamiento, con el equipo Deka visible y el ambiente real. Evitar stock, mantener el enfoque en el equipo y la experiencia real. No usar iluminación fría o estética de estudio — solo luz cálida y ambiental."
+}

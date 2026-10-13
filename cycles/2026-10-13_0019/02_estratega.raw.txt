@@ -1,0 +1,63 @@
+```json
+{
+  "mes": "2026-11",
+  "objetivo_del_mes": "Capitalizar el momentum de la segunda competencia Deka y lanzar un Reto 21 días para impulsar captación directa de socios profesionales (28-42 años) con enfoque educativo y contexto de DOPA como proveedor de equipo real.",
+  "piezas": [
+    {
+      "id": "2026-11-P01",
+      "fecha_sugerida": "2026-11-01",
+      "canal": "instagram",
+      "formato": "post vertical",
+      "tema": "¿Qué es Deka? ¿Por qué DOPA es el lugar ideal para ti?",
+      "objetivo": "Educación sobre Deka y la posición de DOPA como proveedor de equipo real",
+      "mensaje_clave": "Deka no es solo un evento — es un desafío que solo se puede hacer con el equipo que DOPA te entrega",
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P02",
+      "fecha_sugerida": "2026-11-03",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "tema": "Reto 21 días: Tu primer día de entrenamiento con DOPA",
+      "objetivo": "Lanzar el Reto 21 días con contexto educativo y motivación para participar",
+      "mensaje_clave": "21 días de entrenamiento real. No solo de entrenamiento — de progreso real con el equipo DOPA",
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P03",
+      "fecha_sugerida": "2026-11-07",
+      "canal": "instagram",
+      "formato": "historia",
+      "tema": "Testimonio de un socio que ya participó en Deka",
+      "objetivo": "Generar confianza con testimonios reales (no stock) y reforzar la narrativa educativa",
+      "mensaje_clave": "No es solo un evento — es tu primer paso hacia el progreso real con equipo real",
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P04",
+      "fecha_sugerida": "2026-11-10",
+      "canal": "blog",
+      "formato": "articulo_blog",
+      "tema": "¿Por qué DOPA es el mejor lugar para prepararte para Deka?",
+      "objetivo": "Atraer lectores con contenido educativo que explique la ventaja de DOPA sobre otros entornos",
+      "mensaje_clave": "En DOPA, no solo entrenas — entrenas con el equipo real que te conviene",
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P05",
+      "fecha_sugerida": "2026-11-14",
+      "canal": "instagram",
+      "formato": "reel",
+      "tema": "Cierre del Reto 21 días: El progreso real de un socio",
+      "objetivo": "Mostrar el impacto del Reto 21 días con un caso real (sin stock, con testimonio)",
+      "mensaje_clave": "21 días de entrenamiento real. El resultado que te conviene",
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    }
+  ]
+}
+```

@@ -1,0 +1,10 @@
+{
+  "pieza_id": "2026-11-P02",
+  "tipo_de_pieza": "grafico_de_texto",
+  "formato_instagram": "carrusel",
+  "composicion": "3 paneles verticales (1080×1350px cada uno), con texto centrado en la parte superior y espacio para 2 imágenes de entrenamiento real en la mitad inferior. Cada panel tiene 250px de margen vertical en los extremos, y 150px de margen horizontal en los lados. Texto en Inter, con títulos en Poppins, usando el degradado Morado → Coral → Dorado en el fondo.",
+  "logotipo_a_usar": "Horizontal a color, en la esquina superior izquierda de cada panel, sobre fondo degradado.",
+  "paleta_aplicada": ["Morado DOPA", "Magenta DOPA", "Coral DOPA", "Dorado DOPA"],
+  "referencias": ["Fotos reales de entrenamiento con atletas de diferentes edades y cuerpos, capturadas con luz cálida; incluir en cada panel una frase clave del mensaje con tipografía Inter en negrita, con fondo degradado ascendente desde Morado a Dorado"],
+  "notas_para_produccion": "No usar stock ni imágenes generadas por IA. Cada panel debe mostrar un momento de progreso real con coach, con ganchos visuales en los primeros 3 segundos. El texto debe estar en la parte superior con 250px de margen arriba y abajo para permitir la interfaz de Instagram. No incluir elementos de diseño que rompan el degradado de la paleta."
+}

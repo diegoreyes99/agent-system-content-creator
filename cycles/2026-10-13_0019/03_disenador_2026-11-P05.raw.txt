@@ -1,0 +1,10 @@
+{
+  "pieza_id": "2026-11-P05",
+  "tipo_de_pieza": "video",
+  "formato_instagram": "reel",
+  "composicion": "1080×1920px, gancho en los primeros 3 segundos con un primer plano de la cara de un socio con una expresión de satisfacción; 250px libres arriba y abajo para la interfaz de Instagram; el logotipo aparece en esquina superior izquierda desde el segundo segundo, con overlay oscuro para evitar distracción",
+  "logotipo_a_usar": "Horizontal a color, centrado en la esquina superior izquierda, con transición suave al fondo degradado",
+  "paleta_aplicada": ["Morado DOPA", "Magenta DOPA", "Coral DOPA", "Dorado DOPA"],
+  "referencias": ["Clips reales de entrenamiento de un socio con testimonio, grabados en entorno real; no editar ni cortar; mantener el ritmo natural del video"],
+  "notas_para_produccion": "Priorizar tomas con el socio mirando directamente a la cámara y con emoción genuina; no usar efectos de edición ni música de fondo; el video debe ser 15-20 segundos sin interrupciones; el testimonio debe ser real, no interpretado, y el equipo de producción debe tener acceso a la lista de socios pre-seleccionados para el cierre del reto."
+}

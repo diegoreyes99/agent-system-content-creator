@@ -1,0 +1,3 @@
+google-adk>=1.13.0
+litellm>=1.84
+python-dotenv>=1.0.0

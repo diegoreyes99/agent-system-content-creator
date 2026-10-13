@@ -1,0 +1,16 @@
+{
+  "pieza_id": "2026-11-P03",
+  "tipo_de_pieza": "foto",
+  "formato_instagram": "historia",
+  "composicion": "1080×1350px, centrado en la cara y el torso del socio (no más de 70% del frame), con el logotipo en la esquina inferior izquierda; dejar 50px libres en la parte superior y 200px en la inferior para el texto y el CTA",
+  "logotipo_a_usar": "Horizontal a color, en esquina inferior izquierda, sobre fondo ligero",
+  "paleta_aplicada": [
+    "Morado DOPA",
+    "Coral DOPA",
+    "Dorado DOPA"
+  ],
+  "referencias": [
+    "Fotos reales de socios en Deka, con expresiones genuinas y luz cálida, no stock; incluir fondo de entrenamiento con equipo real en el primer plano"
+  ],
+  "notas_para_produccion": "Priorizar fotógrafos que capturen el ambiente de apoyo, no el esfuerzo físico solo. Usar luz natural o cálida artificial para reflejar el mensaje de comunidad. No usar tomas con equipo de entrenamiento en segundo plano — el foco debe ser el testimonio humano."
+}
