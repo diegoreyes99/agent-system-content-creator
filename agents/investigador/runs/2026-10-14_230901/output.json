@@ -1,0 +1,23 @@
+{
+  "hallazgos": [
+    {
+      "tema": "Diferencias entre Deka y Hyrox",
+      "fuente": "https://roxzone.training/blog/hyrox-vs-deka-fit-comparison",
+      "relevancia_dopa": "DOPA necesita explicar la diferencia entre Deka y Hyrox como prioridad del mes, ya que el público Ana (profesionales) cree que Deka es solo para atletas. Este contenido educativo es clave para reducir la objeción y promover el simulacro Deka.",
+      "formato_sugerido": "post",
+      "prioridad": "alta"
+    },
+    {
+      "tema": "Clínica técnica Deka y Hyrox en CDMX",
+      "fuente": "https://www.instagram.com/reel/DdZO9rmBHTk",
+      "relevancia_dopa": "DOPA tiene una clínica técnica de estaciones el 16 y 23 de enero, y el público necesita entender el formato. La publicación de Instagram sobre HYROX México City puede servir como modelo para promocionar la clínica técnica con formato claro y visual.",
+      "formato_sugerido": "historia",
+      "prioridad": "media"
+    }
+  ],
+  "tendencias_de_formato": [
+    "post",
+    "historia"
+  ],
+  "resumen_ejecutivo": "Se encontraron fuentes que explican las diferencias entre Deka y Hyrox, y que el formato de clínica técnica en CDMX es un formato efectivo. El contenido educativo y visual es clave para el público de DOPA, especialmente para reducir la objeción de que Deka es solo para atletas."
+}

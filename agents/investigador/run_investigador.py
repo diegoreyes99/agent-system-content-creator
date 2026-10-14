@@ -61,7 +61,7 @@ from google.genai import types  # noqa: E402
 
 import agent as investigador  # noqa: E402
 import tools  # noqa: E402
-from output_checks import compute_metrics, extract_json, validate  # noqa: E402
+from output_checks import compute_metrics, extract_json, trace_metrics, validate  # noqa: E402
 
 APP_NAME = "dopa_investigador"
 USER_ID = "diego"
@@ -211,8 +211,8 @@ def main() -> None:
         output, errors = None, [f"JSON no parseable: {exc}"]
 
     metrics = compute_metrics(output, errors)
+    metrics.update(trace_metrics(output, result["trace"]))
     metrics.update({
-        "n_tool_calls": float(sum(1 for t in result["trace"] if t["type"] == "tool_call")),
         "latency_s": round(result["latency_s"], 2),
         "prompt_tokens": float(result["prompt_tokens"]),
         "completion_tokens": float(result["completion_tokens"]),

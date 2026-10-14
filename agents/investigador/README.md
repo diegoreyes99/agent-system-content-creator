@@ -11,6 +11,7 @@ Primer agente real del sistema. Corre solo, fuera del baseline. Spec:
 | `tracking.py` | Configuración de MLflow (todo local en `agents_dopa_final_project/mlruns/`) |
 | `run_investigador.py` | Corre el agente, guarda la salida en `runs/<fecha>/` y la registra en MLflow |
 | `compare_with_baseline.py` | Pone lado a lado el baseline de Fase 1 y una corrida del agente nuevo |
+| `eval_investigador.py` | Evalúa una configuración contra el golden set (5 briefs de enero 2027 × 3 repeticiones) y registra promedios y variación en MLflow |
 
 Todos los comandos se corren **desde `agents_dopa_final_project/`**, con
 el `.venv` activo.
@@ -67,7 +68,22 @@ python agents/investigador/compare_with_baseline.py \
 Usa `--log-baseline` solo la primera vez. Con eso el baseline también
 queda como corrida en MLflow (`E00-baseline-sin-herramientas`).
 
-## 4. Abre la UI de MLflow
+## 4. Evalúa una configuración (golden set)
+
+```bash
+python agents/investigador/eval_investigador.py --prompt-version v4 --trigger t2
+```
+
+Corre los 5 briefs de enero 2027 (`baseline/briefs/brief_2027-01_op*.md`)
+3 veces cada uno: 15 corridas, unos 50 minutos con el modelo local y unas
+60 búsquedas de Tavily. Si una corrida falla, se registra como fallida y
+el eval sigue. Al final imprime el resumen; los archivos quedan en
+`agents/investigador/evals/<fecha>/` y en MLflow como una corrida padre
+`eval-...` con una corrida hija por caso.
+
+Para una prueba rápida sin internet ni créditos: `--reps 1 --search-backend stub`.
+
+## 5. Abre la UI de MLflow
 
 ```bash
 mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db --port 5001

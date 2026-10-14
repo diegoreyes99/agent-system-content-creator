@@ -1,0 +1,144 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "diferencias entre Deka y Hyrox en fitness 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días gimnasio Deka Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "clínica técnica Deka y Hyrox en CDMX 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "HYROX vs DEKA Fit – Race Formats, Workouts & Training Differences",
+            "url": "https://roxzone.training/blog/hyrox-vs-deka-fit-comparison",
+            "snippet": "A: The HYROX format is 8x1km runs, each followed by one of 8 workout stations (8 runs, 8 exercises total). The DEKA Fit format is 10x500m runs, each followed by a functional fitness zone (10 runs, 10 exercises total). HYROX has 8 km of running vs DEKA’s 5 km, and HYROX’s stations are fewer but generally longer/heavier (like a 1000m row or 100 wall balls). DEKA’s stations are more numerous but each is shorter (like 500m row, 20 reps, etc.) and include an air bike segment which HYROX does not [...] In summary, HYROX workouts are fewer in number but higher in volume/intensity, demanding more stre",
+            "published": "",
+            "relevance": 0.87
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DZaFNw8lW8-",
+            "snippet": "💥 DEKA FIT vs HYROX – what’s the difference?   \n  \nBoth are popular fitness racing events, but they’re structured quite differently.   \n  \n⚡ Quick breakdown:   \n  \nHYROX = 8km total running + 8 stations   \n  \nDEKA FIT = 5km total running + 10 stations   \n  \nWith shorter 500m runs, more stations, and a quicker overall completion time, DEKA Fit keeps the intensity high and the running manageable. It’s also flexible, with options to split runs and stations in team formats.",
+            "published": "",
+            "relevance": 0.86
+          },
+          {
+            "title": "HYROX vs DEKA FIT 2026: Diferencias y Cuál Elegir | CorrerJuntos",
+            "url": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+            "snippet": "### Duración\n\nUna HYROX típica dura entre 60 y 105 minutos. DEKA FIT entre 30 y 60. Esto significa que HYROX requiere más resistencia aérobica sostenida, mientras que DEKA FIT permite mantener una intensidad más alta durante menos tiempo.\n\nNuestra valoración: HYROX es más difícil para la mayoría de personas, principalmente por la distancia de carrera y el peso de los sleds. DEKA FIT es más accesible para principiantes.\n\n## Comunidad y expansión [...] Resumen rápido: HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA FIT es más variado en ejercicios (10 zonas) y tiene men",
+            "published": "",
+            "relevance": 0.85
+          },
+          {
+            "title": "HYROX vs. DEKA: What’s the Difference? - Raintree Athletic Club",
+            "url": "https://raintreeathleticclub.com/uncategorized/hyrox-vs-deka-what-s-the-difference",
+            "snippet": "Although HYROX and DEKA share plenty of similarities, their formats create very different challenges.\n\nOne of the biggest differences is running volume. A standard HYROX race includes 8 kilometers of running, while DEKA gives athletes multiple options ranging from no running at all to a total of 5 kilometers.\n\nThe workout stations are also different. Both events test functional strength and conditioning, but each uses its own standardized exercises and race structure. [...] In simple terms, HYROX places a significant emphasis on the ability to maintain your running pace while completing demand",
+            "published": "",
+            "relevance": 0.84
+          },
+          {
+            "title": "DEKA vs Hyrox: How the Two Races Compare | Battle Bunker",
+            "url": "https://thebattlebunker.com/blogs/logbook/deka-vs-hyrox",
+            "snippet": "The honest differences come down to three things. First, running volume: HYROX demands a real running base, DEKA STRONG demands none. Second, the machines: DEKA leans on the air bike, which HYROX does not use at all. Third, the implements: HYROX uses a sandbag for its 100 m lunges, while DEKA uses a weighted RAM roller for both its lunges and its burpees, plus a dead ball for the wall overs. [...] Short answer: HYROX is a single fixed race, eight 1 km runs alternating with eight functional stations, held in arenas and identical everywhere in the world. DEKA is Spartan's indoor racing family bu",
+            "published": "",
+            "relevance": 0.83
+          }
+        ],
+        "backend": "tavily",
+        "query": "diferencias entre Deka y Hyrox en fitness 2027",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "ESTO ES DEKA  DEKA es salud, bienestar, una razón para ...",
+            "url": "https://www.instagram.com/reel/DVzACJjDhp5?hl=en",
+            "snippet": "Ara toca recuperar, tornar als entrenaments i començar a preparar el pròxim repte: DEKA Primavera, 20 i 21 de març 2027! 20–21 MARÇ. TENIM",
+            "published": "",
+            "relevance": 0.71
+          },
+          {
+            "title": "Desafíos Fitness DEKA 2026 | DEKA Spartan | Pon a prueba tus límites",
+            "url": "https://es.spartan.com/es/deka",
+            "snippet": "Tough MudderSPARTAN TRAILDEKAEXTREME ENDURANCEOCRWCLA RUTAM20HIGHLANDERCOMBAT\n\nTough MudderSPARTAN TRAILDEKAEXTREME ENDURANCEOCRWCLA RUTAM20HIGHLANDERCOMBAT\n\n Encuentra tu carrera\n\nCompras\n\nCrear una cuenta\n\nIniciar sesión\n\npublic\n\nEl estándar\n\nmundial del\n\nfitness\n\nDEKA es la prueba definitiva de tu fuerza, resistencia y determinación. Con pruebas de condición física estandarizadas diseñadas para superar tus límites y celebrar tu progreso.\n\nCALENDARIO 2026/2027\n\n¿Qué es DEKA? [...] ¿Qué es DEKA?\n\nÚnete a la comunidad global de atletas que ponen a prueba su entrenamiento en el gimnasio en la c",
+            "published": "",
+            "relevance": 0.46
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días gimnasio Deka Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.368,
+          0.35,
+          0.299
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Si haces Hyrox CDMX estos tips te pueden ayudar a mejorar tu ...",
+            "url": "https://www.instagram.com/reel/DdfNBBSxgsL",
+            "snippet": "HYROX Cancún 2027 Correr rápido es importante. Hacerlo bajo fatiga es otro nivel Entrenamiento enfocado running-fuerza-resistencia, para",
+            "published": "",
+            "relevance": 0.48
+          },
+          {
+            "title": "Ahora HYROX México City será de 4 días, del jueves 29 de ...",
+            "url": "https://www.instagram.com/reel/DdZO9rmBHTk",
+            "snippet": "TODAS LAS VENTAS ABREN A LAS 12 PM (CDMX) 🏋️ HYROX TRAINING CLUB 21 y 23 de septiembre PREVENTA BBVA 23 y 25 de septiembre PRE-REGISTRO",
+            "published": "",
+            "relevance": 0.44
+          }
+        ],
+        "backend": "tavily",
+        "query": "clínica técnica Deka y Hyrox en CDMX 2027",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.391,
+          0.354,
+          0.256
+        ]
+      }
+    }
+  ],
+  "latency_s": 202.72670533397468,
+  "prompt_tokens": 9027,
+  "completion_tokens": 515
+}
