@@ -1,0 +1,165 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "formatos de contenido para captación de socios nuevos en gimnasios CDMX enero 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "diferencias entre Hyrox y Deka para principiantes en Instagram enero 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo llegar a DOPA Narvarte Poniente Instagram enero 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DRm2XUigd46?__d=1%2B",
+            "snippet": "oltraining\n\nÚltimo reto del año en OL Training  \nReto de 21 días ideal para quienes quieren perder peso y cerrar diciembre con resultados reales. 💪  \n  \n📆 Del 01 al 21 de diciembre  \n✅ Costo: $800 pesos  \n✅ Entrenamiento Lunes a Viernes  \n✅ Plan alimenticio personalizado  \n✅ Horarios flexibles  \n  \n⚠️ Cupo limitado  \n📢 Primeros 5 ien inscribirse = 10% de descuento  \n  \n¡Empieza tu transformación hoy! 🔥  \n  \n📌Calle Hermenegildo Galeana 234, segundo piso.  \n📲638 127 6868\n\n## No comments yet. [...] Start the conversation.\n\n1\n\nLog in to like or comment.\n\nMore posts from oltraining\n\nVideo by OLTRAI",
+            "published": "",
+            "relevance": 0.62
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DbKlepYNZhq",
+            "snippet": "Estos retos de 21 días, hay gente que los utiliza para bajar de peso; otros para mantener, tonificar y sentirse mejor de vitalidad; y otros para subir de peso! 🤗🤗  \n  \nA mi me ayudan a no descentrarme del todo, en esta época que además hay más excesos, me viene genial, para compensar y mantener💪🏻🤗  \n  \nOrgullosa de tod@s los participantes y vuestros logros🫶🏻aupa zuek♥️   \n  \nEl día 3 comenzamos nuevo reto💪🏻💪🏻💪🏻💪🏻💪🏻  \n  \n#reto #21dias #nutricion #ejercicio #habitos\n\njeus1691's profile picture [...] Video by Lorea Luzar on October 08, 2026. May be an image of omelet, tomato, zucchini and text.\n\n",
+            "published": "",
+            "relevance": 0.59
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.366,
+          0.26,
+          0.257
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Marketing para Gimnasios en 2026: 15 Estrategias que Realmente Funcionan | FitNova",
+            "url": "https://www.fitnova.eu/blog/marketing-para-gimnasios",
+            "snippet": "Durante la primera semana debes enfocarte en contenido: crear y programar publicaciones para redes sociales del mes, escribir un artículo de blog y optimizar la ficha de Google My Business con fotos nuevas.\n\nLa segunda semana es para captación activa: lanzar o ajustar campañas de publicidad, activar la campaña de referidos del mes y contactar con un negocio local para una colaboración. [...] Guía práctica de marketing local para gimnasios: optimización de Google Business Profile, SEO local, reseñas, publicidad geolocalizada y captación en un radio de 3-5 km.\n\nEquipo FitNova•\n\nEstrategias de ca",
+            "published": "",
+            "relevance": 0.42
+          }
+        ],
+        "backend": "tavily",
+        "query": "formatos de contenido para captación de socios nuevos en gimnasios CDMX enero 2027",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.281,
+          0.016,
+          0.012,
+          0.007
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DZaFNw8lW8-",
+            "snippet": "💥 DEKA FIT vs HYROX – what’s the difference?   \n  \nBoth are popular fitness racing events, but they’re structured quite differently.   \n  \n⚡ Quick breakdown:   \n  \nHYROX = 8km total running + 8 stations   \n  \nDEKA FIT = 5km total running + 10 stations   \n  \nWith shorter 500m runs, more stations, and a quicker overall completion time, DEKA Fit keeps the intensity high and the running manageable. It’s also flexible, with options to split runs and stations in team formats. [...] 💥 Fancy trying DEKA Fit for yourself?   \nWe’ve got a DEKA FIT simulation on 13th June – the perfect chance to experienc",
+            "published": "",
+            "relevance": 0.78
+          },
+          {
+            "title": "HYROX vs DEKA FIT 2026: Diferencias y Cuál Elegir | CorrerJuntos",
+            "url": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+            "snippet": "### Duración\n\nUna HYROX típica dura entre 60 y 105 minutos. DEKA FIT entre 30 y 60. Esto significa que HYROX requiere más resistencia aérobica sostenida, mientras que DEKA FIT permite mantener una intensidad más alta durante menos tiempo.\n\nNuestra valoración: HYROX es más difícil para la mayoría de personas, principalmente por la distancia de carrera y el peso de los sleds. DEKA FIT es más accesible para principiantes.\n\n## Comunidad y expansión [...] Resumen rápido: HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA FIT es más variado en ejercicios (10 zonas) y tiene men",
+            "published": "",
+            "relevance": 0.77
+          },
+          {
+            "title": "HYROX® vs DEKA FIT: ¿A cuál te apuntas? | Repz",
+            "url": "https://www.repz.app/es/blog/hyrox-vs-deka",
+            "snippet": "HYROX® usa segmentos individuales más largos; DEKA FIT más segmentos cortos. Eso no demuestra cuál es más difícil, aeróbico o adecuado para un perfil. Estaciones, ritmo, habilidad, división, circuito y persona determinan la demanda. Los tiempos no son benchmarks intercambiables.\n\nHYROX® Singles Rulebook 2026/27 · DEKA official competition formats · DEKA FIT official format\n\n## Elegir por logística y preferencia [...] HYROX® Singles actual alterna ocho carreras designadas de unos 1 km con ocho estaciones prescritas. El reglamento define orden, distancias, cargas, estándares y penalizaciones. El",
+            "published": "",
+            "relevance": 0.75
+          },
+          {
+            "title": "DEKA vs Hyrox: How the Two Races Compare | Battle Bunker",
+            "url": "https://thebattlebunker.com/blogs/logbook/deka-vs-hyrox",
+            "snippet": "The honest differences come down to three things. First, running volume: HYROX demands a real running base, DEKA STRONG demands none. Second, the machines: DEKA leans on the air bike, which HYROX does not use at all. Third, the implements: HYROX uses a sandbag for its 100 m lunges, while DEKA uses a weighted RAM roller for both its lunges and its burpees, plus a dead ball for the wall overs. [...] Short answer: HYROX is a single fixed race, eight 1 km runs alternating with eight functional stations, held in arenas and identical everywhere in the world. DEKA is Spartan's indoor racing family bu",
+            "published": "",
+            "relevance": 0.69
+          },
+          {
+            "title": "¿Qué diferencia hay entre HYROX, DEKA y OCR? Nos lo ...",
+            "url": "https://www.instagram.com/reel/DO_EFtRCq14?hl=en",
+            "snippet": "HYROX → El hermano mayor del fitness híbrido 1.000. DEKA → Más accesible, pero no por eso fácil Formato más corto, menos carga y repes, ideal",
+            "published": "",
+            "relevance": 0.64
+          }
+        ],
+        "backend": "tavily",
+        "query": "diferencias entre Hyrox y Deka para principiantes en Instagram enero 2027",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cómo llegar a DOPA Narvarte Poniente Instagram enero 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.25,
+          0.241,
+          0.227,
+          0.2,
+          0.027
+        ]
+      }
+    }
+  ],
+  "latency_s": 93.44667612499325,
+  "prompt_tokens": 9797,
+  "completion_tokens": 320
+}

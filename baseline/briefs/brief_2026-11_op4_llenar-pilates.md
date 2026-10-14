@@ -1,7 +1,7 @@
 # Brief mensual DOPA — Instagram (feed e historias) y blog
 
-**Mes a planear:** 2027-01
-**Fecha de llenado:** 2027-01-04
+**Mes a planear:** 2026-11
+**Fecha de llenado:** 2026-11-03
 
 ---
 
@@ -22,7 +22,7 @@ Sembrar interés en Hot Pilates como "próximamente", sin fecha ni precio (la ad
 ## 2. Meta medible del mes (obligatoria)
 
 **Meta:**
-Pilates con al menos 10 personas por clase al cierre de enero y 5 inscritas al plan Pilates mensual ($1,599).
+Pilates con al menos 10 personas por clase al cierre de noviembre y 5 inscritas al plan Pilates mensual ($1,599).
 
 **Situación actual** (socios directos / socios de agregadores):
 Aprox. 30 socios con membresía directa / 55 usuarios de TotalPass y Fitpass (último corte, octubre 2026). Meta de punto de equilibrio: 90 socios directos.
@@ -41,7 +41,7 @@ Rosa: le interesa Pilates y el trabajo de movilidad, pero teme que el entrenamie
 ## 4. Fechas clave y fechas a evitar (obligatoria)
 
 **Fechas para comunicar** (eventos propios, arranque de retos, cierres, cambios de horario):
-Martes y jueves de enero, 09:00–10:00: clases de Pilates. Jueves 14 de enero: clase abierta para principiantes.
+Martes y jueves de noviembre, 09:00–10:00: clases de Pilates. Jueves 12 de noviembre: clase abierta para principiantes.
 
 **Fechas en las que NO conviene publicar contenido fuerte (Si no hay fecha inidicarlo):**
 No hay fechas a evitar este mes.
@@ -70,7 +70,7 @@ Preguntan si pueden venir solo a Pilates sin pagar la membresía completa.
 
 ### Evento 1
 - **Nombre:** Clase abierta de Pilates para principiantes
-- **Fecha y horario:** Jueves 14 de enero, 09:00–10:00
+- **Fecha y horario:** Jueves 12 de noviembre, 09:00–10:00
 - **Lugar o punto de encuentro:** DOPA
 - **Quién puede ir (nivel y cupo):** Principiantes, sin experiencia previa; 15 lugares
 - **Costo (socios / externos):** Gratis
@@ -86,7 +86,7 @@ Preguntan si pueden venir solo a Pilates sin pagar la membresía completa.
 Primera clase de Pilates gratis para quien nunca ha venido a DOPA.
 
 **Vigencia:**
-Todo enero.
+Todo noviembre.
 
 **Condiciones indispensables:**
 Una clase por persona. Requiere reservar con un día de anticipación.
@@ -127,10 +127,10 @@ No anunciar Hot Pilates como disponible ni dar fecha o precio. No usar lenguaje 
 ## 12. Recursos y avisos operativos (opcional)
 
 **Fotos disponibles este mes:**
-Faltan fotos de las clases de Pilates: se agenda sesión con Mike el martes 5 de enero.
+Faltan fotos de las clases de Pilates: se agenda sesión con Mike el martes 3 de noviembre.
 
 **Avisos operativos para historias** (cierres, mantenimiento, cambios de horario):
-Viernes 1 de enero cerrado. Domingos cerrado. Horario regular desde el sábado 2 de enero: lunes a viernes 06:00–10:00 y 18:30–20:30; sábado 08:00–09:30.
+Lunes 2 de noviembre (Día de Muertos) y lunes 16 de noviembre (día festivo): horario por confirmar. Domingos cerrado. Horario regular: lunes a viernes 06:00–10:00 y 18:30–20:30; sábado 08:00–09:30.
 
 ---
 

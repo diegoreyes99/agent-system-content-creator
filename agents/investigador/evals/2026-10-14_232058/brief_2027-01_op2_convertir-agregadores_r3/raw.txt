@@ -1,0 +1,7 @@
+```json
+{
+  "hallazgos": [],
+  "tendencias_de_formato": ["Reels", "contenido generado por usuarios (UGC)", "vídeos cortos", "live video"],
+  "resumen_ejecutivo": "No se encontraron hallazgos directos sobre contenidos que convierten usuarios de plataformas de gimnasio a membresía directa. Sin embargo, se identificaron tendencias generales en Instagram que pueden aplicarse: Reels, contenido generado por usuarios (UGC) y live video, que son efectivos para generar conversión y engagement. Estos formatos pueden usarse para destacar beneficios de la membresía directa y promover el evento de evaluación de movilidad como parte del valor de la membresía."
+}
+```

@@ -1,0 +1,102 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días para regresar al gimnasio después de vacaciones 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo regresar al entrenamiento tras 2-3 semanas sin hacerlo Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cosmic run de enero 2027 Instagram posteo de éxito y testimonios",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Retoma tu vida fitness después de vacaciones - Sportium",
+            "url": "https://www.sportium.com.mx/blog/retoma-tu-vida-fitness-despues-de-vacaciones",
+            "snippet": "Volver a tu rutina fitness después de vacaciones no tiene que ser un reto abrumador. Con pequeños pasos, actividades que disfrutes y un enfoque positivo, puedes recuperar el hábito de forma natural y sostenible.\n\nMás allá de los resultados físicos, lo más importante es cómo te hace sentir: más energía, mayor bienestar y mejor calidad de vida. Este es el mejor momento para volver a empezar. [...] Las vacaciones son ese momento de relajación que se espera con ansias: días en los que el reloj parece moverse más despacio, las rutinas se olvidan y el cuerpo agradece la pausa de la marcha diaria. Si",
+            "published": "",
+            "relevance": 0.47
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días para regresar al gimnasio después de vacaciones 2027",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.377,
+          0.292,
+          0.199,
+          0.034
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cómo regresar al entrenamiento tras 2-3 semanas sin hacerlo Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.29,
+          0.215,
+          0.172,
+          0.109,
+          0.105
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "What a weekend, grateful to be out there enjoying 50miles ...",
+            "url": "https://www.instagram.com/reel/C9fmNGMu5hD",
+            "snippet": "January 23–30, 2027. If you feel the call, reach out. I'd love to connect and share more about the journey. Come adventure with us. ❤️‍",
+            "published": "",
+            "relevance": 0.48
+          }
+        ],
+        "backend": "tavily",
+        "query": "cosmic run de enero 2027 Instagram posteo de éxito y testimonios",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.337,
+          0.08,
+          0.055,
+          0.055
+        ]
+      }
+    }
+  ],
+  "latency_s": 67.28168683301192,
+  "prompt_tokens": 7326,
+  "completion_tokens": 252
+}

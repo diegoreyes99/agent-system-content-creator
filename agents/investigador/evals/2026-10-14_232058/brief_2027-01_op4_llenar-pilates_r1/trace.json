@@ -1,0 +1,120 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "Pilates para movilidad y espalda en Instagram CDMX 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "reto de 21 días Pilates para principiantes Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "testimonios de Pilates para mujeres 45-55+ años en Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "🚨 Algo grande está por llegar a CDMX... 🚨 Este 8 y 9 de ...",
+            "url": "https://www.instagram.com/p/DZal9UEux4n",
+            "snippet": "La Formación en Pilates BIA 2027 está diseñada para aprender el método con orden, profundidad y práctica constante. 5 módulos",
+            "published": "",
+            "relevance": 0.62
+          },
+          {
+            "title": "Más de 15 años no se cuentan… se sienten.  En Body Fitness ...",
+            "url": "https://www.instagram.com/reel/DX1-7WuRlK2",
+            "snippet": "Pilates combina fuerza, movilidad, control y respiración para trabajar tu cuerpo de manera consciente. ... Colonia San Rafael #cdmx #pilates #",
+            "published": "",
+            "relevance": 0.47
+          }
+        ],
+        "backend": "tavily",
+        "query": "Pilates para movilidad y espalda en Instagram CDMX 2027",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.231,
+          0.141,
+          0.087
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Se va a publicar los días lunes un carrusel el reto ...",
+            "url": "https://www.instagram.com/p/C3i4j9KtwRo",
+            "snippet": "✔️Son 3 o 4 ejercicios, 10 minutos por día. No olvides utilizar un Mat de Pilates. ✔️ Antes de iniciar debes aprender la Respiración Pilates",
+            "published": "",
+            "relevance": 0.53
+          },
+          {
+            "title": "21-Day Pilates Challenge | #DAY3 ARMS AND BACK",
+            "url": "https://www.youtube.com/watch?v=EN214X3RIuE",
+            "snippet": "Bienvenid@ al día 3 de nuestro Reto de Pilates de 21 Días Hoy trabajaremos brazos y espalda con una rutina de aproximadamente 30 minutos",
+            "published": "",
+            "relevance": 0.47
+          },
+          {
+            "title": "Come join my FREE 21-day pilates challenge lN BlO ...",
+            "url": "https://www.instagram.com/reel/DPR4dimCd_0",
+            "snippet": "FREE 21-day pilates challenge ・ doing a simple 25 day challenge. combining strength training with Pilates for core strength, balance,",
+            "published": "",
+            "relevance": 0.42
+          }
+        ],
+        "backend": "tavily",
+        "query": "reto de 21 días Pilates para principiantes Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.378,
+          0.357
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "testimonios de Pilates para mujeres 45-55+ años en Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.223,
+          0.159,
+          0.142,
+          0.09,
+          0.066
+        ]
+      }
+    }
+  ],
+  "latency_s": 87.90341700002318,
+  "prompt_tokens": 7565,
+  "completion_tokens": 280
+}

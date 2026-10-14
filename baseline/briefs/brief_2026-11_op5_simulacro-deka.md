@@ -1,7 +1,7 @@
 # Brief mensual DOPA — Instagram (feed e historias) y blog
 
-**Mes a planear:** 2027-01
-**Fecha de llenado:** 2027-01-02
+**Mes a planear:** 2026-11
+**Fecha de llenado:** 2026-11-02
 
 ---
 
@@ -11,7 +11,7 @@
 
 - **Llenar un evento propio**
 
-  Llenar el Simulacro Deka abierto del sábado 30 de enero: que socios y externos vivan el formato Deka con el equipo oficial que tiene DOPA.
+  Llenar el Simulacro Deka abierto del sábado 21 de noviembre: que socios y externos vivan el formato Deka con el equipo oficial que tiene DOPA.
 
 ### Prioridad secundaria (opcional, máximo una)
 
@@ -41,10 +41,10 @@ Ana con buena condición (corre 5K a 21K) que nunca ha probado un formato híbri
 ## 4. Fechas clave y fechas a evitar (obligatoria)
 
 **Fechas para comunicar** (eventos propios, arranque de retos, cierres, cambios de horario):
-Sábados 16 y 23 de enero: clínica técnica de estaciones. Sábado 30 de enero: Simulacro Deka abierto.
+Sábados 7 y 14 de noviembre: clínica técnica de estaciones. Sábado 21 de noviembre: Simulacro Deka abierto.
 
 **Fechas en las que NO conviene publicar contenido fuerte (Si no hay fecha inidicarlo):**
-No hay fechas a evitar este mes.
+Última semana de noviembre: Black Friday y promociones de otras marcas.
 
 ---
 
@@ -70,7 +70,7 @@ Quieren saber cuándo es la próxima competencia oficial.
 
 ### Evento 1
 - **Nombre:** Simulacro Deka abierto
-- **Fecha y horario:** Sábado 30 de enero, 08:00–11:00 (salidas por grupos)
+- **Fecha y horario:** Sábado 21 de noviembre, 08:00–11:00 (salidas por grupos)
 - **Lugar o punto de encuentro:** DOPA
 - **Quién puede ir (nivel y cupo):** Nivel intermedio en adelante, con escalamiento para principiantes; 30 lugares
 - **Costo (socios / externos):** Gratis para socios / $320 externos (precio de clase suelta)
@@ -80,7 +80,7 @@ Quieren saber cuándo es la próxima competencia oficial.
 
 ### Evento 2
 - **Nombre:** Clínica técnica de estaciones Deka
-- **Fecha y horario:** Sábados 16 y 23 de enero, 09:30–10:30
+- **Fecha y horario:** Sábados 7 y 14 de noviembre, 09:30–10:30
 - **Lugar o punto de encuentro:** DOPA
 - **Quién puede ir (nivel y cupo):** Inscritos al simulacro; 20 lugares por sesión
 - **Costo (socios / externos):** Incluida con la inscripción al simulacro
@@ -124,7 +124,7 @@ Kings of Barrio (Obrero Mundial y Gabriel Mancera), Stronger / STRGR (Narvarte�
 Cuentas oficiales de HYROX, Deka y Spartan Race (DOPA es sede afiliada Deka y tiene certificación OCR de Spartan Race). Marcas que admiramos: Adidas, Nike y Birdman. Aliada de DOPA: Habits.
 
 **Eventos externos del mes relevantes para la comunidad:**
-Por confirmar si hay una competencia HYROX o Deka en CDMX en el primer trimestre de 2027.
+Por confirmar si hay una competencia HYROX o Deka en CDMX en noviembre o diciembre.
 
 ---
 
@@ -137,10 +137,10 @@ No presentar el simulacro como competencia oficial Deka. No usar mensajes que in
 ## 12. Recursos y avisos operativos (opcional)
 
 **Fotos disponibles este mes:**
-Fotos de Mike de la competencia Deka del 4 de octubre y del banco de entrenamientos híbridos.
+Las fotos de Mike de la competencia Deka del 4 de octubre todavía no están listas (entrega por confirmar). Mientras tanto, banco de entrenamientos híbridos.
 
 **Avisos operativos para historias** (cierres, mantenimiento, cambios de horario):
-Viernes 1 de enero cerrado. Domingos cerrado. Horario regular desde el sábado 2 de enero: lunes a viernes 06:00–10:00 y 18:30–20:30; sábado 08:00–09:30.
+Lunes 2 de noviembre (Día de Muertos) y lunes 16 de noviembre (día festivo): horario por confirmar. Domingos cerrado. Horario regular: lunes a viernes 06:00–10:00 y 18:30–20:30; sábado 08:00–09:30.
 
 ---
 

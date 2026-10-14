@@ -1,0 +1,126 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo llegar a un gimnasio en CDMX con mapas y fotos",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "clases de 60 minutos en gimnasio híbrido con coach en CDMX",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DUQjJF1kcXN",
+            "snippet": "Febrero no es para probar. Es para decidir.✍🏼  \n  \nPor eso este 9 de Febrero comenzamos nuestro Reto de 21 Días!!!  \n  \nEste no es un reto extremo.  \nEs un reto real, sostenible y con propósito.  \n  \nDurante 21 días vamos a trabajar:  \n✔️ hábitos  \n✔️ disciplina  \n✔️ movimiento  \n✔️ alimentación  \n✔️ mentalidad  \n✔️ conexión contigo  \n  \nNo se trata solo de verte diferente.  \nSe trata de sentirte fuerte, clara y enfocada.  \n  \nSi llevas tiempo diciendo “este año sí” [...] pero aún no comienzasx esta es tu señal.  \n  \nEstoy buscando 15 mujeres que estén listas para trabajar su transformación fí",
+            "published": "",
+            "relevance": 0.69
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DRm2XUigd46?__d=1%2B",
+            "snippet": "oltraining\n\nÚltimo reto del año en OL Training  \nReto de 21 días ideal para quienes quieren perder peso y cerrar diciembre con resultados reales. 💪  \n  \n📆 Del 01 al 21 de diciembre  \n✅ Costo: $800 pesos  \n✅ Entrenamiento Lunes a Viernes  \n✅ Plan alimenticio personalizado  \n✅ Horarios flexibles  \n  \n⚠️ Cupo limitado  \n📢 Primeros 5 ien inscribirse = 10% de descuento  \n  \n¡Empieza tu transformación hoy! 🔥  \n  \n📌Calle Hermenegildo Galeana 234, segundo piso.  \n📲638 127 6868\n\n## No comments yet. [...] Start the conversation.\n\n1\n\nLog in to like or comment.\n\nMore posts from oltraining\n\nVideo by OLTRAI",
+            "published": "",
+            "relevance": 0.62
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DbKlepYNZhq",
+            "snippet": "Estos retos de 21 días, hay gente que los utiliza para bajar de peso; otros para mantener, tonificar y sentirse mejor de vitalidad; y otros para subir de peso! 🤗🤗  \n  \nA mi me ayudan a no descentrarme del todo, en esta época que además hay más excesos, me viene genial, para compensar y mantener💪🏻🤗  \n  \nOrgullosa de tod@s los participantes y vuestros logros🫶🏻aupa zuek♥️   \n  \nEl día 3 comenzamos nuevo reto💪🏻💪🏻💪🏻💪🏻💪🏻  \n  \n#reto #21dias #nutricion #ejercicio #habitos\n\njeus1691's profile picture",
+            "published": "",
+            "relevance": 0.59
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.366,
+          0.26
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Smart Fit tiene gimnasios cerca de tu ubicación en CDMX - Rutinas y consejos por parte de nuestros expertos",
+            "url": "https://smartfit.com.mx/news/comunidad-smart-fit/gimnasios-cerca-de-tu-ubicacion-en-cdmx",
+            "snippet": "1. San Jerónimo\n\n### Gimnasios en la Alcaldía Álvaro Obregón\n\nOtra zona con 6 centros fitness de alta calidad.\n\n1. Terraza Pedregal\n2. Escenaria\n3. Aleph\n4. Pabellón Altavista\n5. Torre Diamante\n\nmapa de la cdmx dividido por alcaldias mostrando los gimnasios smart fit \n\n## Forma parte de la comunidad Smartfitera [...] 1. Independencia\n2. Doctores\n3. Boturini\n4. Reforma 27\n5. Tlatelolco\n6. Reforma Ángel\n7. Torre Diana\n8. Génova\n9. Roma Norte\n10. Condesa\n11. Pabellón Cuauhtémoc\n\n### Gimnasios en la Alcaldía Miguel Hidalgo\n\nAdemás de los dos gimnasios en Polanco, esta zona cuenta con otras alterna",
+            "published": "",
+            "relevance": 0.66
+          },
+          {
+            "title": "gym - Google Maps",
+            "url": "https://www.google.com/maps/search/gym/@19.332697,-99.314166,15z/data=!3m1!4b1?hl=en",
+            "snippet": "Zion Gym\n\n3.7(3)\n\nGym · Av. Cam. al Bosque\n\nOpen · Closes 11 PM\n\nGym Centro Deportivo Cdc\n\nGym Centro Deportivo Cdc\n\n5.0(2)\n\nGym · Av. Monte de las Cruces 333\n\nALX GYM\n\nALX GYM\n\n4.8(218)\n\nGym ·  · Prol. Av. Juárez 257\n\nOpen · Closes 10:30 PM\n\nGym Guerrero\n\nGym Guerrero\n\n4.9(10)\n\nGym · Cam. Antiguo a San Pablo Chimalpa\n\nClosed · Opens 6 PM\n\nIronFit GYM\n\nIronFit GYM\n\n5.0(13)\n\nGym · Av. Veracruz\n\nOpen · Closes 12 AM\n\n\" Pro Warriors GYM\"\n\n\" Pro Warriors GYM\"\n\n5.0(5)\n\nGymnastics center [...] Gymnastics center\n\nOpen · Closes 11 PM\n\nYou're seeing a limited view of Google Maps.\n\nAbout pricing",
+            "published": "",
+            "relevance": 0.48
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DVUHGaMiLjU",
+            "snippet": "paseoarcosbosques\n\n¿Cómo llegar a Arcos Fitness Club? ✨ Aquí te dejamos la guía, rápido y fácil.  \nEntrenar aquí es otro nivel. 💎🖤   \n#CDMX #Fitness #Wellness #PaseoArcosBosques\n\n## No comments yet.\n\nStart the conversation.\n\n16\n\nLog in to like or comment.\n\nMore posts from paseoarcosbosques\n\nPhoto by Paseo Arcos Bosques on October 01, 2026. May be an image of text.\n\nOpen jars of creams in various colors with text '¡MUY PRONTO! SEPHORA'. [...] Log In\n\nSign Up\n\npaseoarcosbosques's profile picture\n\nNever miss a post from paseoarcosbosques\n\nSign up for Instagram to stay in the loop.\n\nBy continuing,",
+            "published": "",
+            "relevance": 0.42
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo llegar a un gimnasio en CDMX con mapas y fotos",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.088,
+          0.019
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "clases de 60 minutos en gimnasio híbrido con coach en CDMX",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.393,
+          0.371,
+          0.156,
+          0.131,
+          0.06
+        ]
+      }
+    }
+  ],
+  "latency_s": 82.21767766703852,
+  "prompt_tokens": 9607,
+  "completion_tokens": 268
+}

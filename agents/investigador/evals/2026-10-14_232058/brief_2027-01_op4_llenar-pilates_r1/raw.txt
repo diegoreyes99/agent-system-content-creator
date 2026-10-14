@@ -1,0 +1,7 @@
+```json
+{
+  "hallazgos": [],
+  "tendencias_de_formato": ["carrusel", "historia", "post"],
+  "resumen_ejecutivo": "No se encontraron hallazgos relevantes para el objetivo del mes. Las búsquedas sobre testimonios de mujeres 45-55+ y retos de 21 días para principiantes no generaron resultados relevantes. Se encontraron referencias a retos y contenido general de Pilates, pero no se pudo identificar contenido específico que conecte con el público Rosa o con la meta de llenar clases de Pilates."
+}
+```

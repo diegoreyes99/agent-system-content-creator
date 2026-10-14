@@ -1,7 +1,7 @@
 # Brief mensual DOPA — Instagram (feed e historias) y blog
 
-**Mes a planear:** 2027-01
-**Fecha de llenado:** 2027-01-04
+**Mes a planear:** 2026-11
+**Fecha de llenado:** 2026-11-03
 
 ---
 
@@ -10,7 +10,7 @@
 ### Prioridad principal
 
 - **Convertir usuarios de TotalPass/Fitpass a membresía directa**
-  Son 55 usuarios de TotalPass y Fitpass contra solo 30 socios directos, y las plataformas pagan tarifas bajas. En enero queremos mostrarles lo que ganan con la membresía directa para que se pasen.
+  Son 55 usuarios de TotalPass y Fitpass contra solo 30 socios directos, y las plataformas pagan tarifas bajas. En noviembre queremos mostrarles lo que ganan con la membresía directa para que se pasen.
 
 ### Prioridad secundaria (opcional, máximo una)
 
@@ -40,10 +40,10 @@ Usuarios de plataformas que ya entrenan con nosotros: conocen el método, pero t
 ## 4. Fechas clave y fechas a evitar (obligatoria)
 
 **Fechas para comunicar** (eventos propios, arranque de retos, cierres, cambios de horario):
-Lunes 4 de enero: arranca la promoción de cambio a membresía. Sábado 16 de enero: evaluación de movilidad con Leo. Domingo 31 de enero: cierre de la promoción.
+Martes 3 de noviembre: arranca la promoción de cambio a membresía. Sábado 14 de noviembre: evaluación de movilidad con Leo. Lunes 30 de noviembre: cierre de la promoción.
 
 **Fechas en las que NO conviene publicar contenido fuerte (Si no hay fecha inidicarlo):**
-Viernes 1 de enero (día festivo). No hay otras fechas a evitar este mes.
+Lunes 2 y lunes 16 de noviembre (días festivos).
 
 ---
 
@@ -69,7 +69,7 @@ Quienes vienen por plataforma dicen que se sienten "de visita" y no parte del gr
 
 ### Evento 1
 - **Nombre:** Evaluación de movilidad con Leo (fisioterapeuta)
-- **Fecha y horario:** Sábado 16 de enero, 09:30–11:00
+- **Fecha y horario:** Sábado 14 de noviembre, 09:30–11:00
 - **Lugar o punto de encuentro:** DOPA
 - **Quién puede ir (nivel y cupo):** Usuarios de TotalPass y Fitpass y socios directos; 12 lugares
 - **Costo (socios / externos):** Gratis
@@ -85,7 +85,7 @@ Quienes vienen por plataforma dicen que se sienten "de visita" y no parte del gr
 Inscripción sin costo (ahorro de $599) para usuarios de TotalPass o Fitpass que se pasen a membresía directa.
 
 **Vigencia:**
-Del 4 al 31 de enero.
+Del 3 al 30 de noviembre.
 
 **Condiciones indispensables:**
 Solo usuarios activos de TotalPass o Fitpass con al menos una visita en los últimos 3 meses. Aplica a mensualidad ($1,850), trimestre ($5,400), semestre ($10,545) o anualidad ($19,980).
@@ -126,10 +126,10 @@ No hablar mal de TotalPass ni de Fitpass: siguen siendo un canal de entrada. No 
 ## 12. Recursos y avisos operativos (opcional)
 
 **Fotos disponibles este mes:**
-Banco de Mike: clases y coaches. Fotos de comunidad del Cosmic Run de diciembre.
+Banco de Mike: clases y coaches. Fotos de comunidad del Cosmic Run de octubre.
 
 **Avisos operativos para historias** (cierres, mantenimiento, cambios de horario):
-Viernes 1 de enero cerrado. Domingos cerrado. Horario regular desde el sábado 2 de enero: lunes a viernes 06:00–10:00 y 18:30–20:30; sábado 08:00–09:30.
+Lunes 2 de noviembre (Día de Muertos) y lunes 16 de noviembre (día festivo): horario por confirmar. Domingos cerrado. Horario regular: lunes a viernes 06:00–10:00 y 18:30–20:30; sábado 08:00–09:30.
 
 ---
 

@@ -1,0 +1,114 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo regresar después de vacaciones de invierno fitness Instagram",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cosmic run de enero Instagram y redes sociales",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DRm2XUigd46?__d=1%2B",
+            "snippet": "oltraining\n\nÚltimo reto del año en OL Training  \nReto de 21 días ideal para quienes quieren perder peso y cerrar diciembre con resultados reales. 💪  \n  \n📆 Del 01 al 21 de diciembre  \n✅ Costo: $800 pesos  \n✅ Entrenamiento Lunes a Viernes  \n✅ Plan alimenticio personalizado  \n✅ Horarios flexibles  \n  \n⚠️ Cupo limitado  \n📢 Primeros 5 ien inscribirse = 10% de descuento  \n  \n¡Empieza tu transformación hoy! 🔥  \n  \n📌Calle Hermenegildo Galeana 234, segundo piso.  \n📲638 127 6868\n\n## No comments yet. [...] Start the conversation.\n\n1\n\nLog in to like or comment.\n\nMore posts from oltraining\n\nVideo by OLTRAI",
+            "published": "",
+            "relevance": 0.62
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DbKlepYNZhq",
+            "snippet": "Estos retos de 21 días, hay gente que los utiliza para bajar de peso; otros para mantener, tonificar y sentirse mejor de vitalidad; y otros para subir de peso! 🤗🤗  \n  \nA mi me ayudan a no descentrarme del todo, en esta época que además hay más excesos, me viene genial, para compensar y mantener💪🏻🤗  \n  \nOrgullosa de tod@s los participantes y vuestros logros🫶🏻aupa zuek♥️   \n  \nEl día 3 comenzamos nuevo reto💪🏻💪🏻💪🏻💪🏻💪🏻  \n  \n#reto #21dias #nutricion #ejercicio #habitos\n\njeus1691's profile picture [...] Video by Lorea Luzar on October 08, 2026. May be an image of omelet, tomato, zucchini and text.\n\n",
+            "published": "",
+            "relevance": 0.59
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DeZs9EMS5KF",
+            "snippet": "Original audio\n\nsportclubstjohns's profile picture\n\nsportclubstjohns\n\n⏳ Faltan 81 días para 2027.  \nNo tienes que esperar a enero para empezar a hacer algo por ti. Hoy puedes dar el primer paso: venir a entrenar, retomar tu rutina o simplemente intentarlo de nuevo. 💪💙  \n  \nEnfócate. Sé constante. Hazlo por ti. 🔥  \n  \n📍 Te esperamos en Sport Club St. John’s.\n\n## No comments yet.\n\nStart the conversation.\n\n19\n\nLog in to like or comment.\n\nMore posts from sportclubstjohns [...] Video by Sport Club St. Jonh’s on April 17, 2026.\n\nVideo by Sport Club St. Jonh’s on April 13, 2026.\n\nVideo by Sport Club ",
+            "published": "",
+            "relevance": 0.56
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.366,
+          0.26
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Retoma tu vida fitness después de vacaciones - Sportium",
+            "url": "https://www.sportium.com.mx/blog/retoma-tu-vida-fitness-despues-de-vacaciones",
+            "snippet": "Uno de los mayores obstáculos es el tiempo. Después de vacaciones, regresar al ritmo laboral puede hacer que el ejercicio pase a segundo plano. Para evitarlo, agenda tus entrenamientos como una cita, elige horarios realistas y aprovecha espacios cercanos a tu día a día.\n\nLa clave no es tener más tiempo, sino organizarlo mejor. Un entrenamiento de 30 minutos puede ser suficiente si lo haces con constancia.\n\n \n\n## El papel del descanso y la nutrición [...] Volver a tu rutina fitness después de vacaciones no tiene que ser un reto abrumador. Con pequeños pasos, actividades que disfrutes y un enfoq",
+            "published": "",
+            "relevance": 0.57
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo regresar después de vacaciones de invierno fitness Instagram",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.342,
+          0.313,
+          0.273,
+          0.214
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cosmic run de enero Instagram y redes sociales",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.226,
+          0.125,
+          0.062,
+          0.044,
+          0.033
+        ]
+      }
+    }
+  ],
+  "latency_s": 64.24334512499627,
+  "prompt_tokens": 7970,
+  "completion_tokens": 256
+}

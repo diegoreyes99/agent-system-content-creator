@@ -1,0 +1,101 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "contenido de Instagram para usuarios de TotalPass/Fitpass que quieren pasar a membresía directa 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "contenido de Instagram para usuarios de TotalPass/Fitpass que quieren pasar a membresía directa 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.303,
+          0.303,
+          0.23,
+          0.228,
+          0.088
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo convencer a usuarios de TotalPass de que la membresía directa es mejor 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cómo convencer a usuarios de TotalPass de que la membresía directa es mejor 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.377,
+          0.192,
+          0.121,
+          0.021,
+          0.016
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "contenidos de Instagram que muestran la diferencia entre membresía directa y plataformas de pago 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Todo lo que cambió en Instagram en 2026 (y qué hacer con cada cosa)",
+            "url": "https://www.youtube.com/watch?v=hegC0PUPFiw",
+            "snippet": "✦ Reordenar tu perfil para convertir a quien te descubre\n\n✦ Links de afiliado directo en tus reels (la comisión va completa para ti)\n\n✦ La purga de bots, la verificación con selfie y lo que es puro ruido\n\n⏱️ CAPÍTULOS\n\n0:00 Por qué estás publicando a ciegas\n\n1:07 El skip rate y los 3 primeros segundos\n\n1:55 Likes vs compartidos\n\n3:15 Contenido original gana\n\n3:50 Reordenar tu perfil para convertir\n\n5:40 Links de afiliado en tus reels\n\n6:35 Instagram Plus, en resumen [...] Una métrica nueva decide si tu reel vive o muere, cambió la forma de llegar a gente nueva, borraron millones de cuentas fal",
+            "published": "",
+            "relevance": 0.4
+          },
+          {
+            "title": "Novedades Instagram 2026: Todas las Nuevas Funcionalidades",
+            "url": "https://metricool.com/es/novedades-instagram",
+            "snippet": "### Instagram Plus\n\nYa es oficial. Instagram lanza su primera suscripción de pago para usuarios, Instagram Plus, disponible desde 3,99 dólares al mes. El plan incluye funciones centradas en stories y personalización del perfil. También aclara que la versión gratuita de la plataforma no cambia.\n\n### Reordenar el feed\n\nInstagram lanza a nivel global esta función para reorganizar el orden de tus publicaciones como quieras, sin borrar ni republicar nada. [...] Instagram incorpora la música a las publicaciones de carruseles en el feed. Desde ahora cualquier usuario, tenga una cuenta de marca, de cr",
+            "published": "",
+            "relevance": 0.4
+          }
+        ],
+        "backend": "tavily",
+        "query": "contenidos de Instagram que muestran la diferencia entre membresía directa y plataformas de pago 2027",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.376,
+          0.322,
+          0.189
+        ]
+      }
+    }
+  ],
+  "latency_s": 107.80433237500256,
+  "prompt_tokens": 15065,
+  "completion_tokens": 310
+}

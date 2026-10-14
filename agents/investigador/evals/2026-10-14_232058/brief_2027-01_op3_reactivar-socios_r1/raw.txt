@@ -1,0 +1,7 @@
+```json
+{
+  "hallazgos": [],
+  "tendencias_de_formato": [],
+  "resumen_ejecutivo": "No se encontraron resultados relevantes para las búsquedas realizadas. Las consultas se centraron en retos de 21 días, guías de regreso al entrenamiento y contenido para el Cosmic Run de enero 2027, pero no hubo fuentes externas que cumplieran con el objetivo del mes ni con los temas de interés de DOPA."
+}
+```

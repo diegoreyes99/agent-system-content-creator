@@ -1,0 +1,139 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo llegar a un gimnasio en CDMX con mapa y dirección",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "clases de 60 minutos en gimnasio con coach presente CDMX",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Llevo más de una década en el mundo fitness ...",
+            "url": "https://www.instagram.com/p/DSSRmKcDZK_",
+            "snippet": "Por eso hoy te invito a que empieces enero conmigo en un reto de 21 días. Regálate ese tiempo. Hazlo por ti. Escríbeme y reserva tu cupo",
+            "published": "",
+            "relevance": 0.63
+          },
+          {
+            "title": "Estàn a tiempo faltan 3 meses ,cumple tu promesa no les ...",
+            "url": "https://www.facebook.com/groups/284623859308006/posts/1728227188280992",
+            "snippet": "Estàn a tiempo faltan 3 meses ,cumple tu promesa no les quiero ver el 2027 haciendo retos de 21 dias #ejerciciosdesdecasa #humorfitness",
+            "published": "",
+            "relevance": 0.62
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DbKlepYNZhq",
+            "snippet": "Estos retos de 21 días, hay gente que los utiliza para bajar de peso; otros para mantener, tonificar y sentirse mejor de vitalidad; y otros para subir de peso! 🤗🤗  \n  \nA mi me ayudan a no descentrarme del todo, en esta época que además hay más excesos, me viene genial, para compensar y mantener💪🏻🤗  \n  \nOrgullosa de tod@s los participantes y vuestros logros🫶🏻aupa zuek♥️   \n  \nEl día 3 comenzamos nuevo reto💪🏻💪🏻💪🏻💪🏻💪🏻  \n  \n#reto #21dias #nutricion #ejercicio #habitos\n\njeus1691's profile picture [...] Video by Lorea Luzar on October 08, 2026. May be an image of omelet, tomato, zucchini and text.\n\n",
+            "published": "",
+            "relevance": 0.59
+          },
+          {
+            "title": "¡Transfórmate en un reto de 30 días! COMENZANDO ENERO 5 ...",
+            "url": "https://www.instagram.com/reel/DS-OqLMDWMQ",
+            "snippet": "¿Qué incluye el Reto de 21 Días? *Plan de alimentación *guía de nutrición personalizada. *Rutinas de ejercicio adaptadas a tu nivel. *",
+            "published": "",
+            "relevance": 0.54
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días gimnasios Instagram enero 2027",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.299
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Smart Fit tiene gimnasios cerca de tu ubicación en CDMX",
+            "url": "https://smartfit.com.mx/news/comunidad-smart-fit/gimnasios-cerca-de-tu-ubicacion-en-cdmx",
+            "snippet": "Para ayudarte a localizar tu próximo centro de entrenamiento, aquí te dejamos una lista de los gimnasios en la Ciudad de México. Copilco Coapa Miramontes",
+            "published": "",
+            "relevance": 0.64
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo llegar a un gimnasio en CDMX con mapa y dirección",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.102,
+          0.091,
+          0.089,
+          0.029
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "EN IRONCORE TENEMOS CLASES DE 60 MINUTOS ...",
+            "url": "https://www.instagram.com/reel/CzFGoFqpknP",
+            "snippet": "Aquí encontrarás un entrenamiento súper completo, llamado Funcional, donde te harás más rápido, más fuerte y mejor en cualquier disciplina que",
+            "published": "",
+            "relevance": 0.55
+          },
+          {
+            "title": "Nuestro coach de yoga Luis Cervantes Franco te espera en # ...",
+            "url": "https://www.facebook.com/CapitalGymOficial/posts/nuestro-coach-de-yoga-luis-cervantes-franco-te-espera-en-capitalgymguadalupe-%EF%B8%8Fma/1360199732972447",
+            "snippet": "... \"○○ Duración: 60 minutos Prof. Diego Martíno Material: Ropa cómoda Tapete Botella de agua *_Confirma tú asistencia y horario.!!!_* Namasté",
+            "published": "",
+            "relevance": 0.52
+          },
+          {
+            "title": "60 minutos para ti. Para desafiar tus límites, conectar con ...",
+            "url": "https://www.instagram.com/reel/DF6oiM6RHgQ",
+            "snippet": "Tu dosis ideal de cardio, medido por nuestra tecnología. Y un coach contigo, siempre sabrás cuál es tu siguiente paso. Fuerza, cardio y guía.",
+            "published": "",
+            "relevance": 0.45
+          }
+        ],
+        "backend": "tavily",
+        "query": "clases de 60 minutos en gimnasio con coach presente CDMX",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.159,
+          0.084
+        ]
+      }
+    }
+  ],
+  "latency_s": 143.3161204579519,
+  "prompt_tokens": 8905,
+  "completion_tokens": 290
+}

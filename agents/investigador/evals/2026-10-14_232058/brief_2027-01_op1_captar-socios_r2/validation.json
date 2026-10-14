@@ -1,0 +1,22 @@
+{
+  "schema_errors": [],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 1.0,
+    "n_schema_errors": 0.0,
+    "n_hallazgos": 0.0,
+    "n_alta": 0.0,
+    "n_tendencias": 0.0,
+    "pct_fuentes_stub": 0.0,
+    "pct_fuentes_url": 0.0,
+    "n_tool_calls": 3.0,
+    "n_search_errors": 1.0,
+    "pct_fuentes_verificadas": 0.0,
+    "search_pass_rate": 0.4,
+    "avg_relevance": 0.5766666666666667,
+    "run_failed": 0.0,
+    "latency_s": 82.22,
+    "prompt_tokens": 9607.0,
+    "completion_tokens": 268.0
+  }
+}

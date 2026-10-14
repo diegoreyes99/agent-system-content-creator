@@ -1,0 +1,88 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días para regresar al gimnasio después de vacaciones 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo regresar al entrenamiento después de 2-3 semanas sin hacerlo Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cosmic run de enero 2027 Instagram y formato de contenido que funciona",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "retos de 21 días para regresar al gimnasio después de vacaciones 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.377,
+          0.292,
+          0.173,
+          0.132,
+          0.123
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cómo regresar al entrenamiento después de 2-3 semanas sin hacerlo Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.029,
+          0.015,
+          0.015,
+          0.013,
+          0.01
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cosmic run de enero 2027 Instagram y formato de contenido que funciona",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.364,
+          0.156,
+          0.132,
+          0.079,
+          0.02
+        ]
+      }
+    }
+  ],
+  "latency_s": 106.6588681670255,
+  "prompt_tokens": 7030,
+  "completion_tokens": 258
+}

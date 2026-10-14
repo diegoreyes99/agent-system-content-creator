@@ -1,0 +1,114 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "content strategy for converting TotalPass users to direct membership fitness Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días para usuarios de plataformas de entrenamiento Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "testimonial content for fitness gym conversion from platform to direct membership 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "How Social Media Shifts Are Transforming Fitness Marketing Strategies",
+            "url": "https://milleradagency.com/how-social-media-shifts-are-transforming-fitness-marketing-strategies",
+            "snippet": "Audit Your Content Mix: Stop posting only static promotional flyers. Ensure at least sixty percent of your weekly posts are short-form videos showing real workouts, facility tours, or staff introductions.\n   Leverage Your Members: Launch a branded hashtag and encourage your members to post their post-workout selfies. Reshare these to your Instagram Stories to build instant, authentic social proof. [...] Short-Form Video Dominance: Utilizing a viral fitness Instagram Reels strategy and TikTok Shorts is essential for hooking modern audiences with high-impact, bite-sized tutorials.\n   Niche Targe",
+            "published": "",
+            "relevance": 0.47
+          }
+        ],
+        "backend": "tavily",
+        "query": "content strategy for converting TotalPass users to direct membership fitness Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.394,
+          0.383,
+          0.371,
+          0.16
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DbKlepYNZhq",
+            "snippet": "Estos retos de 21 días, hay gente que los utiliza para bajar de peso; otros para mantener, tonificar y sentirse mejor de vitalidad; y otros para subir de peso! 🤗🤗  \n  \nA mi me ayudan a no descentrarme del todo, en esta época que además hay más excesos, me viene genial, para compensar y mantener💪🏻🤗  \n  \nOrgullosa de tod@s los participantes y vuestros logros🫶🏻aupa zuek♥️   \n  \nEl día 3 comenzamos nuevo reto💪🏻💪🏻💪🏻💪🏻💪🏻  \n  \n#reto #21dias #nutricion #ejercicio #habitos\n\njeus1691's profile picture [...] Video by Lorea Luzar on October 08, 2026. May be an image of omelet, tomato, zucchini and text.\n\n",
+            "published": "",
+            "relevance": 0.57
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DSkIGpGDATt",
+            "snippet": "21 días del año y luego quedará solo disponible para los usuarios PRO. Puedes unirte ya en la sección de desafíos de la app o en el enlace de nuestro perfil. Empieza el año con disciplina, constancia y cumpliendo con un extra de intensidad para conseguir tus bojetivos 💪🏻🫡 [...] Llega nuestro desafío de 21 días para iniciar el 2026: el 10' Workout Challenge. Comenzando el 1 de enero, cada día tendrás una rutina corta de entre 5 y 15 minutos que puedes usar como tu entrenamiento del día si estás iniciando el hábito o como complemento a tu entrenamiento habitual para darle un extra de intensidad.",
+            "published": "",
+            "relevance": 0.57
+          },
+          {
+            "title": "✅ RETO 21 DÍAS EJERCICIO SALUDABLE | DÍA #1 | Entrenar en casa",
+            "url": "https://www.youtube.com/watch?v=uj_m2rRjn5s",
+            "snippet": "[16:07] venga vamos con las flexiones Recuerda que las puedes hacer\n[16:14] o bien en esta posición o en suelo como te muestro en imagen ahora\n[16:22] mismo que ya es para los usuarios que tengan ya un poquito de fuerza en en el tren\n[16:31] superior manos a la misma altura y nos vamos con extensión de\n[16:38] cadera me voy sentando por aquí a ver que no se me vea nada Yo creo que se me están encogiendo [...] [3:29] mirando hacia la izquierda venga otra vez un agarre ancho subimos a la altura\n[3:35] del pecho y traigo y alejo y empujo Mira\n[3:42] al frente siempre al frente contraigo abdomen s",
+            "published": "",
+            "relevance": 0.43
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días para usuarios de plataformas de entrenamiento Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.378,
+          0.329
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "testimonial content for fitness gym conversion from platform to direct membership 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.316,
+          0.292,
+          0.292,
+          0.262,
+          0.222
+        ]
+      }
+    }
+  ],
+  "latency_s": 64.55582800001139,
+  "prompt_tokens": 8147,
+  "completion_tokens": 283
+}

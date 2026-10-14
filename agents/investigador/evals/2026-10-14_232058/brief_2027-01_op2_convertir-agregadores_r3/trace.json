@@ -1,0 +1,107 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "contenidos que convierten usuarios de TotalPass/Fitpass a membresía directa gimnasio 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "contenidos que convierten usuarios de TotalPass/Fitpass a membresía directa gimnasio 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.337,
+          0.272,
+          0.192,
+          0.105,
+          0.028
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo explicar beneficios membresía directa vs plataformas de gimnasio Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cómo explicar beneficios membresía directa vs plataformas de gimnasio Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 5,
+        "discarded_scores": [
+          0.147,
+          0.086,
+          0.074,
+          0.057,
+          0.055
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "contenidos que generan conversión de usuarios de plataformas de gimnasio a membresía directa en Instagram 2027",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Marketing en Instagram para Gimnasios: Guía para Captar Socios | Gestor Gym Blog",
+            "url": "https://gestorgym.com/blog/marketing-instagram-para-gimnasios.html",
+            "snippet": "El sector fitness es el tercero con mayor tasa de engagement en Instagram en España, solo por detrás de gastronomía y viajes, según Sprout Social Index 2024. Los Reels generan un 22% más de alcance que las publicaciones estáticas en cuentas de gimnasios con menos de 5.000 seguidores. Los contenidos con mayor tasa de conversión a consultas (DM o llamada) son las transformaciones antes/después, los testimonios de socios y las ofertas de primera sesión gratuita, en ese orden. [...] Subir una foto de tu gimnasio vacío un lunes por la mañana no aporta nada. El socio potencial quiere verse reflejado",
+            "published": "",
+            "relevance": 0.63
+          },
+          {
+            "title": "Las Mejores 7 Tendencias de Marketing para Gimnasios en 2026 | Virtuagym ES",
+            "url": "https://business.virtuagym.com/es/blog/tendencias-marketing-gimnasios",
+            "snippet": "El Contenido Generado por Usuarios (UGC) va a ayudar a los gimnasios a destacar en 2026.\n\nEl UGC se trata de dejar que los miembros de tu gimnasio hablen - o en este caso, publiquen. [...] ### Contenido de Fitness en Formato Breve\n\nLos gimnasios están aprovechando la tendencia de los videos cortos, como los que se ven en TikTok o Instagram Reels.\n\nEstos clips rápidos, generalmente de menos de un minuto, son perfectos para mostrar movimientos de entrenamiento, dar consejos rápidos sobre fitness o dar un vistazo a cómo es el gimnasio.\n\nSon fáciles de ver y compartir, lo que ayuda a difundir la p",
+            "published": "",
+            "relevance": 0.51
+          },
+          {
+            "title": "How to Make Your Gym’s Social Media a Conversion Machine - Kilo",
+            "url": "https://usekilo.com/how-to-make-your-gyms-social-media-a-conversion-machine",
+            "snippet": "For a deeper look at this strategy, we interviewed Mark Fisher on Gym World, where he shared his full sell by chat playbook. It’s a practical breakdown on how to turn Instagram conversations into memberships. You can watch the full interview below.\n\n### #4 Create and Share Engaging Content\n\nPosting quality content helps you increase reach by working with social media algorithms. It also builds trust and positions you as a knowledgeable voice in the fitness space. [...] More than 80% of social media users prefer live video over static posts from brands. This makes live streaming one of the most",
+            "published": "",
+            "relevance": 0.44
+          }
+        ],
+        "backend": "tavily",
+        "query": "contenidos que generan conversión de usuarios de plataformas de gimnasio a membresía directa en Instagram 2027",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.288,
+          0.275
+        ]
+      }
+    }
+  ],
+  "latency_s": 63.829924583027605,
+  "prompt_tokens": 15284,
+  "completion_tokens": 325
+}

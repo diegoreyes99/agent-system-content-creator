@@ -33,7 +33,7 @@ pena corregir esa referencia en `GUIA_DE_IMPLEMENTACION.md` cuando se retome.
 | Archivo | Entrada principal | Salida (consumida por) |
 |---|---|---|
 | `orquestador_v1.md` | Brief mensual de Daniela | Coordina a los otros 5; reporte de cierre de ciclo |
-| `investigador_v1.md` a `investigador_v4.md` | Brief mensual | Estratega |
+| `investigador_v1.md` a `investigador_v5.md` | Brief mensual | Estratega |
 | `estratega_v1.md`, `estratega_v2.md` | Hallazgos del Investigador | Copywriter + Diseñador (tras aprobación de Daniela) |
 | `copywriter_v1.md`, `copywriter_v2.md` | Pieza de la parrilla aprobada | Punto de aprobación 2 (junto con Diseñador) |
 | `disenador_v1.md`, `disenador_v2.md` | Pieza con copy aprobado | Punto de aprobación 2 (junto con Copywriter) |
@@ -54,3 +54,4 @@ de la sección 10 de `GUIA_DE_IMPLEMENTACION.md` (Constitución → Especificaci
 | `copywriter_v2.md` | El ejemplo pasa de "pieza de reel" a "pieza de carrusel". | — |
 | `disenador_v2.md` | `tipo_de_pieza` solo `foto | grafico_de_texto`; quita `reel` de `formato_instagram`; quita la regla del gancho de 3 s en video; ejemplo reescrito como carrusel 1080×1350 (4:5, sección 6.4 del manual). | Ninguna pieza con `tipo_de_pieza` = video. |
 | `analista_v2.md` | Comparación por formato sin reels; ejemplo reescrito con carruseles vs. posts de una imagen. | No recomienda formatos que el sistema no produce. |
+| `investigador_v5.md` | PROCESO reescrito (excepción a "un cambio por versión", decidida a propósito): (1) búsquedas por ángulo, cortas, sin año ni nombres de gimnasios; (2) regla mecánica: cada resultado que pasó el filtro se convierte en hallazgo (máx. 6), el modelo ya no decide si "aplica a DOPA"; (3) `tema` describe el resultado, no copia la búsqueda; prioridad definida contra la prioridad principal/secundaria del brief; (4) `tendencias_de_formato` solo con formatos vistos en los resultados; (5) ejemplos sin relación con ningún brief del golden set; restricción explícita sin reels ni video. Motivo: eval de v4 (2026-10-14) con 0 hallazgos en 10 de 10 corridas aun con resultados relevantes; los ejemplos del v3/v4 (Hyrox vs Deka, reto 21 días) solo funcionaban en briefs sobre Deka. | Sube `useful_run_rate` y `n_hallazgos` manteniendo `pct_fuentes_verificadas` en 100%; sube `search_pass_rate`. |

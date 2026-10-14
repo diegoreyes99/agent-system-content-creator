@@ -11,7 +11,7 @@ Uso (desde agents_dopa_final_project/, con el .venv activo y LM Studio corriendo
 
 Opciones útiles:
   --reps 3               repeticiones por brief (default 3)
-  --briefs a.md b.md     otros briefs (default: los 5 de enero 2027)
+  --briefs a.md b.md     otros briefs (default: los 5 de noviembre 2026)
   --temperature 0.3      si no se da, se usa la del servidor
   --search-backend stub  prueba rápida sin internet ni créditos de Tavily
 
@@ -40,7 +40,7 @@ sys.path.insert(0, str(HERE))
 import run_investigador as single  # noqa: E402  (carga .env y configura LM Studio al importarse)
 from output_checks import compute_metrics, extract_json, trace_metrics, validate  # noqa: E402
 
-GOLDEN_SET = sorted((single.PROJECT_ROOT / "baseline" / "briefs").glob("brief_2027-01_op*.md"))
+GOLDEN_SET = sorted((single.PROJECT_ROOT / "baseline" / "briefs").glob("brief_2026-11_op*.md"))
 
 # Métricas que se resumen (promedio, desviación, mínimo y máximo) en la corrida padre.
 SUMMARY_METRICS = [
@@ -122,7 +122,10 @@ def main() -> None:
 
     # Todas las corridas en un solo ciclo asíncrono: LiteLLM reutiliza su
     # conexión y no se rompe entre corridas ("Event loop is closed").
-    asyncio.run(run_eval(args))
+    try:
+        asyncio.run(run_eval(args))
+    except KeyboardInterrupt:
+        pass  # el resumen parcial ya se guardó dentro de run_eval
 
 
 async def run_eval(args) -> None:
@@ -160,31 +163,40 @@ async def run_eval(args) -> None:
         mlflow.log_artifact(str(single.investigador.prompt_path(args.prompt_version)), "inputs")
 
         n = 0
-        for brief in args.briefs:
-            for rep in range(1, args.reps + 1):
-                n += 1
-                case = f"{brief.stem}_r{rep}"
-                print(f"\n[{n}/{total}] {case} ...", flush=True)
-                metrics, output, errors, result = await run_case(brief, args)
-                case_dir = eval_dir / case
-                single.save_run(case_dir, result, output, errors, metrics)
+        interrupted = False
+        try:
+            for brief in args.briefs:
+                for rep in range(1, args.reps + 1):
+                    n += 1
+                    case = f"{brief.stem}_r{rep}"
+                    print(f"\n[{n}/{total}] {case} ...", flush=True)
+                    metrics, output, errors, result = await run_case(brief, args)
+                    case_dir = eval_dir / case
+                    single.save_run(case_dir, result, output, errors, metrics)
 
-                with mlflow.start_run(experiment_id=experiment_id, run_name=case, nested=True):
-                    mlflow.log_params({**config, "brief": brief.name, "rep": rep})
-                    mlflow.log_metrics(metrics)
-                    mlflow.log_artifacts(str(case_dir), "outputs")
+                    with mlflow.start_run(experiment_id=experiment_id, run_name=case, nested=True):
+                        mlflow.log_params({**config, "brief": brief.name, "rep": rep})
+                        mlflow.log_metrics(metrics)
+                        mlflow.log_artifacts(str(case_dir), "outputs")
 
-                rows.append({"case": case, "brief": brief.name, "rep": rep, **metrics})
-                status = "FALLÓ" if metrics.get("run_failed") else (
-                    f"{int(metrics['n_hallazgos'])} hallazgos · {int(metrics.get('n_tool_calls', 0))} búsquedas · "
-                    f"fuentes verificadas {metrics.get('pct_fuentes_verificadas', 0):.0%} · "
-                    f"esquema {'ok' if metrics['schema_valid'] else 'inválido'} · {metrics['latency_s']} s")
-                print(f"    {status}")
-                for e in errors:
-                    print(f"    ! {e}")
-                elapsed = time.perf_counter() - started
-                remaining = elapsed / n * (total - n)
-                print(f"    llevamos {elapsed / 60:.1f} min · faltan ~{remaining / 60:.0f} min", flush=True)
+                    rows.append({"case": case, "brief": brief.name, "rep": rep, **metrics})
+                    status = "FALLÓ" if metrics.get("run_failed") else (
+                        f"{int(metrics['n_hallazgos'])} hallazgos · {int(metrics.get('n_tool_calls', 0))} búsquedas · "
+                        f"fuentes verificadas {metrics.get('pct_fuentes_verificadas', 0):.0%} · "
+                        f"esquema {'ok' if metrics['schema_valid'] else 'inválido'} · {metrics['latency_s']} s")
+                    print(f"    {status}")
+                    for e in errors:
+                        print(f"    ! {e}")
+                    elapsed = time.perf_counter() - started
+                    remaining = elapsed / n * (total - n)
+                    print(f"    llevamos {elapsed / 60:.1f} min · faltan ~{remaining / 60:.0f} min", flush=True)
+        except (KeyboardInterrupt, asyncio.CancelledError):
+            # Ctrl+C: no se pierde lo que ya corrió; se resume con las corridas terminadas.
+            interrupted = True
+            print(f"\n=== Eval detenido después de {len(rows)} de {total} corridas ===", flush=True)
+        mlflow.set_tag("interrupted", str(interrupted).lower())
+        if not rows:
+            return
 
         summary = summarize(rows)
         mlflow.log_metrics(summary)
