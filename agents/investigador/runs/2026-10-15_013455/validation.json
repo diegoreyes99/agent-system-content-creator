@@ -1,0 +1,22 @@
+{
+  "schema_errors": [],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 1.0,
+    "n_schema_errors": 0.0,
+    "n_hallazgos": 5.0,
+    "n_alta": 5.0,
+    "n_recomendados": 5.0,
+    "n_tendencias": 0.0,
+    "pct_fuentes_stub": 0.0,
+    "pct_fuentes_url": 1.0,
+    "n_tool_calls": 4.0,
+    "n_search_errors": 0.0,
+    "pct_fuentes_verificadas": 1.0,
+    "search_pass_rate": 0.9166666666666666,
+    "avg_relevance": 0.8018181818181819,
+    "latency_s": 517.3,
+    "prompt_tokens": 10696.0,
+    "completion_tokens": 1175.0
+  }
+}

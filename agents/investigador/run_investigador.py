@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Corre el agente Investigador por sí solo (Fase 2) y registra la corrida en MLflow.
 
-Uso (desde agents_dopa_final_project/, con el .venv activo y LM Studio corriendo):
+Uso (desde agents_dopa_final_project/, con el entorno activo — source ~/.venvs/dopa/bin/activate — y LM Studio corriendo):
   python agents/investigador/run_investigador.py --brief baseline/briefs/brief_2026-11_op1_captar-socios.md \
       --prompt-version v6 --trigger t2
 
@@ -152,13 +152,21 @@ def save_run(run_dir: Path, result: dict, output: dict | None, errors: list[str]
     )
 
 
+def save_mlflow_run_id(folder: Path, run) -> None:
+    """Guarda el id de la corrida de MLflow junto a sus archivos, para que
+    rate_investigador.py pueda registrar ahí las calificaciones humanas."""
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / "mlflow_run.json").write_text(json.dumps({"run_id": run.info.run_id}), encoding="utf-8")
+
+
 def log_to_mlflow(args, run_id: str, run_dir: Path, metrics: dict, temperature) -> None:
     import mlflow
 
     from tracking import setup_mlflow
 
     experiment_id = setup_mlflow()
-    with mlflow.start_run(experiment_id=experiment_id, run_name=f"investigador-{args.prompt_version}-{args.trigger}-{tools.get_backend()}-{run_id}"):
+    with mlflow.start_run(experiment_id=experiment_id, run_name=f"investigador-{args.prompt_version}-{args.trigger}-{tools.get_backend()}-{run_id}") as run:
+        save_mlflow_run_id(run_dir, run)
         mlflow.log_params({
             "agent": "investigador",
             "prompt_version": args.prompt_version,

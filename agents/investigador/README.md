@@ -11,15 +11,18 @@ Primer agente real del sistema. Corre solo, fuera del baseline. Spec:
 | `tracking.py` | Configuración de MLflow (todo local en `agents_dopa_final_project/mlruns/`) |
 | `run_investigador.py` | Corre el agente, guarda la salida en `runs/<fecha>/` y la registra en MLflow |
 | `compare_with_baseline.py` | Pone lado a lado el baseline de Fase 1 y una corrida del agente nuevo |
+| `rubrica_investigador.md` | Rúbrica humana: relevancia, fidelidad y accionabilidad (1 a 3) y si el tema es promoción de otro negocio |
+| `rate_investigador.py` | Califica a mano una muestra de temas con la rúbrica; guarda `ratings.csv` y registra los promedios en MLflow |
 | `eval_investigador.py` | Evalúa una configuración contra el golden set (5 briefs de noviembre 2026 × 3 repeticiones) y registra promedios y variación en MLflow |
 
 Todos los comandos se corren **desde `agents_dopa_final_project/`**, con
-el `.venv` activo.
+el entorno activo (`source ~/.venvs/dopa/bin/activate`).
 
 ## 1. Instala dependencias y configura Tavily (una sola vez)
 
 ```bash
-source .venv/bin/activate
+python3 -m venv ~/.venvs/dopa   # solo la primera vez; fuera de Documents por iCloud
+source ~/.venvs/dopa/bin/activate
 pip install -r agents/investigador/requirements.txt
 mlflow --version
 ```
@@ -83,7 +86,17 @@ el eval sigue. Al final imprime el resumen; los archivos quedan en
 
 Para una prueba rápida sin internet ni créditos: `--reps 1 --search-backend stub`.
 
-## 5. Abre la UI de MLflow
+## 5. Califica la calidad a mano (rúbrica)
+
+```bash
+python agents/investigador/rate_investigador.py agents/investigador/evals/<fecha> --sample 10
+```
+
+Muestra cada tema junto al texto real que regresó la búsqueda y pide tres
+calificaciones de 1 a 3 (ver `rubrica_investigador.md`). Unos 10 minutos para
+10 temas. Los promedios quedan en MLflow como `human_*` en la corrida del eval.
+
+## 6. Abre la UI de MLflow
 
 ```bash
 mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db --port 5001

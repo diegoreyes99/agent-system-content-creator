@@ -20,7 +20,7 @@ Requisitos antes de correr (ver README.md de esta carpeta para el detalle):
      en esa misma pestana) puesto en la variable de entorno
      LM_STUDIO_MODEL_ID, o editado abajo en DEFAULT_MODEL_ID.
   3. pip install -r requirements.txt (idealmente dentro de un entorno
-     virtual: python3 -m venv .venv && source .venv/bin/activate).
+     virtual fuera de Documents: python3 -m venv ~/.venvs/dopa && source ~/.venvs/dopa/bin/activate).
 
 Uso:
   python run_baseline_cycle.py --brief briefs/ciclo-1-brief.md

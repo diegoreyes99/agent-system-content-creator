@@ -8,6 +8,7 @@ El esquema sale del bloque FORMATO DE SALIDA de prompts/investigador_v1.md.
 
 from __future__ import annotations
 
+import difflib
 import json
 import re
 
@@ -140,11 +141,43 @@ def trace_metrics(output: dict | None, trace: list[dict]) -> dict[str, float]:
     n_verified = sum(1 for h in hallazgos if str(h.get("fuente", "")).strip() in returned_urls)
     n_returned = len(relevances)
     total = n_returned + n_discarded
-    return {
+    metrics = {
         "n_tool_calls": float(len(calls)),
         "n_search_errors": float(n_errors),
         "pct_fuentes_verificadas": (n_verified / len(hallazgos)) if hallazgos else 0.0,
         "search_pass_rate": (n_returned / total) if total else 0.0,
         "avg_relevance": (sum(relevances) / n_returned) if n_returned else 0.0,
+    }
+    metrics.update(quality_metrics(hallazgos, calls, returned_urls))
+    return metrics
+
+
+def quality_metrics(hallazgos: list[dict], calls: list[dict], returned_urls: set[str]) -> dict[str, float]:
+    """Chequeos automáticos de fallas de calidad que ya vimos en las corridas.
+
+    - n_fuentes_repetidas: temas que usan una fuente ya usada por otro tema
+      (el mismo artículo contado dos veces).
+    - pct_fuentes_aprovechadas: de las URLs distintas que pasaron el filtro,
+      cuántas se convirtieron en tema. Bajo = le dejó pocas opciones a Dani.
+    - prioridad_sin_variacion: 1 si hay 2+ temas y todos tienen la misma
+      prioridad (la prioridad no está ayudando a distinguir).
+    - n_temas_copia_busqueda: temas casi iguales al texto de una búsqueda
+      (el modelo copió su consulta en vez de describir el resultado).
+    """
+    queries = [str(c.get("args", {}).get("query", "")).strip().lower() for c in calls]
+    fuentes = [str(h.get("fuente", "")).strip() for h in hallazgos]
+    n_repetidas = len(fuentes) - len(set(fuentes))
+    used_returned = {f for f in fuentes if f in returned_urls}
+    prioridades = {h.get("prioridad") for h in hallazgos}
+
+    def copies_query(tema: str) -> bool:
+        t = tema.strip().lower().strip("¿?¡!. ")
+        return any(difflib.SequenceMatcher(None, t, q.strip("¿?¡!. ")).ratio() >= 0.85 for q in queries if q)
+
+    return {
+        "n_fuentes_repetidas": float(n_repetidas),
+        "pct_fuentes_aprovechadas": (len(used_returned) / len(returned_urls)) if returned_urls else 0.0,
+        "prioridad_sin_variacion": 1.0 if len(hallazgos) >= 2 and len(prioridades) == 1 else 0.0,
+        "n_temas_copia_busqueda": float(sum(1 for h in hallazgos if copies_query(str(h.get("tema", ""))))),
     }
 

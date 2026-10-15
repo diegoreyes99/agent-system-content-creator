@@ -1,0 +1,50 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Qué es Deka y cómo se diferencia de Hyrox?",
+      "que_dice_la_fuente": "HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA FIT es más variado en ejercicios (10 zonas) y tiene menos carrera (5 km). Si eres runner, elige HYROX. Si quieres variedad, elige DEKA.",
+      "fuente": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+      "relevancia_dopa": "Apoya la prioridad secundaria de explicar qué es Deka y en qué se diferencia de Hyrox. También responde a la objeción de la comunidad: 'Deka es solo para atletas; yo no estoy a ese nivel.'",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 2,
+      "tema": "Beneficios de Deka para principiantes",
+      "que_dice_la_fuente": "El Deka es un entrenamiento completo que mejora varios aspectos físicos y mentales: mejora de la resistencia, incremento de la fuerza funcional, control del peso corporal y desarrollo emocional.",
+      "fuente": "https://rstraining.es/deka-para-principiantes-todo-lo-que-necesitas-saber-para-empezar",
+      "relevancia_dopa": "Apoya la prioridad principal del mes (llenar el simulacro) y la objeción de la comunidad. Permite a Ana y Rosa entender por qué el Deka es accesible, incluso para principiantes.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 3,
+      "tema": "¿Por qué Deka es popular en gimnasios?",
+      "que_dice_la_fuente": "El significado de las pruebas DEKA trasciende el simple agotamiento físico. Significa someter al cuerpo a transiciones bruscas, lo que es una revolución en el mundo del fitness.",
+      "fuente": "https://underrated.es/blogs/noticias/deka",
+      "relevancia_dopa": "Apoya la prioridad principal y la necesidad de captar a nuevas personas. El tema explica por qué el Deka es atractivo y necesario para el público de DOPA.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 4,
+      "tema": "Diferencias técnicas entre Deka y Hyrox",
+      "que_dice_la_fuente": "HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA FIT es más variado en ejercicios (10 zonas) y tiene menos carrera (5 km).",
+      "fuente": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+      "relevancia_dopa": "Apoya la prioridad principal del mes y la prioridad secundaria. Ayuda a explicar las diferencias para la audiencia y a destacar el valor del Deka en el contexto de Hyrox.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 5,
+      "tema": "¿Qué tipo de persona puede participar en Deka?",
+      "que_dice_la_fuente": "DEKA es un desafío de fitness funcional diseñado para medir tu rendimiento físico a través de pruebas estandarizadas. Ideal para principiantes y avanzados.",
+      "fuente": "https://xhen.es/blogs/noticias/que-es-deka-y-por-que-deberias-intentarlo",
+      "relevancia_dopa": "Apoya la prioridad principal y la prioridad secundaria. Responde a la objeción de la comunidad y a la pregunta recurrente sobre el nivel requerido.",
+      "prioridad": "alta",
+      "recomendado": true
+    }
+  ],
+  "resumen_ejecutivo": "Se encontró información relevante sobre Deka y su diferencia con Hyrox, así como sus beneficios para principiantes y su popularidad en gimnasios. No se encontraron resultados en el tema de la competencia oficial en CDMX, pero los hallazgos apoyan la prioridad principal y secundaria del mes. Las búsquedas fueron efectivas y entregaron resultados útiles para el contenido."
+}

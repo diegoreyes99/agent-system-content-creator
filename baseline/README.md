@@ -22,8 +22,10 @@ Fase 2 construyas el primer agente real.
 
 ```bash
 cd baseline
-python3 -m venv .venv
-source .venv/bin/activate
+# El entorno vive fuera de Documents: iCloud manda a la nube los archivos
+# de un .venv dentro de Documents y Python se queda colgado al importar.
+python3 -m venv ~/.venvs/dopa
+source ~/.venvs/dopa/bin/activate
 pip install -r requirements.txt
 ```
 

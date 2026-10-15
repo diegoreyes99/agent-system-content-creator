@@ -1,0 +1,11 @@
+{
+  "status": "cancelado",
+  "ronda_aprobada": null,
+  "seleccion": [],
+  "historial": [
+    {
+      "ronda": 1,
+      "accion": "salir"
+    }
+  ]
+}

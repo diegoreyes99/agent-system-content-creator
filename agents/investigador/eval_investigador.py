@@ -6,7 +6,7 @@ MLflow el promedio y la variación de cada métrica. Así una conclusión no sal
 de una sola corrida con suerte, sino de qué tan bien y qué tan estable se
 comporta la configuración.
 
-Uso (desde agents_dopa_final_project/, con el .venv activo y LM Studio corriendo):
+Uso (desde agents_dopa_final_project/, con el entorno activo — source ~/.venvs/dopa/bin/activate — y LM Studio corriendo):
   python agents/investigador/eval_investigador.py --prompt-version v4 --trigger t2
 
 Opciones útiles:
@@ -47,6 +47,7 @@ SUMMARY_METRICS = [
     "schema_valid", "n_hallazgos", "n_alta", "n_recomendados", "pct_fuentes_verificadas", "pct_fuentes_url",
     "n_tool_calls", "n_search_errors", "search_pass_rate", "avg_relevance",
     "latency_s", "prompt_tokens", "completion_tokens",
+    "n_fuentes_repetidas", "pct_fuentes_aprovechadas", "prioridad_sin_variacion", "n_temas_copia_busqueda",
 ]
 
 
@@ -160,7 +161,8 @@ async def run_eval(args) -> None:
     rows: list[dict] = []
     started = time.perf_counter()
     with mlflow.start_run(experiment_id=experiment_id,
-                          run_name=f"eval-{args.prompt_version}-{args.trigger}-{config['search_backend']}-{eval_id}"):
+                          run_name=f"eval-{args.prompt_version}-{args.trigger}-{config['search_backend']}-{eval_id}") as parent:
+        single.save_mlflow_run_id(eval_dir, parent)
         mlflow.log_params(config)
         mlflow.set_tags({"fase": "fase-2", "tipo": "eval", "adk_version": single.adk_version.__version__})
         mlflow.log_artifact(str(single.investigador.prompt_path(args.prompt_version)), "inputs")
@@ -177,7 +179,8 @@ async def run_eval(args) -> None:
                     case_dir = eval_dir / case
                     single.save_run(case_dir, result, output, errors, metrics)
 
-                    with mlflow.start_run(experiment_id=experiment_id, run_name=case, nested=True):
+                    with mlflow.start_run(experiment_id=experiment_id, run_name=case, nested=True) as child:
+                        single.save_mlflow_run_id(case_dir, child)
                         mlflow.log_params({**config, "brief": brief.name, "rep": rep})
                         mlflow.log_metrics(metrics)
                         mlflow.log_artifacts(str(case_dir), "outputs")
