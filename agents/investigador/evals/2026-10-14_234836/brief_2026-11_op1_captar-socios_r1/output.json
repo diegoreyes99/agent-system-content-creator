@@ -1,0 +1,38 @@
+{
+  "hallazgos": [
+    {
+      "tema": "Reto de 21 días con seguimiento del coach para llegar a diciembre más fuerte",
+      "fuente": "https://www.instagram.com/p/DSkIGpGDATt",
+      "relevancia_dopa": "Ana busca una hora intensa y bien estructurada que le cabe antes o después de la oficina, y el Reto 21 días de noviembre es el formato perfecto para captarla con una estructura clara, un coach presente y un resultado visible. El formato funciona en la industria y el contenido educativo es clave para que Ana se inscriba.",
+      "formato_sugerido": "carrusel",
+      "prioridad": "alta"
+    },
+    {
+      "tema": "Cómo llegar a un gimnasio en CDMX",
+      "fuente": "https://www.instagram.com/reel/DVUHGaMiLjU",
+      "relevancia_dopa": "La fricción de ubicación es una objeción principal de quienes no se inscriben. El contenido que resuelve esta duda en Instagram funciona, y DOPA debe crear un pieza fija que resuelva la pregunta '¿Dónde está la entrada?' para captar a Ana y Rosa sin confusión.",
+      "formato_sugerido": "historia",
+      "prioridad": "alta"
+    },
+    {
+      "tema": "Clase muestra abierta: Sábado Hybrid",
+      "fuente": "https://www.instagram.com/reel/DWVDVTRjJ1s?hl=en",
+      "relevancia_dopa": "La clase muestra es un evento clave para captar socios nuevos, y el formato de Instagram que lo promociona (con guía, horarios y contacto) es efectivo. DOPA debe usar este formato para captar a Ana y Rosa con un enfoque en la experiencia y no en el precio.",
+      "formato_sugerido": "post",
+      "prioridad": "alta"
+    },
+    {
+      "tema": "Carrusel educativo de gimnasio",
+      "fuente": "https://coachway.io/es/carrusel-instagram-para-entrenadores",
+      "relevancia_dopa": "El contenido educativo es clave para que Ana se inscriba. Un carrusel que explique cómo funciona el Reto 21 días, el formato de clase y el tipo de entrenamiento de DOPA es un formato que funciona en Instagram y que apoya la meta de captación de socios nuevos.",
+      "formato_sugerido": "carrusel",
+      "prioridad": "alta"
+    }
+  ],
+  "tendencias_de_formato": [
+    "post",
+    "historia",
+    "carrusel"
+  ],
+  "resumen_ejecutivo": "Las búsquedas identificaron que el formato de retos de 21 días y el tipo de contenido educativo son los más efectivos en Instagram. El formato de clase muestra y la guía visual de cómo llegar a un gimnasio también son efectivos para captar socios nuevos. La estrategia debe centrarse en estos formatos y en la creación de contenido que resuelva las dudas de los usuarios."
+}

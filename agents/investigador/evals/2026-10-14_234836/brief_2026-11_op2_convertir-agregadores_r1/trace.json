@@ -1,0 +1,109 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo convertir usuarios de TotalPass a membresía directa gimnasio",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "carrusel educativo de gimnasio para usuarios de plataformas",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "eventos de movilidad en gimnasios CDMX",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Agregador de gimnasios | TotalPass",
+            "url": "https://totalpass.com/mx/para-aliados",
+            "snippet": "### 11:11 FITNESS\n\n\"Nuestra alianza con Totalpass nos permite introducir la cultura fitness en el entorno laboral y de oficina. ¡Deseamos que cada vez más colaboradores de empresas disfruten de la experiencia en 11:11 Fitness!\"\n\nUnir a mi gym/studio\n\n## Fácil acceso para los usuarios\n\nTotalPass trabaja en conjunto con varios sistemas para hacer que el acceso de los usuarios sea cada vez más autónomo y seguro.\n\n### Integraciones con las que trabajamos\n\nLogo Evo [...] Ser aliadoarrow\n\n### Únete a nosotros y crece tu negocio\n\nSer aliado\n\nSeta branca para à direita\n\n## ¿Cómo me hago aliado?\n\n### 0",
+            "published": "",
+            "relevance": 0.52
+          },
+          {
+            "title": "Beneficio corporativo de bienestar integral | TotalPass",
+            "url": "https://totalpass.com/mx",
+            "snippet": "Con el plan activo, ya solo queda acceder a la aplicación y elegir entre miles de opciones de gimnasios, estudios y centros deportivos.\n\nSolicitar una cotización\n\n## Únete a nuestra red\n\nSi tienes un gimnasio, hazte socio.   \n Si eres miembro, refiere tu gimnasio favorito.\n\nUnir a mi gym/studio\n\nSeta preta para à direitaEntrenar en mi gym/studio\n\nSeta preta para à direita\n\n## ¿Qué dicen de nosotros?\n\nLogo BBVA\n\n### BBVA [...] Llévanos con el tomador de decisión de tu empresa, nosotros lo convencemos.\n\nRefiere a tu empresa\n\n## ¿Cómo funciona TotalPass?\n\n### 01. Las empresas contratan\n\nPara que ",
+            "published": "",
+            "relevance": 0.46
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo convertir usuarios de TotalPass a membresía directa gimnasio",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.3
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Carrusel de Instagram para entrenadores: 12 ideas y cómo hacerlo 2026",
+            "url": "https://coachway.io/es/carrusel-instagram-para-entrenadores",
+            "snippet": "Un carrusel es una publicación con hasta 20 imágenes o vídeos que el lector desliza, con un solo caption para todas; funciona para un entrenador porque es el único formato del feed en el que se puede enseñar algo paso a paso y que lo guarden para después. En un hilo en inglés de r/InstagramMarketing sobre el formato, un usuario resume el reparto de tareas: los carruseles siguen fuertes en guardados y visitas al perfil, sobre todo en contenido educativo, porque la gente desliza más despacio y se [...] Los dos, con tareas distintas: el reel para llegar a quien aún no te sigue, el carrusel para e",
+            "published": "",
+            "relevance": 0.48
+          }
+        ],
+        "backend": "tavily",
+        "query": "carrusel educativo de gimnasio para usuarios de plataformas",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.147,
+          0.113
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Sports & Fitness Events in Ciudad de México, Mexico",
+            "url": "https://www.eventbrite.com/b/mexico--ciudad-de-mexico/sports-and-fitness",
+            "snippet": "Teva running in Polanco CDMX. Sunday • 7:00 AM. Teva Wellness & Lifestyle. From $100.00. Save this event: Teva running in Polanco CDMX ; Punto 195 Social Run by",
+            "published": "",
+            "relevance": 0.55
+          }
+        ],
+        "backend": "tavily",
+        "query": "eventos de movilidad en gimnasios CDMX",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.364,
+          0.215
+        ]
+      }
+    }
+  ],
+  "latency_s": 178.77386545902118,
+  "prompt_tokens": 8406,
+  "completion_tokens": 272
+}

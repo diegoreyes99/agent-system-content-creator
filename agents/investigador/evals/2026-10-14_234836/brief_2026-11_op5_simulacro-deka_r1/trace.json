@@ -1,0 +1,107 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "qué es Deka y cómo se diferencia de Hyrox",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "carrusel educativo gimnasio Deka",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "clínica técnica de estaciones Deka",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Qué es DEKA: Pruebas, calendario y diferencias vs HYROX",
+            "url": "https://underrated.es/blogs/noticias/deka",
+            "snippet": "¿Diferencia rápida entre DEKA y HYROX?  \nPara ir al grano: HYROX te desgasta lentamente y beneficia al que tiene pulmones de acero para correr (8km en total y empujar pesados trineos estáticos). DEKA es más corto en distancia (5km máximo) pero mucho más explosivo y castiga más rápido con transiciones constantes, la letal Air Bike y los RAM Burpees. Hyrox es para el fondista resistente; DEKA es para el atleta potente, explosivo y rápido. [...] Si odias correr y prefieres transiciones rápidas e intensidad extrema, DEKA será tu desafío. Si amas sufrir de forma prolongada empujando trineos pesados",
+            "published": "",
+            "relevance": 0.92
+          },
+          {
+            "title": "DEKA vs Hyrox: How the Two Races Compare | Battle Bunker",
+            "url": "https://thebattlebunker.com/blogs/logbook/deka-vs-hyrox",
+            "snippet": "The honest differences come down to three things. First, running volume: HYROX demands a real running base, DEKA STRONG demands none. Second, the machines: DEKA leans on the air bike, which HYROX does not use at all. Third, the implements: HYROX uses a sandbag for its 100 m lunges, while DEKA uses a weighted RAM roller for both its lunges and its burpees, plus a dead ball for the wall overs. [...] Short answer: HYROX is a single fixed race, eight 1 km runs alternating with eight functional stations, held in arenas and identical everywhere in the world. DEKA is Spartan's indoor racing family bu",
+            "published": "",
+            "relevance": 0.91
+          },
+          {
+            "title": "HYROX vs DEKA FIT 2026: Diferencias y Cuál Elegir | CorrerJuntos",
+            "url": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+            "snippet": "HYROX y DEKA son las dos grandes competiciones de fitness racing del mundo. Ambas combinan carrera con estaciones funcionales en un formato indoor, pero tienen diferencias clave en formato, estaciones, dificultad y filosofía.\n\nSi estás pensando en probar una (o ambas), esta comparativa te ayudará a elegir. Analizamos cada aspecto: desde las estaciones hasta los precios, pasando por qué perfil de atleta encaja mejor en cada una. [...] Resumen rápido: HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA FIT es más variado en ejercicios (10 zonas) y tiene menos carrera (5 km)",
+            "published": "",
+            "relevance": 0.9
+          }
+        ],
+        "backend": "tavily",
+        "query": "qué es Deka y cómo se diferencia de Hyrox",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "carrusel educativo gimnasio Deka",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.388,
+          0.232,
+          0.017
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Qué es DEKA: Pruebas, calendario y diferencias vs HYROX",
+            "url": "https://underrated.es/blogs/noticias/deka",
+            "snippet": "¿Cuáles son las zonas o pruebas DEKA?  \nSon 10 estaciones inamovibles diseñadas para destruirte de forma equilibrada: 1. Zancadas inversas con RAM (25kg/15kg), 2. Remo (500m), 3. Saltos o pasos al cajón, 4. Abdominales con balón medicinal, 5. Ski Erg (500m), 6. Paseo del granjero con mancuernas pesadas, 7. Air Bike (la trampa de 25 kcal), 8. Pasar balón pesado sobre muro, 9. Empujar y tirar del Torque Tank, y 10. RAM Burpees con press. Siempre en este orden, siempre brutales. [...] ## 3. ¿Qué tipo de estaciones o de ejercicios puedes encontrar en las carreras DEKA?\n\nEl ecosistema de DEKA se ba",
+            "published": "",
+            "relevance": 0.48
+          }
+        ],
+        "backend": "tavily",
+        "query": "clínica técnica de estaciones Deka",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.321,
+          0.159
+        ]
+      }
+    }
+  ],
+  "latency_s": 153.34140645799926,
+  "prompt_tokens": 8759,
+  "completion_tokens": 381
+}

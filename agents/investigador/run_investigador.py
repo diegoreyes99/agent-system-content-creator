@@ -2,13 +2,19 @@
 """Corre el agente Investigador por sí solo (Fase 2) y registra la corrida en MLflow.
 
 Uso (desde agents_dopa_final_project/, con el .venv activo y LM Studio corriendo):
-  python agents/investigador/run_investigador.py --brief baseline/briefs/ciclo-1-brief.md
+  python agents/investigador/run_investigador.py --brief baseline/briefs/brief_2026-11_op1_captar-socios.md \
+      --prompt-version v6 --trigger t2
+
+Al terminar muestra los temas propuestos y espera la decisión de Dani (punto de
+aprobación): elegir números, pedir una búsqueda nueva o salir. La selección queda
+en runs/<fecha>/seleccion.json; es lo único que pasa al Estratega.
 
 Opciones útiles:
   --prompt-version v1   versión del prompt en prompts/investigador_<v>.md
   --temperature 0.3     si no se da, se usa la del servidor (igual que el baseline)
   --trigger t2          mensaje de arranque que pide buscar antes de responder (default: t1)
   --search-backend stub resultados de ejemplo sin internet (default: tavily, o SEARCH_BACKEND del .env)
+  --sin-aprobacion      no pide la selección de Dani (para pruebas)
   --no-mlflow           corre sin registrar (para depurar)
 
 Cada corrida guarda en agents/investigador/runs/<fecha>/:
@@ -178,6 +184,117 @@ def log_to_mlflow(args, run_id: str, run_dir: Path, metrics: dict, temperature) 
         mlflow.log_artifacts(str(run_dir), "outputs")
 
 
+# --------------------------------------------------------------------------
+# Punto de aprobación de Dani (patrón requires_confirmation, Clase 4 Bloque D)
+# --------------------------------------------------------------------------
+# El Investigador propone; nada pasa al Estratega hasta que Dani elige con qué
+# temas se queda (o pide una búsqueda nueva). Hoy es en terminal; en producción
+# será por WhatsApp (Fase 6). La selección queda en seleccion.json.
+MAX_RONDAS = 3
+
+
+def evaluate(result: dict, prompt_version: str) -> tuple[dict | None, list[str], dict]:
+    try:
+        output = extract_json(result["raw"])
+        errors = validate(output, prompt_version)
+    except (ValueError, json.JSONDecodeError) as exc:
+        output, errors = None, [f"JSON no parseable: {exc}"]
+    metrics = compute_metrics(output, errors)
+    metrics.update(trace_metrics(output, result["trace"]))
+    metrics.update({
+        "latency_s": round(result["latency_s"], 2),
+        "prompt_tokens": float(result["prompt_tokens"]),
+        "completion_tokens": float(result["completion_tokens"]),
+    })
+    return output, errors, metrics
+
+
+def print_summary(metrics: dict, errors: list[str], run_dir: Path) -> None:
+    print(f"\nTool calls: {int(metrics['n_tool_calls'])} · hallazgos: {int(metrics['n_hallazgos'])} "
+          f"(alta: {int(metrics['n_alta'])}, recomendados: {int(metrics.get('n_recomendados', 0))}) · "
+          f"esquema válido: {'sí' if metrics['schema_valid'] else 'no'} · {metrics['latency_s']} s")
+    for e in errors:
+        print(f"  ! {e}")
+    print(f"Resultados en {run_dir}")
+
+
+def ask_dani(output: dict | None, ronda: int) -> dict:
+    """Muestra los temas propuestos y espera la decisión de Dani. Nunca asume aprobación."""
+    hallazgos = [h for h in (output or {}).get("hallazgos") or [] if isinstance(h, dict)]
+    print(f"\n=== Temas propuestos por el Investigador (ronda {ronda}) — esperando a Dani ===")
+    if not hallazgos:
+        print("  (El Investigador no propuso ningún tema.)")
+    ids = []
+    for i, h in enumerate(hallazgos, start=1):
+        hid = h.get("id", i)
+        ids.append(hid)
+        mark = "★" if h.get("recomendado") else " "
+        print(f"\n {mark} {hid}. {h.get('tema', '?')}  [{h.get('prioridad', '?')}]")
+        if h.get("que_dice_la_fuente"):
+            print(f"      Fuente dice: {h['que_dice_la_fuente']}")
+        print(f"      Para DOPA: {h.get('relevancia_dopa', '')}")
+        print(f"      {h.get('fuente', '')}")
+    if (output or {}).get("resumen_ejecutivo"):
+        print(f"\n  Resumen: {output['resumen_ejecutivo']}")
+    print("\n  ★ = recomendado por el Investigador")
+
+    while True:
+        answer = input("\n¿Con qué temas te quedas? Escribe los números (ej. 1,3,5), "
+                       "'nueva' para pedir otra búsqueda o 'salir' para terminar sin elegir: ").strip()
+        lower = answer.lower()
+        if lower == "salir":
+            return {"accion": "salir"}
+        if lower.startswith("nueva"):
+            indicaciones = answer.split(":", 1)[1].strip() if ":" in answer else input(
+                "¿Qué quieres que busque distinto? (Enter si no hay indicaciones): ").strip()
+            return {"accion": "nueva", "indicaciones": indicaciones}
+        try:
+            chosen = [int(x) for x in answer.replace(" ", "").split(",") if x]
+        except ValueError:
+            print("  No entendí la respuesta. Usa números separados por comas, 'nueva' o 'salir'.")
+            continue
+        invalid = [c for c in chosen if c not in ids]
+        if not chosen or invalid:
+            print(f"  Números no válidos: {invalid or 'ninguno elegido'}. Opciones: {ids}")
+            continue
+        selected = [h for h in hallazgos if h.get("id") in chosen]
+        return {"accion": "aprobar", "ids": chosen, "seleccion": selected}
+
+
+def build_new_search_note(indicaciones: str, output: dict | None) -> str:
+    previous = [h.get("tema", "") for h in (output or {}).get("hallazgos") or [] if isinstance(h, dict)]
+    note = "\n\nDani pidió una búsqueda nueva."
+    if indicaciones:
+        note += f" Sus indicaciones: {indicaciones.rstrip('.')}."
+    if previous:
+        note += " Ya se le propusieron estos temas; propón temas distintos: " + "; ".join(previous)
+    return note
+
+
+def save_selection(run_dir: Path, decisiones: list[dict], sin_aprobacion: bool) -> dict:
+    final = decisiones[-1] if decisiones else {}
+    if sin_aprobacion:
+        status = "sin_aprobacion"
+    elif final.get("accion") == "aprobar":
+        status = "aprobado"
+    else:
+        status = "cancelado"  # salió sin elegir o se agotaron las rondas
+    seleccion = {
+        "status": status,
+        "ronda_aprobada": final.get("ronda") if status == "aprobado" else None,
+        "seleccion": final.get("seleccion", []) if status == "aprobado" else [],
+        "historial": [{k: v for k, v in d.items() if k != "seleccion"} for d in decisiones],
+    }
+    run_dir.mkdir(parents=True, exist_ok=True)
+    (run_dir / "seleccion.json").write_text(json.dumps(seleccion, ensure_ascii=False, indent=2), encoding="utf-8")
+    if status == "aprobado":
+        print(f"\nAprobado: {len(seleccion['seleccion'])} temas seleccionados → {run_dir / 'seleccion.json'}")
+        print("Estos son los temas que recibirá el Estratega.")
+    elif status == "cancelado":
+        print("\nNo se aprobó ningún tema: el ciclo no avanza al Estratega.")
+    return seleccion
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Corre el Investigador (Fase 2) y lo registra en MLflow.")
     parser.add_argument("--brief", type=Path, required=True, help="Brief del mes (.md)")
@@ -186,6 +303,8 @@ def main() -> None:
     parser.add_argument("--trigger", choices=sorted(TRIGGERS), default="t1",
                         help="Versión del mensaje de arranque (ver TRIGGERS)")
     parser.add_argument("--search-backend", choices=sorted(tools.VALID_BACKENDS), default=None)
+    parser.add_argument("--sin-aprobacion", action="store_true",
+                        help="No pedir la selección de Dani al final (para pruebas)")
     parser.add_argument("--no-mlflow", action="store_true")
     args = parser.parse_args()
 
@@ -200,38 +319,46 @@ def main() -> None:
         sys.exit(f"No existe el prompt: {investigador.prompt_path(args.prompt_version)}")
 
     run_id = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H%M%S")
+    run_dir = HERE / "runs" / run_id
+    brief_text = args.brief.read_text(encoding="utf-8")
     print(f"=== Investigador {args.prompt_version}/{args.trigger} · modelo {investigador.model_id()} · búsqueda {tools.get_backend()} ===")
 
-    result = asyncio.run(run_agent(args.brief.read_text(encoding="utf-8"), args.prompt_version, args.temperature, TRIGGERS[args.trigger]))
-
+    # Un solo ciclo asíncrono para todas las rondas: LiteLLM reutiliza su conexión.
+    loop = asyncio.new_event_loop()
+    trigger = TRIGGERS[args.trigger]
+    decisiones: list[dict] = []
+    first_metrics: dict = {}
     try:
-        output = extract_json(result["raw"])
-        errors = validate(output)
-    except (ValueError, json.JSONDecodeError) as exc:
-        output, errors = None, [f"JSON no parseable: {exc}"]
+        for ronda in range(1, MAX_RONDAS + 1):
+            result = loop.run_until_complete(run_agent(brief_text, args.prompt_version, args.temperature, trigger))
+            output, errors, metrics = evaluate(result, args.prompt_version)
+            # La ronda 1 queda en la carpeta de la corrida (igual que antes); las nuevas búsquedas, en ronda_N/.
+            round_dir = run_dir if ronda == 1 else run_dir / f"ronda_{ronda}"
+            save_run(round_dir, result, output, errors, metrics)
+            first_metrics = first_metrics or metrics
+            print_summary(metrics, errors, round_dir)
 
-    metrics = compute_metrics(output, errors)
-    metrics.update(trace_metrics(output, result["trace"]))
-    metrics.update({
-        "latency_s": round(result["latency_s"], 2),
-        "prompt_tokens": float(result["prompt_tokens"]),
-        "completion_tokens": float(result["completion_tokens"]),
-    })
+            if args.sin_aprobacion:
+                break
+            decision = ask_dani(output, ronda)
+            decisiones.append({"ronda": ronda, **decision})
+            if decision["accion"] != "nueva":
+                break
+            trigger = TRIGGERS[args.trigger] + build_new_search_note(decision.get("indicaciones", ""), output)
+        else:
+            print(f"\nSe alcanzó el máximo de {MAX_RONDAS} rondas de búsqueda.")
+    finally:
+        loop.close()
 
-    run_dir = HERE / "runs" / run_id
-    save_run(run_dir, result, output, errors, metrics)
-
-    print(f"\nTool calls: {int(metrics['n_tool_calls'])} · hallazgos: {int(metrics['n_hallazgos'])} "
-          f"(alta: {int(metrics['n_alta'])}) · esquema válido: {'sí' if metrics['schema_valid'] else 'no'} "
-          f"· {metrics['latency_s']} s")
-    for e in errors:
-        print(f"  ! {e}")
-    print(f"Resultados en {run_dir}")
+    seleccion = save_selection(run_dir, decisiones, args.sin_aprobacion)
 
     if not args.no_mlflow:
-        log_to_mlflow(args, run_id, run_dir, metrics, args.temperature)
+        final_metrics = {**first_metrics,
+                         "n_rondas": float(max(1, len(decisiones))),
+                         "aprobado": 1.0 if seleccion["status"] == "aprobado" else 0.0,
+                         "n_seleccionados": float(len(seleccion["seleccion"]))}
+        log_to_mlflow(args, run_id, run_dir, final_metrics, args.temperature)
         print("Corrida registrada en MLflow (experimento 'dopa-investigador').")
-
 
 if __name__ == "__main__":
     main()

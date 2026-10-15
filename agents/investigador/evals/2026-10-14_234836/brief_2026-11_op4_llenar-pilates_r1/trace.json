@@ -1,0 +1,131 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "Pilates para movilidad y cuidado de espalda y rodillas mujeres 45-55+",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "carrusel educativo Pilates para principiantes",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "clase abierta Pilates para principiantes Instagram",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Pilates for BACK PAIN Relief | STRENGTH and OVERALL ...",
+            "url": "https://www.youtube.com/watch?v=TKOV-xbCob0",
+            "snippet": "Clase completa de Pilates para trabajar la Fuerza Abdominal y del Core y la Movilidad de la Espalda con la finalidad de aliviar molestias",
+            "published": "",
+            "relevance": 0.72
+          },
+          {
+            "title": "Pilates para la espalda: 8 ejercicios que salvan tu espalda",
+            "url": "https://www.poses-studio.com/es/pilates-para-la-espalda",
+            "snippet": "Movilización de la columna vertebral practica pilates para liberar las articulaciones vertebrales. Estiramiento de los músculos de la espalda",
+            "published": "",
+            "relevance": 0.65
+          }
+        ],
+        "backend": "tavily",
+        "query": "Pilates para movilidad y cuidado de espalda y rodillas mujeres 45-55+",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.395
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "¿Primera vez en Pilates? Guarda este carrusel. ...",
+            "url": "https://www.instagram.com/p/DdHwAgkAX5C",
+            "snippet": "Para empezar solo necesitas unas pocas cosas: Ropa cómoda Calcetines antideslizantes Agua Ganas de aprender Y darte la",
+            "published": "",
+            "relevance": 0.63
+          },
+          {
+            "title": "PILATES FOR BEGINNERS. Pilates Initiation Challenge [18']",
+            "url": "https://www.youtube.com/watch?v=tzK-MaaXWPY",
+            "snippet": "Reto 15 DIAS para iniciarte al Pilates para principiantes. María ... DIA 9 | PILATES PARA PRINCIPIANTES. Reto iniciación al Pilates [23",
+            "published": "",
+            "relevance": 0.61
+          },
+          {
+            "title": "Pilates para principiantes: guía para empezar",
+            "url": "https://www.cursosdepilates.com/blog/pilates-para-principiantes-guia-definitiva-para-iniciarte-en-pilates",
+            "snippet": "Empieza a practicar Pilates en casa con 18 ejercicios y 4 clases para principiantes. Online, a tu ritmo y dedicando 20 minutos al día. Ir al",
+            "published": "",
+            "relevance": 0.59
+          }
+        ],
+        "backend": "tavily",
+        "query": "carrusel educativo Pilates para principiantes",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "¿Hace tiempo querés empezar Pilates pero no te animás? ...",
+            "url": "https://www.instagram.com/p/DclvrFWjrIX",
+            "snippet": "Pilates antes. ✨ Clases para todos los niveles, grupos reducidos y acompañamiento. Septiembre $12.000 📍 Alvear 2200, clase abierta de Pilates",
+            "published": "",
+            "relevance": 0.91
+          },
+          {
+            "title": "Hermosa clase abierta de Pilates   Gracias a todos los que ...",
+            "url": "https://www.instagram.com/reel/Ddhv2cXtpga",
+            "snippet": "Quizás sea momento de empezar a moverte diferente. Hacer pilates te ayuda a fortalecer, mejorar la postura, ganar movilidad y sentirte",
+            "published": "",
+            "relevance": 0.89
+          },
+          {
+            "title": "7 cuentas de Pilates en Instagram que no te puedes perder",
+            "url": "https://www.vitonica.com/pilates/7-cuentas-de-pilates-en-instagram-que-no-te-puedes-perder",
+            "snippet": "Las zapatillas de Decathlon perfectas para caminar horas sin dolor de pies: ideales para rutas de senderismo\n 26 años después de 'Gladiator', Russell Crowe muestra su cambio físico a los 62 años para volver a enfrentarse a Roma\n Ismael Galancho, nutricionista de Messi: \"Es un error no introducir apenas proteína en el desayuno. También lo es meterla en cada comida\"\n Los chefs lo tienen claro: \"Si quieres reducir la acidez de la salsa de tomate, olvida el azúcar y usa bicarbonato de sodio\" [...] Ver más artículos\n\nVitónica TV\n\n AMAZFIT T-REX 2, análisis: El PODER en TU MANO  AMAZFIT T-REX 2, aná",
+            "published": "",
+            "relevance": 0.67
+          }
+        ],
+        "backend": "tavily",
+        "query": "clase abierta Pilates para principiantes Instagram",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    }
+  ],
+  "latency_s": 169.42592170799617,
+  "prompt_tokens": 8405,
+  "completion_tokens": 688
+}

@@ -1,0 +1,31 @@
+{
+  "hallazgos": [
+    {
+      "tema": "Pilates para aliviar dolores en la espalda y mejorar la movilidad",
+      "fuente": "https://www.poses-studio.com/es/pilates-para-la-espalda",
+      "relevancia_dopa": "Rosa busca movilidad y cuidado de espalda y rodillas; este tema directamente aborda su preocupación principal y responde a su miedo de que el entrenamiento sea rudo. DOPA puede usarlo para posicionar su oferta de Pilates como una solución segura y centrada en la salud.",
+      "formato_sugerido": "post",
+      "prioridad": "alta"
+    },
+    {
+      "tema": "Carrusel educativo para principiantes en Pilates",
+      "fuente": "https://www.instagram.com/p/DdHwAgkAX5C",
+      "relevancia_dopa": "El público de Rosa es principiante-intermedio y teme la falta de experiencia previa. Un carrusel educativo con consejos prácticos y elementos visuales es un formato que reduce la barrera de entrada y atrae a quienes no tienen experiencia, alineándose con la meta de llenar clases.",
+      "formato_sugerido": "carrusel",
+      "prioridad": "alta"
+    },
+    {
+      "tema": "Clase abierta de Pilates para principiantes con invitación a participar",
+      "fuente": "https://www.instagram.com/p/DclvrFWjrIX",
+      "relevancia_dopa": "La clase abierta es un evento clave de noviembre, y el formato de Instagram con invitaciones y testimonios funciona bien para este público. El contenido que incluye testimonios y precios atractivos es efectivo para convertir en inscripción.",
+      "formato_sugerido": "historia",
+      "prioridad": "alta"
+    }
+  ],
+  "tendencias_de_formato": [
+    "post",
+    "carrusel",
+    "historia"
+  ],
+  "resumen_ejecutivo": "Se identificaron tres oportunidades de contenido directamente vinculadas a la meta de llenar clases de Pilates para Rosa. El formato de carrusel y historia son efectivos para educar y atraer, mientras que el post se usa para posicionar el valor de la clase. Todas las fuentes apuntan a estrategias de Instagram que funcionan para el público objetivo y el evento clave."
+}

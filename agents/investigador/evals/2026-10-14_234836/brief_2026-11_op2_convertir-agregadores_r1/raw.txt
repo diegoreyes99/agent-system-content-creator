@@ -1,0 +1,7 @@
+```json
+{
+  "hallazgos": [],
+  "tendencias_de_formato": [],
+  "resumen_ejecutivo": "No se encontraron hallazgos relevantes para las búsquedas realizadas. Las búsquedas cubrieron temas de conversión de usuarios de plataformas, carrusel educativo y eventos de movilidad en CDMX, pero no devolvieron resultados con alto grado de relevancia para DOPA ni para el objetivo del mes. Se recomienda revisar los términos de búsqueda o ampliar el alcance a formatos específicos como historias o posts con enfoque en la membresía directa."
+}
+```

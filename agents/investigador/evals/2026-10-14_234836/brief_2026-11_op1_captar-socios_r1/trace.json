@@ -1,0 +1,197 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "retos de 21 días gimnasios Instagram noviembre 2026",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/p/DSkIGpGDATt",
+            "snippet": "Llega nuestro desafío de 21 días para iniciar el 2026: el 10' Workout Challenge. Comenzando el 1 de enero, cada día tendrás una rutina corta de entre 5 y 15 minutos que puedes usar como tu entrenamiento del día si estás iniciando el hábito o como complemento a tu entrenamiento habitual para darle un extra de intensidad. Podrás elegir entre principiantes, intermedios, avanzados y en casa sin material. El desafío estará abierto para los usuarios gratuitos durante los primeros 21 días del año y [...] 21 días del año y luego quedará solo disponible para los usuarios PRO. Puedes unirte ya en la sec",
+            "published": "",
+            "relevance": 0.8
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DeP9cuovgxx",
+            "snippet": "gymsatusfit\n\n¡En la 6ta semana del Reto Satus 2026 realizamos el segundo pesaje!🤩🔥 y esta fue la experiencia y resultado de nuestros participantes 🤭  \n  \nLos 4 siguen trabajando con mucha disciplina y ganas de tener un nuevo estilo de vida 👀🔥  \n…  \n#satus #reto #realityshows #gimnasio #avbolivar bolo\n\nhebopmoreno's profile picture\n\nhebopmoreno\n\nTotalmente de acuerdo @andremendezf 🔥👏🔥 Orgullosa y Sentirte Bien es la Meta 💥🔥💥👍🏼\n\n1 like\n\nReply\n\ncharlirivero22's profile picture\n\ncharlirivero22 [...] Photo by Satus | Gimnasio | Fitness | Clases | Cardio on September 15, 2026. May be an image of tex",
+            "published": "",
+            "relevance": 0.6
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DcuGiEns63c",
+            "snippet": "gabyespino Edited•\n\nVamos a hacer juntas este RETO de 21 dias!!! Nos acompañamos y asi no pega tan duro!!!! 🤓  \n- Comunidad  \n- Acompañamiento 24/7  \n- Guía de alimentación  \n- Guia de ejercicios  \n- Seguimiento de avance semanal  \n  \nEscribe la palabra RETO , te cuento todo y comenzamos!!!!! ❤️  \n-\n\nsilvia.perezm's profile picture\n\nsilvia.perezm\n\nReto\n\nReply\n\nsilvia.perezm's profile picture\n\nsilvia.perezm\n\nRETO\n\nReply\n\nirisvillegas73's profile picture\n\nirisvillegas73\n\nQuiero\n\nReply [...] Reply\n\nibry2009's profile picture\n\nibry2009\n\nNo soporto verla llena de aceite hasta la frente, quien se vi",
+            "published": "",
+            "relevance": 0.51
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DbKlepYNZhq",
+            "snippet": "Estos retos de 21 días, hay gente que los utiliza para bajar de peso; otros para mantener, tonificar y sentirse mejor de vitalidad; y otros para subir de peso! 🤗🤗  \n  \nA mi me ayudan a no descentrarme del todo, en esta época que además hay más excesos, me viene genial, para compensar y mantener💪🏻🤗  \n  \nOrgullosa de tod@s los participantes y vuestros logros🫶🏻aupa zuek♥️   \n  \nEl día 3 comenzamos nuevo reto💪🏻💪🏻💪🏻💪🏻💪🏻  \n  \n#reto #21dias #nutricion #ejercicio #habitos\n\njeus1691's profile picture [...] Video by Lorea Luzar on October 08, 2026. May be an image of omelet, tomato, zucchini and text.\n\n",
+            "published": "",
+            "relevance": 0.46
+          }
+        ],
+        "backend": "tavily",
+        "query": "retos de 21 días gimnasios Instagram noviembre 2026",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.323
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo llegar a un gimnasio en CDMX Instagram",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DVUHGaMiLjU",
+            "snippet": "paseoarcosbosques\n\n¿Cómo llegar a Arcos Fitness Club? ✨ Aquí te dejamos la guía, rápido y fácil.  \nEntrenar aquí es otro nivel. 💎🖤   \n#CDMX #Fitness #Wellness #PaseoArcosBosques\n\n## No comments yet.\n\nStart the conversation.\n\n16\n\nLog in to like or comment.\n\nMore posts from paseoarcosbosques\n\nPhoto by Paseo Arcos Bosques on October 01, 2026. May be an image of text.\n\nOpen jars of creams in various colors with text '¡MUY PRONTO! SEPHORA'. [...] Log In\n\nSign Up\n\npaseoarcosbosques's profile picture\n\nNever miss a post from paseoarcosbosques\n\nSign up for Instagram to stay in the loop.\n\nBy continuing,",
+            "published": "",
+            "relevance": 0.6
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo llegar a un gimnasio en CDMX Instagram",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.356,
+          0.213,
+          0.176,
+          0.091
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "clase muestra gimnasio Instagram",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "No es solo un gimnasio… Imagina un lugar donde entrenas ...",
+            "url": "https://www.instagram.com/reel/DWVDVTRjJ1s?hl=en",
+            "snippet": "Agenda tu clase muestra. Agenda tu clase muestra por Instagram o al 56 4465 0440 # hitboxclubmx … clase muestra es GRATIS. ⏰ 10:00 AM a 2:00 PM",
+            "published": "",
+            "relevance": 0.83
+          },
+          {
+            "title": "@caracoles_gym | 💪🔥 ¡CONÓCENOS! ...",
+            "url": "https://www.instagram.com/p/DcyvEsYFLWp?__d=1%2B",
+            "snippet": "¡CONÓCENOS! CLASE MUESTRA GRATIS ¿Estás buscando un gimnasio donde puedas entrenar, sentirte acompañado y alcanzar tus objetivos?",
+            "published": "",
+            "relevance": 0.57
+          },
+          {
+            "title": "HitBarre fitness para mujeres (@hitbarre_)",
+            "url": "https://www.instagram.com/hitbarre_?hl=en",
+            "snippet": "Un lugar donde te sientas cómoda, acompañada y segura cambia la forma en la que vives tu entrenamiento. ✨ Agenda tu clase muestra al 449 260 7085",
+            "published": "",
+            "relevance": 0.52
+          },
+          {
+            "title": "¡Ven a probar nuestras clases! ¡Agenda tu clase muestra ...",
+            "url": "https://www.instagram.com/reel/DVcIRW3D4Kh",
+            "snippet": "¡Agenda tu clase muestra al 56 511 40471! #entrenar #gimnasio ... Conoce a Coach Miranda y descubre sus clases de Funcional + Sculpt en KickLink",
+            "published": "",
+            "relevance": 0.4
+          }
+        ],
+        "backend": "tavily",
+        "query": "clase muestra gimnasio Instagram",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.337
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "carrusel educativo gimnasio Instagram",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Carrusel de Instagram para entrenadores: 12 ideas y cómo hacerlo 2026",
+            "url": "https://coachway.io/es/carrusel-instagram-para-entrenadores",
+            "snippet": "Un carrusel es una publicación con hasta 20 imágenes o vídeos que el lector desliza, con un solo caption para todas; funciona para un entrenador porque es el único formato del feed en el que se puede enseñar algo paso a paso y que lo guarden para después. En un hilo en inglés de r/InstagramMarketing sobre el formato, un usuario resume el reparto de tareas: los carruseles siguen fuertes en guardados y visitas al perfil, sobre todo en contenido educativo, porque la gente desliza más despacio y se [...] Markus Evers · Actualizado septiembre de 2026\n\nen resumen\n\nUn carrusel de Instagram es una pub",
+            "published": "",
+            "relevance": 0.8
+          },
+          {
+            "title": "️ Nuevo carrusel educativo ⚠️⁣⁣⁣⁣ ⁣⁣⁣⁣ ...",
+            "url": "https://www.instagram.com/p/B_SSkW1DlVo?hl=en",
+            "snippet": "Nuevo carrusel educativo. Cómo agregar diapositivas de imágenes y/o vídeos en tu Instagram LIVE.⁣⁣⁣⁣",
+            "published": "",
+            "relevance": 0.65
+          },
+          {
+            "title": "Imágenes de Carrusel instagram fitness",
+            "url": "https://www.magnific.com/es/fotos-vectores-gratis/carrusel-instagram-fitness",
+            "snippet": "Encuentra y descarga recursos gráficos gratuitos de Carrusel instagram fitness. ✓ Gratis para uso comercial ✓ Imágenes de gran calidad.",
+            "published": "",
+            "relevance": 0.53
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DEpbBQiRnlx?hl=en",
+            "snippet": "genproyect.ia\n\nExcelente. Recien probe tu metodo, en mi primer carrusel, quedo horrible, vayan a tirarme hate 😂🔥✊️🖤\n\nReply\n\ngnzalezandrea's profile picture\n\ngnzalezandrea\n\nIncreíble! Gracias\n\nReply\n\nsomos_lemniscata's profile picture\n\nsomos\\_lemniscata\n\nUn ejemplo de título gancho?\n\nReply\n\ndonnafinanzas's profile picture\n\ndonnafinanzas\n\nBuenísimos tips! Qué opinas de los carrousels que hemos hecho en nuestra página?\n\nReply\n\nsandra.k.ramirez.g's profile picture\n\nsandra.k.ramirez.g\n\nMe encanta [...] lookeotuperfil\n\nCómo crear un carrusel exitoso en Instagram 🚀  \n  \nEl método AIDA es uno de mis p",
+            "published": "",
+            "relevance": 0.45
+          }
+        ],
+        "backend": "tavily",
+        "query": "carrusel educativo gimnasio Instagram",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.359
+        ]
+      }
+    }
+  ],
+  "latency_s": 361.31844699999783,
+  "prompt_tokens": 27337,
+  "completion_tokens": 882
+}

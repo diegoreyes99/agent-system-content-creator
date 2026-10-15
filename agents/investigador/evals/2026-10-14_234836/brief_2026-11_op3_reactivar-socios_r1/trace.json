@@ -1,0 +1,107 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo regresar al entrenamiento después de 2 o 3 semanas sin hacerlo",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "carrusel educativo gimnasio para socios que dejaron de venir",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "Cosmic Run de noviembre Instagram eventos de fitness",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Cómo volver al gimnasio tras una pausa larga sin lesionarte – VivaGym",
+            "url": "https://www.vivagym.com/es-es/como-volver-al-gimnasio",
+            "snippet": "No existe una única receta, pero hay un marco que funciona para la gran mayoría de personas que retoman el entrenamiento tras un parón de entre 3 semanas y 6 meses. El objetivo a medio plazo es volver a acumular los al menos 150 minutos de actividad moderada semanal que recomienda la OMS, pero llegando a ese umbral de forma progresiva. Si llevas más tiempo parado, o si vienes de una lesión o enfermedad, consulta primero con un profesional sanitario o con el equipo de entrenadores de tu centro. [...] 2. No restringir calorías agresivamente al mismo tiempo que retomas el entrenamiento. Intentar ",
+            "published": "",
+            "relevance": 0.81
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DW2ZpUqDKeD?hl=en",
+            "snippet": "¿Como retomar el entrenamiento? 👇🏻🤯  \n.  \nSi llevas varios días o semanas sin entrenar ten presente que tu cuerpo perdió capacidad de recuperación y regresar a entrenar demasiado intenso y con mucho volumen de entrenamiento solo hará que tengas exceso de dolor y que se dañe el resto de tu semana de entrenamientos.  \n. [...] .  \nLa mejor estrategia y que yo recomiendo es retomar con sesiones full body, que te permiten entrenar pesado, con volumen de entrenamiento mínimo, pero a la vez permiten que tu cuerpo se acondicione de forma correcta para que puedas retornar a tu rutina normal.  \n.  \nMánd",
+            "published": "",
+            "relevance": 0.66
+          },
+          {
+            "title": "Cómo retomar el ejercicio después de mucho tiempo",
+            "url": "https://es-share.upmc.com/2023/03/ejercicio-despues-de-mucho-tiempo",
+            "snippet": "Esta interrupción puede ser frustrante sin importar la causa: el COVID-19, una lesión, una enfermedad o cualquier otra razón. Pero, ¿cómo volver a hacer ejercicio después de mucho tiempo?\n\nEn primer lugar, asegúrese de estar sano para hacer ejercicio. Si hace tiempo que no visita a su médico programe una cita para hablar de su vuelta a la actividad física.\n\nA continuación, respire profundo. ¡Puede hacerlo! Si alguna vez tuvo una rutina de ejercicio, puede volver a tenerla. [...] Solo necesita seguir algunas estrategias para volver a hacer ejercicio después de una larga pausa.\n\n## Estrategia nº",
+            "published": "",
+            "relevance": 0.65
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo regresar al entrenamiento después de 2 o 3 semanas sin hacerlo",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "carrusel educativo gimnasio para socios que dejaron de venir",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.22,
+          0.13,
+          0.128
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Cosmic Run Club (@cosmicrunclub) • Instagram photos and videos",
+            "url": "https://www.instagram.com/cosmicrunclub?hl=en",
+            "snippet": "Log In\n\nSign Up\n\n## cosmicrunclub\n\n 40 followers\n 0 following\n\nCosmic Run Club\n\nMiles Over Excuses\n\nPhoto by Cosmic Run Club on October 14, 2026. May be an image of frisbee, poster, sportswear, park and text.\n\nPhoto by Cosmic Run Club on October 09, 2026. May be an image of text.\n\nVideo by Cosmic Run Club on October 01, 2026. May be an image of park, picnic and text.\n\nShow more posts from cosmicrunclub",
+            "published": "",
+            "relevance": 0.41
+          }
+        ],
+        "backend": "tavily",
+        "query": "Cosmic Run de noviembre Instagram eventos de fitness",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.067,
+          0.034
+        ]
+      }
+    }
+  ],
+  "latency_s": 103.39853133296128,
+  "prompt_tokens": 8245,
+  "completion_tokens": 225
+}

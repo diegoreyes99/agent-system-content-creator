@@ -44,7 +44,7 @@ GOLDEN_SET = sorted((single.PROJECT_ROOT / "baseline" / "briefs").glob("brief_20
 
 # Métricas que se resumen (promedio, desviación, mínimo y máximo) en la corrida padre.
 SUMMARY_METRICS = [
-    "schema_valid", "n_hallazgos", "n_alta", "pct_fuentes_verificadas", "pct_fuentes_url",
+    "schema_valid", "n_hallazgos", "n_alta", "n_recomendados", "pct_fuentes_verificadas", "pct_fuentes_url",
     "n_tool_calls", "n_search_errors", "search_pass_rate", "avg_relevance",
     "latency_s", "prompt_tokens", "completion_tokens",
 ]
@@ -66,7 +66,7 @@ async def run_case(brief: Path, args) -> tuple[dict, dict | None, list[str], dic
 
     try:
         output = extract_json(result["raw"])
-        errors = validate(output)
+        errors = validate(output, args.prompt_version)
     except (ValueError, json.JSONDecodeError) as exc:
         output, errors = None, [f"JSON no parseable: {exc}"]
 
@@ -91,6 +91,9 @@ def summarize(rows: list[dict]) -> dict[str, float]:
     )
     for key in SUMMARY_METRICS:
         values = [r.get(key, 0.0) for r in rows if not r.get("run_failed")]
+        if key == "pct_fuentes_verificadas":
+            # Solo tiene sentido en corridas con hallazgos: con 0 hallazgos no hay fuentes que verificar.
+            values = [r[key] for r in rows if not r.get("run_failed") and r.get("n_hallazgos", 0) > 0]
         if not values:
             continue
         summary[f"{key}_mean"] = statistics.mean(values)
