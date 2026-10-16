@@ -6,8 +6,10 @@ Uso (desde agents_dopa_final_project/, con el entorno activo — source ~/.venvs
       --prompt-version v6 --trigger t2
 
 Al terminar muestra los temas propuestos y espera la decisión de Dani (punto de
-aprobación): elegir números, pedir una búsqueda nueva o salir. La selección queda
-en runs/<fecha>/seleccion.json; es lo único que pasa al Estratega.
+aprobación), en dos preguntas: 1) con qué temas se queda (números, 'ninguno',
+'nueva' para otra búsqueda o 'salir'); 2) si quiere agregar temas suyos, tal cual
+o pidiendo que el Investigador los investigue. La selección queda en
+runs/<fecha>/seleccion.json; es lo único que pasa al Estratega.
 
 Opciones útiles:
   --prompt-version v1   versión del prompt en prompts/investigador_<v>.md
@@ -33,6 +35,7 @@ import asyncio
 import json
 import os
 import platform
+import re
 import sys
 import time
 import uuid
@@ -246,18 +249,24 @@ def print_summary(metrics: dict, errors: list[str], run_dir: Path, corrections: 
     print(f"Resultados en {run_dir}")
 
 
-def ask_dani(output: dict | None, ronda: int) -> dict:
-    """Muestra los temas propuestos y espera la decisión de Dani. Nunca asume aprobación."""
+TIPO_FUENTE_LABELS = {"certificada": "fuente certificada", "web": "fuente web", "red_social": "red social",
+                      "no_verificada": "FUENTE NO VERIFICADA"}
+
+
+def show_topics(output: dict | None, ronda: int, kept: list[dict]) -> list[dict]:
+    """Imprime los temas propuestos en esta ronda (y los ya elegidos antes). Regresa los hallazgos."""
     hallazgos = [h for h in (output or {}).get("hallazgos") or [] if isinstance(h, dict)]
     print(f"\n=== Temas propuestos por el Investigador (ronda {ronda}) — esperando a Dani ===")
+    if kept:
+        print("\n  Ya elegidos en rondas anteriores:")
+        for k in kept:
+            print(f"    · {k.get('tema', '?')}{'  (tema de Dani)' if k.get('origen') == 'dani' else ''}")
     if not hallazgos:
-        print("  (El Investigador no propuso ningún tema.)")
-    ids = []
+        print("\n  (El Investigador no propuso ningún tema en esta ronda.)")
     for i, h in enumerate(hallazgos, start=1):
-        hid = h.get("id", i)
-        ids.append(hid)
+        h.setdefault("id", i)
         mark = "★" if h.get("recomendado") else " "
-        print(f"\n {mark} {hid}. {h.get('tema', '?')}  [{h.get('prioridad', '?')}]")
+        print(f"\n {mark} {h['id']}. {h.get('tema', '?')}  [{h.get('prioridad', '?')}]")
         if h.get("que_dice_la_fuente"):
             print(f"      Fuente dice: {h['que_dice_la_fuente']}")
         if h.get("responde_a"):
@@ -265,66 +274,138 @@ def ask_dani(output: dict | None, ronda: int) -> dict:
         else:
             print(f"      Para DOPA: {h.get('relevancia_dopa', '')}")
         if "tipo_fuente" in h:
-            labels = {"certificada": "fuente certificada", "web": "fuente web", "red_social": "red social",
-                      "no_verificada": "FUENTE NO VERIFICADA"}
             weak = "" if h.get("contenido_suficiente", True) else " · poco contenido"
-            print(f"      ({labels.get(h['tipo_fuente'], h['tipo_fuente'])}{weak})")
+            print(f"      ({TIPO_FUENTE_LABELS.get(h['tipo_fuente'], h['tipo_fuente'])}{weak})")
         print(f"      {h.get('fuente', '')}")
     if (output or {}).get("resumen_ejecutivo"):
         print(f"\n  Resumen: {output['resumen_ejecutivo']}")
-    print("\n  ★ = recomendado por el Investigador")
+    if hallazgos:
+        print("\n  ★ = recomendado por el Investigador")
+    return hallazgos
 
+
+def parse_numbers(answer: str) -> list[int] | None:
+    """Lee "1,3,5", "1 3 5" o "1, 2 y 4". Regresa None si hay algo que no sea un número."""
+    parts = [p for p in re.split(r"[,\s]+", re.sub(r"\by\b", ",", answer.lower())) if p]
+    if not parts or not all(p.isdigit() for p in parts):
+        return None
+    return list(dict.fromkeys(int(p) for p in parts))  # sin repetidos, en el orden en que los escribió
+
+
+def ask_selection(hallazgos: list[dict], can_search: bool) -> dict:
+    """Pregunta 1: con qué temas del Investigador se queda Dani."""
+    ids = [h["id"] for h in hallazgos]
+    options = "Escribe los números (ej. 1,3,5) o 'ninguno'"
+    if can_search:
+        options += "; 'nueva' para descartarlos y pedir otra búsqueda"
+    options += "; 'salir' para terminar sin aprobar nada"
     while True:
-        answer = input("\n¿Con qué temas te quedas? Escribe los números (ej. 1,3,5), "
-                       "'nueva' para pedir otra búsqueda o 'salir' para terminar sin elegir: ").strip()
+        answer = input(f"\n1) ¿Con qué temas te quedas? {options}: ").strip()
         lower = answer.lower()
         if lower == "salir":
             return {"accion": "salir"}
-        if lower.startswith("nueva"):
+        if can_search and lower.startswith("nueva"):
             indicaciones = answer.split(":", 1)[1].strip() if ":" in answer else input(
-                "¿Qué quieres que busque distinto? (Enter si no hay indicaciones): ").strip()
+                "   ¿Qué quieres que busque distinto? (Enter si no hay indicaciones): ").strip()
             return {"accion": "nueva", "indicaciones": indicaciones}
-        try:
-            chosen = [int(x) for x in answer.replace(" ", "").split(",") if x]
-        except ValueError:
-            print("  No entendí la respuesta. Usa números separados por comas, 'nueva' o 'salir'.")
+        if lower in ("ninguno", "ninguna", "0"):
+            return {"accion": "elegir", "ids": []}
+        chosen = parse_numbers(answer)
+        if chosen is None:
+            valid = "números, 'ninguno', 'nueva' o 'salir'" if can_search else "números, 'ninguno' o 'salir'"
+            print(f"  Aquí solo van {valid}. "
+                  "Si quieres sumar un tema tuyo, elige primero: en la siguiente pregunta lo agregas.")
             continue
         invalid = [c for c in chosen if c not in ids]
-        if not chosen or invalid:
-            print(f"  Números no válidos: {invalid or 'ninguno elegido'}. Opciones: {ids}")
+        if invalid:
+            print(f"  Números no válidos: {invalid}. Opciones: {ids}")
             continue
-        selected = [h for h in hallazgos if h.get("id") in chosen]
-        return {"accion": "aprobar", "ids": chosen, "seleccion": selected}
+        return {"accion": "elegir", "ids": chosen}
 
 
-def build_new_search_note(indicaciones: str, output: dict | None) -> str:
+def ask_own_topics(can_search: bool) -> tuple[list[str], str | None]:
+    """Pregunta 2: temas propios de Dani.
+
+    Regresa (temas que se agregan tal cual, tema que Dani quiere que se investigue o None).
+    """
+    own: list[str] = []
+    while True:
+        prompt = "\n2) ¿Quieres agregar un tema tuyo? Escríbelo" + (" (otro más)" if own else "") + ", o Enter para terminar: "
+        tema = input(prompt).strip()
+        if not tema:
+            return own, None
+        if can_search:
+            while True:
+                how = input("   ¿Lo agrego tal cual (t) o le pido al Investigador que lo investigue (i)? ").strip().lower()
+                if how in ("t", "i"):
+                    break
+                print("    Escribe t o i.")
+            if how == "i":
+                return own, tema
+        else:
+            print("   (Ya no quedan rondas de búsqueda: se agrega tal cual.)")
+        own.append(tema)
+        print(f"   Agregado: {tema}")
+
+
+def ask_dani(output: dict | None, ronda: int, kept: list[dict], can_search: bool) -> dict:
+    """Muestra los temas propuestos y espera la decisión de Dani. Nunca asume aprobación.
+
+    Son dos preguntas separadas: primero elige entre los temas del Investigador,
+    después puede sumar temas suyos (tal cual o pidiendo que se investiguen).
+    """
+    hallazgos = show_topics(output, ronda, kept)
+    while True:
+        first = ask_selection(hallazgos, can_search)
+        if first["accion"] in ("salir", "nueva"):
+            return first
+        selected = [{**h, "origen": "investigador", "ronda": ronda} for h in hallazgos if h["id"] in first["ids"]]
+        own, to_investigate = ask_own_topics(can_search)
+        decision = {"ids": first["ids"], "temas_dani": own,
+                    "seleccion": selected + [{"tema": t, "origen": "dani", "ronda": ronda} for t in own]}
+        if to_investigate:
+            return {"accion": "investigar", "indicaciones": to_investigate, **decision}
+        if decision["seleccion"] or kept:
+            return {"accion": "aprobar", **decision}
+        print("  No elegiste ningún tema ni agregaste uno tuyo. Vuelve a elegir, o escribe 'salir'.")
+
+
+def build_new_search_note(decision: dict, output: dict | None, kept: list[dict]) -> str:
     previous = [h.get("tema", "") for h in (output or {}).get("hallazgos") or [] if isinstance(h, dict)]
-    note = "\n\nDani pidió una búsqueda nueva."
-    if indicaciones:
-        note += f" Sus indicaciones: {indicaciones.rstrip('.')}."
+    previous += [k.get("tema", "") for k in kept if k.get("tema") not in previous]
+    indicaciones = decision.get("indicaciones", "").rstrip(".")
+    if decision["accion"] == "investigar":
+        note = (f"\n\nDani pidió investigar este tema suyo: {indicaciones}. "
+                "Busca fuentes sobre ese tema y propón hallazgos sobre él.")
+    else:
+        note = "\n\nDani pidió una búsqueda nueva."
+        if indicaciones:
+            note += f" Sus indicaciones: {indicaciones}."
     if previous:
-        note += " Ya se le propusieron estos temas; propón temas distintos: " + "; ".join(previous)
+        note += " Ya se le propusieron estos temas; no los repitas: " + "; ".join(previous)
     return note
 
 
-def save_selection(run_dir: Path, decisiones: list[dict], sin_aprobacion: bool) -> dict:
+def save_selection(run_dir: Path, decisiones: list[dict], kept: list[dict], sin_aprobacion: bool) -> dict:
     final = decisiones[-1] if decisiones else {}
     if sin_aprobacion:
         status = "sin_aprobacion"
     elif final.get("accion") == "aprobar":
         status = "aprobado"
     else:
-        status = "cancelado"  # salió sin elegir o se agotaron las rondas
+        status = "cancelado"  # salió sin aprobar nada
     seleccion = {
         "status": status,
         "ronda_aprobada": final.get("ronda") if status == "aprobado" else None,
-        "seleccion": final.get("seleccion", []) if status == "aprobado" else [],
+        # Lo elegido en rondas anteriores (antes de pedir otra búsqueda) más lo de la ronda final.
+        "seleccion": kept + final.get("seleccion", []) if status == "aprobado" else [],
         "historial": [{k: v for k, v in d.items() if k != "seleccion"} for d in decisiones],
     }
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "seleccion.json").write_text(json.dumps(seleccion, ensure_ascii=False, indent=2), encoding="utf-8")
     if status == "aprobado":
-        print(f"\nAprobado: {len(seleccion['seleccion'])} temas seleccionados → {run_dir / 'seleccion.json'}")
+        n_dani = sum(1 for s in seleccion["seleccion"] if s.get("origen") == "dani")
+        print(f"\nAprobado: {len(seleccion['seleccion'])} temas seleccionados ({n_dani} tuyos) → {run_dir / 'seleccion.json'}")
         print("Estos son los temas que recibirá el Estratega.")
     elif status == "cancelado":
         print("\nNo se aprobó ningún tema: el ciclo no avanza al Estratega.")
@@ -369,6 +450,7 @@ def main() -> None:
     loop = asyncio.new_event_loop()
     trigger = TRIGGERS[args.trigger]
     decisiones: list[dict] = []
+    kept: list[dict] = []  # temas elegidos en rondas anteriores, cuando Dani pide otra búsqueda
     first_metrics: dict = {}
     try:
         for ronda in range(1, MAX_RONDAS + 1):
@@ -385,17 +467,19 @@ def main() -> None:
 
             if args.sin_aprobacion:
                 break
-            decision = ask_dani(output, ronda)
+            # En la última ronda ya no se ofrece otra búsqueda.
+            decision = ask_dani(output, ronda, kept, can_search=ronda < MAX_RONDAS)
             decisiones.append({"ronda": ronda, **decision})
-            if decision["accion"] != "nueva":
+            if decision["accion"] not in ("nueva", "investigar"):
                 break
-            trigger = TRIGGERS[args.trigger] + build_new_search_note(decision.get("indicaciones", ""), output)
+            trigger = TRIGGERS[args.trigger] + build_new_search_note(decision, output, kept)
+            kept += decision.get("seleccion", [])
         else:
             print(f"\nSe alcanzó el máximo de {MAX_RONDAS} rondas de búsqueda.")
     finally:
         loop.close()
 
-    seleccion = save_selection(run_dir, decisiones, args.sin_aprobacion)
+    seleccion = save_selection(run_dir, decisiones, kept, args.sin_aprobacion)
 
     if not args.no_mlflow:
         final_metrics = {**first_metrics,
