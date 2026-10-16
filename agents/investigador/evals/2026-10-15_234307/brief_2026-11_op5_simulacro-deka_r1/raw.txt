@@ -1,0 +1,52 @@
+```json
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Qué es Deka y cómo se diferencia de Hyrox?",
+      "que_dice_la_fuente": "HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA es más corto en distancia (5 km) pero mucho más explosivo y castiga más rápido con transiciones constantes, la letal Air Bike y los RAM Burpees.",
+      "fuente": "https://underrated.es/blogs/noticias/deka",
+      "relevancia_dopa": "Apoya la prioridad secundaria de explicar qué es Deka y en qué se diferencia de Hyrox antes del simulacro. También responde a la objeción de la comunidad: 'Deka es solo para atletas' al mostrar que es más accesible para principiantes.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 2,
+      "tema": "Beneficios de Deka para principiantes",
+      "que_dice_la_fuente": "El Deka es un entrenamiento completo que mejora varios aspectos físicos y mentales: mejora de la resistencia, incremento de la fuerza funcional, control del peso corporal y desarrollo emocional.",
+      "fuente": "https://rstraining.es/deka-para-principiantes-todo-lo-que-necesitas-saber-para-empezar",
+      "relevancia_dopa": "Apoya la prioridad principal del mes (llenar el simulacro) al abordar el miedo de la comunidad y la necesidad de que el público se sienta cómodo y capaz de participar. Es clave para Ana, que busca eficiencia y no tiene experiencia previa.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id":  "3",
+      "tema": "¿Por qué Deka es más accesible para principiantes que Hyrox?",
+      "que_dice_la_fuente": "DEKA FIT es más accesible para principiantes, ya que dura menos tiempo (5 km) y tiene menos carga. HYROX exige 8 km con tramos de 1 km entre estaciones.",
+      "fuente": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+      "relevancia_dopa": "Apoya la prioridad principal y secundaria al desmentir la percepción de que Deka es solo para atletas. Responde directamente a la objeción de la comunidad y al perfil de Ana, que busca eficiencia.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 4,
+      "tema": "¿Qué incluye el formato Deka y cómo se entrena?",
+      "que_dice_la_fuente": "DEKA incluye 10 zonas de fitness funcional basadas en movimientos rudimentarios. Se enfoca en empujar, saltar y levantar. El entrenamiento consiste en 10 estaciones con transiciones constantes.",
+      "fuente": "https://es.spartan.com/es/life/deka/deka-philosophy",
+      "relevancia_dopa": "Apoya la prioridad principal y secundaria al explicar el formato del simulacro y cómo funciona. Es útil para el público de Ana, que busca eficiencia y no tiene experiencia previa.",
+      "prioridad": "media",
+      "recomendado": false
+    },
+    {
+      "id": 5,
+      "tema": "¿Cuáles son las diferencias clave entre Deka y Hyrox en entrenamiento funcional?",
+      "que_dice_la_fuente": "HYROX es más duro en running (8 km) y tiene estaciones con más peso. DEKA es más corto en distancia (5 km) pero mucho más explosivo y castiga más rápido con transiciones constantes, la letal Air Bike y los RAM Burpees.",
+      "fuente": "https://underrated.es/blogs/noticias/deka",
+      "relevancia_dopa": "Apoya la prioridad secundaria y principal al explicar la diferencia entre los dos formatos. Es útil para el público de Ana y Rosa, que buscan eficiencia y movilidad.",
+      "prioridad": "media",
+      "recomendado": false
+    }
+  ],
+  "resumen_ejecutivo": "Se encontraron tres búsquedas relevantes sobre Deka y Hyrox, con información general que respalda la prioridad principal y secundaria del mes. Los temas están enfocados en diferencias, beneficios y accesibilidad, lo que aborda la objeción de la comunidad y el perfil de Ana. No se encontraron resultados sobre el formato de entrenamiento híbrido o el uso de equipos como SkiErg o remos Concept2, que son parte del perfil de DOPA, pero sí se encontró información sobre la diferencia de duración y nivel de exigencia entre ambos formatos."
+}
+```

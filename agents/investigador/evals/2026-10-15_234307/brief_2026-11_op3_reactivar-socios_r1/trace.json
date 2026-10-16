@@ -1,0 +1,125 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo regresar al entrenamiento después de dejarlo por varias semanas sin lastimarte",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de entrenar después de un descanso prolongado",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "dificultades de regresar al entrenamiento tras un periodo de inactividad",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Cómo retomar el entrenamiento después de meses sin ir al gimnasio",
+            "url": "https://www.glamour.es/articulos/como-retomar-el-entrenamiento-despues-de-meses-de-paron",
+            "snippet": "“Lo primero es asumir que el punto de partida ha cambiado. Antes de retomar, es importante evaluar cómo responde el cuerpo hoy, especialmente a nivel articular, cardiovascular y de control del movimiento”, recomienda la fundadora de Fitclub Collective y coach, Camila Monguzzi. “La recomendación es empezar con una frecuencia moderada, entre dos y tres sesiones por semana, priorizando ejercicios básicos bien ejecutados. Volver con la misma exigencia de antes suele generar sobrecarga innecesaria [...] Prepárate para los cambios (y adáptate)\n\nAntes de retomar tu rutina de entrenamiento, hay alguna",
+            "published": "",
+            "relevance": 0.76
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/reel/DW2ZpUqDKeD?hl=en",
+            "snippet": "¿Como retomar el entrenamiento? 👇🏻🤯  \n.  \nSi llevas varios días o semanas sin entrenar ten presente que tu cuerpo perdió capacidad de recuperación y regresar a entrenar demasiado intenso y con mucho volumen de entrenamiento solo hará que tengas exceso de dolor y que se dañe el resto de tu semana de entrenamientos.  \n. [...] .  \nLa mejor estrategia y que yo recomiendo es retomar con sesiones full body, que te permiten entrenar pesado, con volumen de entrenamiento mínimo, pero a la vez permiten que tu cuerpo se acondicione de forma correcta para que puedas retornar a tu rutina normal.  \n.  \nMánd",
+            "published": "",
+            "relevance": 0.74
+          },
+          {
+            "title": "Cómo retomar el ejercicio después de mucho tiempo",
+            "url": "https://es-share.upmc.com/2023/03/ejercicio-despues-de-mucho-tiempo",
+            "snippet": "Esta interrupción puede ser frustrante sin importar la causa: el COVID-19, una lesión, una enfermedad o cualquier otra razón. Pero, ¿cómo volver a hacer ejercicio después de mucho tiempo?\n\nEn primer lugar, asegúrese de estar sano para hacer ejercicio. Si hace tiempo que no visita a su médico programe una cita para hablar de su vuelta a la actividad física.\n\nA continuación, respire profundo. ¡Puede hacerlo! Si alguna vez tuvo una rutina de ejercicio, puede volver a tenerla. [...] Solo necesita seguir algunas estrategias para volver a hacer ejercicio después de una larga pausa.\n\n## Estrategia nº",
+            "published": "",
+            "relevance": 0.63
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo regresar al entrenamiento después de dejarlo por varias semanas sin lastimarte",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Sauna Antes o Después de Entrenar: Beneficios Clave | AVILSA",
+            "url": "https://avilsa.com/blog/saunas/sauna-antes-despues-entrenar",
+            "snippet": "Title: Sauna Antes o Después de Entrenar: Beneficios Clave | AVILSA\n## Sauna y entrenamiento: ¿Antes o después? La **sauna antes o después de entrenar** tiene la capacidad de ofrecer diferentes beneficios para el cuerpo. Si quieres agregar esta práctica milenaria a tu rutina de cuidado diario, aquí te contamos todo lo necesario para que decidas si usar la **sauna antes o después de entrenar** o si prefieres reservarla para tus días de descanso. ## **Beneficios de la sauna antes de entrenar**. Utilizar la sauna antes de entrenar puede ofrecer varios beneficios que preparan tanto el cuerpo como ",
+            "published": "",
+            "relevance": 0.47
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de entrenar después de un descanso prolongado",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.379,
+          0.342
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Volver a entrenar después de años de inactividad ...",
+            "url": "https://www.facebook.com/vanguardiacolombia/posts/volver-a-entrenar-despu%C3%A9s-de-a%C3%B1os-de-inactividad-no-significa-empezar-con-las-mi/1403596471747854",
+            "snippet": "Especialistas advierten sobre tendinopatías, sobrecargas y dolores lumbares por mala técnica, exceso de peso o falta de calentamiento.",
+            "published": "",
+            "relevance": 0.64
+          },
+          {
+            "title": "6 Consejos para reanudar la actividad física tras un ...",
+            "url": "https://www.orangetheory.com/es-es/articles/6-tips-for-resuming-physical-activity-after-a-sedentary-period",
+            "snippet": "Consejos para reanudar el ejercicio físico tras un periodo de inactividad · 1. Empieza a entrenar paso a paso. · 2. El importante papel de la mente · 3. Visión",
+            "published": "",
+            "relevance": 0.61
+          },
+          {
+            "title": "Cómo retomar el ejercicio después de mucho tiempo",
+            "url": "https://es-share.upmc.com/2023/03/ejercicio-despues-de-mucho-tiempo",
+            "snippet": "Sin embargo, el dicho “úsalo o piérdelo” aplica para todas las personas. De hecho, a partir de los 50 años perdemos de forma natural entre un 12 % y un 14 % de nuestra fuerza muscular cada década. Si añadimos un periodo de inactividad, el aumento puede ser mayor.\n\nTodo esto quiere decir que después de una interrupción en el ejercicio, no se puede simplemente continuar donde lo dejó. Hay que recuperar lo perdido. De lo contrario, corre el riesgo de sufrir lesiones y, simplemente, de frustrarse. [...] ## Estrategia nº 3: haga ejercicio a medio tiempo\n\nUn estudio de Frontiers in Physiology de 202",
+            "published": "",
+            "relevance": 0.58
+          }
+        ],
+        "backend": "tavily",
+        "query": "dificultades de regresar al entrenamiento tras un periodo de inactividad",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    }
+  ],
+  "latency_s": 219.01403283298714,
+  "prompt_tokens": 9280,
+  "completion_tokens": 912
+}

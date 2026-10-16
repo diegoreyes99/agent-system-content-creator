@@ -1,0 +1,32 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Qué beneficios tiene Pilates para la movilidad y la espalda en personas mayores?",
+      "que_dice_la_fuente": "El Pilates ayuda a recuperar rango de movimiento, flexibiliza músculos rígidos y mejora la movilidad de la columna y la pelvis.",
+      "fuente": "https://doctorluisgallego.com/pilates-para-mayores",
+      "relevancia_dopa": "Apoya la prioridad principal del mes, ya que el público Rosa busca movilidad y cuidar espalda y rodillas. El tema aborda los beneficios específicos que el público de 45 a 55+ necesita.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Cómo empezar Pilates sin experiencia previa?",
+      "que_dice_la_fuente": "Las primeras sesiones de Pilates suelen centrarse en los fundamentos del método: respiración, alineación postural y control de los movimientos.",
+      "fuente": "https://clinicasalux.com/blog/pilates/que-debo-tener-en-cuenta-antes-de-mi-primera-clase-de-pilates",
+      "relevancia_dopa": "Apoya la prioridad secundaria del mes, ya que la meta es sembrar interés en Hot Pilates y atraer a principiantes. El tema aborda el inicio sin experiencia, lo que ayuda a reducir la barrera de entrada.",
+      "prioridad": "media",
+      "recomendado": true
+    },
+    {
+      "id": 3,
+      "tema": "¿Qué miedo tiene el público al ir a Pilates y cómo superarlo?",
+      "que_dice_la_fuente": "Hay personas que vienen a Pilates pensando que solamente van a estirar y después pasan las semanas y comienza algo completamente distinto.",
+      "fuente": "https://www.instagram.com/reel/DbjiwL8hKVE",
+      "relevancia_dopa": "Apoya la objeción principal de la voz de la comunidad: 'Me da miedo que sea muy intenso o lastimarme la espalda'. El tema aborda el miedo y el cambio de percepción, clave para atraer a Rosa.",
+      "prioridad": "alta",
+      "recomendado": true
+    }
+  ],
+  "resumen_ejecutivo": "Se encontraron tres temas relevantes que abordan las dudas y necesidades del público Rosa: beneficios de Pilates para movilidad y espalda, cómo empezar sin experiencia, y el miedo a lastimarse. Todos los temas son generales y no promocionan a otros gimnasios. No se encontraron resultados sobre Hot Pilates o la adaptación del espacio, como se solicitó en el brief."
+}

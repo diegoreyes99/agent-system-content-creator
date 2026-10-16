@@ -21,7 +21,9 @@ Cada corrida guarda en agents/investigador/runs/<fecha>/:
   output.json      salida parseada
   raw.txt          respuesta cruda del modelo
   trace.json       trayectoria: tool calls, resultados, tokens, latencia
-  validation.json  errores de esquema + métricas
+  validation.json  errores de esquema, correcciones del código y métricas
+
+Todos los errores del modelo se acumulan además en agents/investigador/model_errors.csv.
 """
 
 from __future__ import annotations
@@ -67,7 +69,12 @@ from google.genai import types  # noqa: E402
 
 import agent as investigador  # noqa: E402
 import tools  # noqa: E402
-from output_checks import compute_metrics, extract_json, trace_metrics, validate  # noqa: E402
+from output_checks import (  # noqa: E402
+    append_error_log, apply_source_rules, compute_metrics, extract_json, trace_metrics, validate,
+)
+
+# Bitácora acumulada de errores del modelo (todas las corridas y evals).
+ERROR_LOG = HERE / "model_errors.csv"
 
 APP_NAME = "dopa_investigador"
 USER_ID = "diego"
@@ -148,7 +155,9 @@ def save_run(run_dir: Path, result: dict, output: dict | None, errors: list[str]
     if output is not None:
         (run_dir / "output.json").write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     (run_dir / "validation.json").write_text(
-        json.dumps({"schema_errors": errors, "metrics": metrics}, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps({"schema_errors": errors, "correcciones": result.get("correcciones", []), "metrics": metrics},
+                   ensure_ascii=False, indent=2),
+        encoding="utf-8",
     )
 
 
@@ -207,7 +216,9 @@ def evaluate(result: dict, prompt_version: str) -> tuple[dict | None, list[str],
         errors = validate(output, prompt_version)
     except (ValueError, json.JSONDecodeError) as exc:
         output, errors = None, [f"JSON no parseable: {exc}"]
+    result["correcciones"] = apply_source_rules(output, result["trace"], prompt_version)
     metrics = compute_metrics(output, errors)
+    metrics["n_recomendados_corregidos"] = float(len(result["correcciones"]))
     metrics.update(trace_metrics(output, result["trace"]))
     metrics.update({
         "latency_s": round(result["latency_s"], 2),
@@ -217,12 +228,19 @@ def evaluate(result: dict, prompt_version: str) -> tuple[dict | None, list[str],
     return output, errors, metrics
 
 
-def print_summary(metrics: dict, errors: list[str], run_dir: Path) -> None:
+def print_errors(errors: list[str], corrections: list[dict], indent: str = "  ") -> None:
+    """Lista en pantalla cada error del modelo: de esquema y correcciones de fuente."""
+    for e in errors:
+        print(f"{indent}! Esquema: {e}")
+    for c in corrections:
+        print(f"{indent}! Corregido por el código · tema {c['id']} \"{c['tema']}\": {c['motivo']}")
+
+
+def print_summary(metrics: dict, errors: list[str], run_dir: Path, corrections: list[dict] | None = None) -> None:
     print(f"\nTool calls: {int(metrics['n_tool_calls'])} · hallazgos: {int(metrics['n_hallazgos'])} "
           f"(alta: {int(metrics['n_alta'])}, recomendados: {int(metrics.get('n_recomendados', 0))}) · "
           f"esquema válido: {'sí' if metrics['schema_valid'] else 'no'} · {metrics['latency_s']} s")
-    for e in errors:
-        print(f"  ! {e}")
+    print_errors(errors, corrections or [])
     print(f"Resultados en {run_dir}")
 
 
@@ -240,7 +258,15 @@ def ask_dani(output: dict | None, ronda: int) -> dict:
         print(f"\n {mark} {hid}. {h.get('tema', '?')}  [{h.get('prioridad', '?')}]")
         if h.get("que_dice_la_fuente"):
             print(f"      Fuente dice: {h['que_dice_la_fuente']}")
-        print(f"      Para DOPA: {h.get('relevancia_dopa', '')}")
+        if h.get("responde_a"):
+            print(f"      Responde a: {h['responde_a']}")
+        else:
+            print(f"      Para DOPA: {h.get('relevancia_dopa', '')}")
+        if "tipo_fuente" in h:
+            labels = {"certificada": "fuente certificada", "web": "fuente web", "red_social": "red social",
+                      "no_verificada": "FUENTE NO VERIFICADA"}
+            weak = "" if h.get("contenido_suficiente", True) else " · poco contenido"
+            print(f"      ({labels.get(h['tipo_fuente'], h['tipo_fuente'])}{weak})")
         print(f"      {h.get('fuente', '')}")
     if (output or {}).get("resumen_ejecutivo"):
         print(f"\n  Resumen: {output['resumen_ejecutivo']}")
@@ -343,8 +369,11 @@ def main() -> None:
             # La ronda 1 queda en la carpeta de la corrida (igual que antes); las nuevas búsquedas, en ronda_N/.
             round_dir = run_dir if ronda == 1 else run_dir / f"ronda_{ronda}"
             save_run(round_dir, result, output, errors, metrics)
+            append_error_log(ERROR_LOG, {"origen": "run", "carpeta": str(round_dir.relative_to(HERE)),
+                                         "prompt_version": args.prompt_version, "modelo": investigador.model_id(),
+                                         "brief": args.brief.name}, errors, result["correcciones"])
             first_metrics = first_metrics or metrics
-            print_summary(metrics, errors, round_dir)
+            print_summary(metrics, errors, round_dir, result["correcciones"])
 
             if args.sin_aprobacion:
                 break

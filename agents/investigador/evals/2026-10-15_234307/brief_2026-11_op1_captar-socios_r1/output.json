@@ -1,0 +1,32 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Qué beneficios tiene entrenar en grupo para principiantes?",
+      "que_dice_la_fuente": "El beneficio más subestimado de hacer ejercicio en grupo es el impacto en tu salud mental. El ejercicio ya libera endorfinas, pero añadir el componente de grupo amplifica el efecto.",
+      "fuente": "https://eurofitness.com/es/beneficios-del-ejercicio-grupal",
+      "relevancia_dopa": "Ana busca eficiencia y un espacio seguro sin juicios; entrenar en grupo fomenta camaradería y motivación, lo que apoya el Reto 21 días y la clase de prueba.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Cómo empezar en Hyrox sin experiencia?",
+      "que_dice_la_fuente": "No se encontraron resultados relevantes.",
+      "fuente": "error",
+      "relevancia_dopa": "No se pudo encontrar información útil sobre cómo empezar en Hyrox para principiantes.",
+      "prioridad": "baja",
+      "recomendado": false
+    },
+    {
+      "id": 3,
+      "tema": "¿Dónde está la entrada del gimnasio Narvarte Poniente?",
+      "que_dice_la_fuente": "¡EL GYM DONDE SÍ QUIERES ENTRENAR! SPASIO ... Pedro Romero de Terreros 1203, Narvarte Poniente Benito Juárez, CDMX ENTRENA CON GUSTO.",
+      "fuente": "https://www.facebook.com/SpasioSport/videos/-el-gym-donde-s%C3%AD-quieres-entrenar-spasio-fitness-narvartesigues-pagando-gyms-car/2059552654684704",
+      "relevancia_dopa": "La objeción principal de la comunidad es '¿Dónde está la entrada?', por lo que este tema aborda una necesidad real y urgente de orientación.",
+      "prioridad": "alta",
+      "recomendado": true
+    }
+  ],
+  "resumen_ejecutivo": "Se encontraron resultados relevantes para los temas de beneficios del entrenamiento en grupo y ubicación del gimnasio. No se encontró información útil sobre cómo empezar en Hyrox. Las búsquedas se realizaron con precisión y cumplen con el proceso de investigación."
+}

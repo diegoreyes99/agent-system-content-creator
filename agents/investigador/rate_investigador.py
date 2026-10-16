@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Califica a mano los temas del Investigador con la rúbrica (rubrica_investigador.md).
+"""Califica a mano los temas del Investigador con la rúbrica (investigador_rubric.md).
 
 Uso (desde agents_dopa_final_project/):
   # una corrida suelta
@@ -97,7 +97,7 @@ def main() -> None:
     if len(items) > args.sample:
         items = random.Random(args.seed).sample(items, args.sample)
 
-    print(f"Vas a calificar {len(items)} temas. Rúbrica: agents/investigador/rubrica_investigador.md\n")
+    print(f"Vas a calificar {len(items)} temas. Rúbrica: agents/investigador/investigador_rubric.md\n")
     rows = []
     for n, item in enumerate(items, start=1):
         h, src = item["hallazgo"], item["source"]
@@ -107,7 +107,12 @@ def main() -> None:
         print(f"\n  TEMA: {h.get('tema', '')}")
         if h.get("que_dice_la_fuente"):
             print(f"  DICE QUE LA FUENTE DICE: {h['que_dice_la_fuente']}")
-        print(f"  PARA DOPA: {h.get('relevancia_dopa', '')}")
+        if h.get("responde_a"):
+            print(f"  RESPONDE A: {h['responde_a']}")
+        else:
+            print(f"  PARA DOPA: {h.get('relevancia_dopa', '')}")
+        if "tipo_fuente" in h:
+            print(f"  TIPO DE FUENTE: {h['tipo_fuente']}{'' if h.get('contenido_suficiente', True) else ' (poco contenido)'}")
         print(f"\n  FUENTE: {h.get('fuente', '')}")
         if src:
             print(f"  TÍTULO REAL: {src.get('title', '')}")

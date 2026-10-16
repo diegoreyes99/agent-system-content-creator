@@ -33,6 +33,11 @@ def extract_json(raw_text: str) -> dict:
 # recomendados para que Dani elija, y los formatos los decide el Estratega.
 LEGACY_VERSIONS = {"v1", "v2", "v3", "v4", "v5"}
 V6_HALLAZGO_KEYS = {"id", "tema", "que_dice_la_fuente", "fuente", "relevancia_dopa", "prioridad", "recomendado"}
+# v7: relevancia_dopa pasa a responde_a (a qué parte del brief responde; ya no
+# cómo usarlo, eso es trabajo del Estratega).
+V7_HALLAZGO_KEYS = (V6_HALLAZGO_KEYS - {"relevancia_dopa"}) | {"responde_a"}
+# Desde v7, el código revisa cada fuente contra lo que regresó la búsqueda.
+VERSIONS_WITH_SOURCE_RULES_EXCLUDED = LEGACY_VERSIONS | {"v6"}
 MAX_RECOMENDADOS = 5
 
 
@@ -63,7 +68,7 @@ def validate(output: dict, prompt_version: str = "v1") -> list[str]:
         if not isinstance(h, dict):
             errors.append(f"hallazgos[{i}] no es un objeto")
             continue
-        required = REQUIRED_HALLAZGO_KEYS if legacy else V6_HALLAZGO_KEYS
+        required = REQUIRED_HALLAZGO_KEYS if legacy else (V6_HALLAZGO_KEYS if prompt_version == "v6" else V7_HALLAZGO_KEYS)
         missing = required - set(h)
         if missing:
             errors.append(f"hallazgos[{i}] le faltan {sorted(missing)}")
@@ -71,7 +76,7 @@ def validate(output: dict, prompt_version: str = "v1") -> list[str]:
             if h.get("formato_sugerido") not in ALLOWED_FORMATOS:
                 errors.append(f"hallazgos[{i}].formato_sugerido='{h.get('formato_sugerido')}' fuera del esquema")
         else:
-            extra_keys = set(h) - V6_HALLAZGO_KEYS
+            extra_keys = set(h) - required
             if extra_keys:
                 errors.append(f"hallazgos[{i}] tiene campos fuera del esquema: {sorted(extra_keys)}")
             if not isinstance(h.get("recomendado"), bool):
@@ -180,4 +185,69 @@ def quality_metrics(hallazgos: list[dict], calls: list[dict], returned_urls: set
         "prioridad_sin_variacion": 1.0 if len(hallazgos) >= 2 and len(prioridades) == 1 else 0.0,
         "n_temas_copia_busqueda": float(sum(1 for h in hallazgos if copies_query(str(h.get("tema", ""))))),
     }
+
+
+def apply_source_rules(output: dict | None, trace: list[dict], prompt_version: str) -> list[dict]:
+    """Regla en código (desde v7): un tema con fuente de red social o con poco
+    contenido nunca llega a Dani como recomendado, aunque el modelo lo haya
+    marcado así. Además anota en cada tema el tipo de fuente y si tiene
+    contenido suficiente, tomados de lo que regresó la búsqueda (no del modelo).
+
+    Modifica `output` en su lugar y regresa la lista de correcciones (cada una
+    con id, tema, fuente y motivo), para dejar registro de cada vez que el
+    modelo se equivocó. Se llama después de validar el esquema, porque agrega campos.
+    """
+    if output is None or prompt_version in VERSIONS_WITH_SOURCE_RULES_EXCLUDED:
+        return []
+    by_url = {}
+    for t in trace:
+        for r in (t.get("response") or {}).get("results", []) or []:
+            by_url.setdefault(str(r.get("url", "")).strip(), r)
+    corrections: list[dict] = []
+    for h in output.get("hallazgos") or []:
+        if not isinstance(h, dict):
+            continue
+        source = by_url.get(str(h.get("fuente", "")).strip())
+        h["tipo_fuente"] = source.get("tipo_fuente", "web") if source else "no_verificada"
+        h["contenido_suficiente"] = bool(source.get("contenido_suficiente", True)) if source else False
+        reasons = []
+        if h["tipo_fuente"] == "no_verificada":
+            reasons.append("fuente no verificada: la URL no salió de ninguna búsqueda")
+        elif h["tipo_fuente"] == "red_social":
+            reasons.append("fuente de red social")
+        if h["tipo_fuente"] != "no_verificada" and not h["contenido_suficiente"]:
+            reasons.append("fuente con poco contenido")
+        if reasons and h.get("recomendado") is True:
+            h["recomendado"] = False
+            corrections.append({"id": h.get("id"), "tema": h.get("tema", ""), "fuente": h.get("fuente", ""),
+                                "motivo": "recomendado con " + " y ".join(reasons) + "; se quitó la recomendación"})
+    return corrections
+
+
+ERROR_LOG_FIELDS = ["fecha", "origen", "carpeta", "prompt_version", "modelo", "brief",
+                    "tipo", "tema_id", "tema", "fuente", "detalle"]
+
+
+def append_error_log(log_path, context: dict, errors: list[str], corrections: list[dict]) -> int:
+    """Agrega a la bitácora acumulada (CSV) cada error del modelo en una corrida:
+    errores de esquema y correcciones de fuente. Regresa cuántas filas agregó."""
+    import csv
+    from datetime import datetime
+    from pathlib import Path
+
+    rows = [{"tipo": "esquema", "detalle": e} for e in errors]
+    rows += [{"tipo": "fuente", "tema_id": c.get("id"), "tema": c.get("tema"), "fuente": c.get("fuente"),
+              "detalle": c.get("motivo")} for c in corrections]
+    if not rows:
+        return 0
+    log_path = Path(log_path)
+    new_file = not log_path.exists()
+    with log_path.open("a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=ERROR_LOG_FIELDS)
+        if new_file:
+            writer.writeheader()
+        stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+        for r in rows:
+            writer.writerow({**{k: "" for k in ERROR_LOG_FIELDS}, "fecha": stamp, **context, **r})
+    return len(rows)
 

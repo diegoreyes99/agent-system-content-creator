@@ -1,0 +1,32 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Cómo regresar al entrenamiento después de varias semanas sin ir al gimnasio?",
+      "que_dice_la_fuente": "Lo primero es asumir que el punto de partida ha cambiado. Antes de retomar, es importante evaluar cómo responde el cuerpo hoy, especialmente a nivel articular, cardiovascular y de control del movimiento.",
+      "fuente": "https://www.glamour.es/articulos/como-retomar-el-entrenamiento-despues-de-meses-de-paron",
+      "relevancia_dopa": "Apoya la prioridad principal del mes de retener socios que dejaron de venir, al ofrecer una guía práctica para regresar sin lastimarse. Es relevante para Ana y Rosa, quienes buscan eficiencia y movilidad, y para quienes sienten que perdieron condición.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Qué hacer para evitar lesiones al regresar al entrenamiento tras un descanso?",
+      "que_dice_la_fuente": "Especialistas advierten sobre tendinopatías, sobrecargas y dolores lumbares por mala técnica, exceso de peso o falta de calentamiento.",
+      "fuente": "https://www.facebook.com/vanguardiacolombia/posts/volver-a-entrenar-despu%C3%A9s-de-a%C3%B1os-de-inactividad-no-significa-empezar-con-las-mi/1403596471747854",
+      "relevancia_dopa": "Apoya la prioridad principal al abordar el riesgo de lesiones, que es una objeción común de socios que no regresan. Es útil para ambos perfiles, especialmente Rosa, que busca movilidad y atención cercana.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 3,
+      "tema": "¿Qué beneficios obtienes al retomar el entrenamiento tras un descanso prolongado?",
+      "que_dice_la_fuente": "Si llevas varios días o semanas sin entrenar, tu cuerpo perdió capacidad de recuperación y regresar a entrenar demasiado intenso y con mucho volumen de entrenamiento solo hará que tengas exceso de dolor y que se dañe el resto de tu semana de entrenamientos.",
+      "fuente": "https://www.instagram.com/reel/DW2ZpUqDKeD?hl=en",
+      "relevancia_dopa": "Apoya la prioridad secundaria de motivar a socios a regresar con el Cosmic Run, al destacar los beneficios de retomar el entrenamiento sin excederse. También es útil para Ana, que busca eficiencia.",
+      "prioridad": "media",
+      "recomendado": true
+    }
+  ],
+  "resumen_ejecutivo": "Se encontraron tres temas relevantes que abordan cómo regresar al entrenamiento tras un descanso, con enfoque en evitar lesiones y recuperar la condición sin sobrecargar el cuerpo. Ningún tema fue excluido por ser promociones de otros gimnasios. Las fuentes incluyen artículos de prestigiosas marcas y redes sociales, lo que respalda la utilidad de los temas para el público de DOPA."
+}

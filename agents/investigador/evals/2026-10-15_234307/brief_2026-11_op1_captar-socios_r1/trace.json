@@ -1,0 +1,118 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de entrenar en grupo para principiantes",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo empezar en Hyrox sin experiencia",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "dónde está la entrada del gimnasio Narvarte Poniente",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Beneficios del ejercicio grupal",
+            "url": "https://eurofitness.com/es/beneficios-del-ejercicio-grupal",
+            "snippet": "Quizás el beneficio más subestimado de hacer ejercicio en grupo es el impacto en tu salud mental. El ejercicio ya libera endorfinas, pero añadir el componente",
+            "published": "",
+            "relevance": 0.61
+          },
+          {
+            "title": "9 beneficios del ejercicio en grupo",
+            "url": "https://chuzefitness.com/es/blog/9-benefits-of-group-exercise",
+            "snippet": "# 5 El ejercicio grupal puede garantizar la forma adecuada · Manos ligeramente fuera del ancho de los hombros · Curva neutra en la espalda baja · Núcleo",
+            "published": "",
+            "relevance": 0.58
+          },
+          {
+            "title": "Entrenamiento de fitnes en grupo: ¿Qué lo hace diferente ...",
+            "url": "https://www.crunch.com/es/thehub/entrenamiento-de-fitnes-en-grupo-que-lo-hace-diferente-de-los-entrenamientos-individuales",
+            "snippet": "Ejercitarse en un entorno grupal fomenta un sentido de camaradería y apoyo mutuo. Las personas suelen motivarse entre sí para esforzarse más y",
+            "published": "",
+            "relevance": 0.47
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de entrenar en grupo para principiantes",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "cómo empezar en Hyrox sin experiencia",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.155,
+          0.149,
+          0.035
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "¡EL GYM DONDE SÍ QUIERES ENTRENAR!  SPASIO ...",
+            "url": "https://www.facebook.com/SpasioSport/videos/-el-gym-donde-s%C3%AD-quieres-entrenar-spasio-fitness-narvartesigues-pagando-gyms-car/2059552654684704",
+            "snippet": "Pedro Romero de Terreros 1203, Narvarte Poniente Benito Juárez, CDMX ENTRENA CON GUSTO. ENTRENA CON PASIÓN. EL RESULTADO ES INEVITABLE",
+            "published": "",
+            "relevance": 0.63
+          },
+          {
+            "title": "XPORTSFIT. abierto los 365 días del año Lunes a Viernes 5 ...",
+            "url": "https://www.instagram.com/reel/DT9HZt0CfaA",
+            "snippet": "Pedro Romero de Terreros 1203, Col. Narvarte Poniente, Benito Juárez 56 2019 4784 WhatsApp: https://wa.me/525620194784. Ven a",
+            "published": "",
+            "relevance": 0.56
+          },
+          {
+            "title": "Gimnasio Pancho Rosales: Boxeo y Muay Thai en Narvarte y ...",
+            "url": "https://www.tiktok.com/@panchorosalesmx/video/7535997004011310343",
+            "snippet": "Aquí puedes entrenar box, Muay Thai y MMA. * **Sucursal Coapa:** En la Calle Escuela 4513, Coapa, Potrero de Acoxpa, Tlalpan. En esta ubicación",
+            "published": "",
+            "relevance": 0.43
+          }
+        ],
+        "backend": "tavily",
+        "query": "dónde está la entrada del gimnasio Narvarte Poniente",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    }
+  ],
+  "latency_s": 206.41117045801366,
+  "prompt_tokens": 9508,
+  "completion_tokens": 699
+}

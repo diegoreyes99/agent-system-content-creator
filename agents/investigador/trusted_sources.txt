@@ -1,0 +1,42 @@
+# Fuentes confiables para el Investigador (herramienta v3).
+#
+# Un dominio por línea. Los resultados de estos sitios se marcan como
+# "certificada" y van primero en la lista que ve el modelo. Las líneas que
+# empiezan con un punto aplican a todo lo que termine así (".edu" incluye
+# cualquier universidad .edu). Lo que empieza con # es comentario.
+#
+# Versión inicial para que Diego y Dani la corrijan: agregar o quitar sitios
+# según su criterio profesional.
+
+# Salud pública e instituciones médicas
+who.int
+paho.org
+.gob.mx
+.gov
+mayoclinic.org
+clevelandclinic.org
+medlineplus.gov
+health.harvard.edu
+hopkinsmedicine.org
+cun.es
+fundaciondelcorazon.com
+
+# Universidades
+.edu
+.edu.mx
+.unam.mx
+
+# Asociaciones profesionales de ejercicio
+acsm.org
+nsca.com
+acefitness.org
+pilatesmethodalliance.org
+
+# Organizaciones oficiales de las competencias que trabaja DOPA
+hyrox.com
+spartan.com
+
+# Blogs interesantes. Revisar con calma
+fisiologiadelejercicio.com/blog
+https://www.trainheroic.com/blog/
+https://www.nasm.org/resource-center/blogs

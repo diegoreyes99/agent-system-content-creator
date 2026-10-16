@@ -6,12 +6,14 @@ Primer agente real del sistema. Corre solo, fuera del baseline. Spec:
 | Archivo | Qué es |
 |---|---|
 | `agent.py` | El `Agent()` de ADK: prompt `prompts/investigador_<versión>.md` como `instruction`, herramienta `search_web` y guardrail `before_tool_callback` |
-| `tools.py` | `search_web` con búsqueda real en **Tavily** (default) o **stub** (resultados de ejemplo en `stub.invalid`, sin internet) |
+| `tools.py` | `search_web` con búsqueda real en **Tavily** (default) o **stub** (sin internet). Desde v3 clasifica cada fuente (certificada / web / red social) y marca las que tienen poco contenido |
+| `model_errors.csv` | Bitácora acumulada de cada error del modelo (de esquema y correcciones de fuente), con fecha, corrida, versión y brief. Se crea con la primera corrida que tenga errores |
+| `trusted_sources.txt` | Lista editable de dominios que cuentan como fuente certificada (instituciones de salud, universidades, asociaciones, organizaciones oficiales) |
 | `output_checks.py` | Parseo del JSON, validación contra el esquema del prompt y métricas proxy |
 | `tracking.py` | Configuración de MLflow (todo local en `agents_dopa_final_project/mlruns/`) |
 | `run_investigador.py` | Corre el agente, guarda la salida en `runs/<fecha>/` y la registra en MLflow |
 | `compare_with_baseline.py` | Pone lado a lado el baseline de Fase 1 y una corrida del agente nuevo |
-| `rubrica_investigador.md` | Rúbrica humana: relevancia, fidelidad y accionabilidad (1 a 3) y si el tema es promoción de otro negocio |
+| `investigador_rubric.md` | Rúbrica humana: relevancia, fidelidad y accionabilidad (1 a 3) y si el tema es promoción de otro negocio |
 | `rate_investigador.py` | Califica a mano una muestra de temas con la rúbrica; guarda `ratings.csv` y registra los promedios en MLflow |
 | `eval_investigador.py` | Evalúa una configuración contra el golden set (5 briefs de noviembre 2026 × 3 repeticiones) y registra promedios y variación en MLflow |
 
@@ -93,7 +95,7 @@ python agents/investigador/rate_investigador.py agents/investigador/evals/<fecha
 ```
 
 Muestra cada tema junto al texto real que regresó la búsqueda y pide tres
-calificaciones de 1 a 3 (ver `rubrica_investigador.md`). Unos 10 minutos para
+calificaciones de 1 a 3 (ver `investigador_rubric.md`). Unos 10 minutos para
 10 temas. Los promedios quedan en MLflow como `human_*` en la corrida del eval.
 
 ## 6. Abre la UI de MLflow

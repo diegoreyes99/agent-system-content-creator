@@ -1,0 +1,108 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de la membresía directa en gimnasio",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "diferencias entre membresía directa y plataformas de gimnasio",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "¿Qué incluye la membresía directa en un gimnasio boutique?",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "¿Cuál es la mejor membresía de gimnasio para ti?",
+            "url": "https://www.planetfitness.com/es/blog/articles/cual-es-la-mejor-membresia-de-gimnasio-para-ti",
+            "snippet": "Mayor motivación: Si está pagando una membresía de gimnasio, querrá usarla. · Mejor salud física: · Mejor salud mental: · Orientación profesional: · Encontrar",
+            "published": "",
+            "relevance": 0.51
+          },
+          {
+            "title": "Descuentos en gimnasios para 1199SEIU Miembros",
+            "url": "https://www.1199seiubenefits.org/es/gym-discounts",
+            "snippet": "La membresía cuesta solo $35 al mes e incluye acceso al gimnasio seis días a la semana y a todas las clases programadas como Zumba, Illuminated Spin y Yoga, así",
+            "published": "",
+            "relevance": 0.43
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de la membresía directa en gimnasio",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.274
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "diferencias entre membresía directa y plataformas de gimnasio",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.337,
+          0.312,
+          0.219
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Preguntas frecuentes de los miembros",
+            "url": "https://dhr.colorado.gov/sites/dhr/files/documents/CIG%20ActiveFit%20Direct%20Member%20FAQs%202026%20%28spanish%29.pdf",
+            "snippet": "A: Los gimnasios estándar incluyen gimnasios convencionales, mientras que los centros de ejercicio prémium incluyen centros boutique que ofrecen yoga",
+            "published": "",
+            "relevance": 0.65
+          },
+          {
+            "title": "¿Cuánto cuesta una membresía de gimnasio? Qué esperar de cada precio - Crunch",
+            "url": "https://www.crunch.com/es/thehub/cuanto-cuesta-una-membresia-de-gimnasio-que-esperar-de-cada-precio",
+            "snippet": "Por lo general, esta característica única agrega el mayor valor por el cargo adicional más pequeño: con las clases de fitnes boutique, puedes esperar pagar más de $30,00 por una sola sesión. Con las membresías de Crunch’s Peak y Peak Results, puedes obtener un mes completo de esas mismas clases por casi el mismo precio.\n\n### Privilegios de los invitados [...] Si bien es posible que esto no incluya cosas como clases grupales de fitnes o privilegios para los invitados, debería abarcar vestuarios limpios y seguros, una sesión introductoria de entrenamiento personal (como nuestro lanzamiento de Cr",
+            "published": "",
+            "relevance": 0.46
+          }
+        ],
+        "backend": "tavily",
+        "query": "¿Qué incluye la membresía directa en un gimnasio boutique?",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.263
+        ]
+      }
+    }
+  ],
+  "latency_s": 144.5857466669986,
+  "prompt_tokens": 8713,
+  "completion_tokens": 261
+}

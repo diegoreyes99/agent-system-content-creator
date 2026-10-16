@@ -1,0 +1,30 @@
+{
+  "schema_errors": [
+    "hallazgos[2].id debe ser un número entero",
+    "los id deben ir 1, 2, 3... en orden (vienen [1, 2, '3', 4, 5])"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_schema_errors": 2.0,
+    "n_hallazgos": 5.0,
+    "n_alta": 3.0,
+    "n_recomendados": 3.0,
+    "n_tendencias": 0.0,
+    "pct_fuentes_stub": 0.0,
+    "pct_fuentes_url": 1.0,
+    "n_tool_calls": 3.0,
+    "n_search_errors": 0.0,
+    "pct_fuentes_verificadas": 1.0,
+    "search_pass_rate": 1.0,
+    "avg_relevance": 0.8633333333333334,
+    "n_fuentes_repetidas": 1.0,
+    "pct_fuentes_aprovechadas": 0.5714285714285714,
+    "prioridad_sin_variacion": 0.0,
+    "n_temas_copia_busqueda": 2.0,
+    "run_failed": 0.0,
+    "latency_s": 245.82,
+    "prompt_tokens": 10349.0,
+    "completion_tokens": 1250.0
+  }
+}

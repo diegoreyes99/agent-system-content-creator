@@ -38,7 +38,7 @@ sys.path.insert(0, str(HERE))
 
 # Reutiliza todo de la corrida individual: mismo agente, misma medición.
 import run_investigador as single  # noqa: E402  (carga .env y configura LM Studio al importarse)
-from output_checks import compute_metrics, extract_json, trace_metrics, validate  # noqa: E402
+from output_checks import apply_source_rules, compute_metrics, extract_json, trace_metrics, validate  # noqa: E402
 
 GOLDEN_SET = sorted((single.PROJECT_ROOT / "baseline" / "briefs").glob("brief_2026-11_op*.md"))
 
@@ -63,7 +63,7 @@ async def run_case(brief: Path, args) -> tuple[dict, dict | None, list[str], dic
         metrics = compute_metrics(None, [error])
         metrics.update({"run_failed": 1.0, "latency_s": 0.0})
         return metrics, None, [error], {"raw": traceback.format_exc(), "trace": [], "latency_s": 0.0,
-                                         "prompt_tokens": 0, "completion_tokens": 0}
+                                         "prompt_tokens": 0, "completion_tokens": 0, "correcciones": []}
 
     try:
         output = extract_json(result["raw"])
@@ -71,9 +71,11 @@ async def run_case(brief: Path, args) -> tuple[dict, dict | None, list[str], dic
     except (ValueError, json.JSONDecodeError) as exc:
         output, errors = None, [f"JSON no parseable: {exc}"]
 
+    result["correcciones"] = apply_source_rules(output, result["trace"], args.prompt_version)
     metrics = compute_metrics(output, errors)
     metrics.update(trace_metrics(output, result["trace"]))
     metrics.update({
+        "n_recomendados_corregidos": float(len(result["correcciones"])),
         "run_failed": 0.0,
         "latency_s": round(result["latency_s"], 2),
         "prompt_tokens": float(result["prompt_tokens"]),
@@ -169,6 +171,7 @@ async def run_eval(args) -> None:
 
         n = 0
         interrupted = False
+        all_corrections: list[dict] = []
         try:
             for brief in args.briefs:
                 for rep in range(1, args.reps + 1):
@@ -178,6 +181,11 @@ async def run_eval(args) -> None:
                     metrics, output, errors, result = await run_case(brief, args)
                     case_dir = eval_dir / case
                     single.save_run(case_dir, result, output, errors, metrics)
+                    single.append_error_log(single.ERROR_LOG, {
+                        "origen": "eval", "carpeta": str(case_dir.relative_to(HERE)),
+                        "prompt_version": args.prompt_version, "modelo": config["model"], "brief": brief.name,
+                    }, errors, result["correcciones"])
+                    all_corrections += [{"case": case, **c} for c in result["correcciones"]]
 
                     with mlflow.start_run(experiment_id=experiment_id, run_name=case, nested=True) as child:
                         single.save_mlflow_run_id(case_dir, child)
@@ -191,8 +199,7 @@ async def run_eval(args) -> None:
                         f"fuentes verificadas {metrics.get('pct_fuentes_verificadas', 0):.0%} · "
                         f"esquema {'ok' if metrics['schema_valid'] else 'inválido'} · {metrics['latency_s']} s")
                     print(f"    {status}")
-                    for e in errors:
-                        print(f"    ! {e}")
+                    single.print_errors(errors, result["correcciones"], indent="    ")
                     elapsed = time.perf_counter() - started
                     remaining = elapsed / n * (total - n)
                     print(f"    llevamos {elapsed / 60:.1f} min · faltan ~{remaining / 60:.0f} min", flush=True)
@@ -208,7 +215,8 @@ async def run_eval(args) -> None:
         mlflow.log_metrics(summary)
         eval_dir.mkdir(parents=True, exist_ok=True)
         (eval_dir / "summary.json").write_text(
-            json.dumps({"config": config, "summary": summary, "runs": rows}, ensure_ascii=False, indent=2),
+            json.dumps({"config": config, "summary": summary, "runs": rows, "correcciones": all_corrections},
+                       ensure_ascii=False, indent=2),
             encoding="utf-8")
         mlflow.log_artifact(str(eval_dir / "summary.json"))
 

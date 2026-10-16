@@ -1,0 +1,131 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de Pilates para movilidad y espalda en personas mayores",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo empezar Pilates sin experiencia previa",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "temor a lastimarse en Pilates principiantes",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Pilates para mayores y beneficios para tus articulaciones",
+            "url": "https://doctorluisgallego.com/pilates-para-mayores",
+            "snippet": "Cuando fortaleces el “core” —la musculatura profunda del abdomen y la espalda— ganas estabilidad, coordinación y reflejos posturales.\n\nY eso se traduce en algo muy concreto: caminar con más seguridad.\n\n### 3. Recupera movilidad y flexibilidad\n\nHay una frase que escucho muchísimo en consulta:\n\n“Doctor, noto el cuerpo oxidado”.\n\nY es exactamente esa sensación.\n\nEl Pilates ayuda a recuperar rango de movimiento, flexibiliza músculos rígidos y mejora la movilidad de la columna y la pelvis. [...] Cómo hacerlo\n\n1. Sentado en una silla, estira una pierna con el talón apoyado.\n2. Inclina el tronco lige",
+            "published": "",
+            "relevance": 0.87
+          },
+          {
+            "title": "Los tres principales beneficios de Pilates para adultos mayores ...",
+            "url": "https://www.instagram.com/reel/C_MISUTR4LA?hl=en",
+            "snippet": "1. Pilates ayuda a estirar y fortalecer los músculos, lo que puede mejorar la movilidad y reducir la rigidez en las articulaciones. 2. Fortalece",
+            "published": "",
+            "relevance": 0.87
+          },
+          {
+            "title": "Pilates y dolor de espalda | Tu canal de salud",
+            "url": "https://www.tucanaldesalud.com/es/voz-especialista/pilates-bueno-dolor-espalda",
+            "snippet": "Este deporte se adapta a todas las edades, incluso es apto para adultos de más de 80 años, y es uno de los más populares en los gimnasios para mejorar la forma física.\n\nEl pilates es bueno para el dolor de espalda\n\nEl Método Pilates también favorece la potencia, la flexibilidad y el control sobre el tono muscular y el cuerpo en movimiento en pocas sesiones. Y, además, resulta eficaz como técnica de rehabilitación y fisioterapia, por lo que es una de las más utilizadas. [...] Espondilitis anquilopoyética. Los ejercicios de pilates favorecen la movilidad de la columna y del tórax para la respira",
+            "published": "",
+            "relevance": 0.83
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de Pilates para movilidad y espalda en personas mayores",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Pilates para principiantes: así se empieza. 🤍 8 ejercicios ...",
+            "url": "https://www.instagram.com/p/Ddl9Vq5Cden",
+            "snippet": "8 ejercicios en la esterilla para fortalecer el core y mejorar la movilidad de todo el cuerpo. Sin experiencia previa y sin material. ✨",
+            "published": "",
+            "relevance": 0.7
+          },
+          {
+            "title": "Pilates en casa: rutina sin máquina para principiantes",
+            "url": "https://www.vivagym.com/es-es/pilates-en-casa",
+            "snippet": "Para empezar en el pilates no necesitas una máquina ni un equipo caro: te basta con una esterilla y un poco de espacio. El pilates en casa es una forma",
+            "published": "",
+            "relevance": 0.68
+          },
+          {
+            "title": "¿Qué debo tener en cuenta antes de mi primera clase",
+            "url": "https://clinicasalux.com/blog/pilates/que-debo-tener-en-cuenta-antes-de-mi-primera-clase-de-pilates",
+            "snippet": "Las primeras sesiones de Pilates suelen centrarse en los fundamentos del método: respiración, alineación postural y control de los movimientos.",
+            "published": "",
+            "relevance": 0.49
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo empezar Pilates sin experiencia previa",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Miedo irracional a caerte del reformer : r/pilates",
+            "url": "https://www.reddit.com/r/pilates/comments/1jvi376/irrational_fear_of_falling_off_reformer?tl=es-419",
+            "snippet": "Si realmente es una clase para principiantes, necesitan adaptarse a tu nivel. Definitivamente te puedes lastimar en un reformer. un ejercicio",
+            "published": "",
+            "relevance": 0.73
+          },
+          {
+            "title": "Y vos? ¿Qué miedo tenías antes de arrancar Pilates? 👀",
+            "url": "https://www.instagram.com/reel/DbjiwL8hKVE",
+            "snippet": "Hay personas que vienen a Pilates pensando que solamente van a estirar y despus pasan las semanas y comienza algo completamente distinto.",
+            "published": "",
+            "relevance": 0.42
+          }
+        ],
+        "backend": "tavily",
+        "query": "temor a lastimarse en Pilates principiantes",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.202
+        ]
+      }
+    }
+  ],
+  "latency_s": 179.11538775003282,
+  "prompt_tokens": 9041,
+  "completion_tokens": 787
+}

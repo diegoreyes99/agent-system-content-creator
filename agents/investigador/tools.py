@@ -21,13 +21,18 @@ y el formato de respuesta son los mismos con cualquier backend.
 from __future__ import annotations
 
 import os
+from pathlib import Path
+from urllib.parse import urlparse
 
 # Versión del contrato/comportamiento de la herramienta. Se registra en MLflow
 # (Clase 4: tools v1 → v2 es un experimento propio, igual que prompt v1 → v2).
 #   v1: resultados de Tavily tal cual.
 #   v2: descarta resultados con puntaje de relevancia bajo y le pasa el
 #       puntaje al modelo (corrida 2026-10-12: 8 de 15 resultados eran ruido).
-TOOLS_VERSION = "v2"
+#   v3: clasifica cada resultado por su dominio (certificada / web / red social,
+#       según trusted_sources.txt), marca si tiene contenido suficiente y
+#       ordena primero las certificadas (calificación humana del v6, 2026-10-15).
+TOOLS_VERSION = "v3"
 
 VALID_BACKENDS = {"tavily", "stub"}
 DEFAULT_BACKEND = "tavily"
@@ -35,6 +40,43 @@ SNIPPET_MAX_CHARS = 600  # el modelo local es de 4B: resultados cortos para no l
 # Puntaje mínimo de relevancia de Tavily (0 a 1) para pasarle un resultado al
 # modelo. Valor inicial: se calibra con los puntajes que quedan en trace.json.
 DEFAULT_MIN_SCORE = 0.4
+
+
+# Menos de esto (en caracteres) = la fuente casi no tiene contenido que respalde
+# un tema; típico de publicaciones de redes con solo un texto corto.
+MIN_CONTENT_CHARS = 250
+SOCIAL_DOMAINS = ("instagram.com", "facebook.com", "tiktok.com", "youtube.com", "x.com",
+                  "twitter.com", "threads.net", "linkedin.com", "pinterest.com")
+TRUSTED_SOURCES_FILE = Path(__file__).resolve().parent / "trusted_sources.txt"
+_TYPE_ORDER = {"certificada": 0, "web": 1, "red_social": 2}
+
+
+def _trusted_domains() -> list[str]:
+    if not TRUSTED_SOURCES_FILE.exists():
+        return []
+    lines = TRUSTED_SOURCES_FILE.read_text(encoding="utf-8").splitlines()
+    return [l.strip().lower() for l in lines if l.strip() and not l.strip().startswith("#")]
+
+
+def _domain_matches(host: str, entry: str) -> bool:
+    if entry.startswith("."):
+        return host.endswith(entry)
+    return host == entry or host.endswith("." + entry)
+
+
+def classify_source(url: str) -> str:
+    """certificada (lista de fuentes confiables), red_social o web. Solo por dominio."""
+    host = (urlparse(url).hostname or "").lower()
+    if any(_domain_matches(host, d) for d in _trusted_domains()):
+        return "certificada"
+    if any(_domain_matches(host, d) for d in SOCIAL_DOMAINS):
+        return "red_social"
+    return "web"
+
+
+def describe_result(url: str, content: str) -> dict:
+    return {"tipo_fuente": classify_source(url),
+            "contenido_suficiente": len((content or "").strip()) >= MIN_CONTENT_CHARS}
 
 
 def get_min_score() -> float:
@@ -62,8 +104,11 @@ def search_web(query: str, max_results: int = 5) -> dict:
 
     Returns:
         Un dict con "status" ("success" o "error"), "backend" y "results":
-        una lista de resultados con "title", "url", "snippet", "published"
-        y "relevance" (0 a 1; solo llegan los relevantes).
+        una lista de resultados con "title", "url", "snippet", "published",
+        "relevance" (0 a 1; solo llegan los relevantes), "tipo_fuente"
+        ("certificada", "web" o "red_social") y "contenido_suficiente"
+        (false si la fuente casi no tiene texto). Vienen ordenados: primero
+        las fuentes certificadas.
         Si hay error, incluye "error_code" en vez de "results".
     """
     backend = get_backend()
@@ -73,7 +118,8 @@ def search_web(query: str, max_results: int = 5) -> dict:
     max_results = max(1, min(int(max_results), 10))
 
     if backend == "stub":
-        return {"status": "success", "backend": backend, "query": query, "results": _STUB_RESULTS[:max_results]}
+        results = [{**r, **describe_result(r["url"], r["snippet"])} for r in _STUB_RESULTS[:max_results]]
+        return {"status": "success", "backend": backend, "query": query, "results": results}
     return _search_tavily(query, max_results)
 
 
@@ -115,9 +161,13 @@ def _search_tavily(query: str, max_results: int) -> dict:
             "snippet": (r.get("content") or "")[:SNIPPET_MAX_CHARS],
             "published": r.get("published_date", ""),
             "relevance": round(r.get("score") or 0, 2),
+            **describe_result(r.get("url", ""), r.get("content") or ""),
         }
         for r in relevant
     ]
+    # Primero las fuentes certificadas, luego web, al final redes sociales;
+    # dentro de cada grupo, por relevancia.
+    results.sort(key=lambda x: (_TYPE_ORDER[x["tipo_fuente"]], -x["relevance"]))
     base = {"backend": "tavily", "query": query, "min_score": min_score,
             "discarded": len(discarded_scores), "discarded_scores": discarded_scores}
     if not results:

@@ -1,0 +1,6 @@
+```json
+{
+  "hallazgos": [],
+  "resumen_ejecutivo": "No se encontraron temas relevantes que apoyen la prioridad principal del mes (convertir usuarios de TotalPass/Fitpass a membresía directa). Las búsquedas sobre beneficios de la membresía directa y diferencias con plataformas no generaron resultados útiles, y los temas sobre lo que incluye la membresía directa en un gimnasio boutique no aportaron información específica ni general suficiente para DOPA. La búsqueda sobre diferencias entre membresía directa y plataformas no tuvo resultados relevantes."
+}
+```
