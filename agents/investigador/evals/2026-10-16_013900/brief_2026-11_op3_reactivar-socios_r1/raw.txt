@@ -1,0 +1,34 @@
+```json
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Cómo regresar al entrenamiento tras una pausa sin lesionarte?",
+      "que_dice_la_fuente": "No restringir calorías agresivamente al mismo tiempo que retomas el entrenamiento. Intentar perder peso y readaptarse a la vez ralentiza los dos procesos. Prioriza la readaptación las primeras cuatro semanas; el déficit calórico puede venir después.",
+      "fuente": "https://www.vivagym.com/es-es/como-volver-al-gimnasio",
+      "responde_a": "Prioridad del mes: Retener socios actuales o reactivar a los que dejaron de venir. Público: Ana y Rosa, que sienten que 'perdieron condición' y les da pena regresar.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Qué beneficios ofrece entrenar con un entrenador personal?",
+      "que_dice_la_fuente": "Trabajar con entrenadores personales certificados puede brindarte muchos beneficios adicionales. Esto se debe a que estas personas están especializadas en desarrollar e implementar programas de ejercicios desafiantes y altamente efectivos para sus clientes.",
+      "fuente": "https://www.crunch.com/es/thehub/4-beneficios-de-los-programas-de-entrenamiento-personal",
+      "responde_a": "Prioridad del mes: Retener socios actuales o reactivar a los que dejaron de venir. Público: Ana y Rosa, que sienten que 'perdieron condición' y les da pena regresar.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 3,
+      "tema": "¿Qué dudas surgen al regresar al entrenamiento tras una pausa?",
+      "que_dice_la_fuente": "Volver a entrenar después de un tiempo puede generar muchas dudas: ¿por dónde empiezo?, ¿cuánto debería hacer?, ¿será suficiente?",
+      "fuente": "https://www.instagram.com/p/Dcy4tPUnZoI",
+      "responde_a": "Voz de la comunidad: 'Ya dejé de ir varias semanas, perdí condición y me da pena regresar.'",
+      "prioridad": "media",
+      "recomendado": false
+    }
+  ],
+  "resumen_ejecutivo": "Se encontraron tres temas relevantes. El primero y segundo son de fuente web y responden directamente a la prioridad del mes y al público. El tercero es una red social que refleja la duda común de la comunidad, pero no es recomendado por su fuente. No se encontró información sobre cambios de horario en días festivos, como se solicitó en el brief."
+}
+```

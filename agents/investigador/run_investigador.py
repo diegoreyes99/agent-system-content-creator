@@ -129,8 +129,9 @@ async def run_agent(brief_text: str, prompt_version: str, temperature: float | N
 
     if not final_text.strip():
         raise RuntimeError(
-            "El Investigador no devolvió texto. Revisa que LM Studio esté corriendo y que "
-            f"LM_STUDIO_MODEL_ID='{investigador.model_id()}' sea el id exacto del modelo cargado."
+            f"El Investigador no devolvió texto (modelo {investigador.model_id()}, proveedor {investigador.provider()}). "
+            "Con el modelo local, revisa que LM Studio esté corriendo y que LM_STUDIO_MODEL_ID sea el id exacto; "
+            "con Gemini, revisa GOOGLE_API_KEY."
         )
 
     return {
@@ -181,6 +182,7 @@ def log_to_mlflow(args, run_id: str, run_dir: Path, metrics: dict, temperature) 
             "prompt_version": args.prompt_version,
             "trigger_version": args.trigger,
             "model": investigador.model_id(),
+            "model_provider": investigador.provider(),
             "temperature": "default" if temperature is None else temperature,
             "search_backend": tools.get_backend(),
             "tools_version": tools.TOOLS_VERSION,
@@ -336,12 +338,18 @@ def main() -> None:
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--trigger", choices=sorted(TRIGGERS), default="t1",
                         help="Versión del mensaje de arranque (ver TRIGGERS)")
+    parser.add_argument("--model", choices=sorted(investigador.VALID_PROVIDERS), default=None,
+                        help="local (LM Studio, default) or gemini (Gemini API, needs GOOGLE_API_KEY)")
     parser.add_argument("--search-backend", choices=sorted(tools.VALID_BACKENDS), default=None)
     parser.add_argument("--sin-aprobacion", action="store_true",
                         help="No pedir la selección de Dani al final (para pruebas)")
     parser.add_argument("--no-mlflow", action="store_true")
     args = parser.parse_args()
 
+    if args.model:
+        os.environ["MODEL_PROVIDER"] = args.model
+    if investigador.provider() == "gemini" and not os.environ.get("GOOGLE_API_KEY"):
+        sys.exit("Missing GOOGLE_API_KEY. Add it to agents/investigador/.env (get one at https://aistudio.google.com).")
     if args.search_backend:
         os.environ["SEARCH_BACKEND"] = args.search_backend
     if tools.get_backend() == "tavily" and not os.environ.get("TAVILY_API_KEY"):

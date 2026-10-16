@@ -1,0 +1,55 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Qué es Deka y cómo se diferencia de Hyrox?",
+      "que_dice_la_fuente": "HYROX y DEKA son las dos grandes competiciones de fitness racing del mundo. Ambas combinan carrera con estaciones funcionales en un formato indoor, pero tienen diferencias clave en formato, estaciones, dificultad y filosofía.",
+      "fuente": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+      "responde_a": "Prioridad secundaria: explicar qué es Deka y en qué se diferencia de Hyrox antes de promocionar el simulacro.",
+      "prioridad": "alta",
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Por qué Deka es más accesible que Hyrox para principiantes?",
+      "que_dice_la_fuente": "DEKA FIT es más accesible para principiantes. HYROX es más duro en running y tiene estaciones con más peso.",
+      "fuente": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+      "responde_a": "Objeción o miedo principal de la comunidad: 'Deka es solo para atletas; yo no estoy a ese nivel.'",
+      "prioridad": "alta",
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 3,
+      "tema": "¿Qué diferencia hay entre Deka y Hyrox en el formato de carrera?",
+      "que_dice_la_fuente": "HYROX tiene 8 km de carrera; DEKA FIT tiene 5 km, lo que lo hace más accesible para principiantes.",
+      "fuente": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+      "responde_a": "Objeción o miedo principal de la comunidad: 'Deka es solo para atletas; yo no estoy a ese nivel.'",
+      "prioridad": "alta",
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 4,
+      "tema": "¿Qué diferencia hay entre Deka y Hyrox en el tipo de entrenamiento funcional?",
+      "que_dice_la_fuente": "HYROX es más exigente en running y tiene estaciones con más peso; DEKA FIT es más variado en ejercicios y tiene menos carga.",
+      "fuente": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+      "responde_a": "Objeción o miedo principal de la comunidad: 'Deka es solo para atletas; yo no estoy a ese nivel.'",
+      "prioridad": "alta",
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 5,
+      "tema": "¿Qué diferencia hay entre Deka y Hyrox en el tipo de estaciones?",
+      "que_dice_la_fuente": "HYROX usa una sandbag para sus 100 m de salto; DEKA usa un weighted RAM roller y una dead ball para sus estaciones.",
+      "fuente": "https://thebattlebunker.com/blogs/logbook/deka-vs-hyrox",
+      "responde_a": "Objeción o miedo principal de la comunidad: 'Deka es solo para atletas; yo no estoy a ese nivel.'",
+      "prioridad": "alta",
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    }
+  ],
+  "resumen_ejecutivo": "Se encontraron múltiples fuentes que explican las diferencias clave entre Deka y Hyrox, enfocándose en su formato, intensidad y accesibilidad para principiantes. No se encontraron resultados relevantes sobre '¿Deka es solo para atletas? explicación para principiantes'."
+}

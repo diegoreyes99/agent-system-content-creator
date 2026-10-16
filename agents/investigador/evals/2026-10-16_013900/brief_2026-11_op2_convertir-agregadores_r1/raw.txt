@@ -1,0 +1,6 @@
+```json
+{
+  "hallazgos": [],
+  "resumen_ejecutivo": "No se encontraron temas relevantes con información general y confiable sobre las diferencias entre membresía directa y plataformas de entrenamiento. Las búsquedas generaron resultados con poca o nula información útil, y no se encontraron fuentes certificadas con contenido suficiente. Los temas propuestos no cumplen con el criterio de tener información general y no promocionan a otros gimnasios."
+}
+```

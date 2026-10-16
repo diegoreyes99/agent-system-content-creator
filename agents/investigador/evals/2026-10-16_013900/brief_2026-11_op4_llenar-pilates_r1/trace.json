@@ -1,0 +1,147 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de Pilates para movilidad y espalda en mujeres de 45 a 55 años",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "¿Qué necesita un principiante para empezar Pilates?",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "¿Por qué temen las mujeres de 45 a 55 años que el Pilates sea intenso?",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Pilates en mujeres de más de 50 años",
+            "url": "https://pilatesconsciente.com/pilates-en-las-mujeres-de-mas-de-50",
+            "snippet": "0 Comentarios\n\nEl Pilates beneficia a mujeres mayores de 50, equilibrando cambios hormonales y fortaleciendo el cuerpo. Mejora la movilidad, combate el envejecimiento y promueve la salud física y mental. Los ejercicios suaves y controlados de Pilates Consciente transforman el bienestar, ofreciendo una práctica adaptada para mantenerse activa, fuerte y saludable, con beneficios que se notan en la vida diaria. [...] 1. Fortalecimiento del core: El Pilates se centra en fortalecer los músculos del core, que incluyen el abdomen, la espalda baja y el suelo pélvico. Un core fuerte es fundamental para",
+            "published": "",
+            "relevance": 0.88,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Beneficios de practicar pilates para mejorar tu salud",
+            "url": "https://www.aarp.org/espanol/salud/vida-saludable/info-2024/beneficios-pilates-cuerpo-mente.html",
+            "snippet": "El dolor de espalda ocurre en personas de todas las edades, pero puede causar problemas más significativos a medida que envejecemos. El pilates ayuda a aliviar el dolor de espalda a través del fortalecimiento del torso, una mayor flexibilidad y una mejor postura y alineación de la columna vertebral. [...] Una revisión sistemática del 2022 sobre pilates entre adultos mayores detalló los beneficios, los cuales incluyeron desarrollar la fuerza de las extremidades inferiores, aumentar la estabilidad del tronco, prevenir caídas, mejorar el sueño y ayudar al bienestar emocional.\n\nEstas son seis razo",
+            "published": "",
+            "relevance": 0.76,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Pilates en la tercera edad: el mejor aliado",
+            "url": "https://www.institutoclavel.com/es/blog/pilates-en-la-tercera-edad",
+            "snippet": "Mejor equilibrio y prevención de caídas: mejora la estabilidad al caminar y reduce el miedo a caerse, uno de los factores que más afecta la independencia en la edad avanzada.\n Más fuerza y movilidad: incrementa la fuerza muscular en piernas y brazos, facilitando actividades cotidianas como subir escaleras, levantarse o cargar objetos.\n Mayor capacidad aeróbica y resistencia: mejora la función cardiorrespiratoria, aportando más energía para el día a día. [...] Flexibilidad y postura: ayuda a mantener la movilidad articular y una correcta alineación corporal, aliviando molestias musculares y art",
+            "published": "",
+            "relevance": 0.62,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de Pilates para movilidad y espalda en mujeres de 45 a 55 años",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Pilates para principiantes: guía para empezar | Polestar",
+            "url": "https://www.cursosdepilates.com/blog/pilates-para-principiantes-guia-definitiva-para-iniciarte-en-pilates",
+            "snippet": "Para empezar a practicar Pilates en casa, necesitas una colchoneta o mat, ropa cómoda que permita movimientos libres y, opcionalmente, pequeños accesorios como bandas de resistencia o pelotas. Estos materiales ayudan a aumentar la variabilidad del entrenamiento.\n\nPara ayudarte en este proceso, tenemos una pequeña guía sobre cómo preparar Pilates en casa para principiantes, para que así te sientas seguro en tus primeras rutinas. [...] Empezar Pilates tiene muchas ventajas claras para cualquier principiante. Entre las más destacadas están la mejora de la postura y la alineación corporal, el aume",
+            "published": "",
+            "relevance": 0.91,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "¿Qué debo tener en cuenta antes de mi primera clase | Clínica Salux",
+            "url": "https://clinicasalux.com/blog/pilates/que-debo-tener-en-cuenta-antes-de-mi-primera-clase-de-pilates",
+            "snippet": "💡 Consejo: si sientes que te cuesta coordinar movimiento y respiración al principio, céntrate primero en mantener el ritmo natural. Con el tiempo, esa sincronía se volverá automática.\n\n### Errores comunes de los principiantes\n\nComenzar Pilates es sencillo, pero hay algunos errores típicos que conviene evitar para progresar con seguridad: [...] La respiración es el motor del Pilates. Cada inhalación y exhalación guían el movimiento y ayudan a mantener la conexión entre mente y cuerpo.  \nEl error más común de los principiantes es contener la respiración mientras se concentran en la postura o el ",
+            "published": "",
+            "relevance": 0.76,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "DAY 1 | PILATES FOR BEGINNERS. Pilates Initiation Challenge [18']",
+            "url": "https://www.youtube.com/watch?v=tzK-MaaXWPY",
+            "snippet": "With this challenge, I want you to acquire all the tools you need to consistently incorporate this practice into your daily routine.\n\nWe'll start at a beginner level and gradually progress in breath control, posture, strength, and mobility.\n\nNOT SURE IF IT'S FOR YOU?\n\nIt's for you whether you've never practiced Pilates before, haven't practiced in a while, or only practice sporadically.\n\nWhat's truly important is that you want to introduce and maintain Pilates as a habit in your life. [...] [0:24] flexibilidad y trabajar Nuestra fuerza protegiendo siempre nuestro suelo pélvico y fortaleciendo ",
+            "published": "",
+            "relevance": 0.75,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "¿Qué necesita un principiante para empezar Pilates?",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Pilates en mujeres de más de 50 años",
+            "url": "https://pilatesconsciente.com/pilates-en-las-mujeres-de-mas-de-50",
+            "snippet": "2. Mejora de la densidad ósea: si bien no es tan intenso como el entrenamiento de fuerza con pesas, el Pilates sí implica ejercicios de resistencia que pueden ayudar a estimular la formación de hueso nuevo y prevenir la pérdida de densidad ósea. Esto es crucial para reducir el riesgo de osteoporosis, una preocupación común para las mujeres mayores de 50 años. [...] 3. Flexibilidad y equilibrio: El Pilates incluye ejercicios que mejoran la flexibilidad y el equilibrio, dos aspectos que tienden a disminuir con la edad. Mantener la flexibilidad es importante para prevenir lesiones y mantener la m",
+            "published": "",
+            "relevance": 0.81,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Pilates y menopausia: guía completa para entrenar en esta etapa | Blog · Lagar Studio",
+            "url": "https://lagarstudio.es/pilates-menopausia",
+            "snippet": "El pilates en menopausia es una forma de ejercicio de fuerza, control y movilidad que ayuda a mujeres en perimenopausia y menopausia a frenar la pérdida de masa ósea, conservar masa muscular, sostener el suelo pélvico y gestionar la energía cuando las hormonas dejan de jugar a su favor. No es magia ni sustituye al criterio médico, pero bien aplicado es una de las herramientas más prácticas que tiene una mujer entre los 45 y los 60 años para vivir esta etapa con cuerpo y cabeza. En Lagar Studio [...] El cuerpo, frente a este reajuste hormonal, responde con cambios que cualquier mujer de esta ed",
+            "published": "",
+            "relevance": 0.58,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "¿Por qué temen las mujeres de 45 a 55 años que el Pilates sea intenso?",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.295
+        ]
+      }
+    }
+  ],
+  "latency_s": 220.19191595801385,
+  "prompt_tokens": 10739,
+  "completion_tokens": 780
+}

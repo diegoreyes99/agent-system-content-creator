@@ -1,0 +1,17 @@
+fecha,origen,carpeta,prompt_version,modelo,brief,tipo,tema_id,tema,fuente,detalle
+2026-10-15 19:51,eval,evals/2026-10-16_013900/brief_2026-11_op4_llenar-pilates_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op4_llenar-pilates.md,esquema,,,,hallazgos[0] le faltan ['recomendado']
+2026-10-15 19:51,eval,evals/2026-10-16_013900/brief_2026-11_op4_llenar-pilates_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op4_llenar-pilates.md,esquema,,,,hallazgos[0].recomendado debe ser true o false
+2026-10-15 19:51,eval,evals/2026-10-16_013900/brief_2026-11_op4_llenar-pilates_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op4_llenar-pilates.md,esquema,,,,hallazgos[1] le faltan ['recomendado']
+2026-10-15 19:51,eval,evals/2026-10-16_013900/brief_2026-11_op4_llenar-pilates_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op4_llenar-pilates.md,esquema,,,,hallazgos[1].recomendado debe ser true o false
+2026-10-15 19:51,eval,evals/2026-10-16_013900/brief_2026-11_op4_llenar-pilates_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op4_llenar-pilates.md,esquema,,,,hallazgos[2] le faltan ['recomendado']
+2026-10-15 19:51,eval,evals/2026-10-16_013900/brief_2026-11_op4_llenar-pilates_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op4_llenar-pilates.md,esquema,,,,hallazgos[2].recomendado debe ser true o false
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[0] le faltan ['recomendado']
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[0].recomendado debe ser true o false
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[1] le faltan ['recomendado']
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[1].recomendado debe ser true o false
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[2] le faltan ['recomendado']
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[2].recomendado debe ser true o false
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[3] le faltan ['recomendado']
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[3].recomendado debe ser true o false
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[4] le faltan ['recomendado']
+2026-10-15 19:55,eval,evals/2026-10-16_013900/brief_2026-11_op5_simulacro-deka_r1,v7,qwen/qwen3-vl-4b,brief_2026-11_op5_simulacro-deka.md,esquema,,,,hallazgos[4].recomendado debe ser true o false

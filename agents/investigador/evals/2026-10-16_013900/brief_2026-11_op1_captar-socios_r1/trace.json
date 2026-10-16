@@ -1,0 +1,157 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de entrenar en grupo para reducir el estrés",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo empezar en Hyrox para principiantes",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "dónde está la entrada de un gimnasio en CDMX",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "clases de 60 minutos en gimnasio con coach presente",
+        "max_results": 3
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Beneficios del ejercicio grupal | Eurofitness",
+            "url": "https://eurofitness.com/es/beneficios-del-ejercicio-grupal",
+            "snippet": "Cuando entrenas con otros, tu cerebro libera oxitocina, la «hormona del vínculo social.» Esta hormona no solo te hace sentir conectado, sino que también reduce el cortisol (hormona del estrés) y aumenta tu tolerancia al dolor.\n\nUn estudio de la Universidad de Oxford encontró que las personas que remaban en equipo tenían un umbral de dolor significativamente mayor que quienes remaban solos, incluso realizando el mismo esfuerzo físico.\n\n## Los 5 superpoderes del ejercicio grupal [...] Reducción del aislamiento: combates la soledad mientras te pones en forma\n Aumento de autoestima: perteneces a u",
+            "published": "",
+            "relevance": 0.85,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Ejercicio y estrés: cómo entrenar para reducir la tensión – VivaGym",
+            "url": "https://www.vivagym.com/es-es/ejercicio-y-estres",
+            "snippet": "Al entrenar pasan varias cosas a la vez. Liberas endorfinas y otros neurotransmisores asociados al bienestar, bajas la tensión muscular acumulada y, con el tiempo, mejoras la calidad del sueño, que es una de las primeras víctimas del estrés. A todo esto se suma un efecto psicológico potente: la sensación de control y logro que da cumplir con tu entrenamiento. No es magia, es fisiología, como se explica en los beneficios del ejercicio físico.\n\n## Qué dice la evidencia sobre ejercicio y estrés [...] Cardio (correr, bici, nadar): excelente para descargar tensión y liberar endorfinas. Una sesión d",
+            "published": "",
+            "relevance": 0.79,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "9 Mental Health Benefits of Exercise",
+            "url": "https://medbox.com/es/9-mental-health-benefits-of-exercise",
+            "snippet": "El ejercicio es un aliviador natural del estrés. Ayuda a sentirse tranquilo reduciendo el cortisol, la principal hormona del estrés en el organismo. La actividad física estimula el sistema nervioso parasimpático para reducir el ritmo cardíaco e inducir la relajación. Este cambio disminuye el nivel de cortisol en el torrente sanguíneo. [...] Participar en actividades físicas como footing matutino o clases de baile ayuda a mantener la claridad mental y reduce la niebla cerebral. También tiene el potencial de reducir la probabilidad de deterioro cognitivo en la vejez. Los entrenamientos en grupo ",
+            "published": "",
+            "relevance": 0.69,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de entrenar en grupo para reducir el estrés",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "HYROX para principiantes: la guía esencial | HYROX",
+            "url": "https://hyrox.es/hyrox-para-principiantes-la-guia-esencial",
+            "snippet": "Empezar en HYROX puede parecer un reto enorme, pero recuerda: cada atleta que ves en la línea de meta un día fue principiante como tú. Con constancia, planificación y motivación, llegarás preparado para tu primer HYROX y disfrutarás al máximo de la experiencia.\n\nSi quieres informarte sobre como entrenar HYROX sin material de competición, te dejamos nuestro anterior artículo en el siguiente link.\n\nAntAnteriorComo entrenar HYROX sin material de competición [...] Llegada y check-in: llega con tiempo para realizar tu check-in, ubicar vestuarios y reconocer el recinto.\n Warm-Up Area: aprovecha la z",
+            "published": "",
+            "relevance": 0.84,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo empezar en Hyrox para principiantes",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.115,
+          0.034
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "error",
+        "error_code": "NO_RELEVANT_RESULTS",
+        "backend": "tavily",
+        "query": "dónde está la entrada de un gimnasio en CDMX",
+        "min_score": 0.4,
+        "discarded": 3,
+        "discarded_scores": [
+          0.391,
+          0.194,
+          0.07
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Todos los PROGRAMAS: Training by Miguel angel Lopez ...",
+            "url": "https://marketplace.trainheroic.com/workout-plan/team/todos-los-programas",
+            "snippet": "PRESENTE 247 Bodybuilding, Functional Fitness, Endurance Coach Miguel angel Lopez Features 0 sessions per week ;60 minutos - MINIMAL. SWEAT 5 Días - 30>45 -",
+            "published": "",
+            "relevance": 0.76,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "pwr:club",
+            "url": "https://www.instagram.com/reel/Dap7lq7SdZP",
+            "snippet": "Una clase ‍♀️ 60 minutos ⏱️ Una metodología diseñada para retarte, acompañarte y hacer que cada entrenamiento cuente. Entrena en pwr",
+            "published": "",
+            "relevance": 0.6,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "clases de 60 minutos en gimnasio con coach presente",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.081
+        ]
+      }
+    }
+  ],
+  "latency_s": 216.75850420899224,
+  "prompt_tokens": 10878,
+  "completion_tokens": 309
+}

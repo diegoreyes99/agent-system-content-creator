@@ -30,9 +30,35 @@ READ_ONLY_TOOLS = {"search_web"}
 MAX_SEARCH_CALLS = 5
 
 
+# Model provider: "local" (LM Studio, OpenAI-compatible) or "gemini" (Gemini API).
+# Selected with MODEL_PROVIDER or with --model in run_investigador.py / eval_investigador.py.
+VALID_PROVIDERS = {"local", "gemini"}
+DEFAULT_GEMINI_MODEL_ID = "gemini-3.1-flash-lite"  # same model family used in Class 4
+
+
+def provider() -> str:
+    value = os.environ.get("MODEL_PROVIDER", "local").strip().lower()
+    if value not in VALID_PROVIDERS:
+        raise ValueError(f"MODEL_PROVIDER='{value}' is not valid. Options: {sorted(VALID_PROVIDERS)}")
+    return value
+
+
 def model_id() -> str:
+    if provider() == "gemini":
+        return os.environ.get("GEMINI_MODEL_ID", DEFAULT_GEMINI_MODEL_ID)
     # Mismo default que el baseline (run_baseline_cycle.py), para comparar con el mismo modelo.
     return os.environ.get("LM_STUDIO_MODEL_ID", "qwen/qwen3-vl-4b")
+
+
+def build_model():
+    """Gemini is native to ADK (a model string); the local model goes through LiteLLM."""
+    if provider() == "gemini":
+        # Use the Gemini API with GOOGLE_API_KEY, not Vertex AI.
+        os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "FALSE")
+        return model_id()
+    # timeout: si LM Studio no responde en 5 min, la corrida falla con error
+    # en vez de quedarse esperando para siempre.
+    return LiteLlm(model=f"openai/{model_id()}", timeout=300)
 
 
 def prompt_path(prompt_version: str) -> Path:
@@ -81,9 +107,7 @@ def build_agent(
 
     return Agent(
         name="investigador",
-        # timeout: si LM Studio no responde en 5 min, la corrida falla con error
-        # en vez de quedarse esperando para siempre.
-        model=LiteLlm(model=f"openai/{model_id()}", timeout=300),
+        model=build_model(),
         # Se pasa como función (InstructionProvider) y no como string para que
         # ADK no intente sustituir {llaves} del brief o del JSON de ejemplo
         # con variables de sesión.

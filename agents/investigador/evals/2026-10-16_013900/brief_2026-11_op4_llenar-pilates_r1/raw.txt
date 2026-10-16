@@ -1,0 +1,31 @@
+```json
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Qué beneficios tiene el Pilates para mujeres de 45 a 55 años?",
+      "que_dice_la_fuente": "El Pilates beneficia a mujeres mayores de 50, equilibrando cambios hormonales y fortaleciendo el cuerpo. Mejora la movilidad, combate el envejecimiento y promueve la salud física y mental.",
+      "fuente": "https://pilatesconsciente.com/pilates-en-las-mujeres-de-mas-de-50",
+      "responde_a": "Público prioritario: Rosa — 45 a 55+ años, nivel principiante-intermedio, busca movilidad y atención cercana",
+      "prioridad": "alta"
+    },
+    {
+      "id": 2,
+      "tema": "¿Qué necesita un principiante para empezar Pilates?",
+      "que_dice_la_fuente": "Para empezar a practicar Pilates en casa, necesitas una colchoneta o mat, ropa cómoda que permita movimientos libres y, opcionalmente, pequeños accesorios como bandas de resistencia o pelotas.",
+      "fuente": "https://www.cursosdepilates.com/blog/pilates-para-principiantes-guia-definitiva-para-iniciarte-en-pilates",
+      "responde_a": "Voz de la comunidad: \"¿Necesito experiencia previa en Pilates?\"",
+      "prioridad": "media"
+    },
+    {
+      "id": 3,
+      "tema": "¿Por qué temen las mujeres de 45 a 55 años que el Pilates sea intenso?",
+      "que_dice_la_fuente": "El Pilates en menopausia es una forma de ejercicio de fuerza, control y movilidad que ayuda a mujeres en perimenopausia y menopausia a frenar la pérdida de masa ósea, conservar masa muscular, sostener el suelo pélvico y gestionar la energía cuando las hormonas dejan de jugar a su favor.",
+      "fuente": "https://lagarstudio.es/pilates-menopausia",
+      "responde_a": "Voz de la comunidad: \"Me da miedo que sea muy intenso o lastimarme la espalda\"",
+      "prioridad": "alta"
+    }
+  ],
+  "resumen_ejecutivo": "Se encontraron tres temas relevantes que abordan las dudas y beneficios del Pilates para el público Rosa. Los temas cubren los beneficios de la práctica, los requisitos para empezar y las razones de la temor a la intensidad. Las fuentes son web y una de redes sociales, pero se incluyeron los temas con contenido suficiente y útil."
+}
+```

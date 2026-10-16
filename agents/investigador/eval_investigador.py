@@ -113,9 +113,15 @@ def main() -> None:
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--reps", type=int, default=3)
     parser.add_argument("--briefs", type=Path, nargs="+", default=GOLDEN_SET)
+    parser.add_argument("--model", choices=sorted(single.investigador.VALID_PROVIDERS), default=None,
+                        help="local (LM Studio, default) or gemini (Gemini API, needs GOOGLE_API_KEY)")
     parser.add_argument("--search-backend", choices=sorted(single.tools.VALID_BACKENDS), default=None)
     args = parser.parse_args()
 
+    if args.model:
+        os.environ["MODEL_PROVIDER"] = args.model
+    if single.investigador.provider() == "gemini" and not os.environ.get("GOOGLE_API_KEY"):
+        sys.exit("Missing GOOGLE_API_KEY. Add it to agents/investigador/.env (get one at https://aistudio.google.com).")
     if args.search_backend:
         os.environ["SEARCH_BACKEND"] = args.search_backend
     if single.tools.get_backend() == "tavily" and not os.environ.get("TAVILY_API_KEY"):
@@ -147,6 +153,7 @@ async def run_eval(args) -> None:
         "prompt_version": args.prompt_version,
         "trigger_version": args.trigger,
         "model": single.investigador.model_id(),
+        "model_provider": single.investigador.provider(),
         "temperature": "default" if args.temperature is None else args.temperature,
         "search_backend": single.tools.get_backend(),
         "tools_version": single.tools.TOOLS_VERSION,

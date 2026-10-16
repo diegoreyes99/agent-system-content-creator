@@ -1,0 +1,6 @@
+```json
+{
+  "hallazgos": [],
+  "resumen_ejecutivo": "No se encontraron resultados relevantes para la búsqueda \"dónde está la entrada de un gimnasio en CDMX\". Se encontró información sobre los beneficios del entrenamiento en grupo para reducir el estrés y cómo empezar en Hyrox para principiantes, pero no se encontraron fuentes que describan la ubicación de la entrada en CDMX o el formato de una clase de 60 minutos con coach presente. Las fuentes sobre entrenamiento en grupo y Hyrox son útiles, pero no cumplen con la necesidad de información específica sobre ubicación o estructura de clase."
+}
+```

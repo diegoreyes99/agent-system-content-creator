@@ -1,0 +1,29 @@
+{
+  "schema_errors": [],
+  "correcciones": [],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 1.0,
+    "n_schema_errors": 0.0,
+    "n_hallazgos": 3.0,
+    "n_alta": 2.0,
+    "n_recomendados": 2.0,
+    "n_tendencias": 0.0,
+    "pct_fuentes_stub": 0.0,
+    "pct_fuentes_url": 1.0,
+    "n_tool_calls": 3.0,
+    "n_search_errors": 0.0,
+    "pct_fuentes_verificadas": 1.0,
+    "search_pass_rate": 0.3333333333333333,
+    "avg_relevance": 0.73,
+    "n_fuentes_repetidas": 0.0,
+    "pct_fuentes_aprovechadas": 0.6,
+    "prioridad_sin_variacion": 0.0,
+    "n_temas_copia_busqueda": 0.0,
+    "n_recomendados_corregidos": 0.0,
+    "run_failed": 0.0,
+    "latency_s": 183.36,
+    "prompt_tokens": 9548.0,
+    "completion_tokens": 771.0
+  }
+}

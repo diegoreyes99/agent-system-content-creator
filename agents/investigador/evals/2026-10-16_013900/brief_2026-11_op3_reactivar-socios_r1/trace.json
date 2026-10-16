@@ -1,0 +1,131 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "cómo regresar al entrenamiento después de perder condición",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de entrenar con un coach especializado",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "dudas comunes sobre el regreso al entrenamiento",
+        "max_results": 5
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Cómo volver al gimnasio tras una pausa larga sin lesionarte – VivaGym",
+            "url": "https://www.vivagym.com/es-es/como-volver-al-gimnasio",
+            "snippet": "2. No restringir calorías agresivamente al mismo tiempo que retomas el entrenamiento. Intentar perder peso y readaptarse a la vez ralentiza los dos procesos. Prioriza la readaptación las primeras cuatro semanas; el déficit calórico puede venir después.\n3. Hidratación. Trivial pero frecuentemente descuidada. El rendimiento cardiovascular empieza a caer con una deshidratación de apenas el 2% del peso corporal. [...] No existe una única receta, pero hay un marco que funciona para la gran mayoría de personas que retoman el entrenamiento tras un parón de entre 3 semanas y 6 meses. El objetivo a med",
+            "published": "",
+            "relevance": 0.61,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "cómo regresar al entrenamiento después de perder condición",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.375,
+          0.208,
+          0.129,
+          0.098
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "4 beneficios de los programas de entrenamiento personal - Crunch",
+            "url": "https://www.crunch.com/es/thehub/4-beneficios-de-los-programas-de-entrenamiento-personal",
+            "snippet": "Ya seas un principiante o un profesional del fitnes, trabajar con entrenadores personales certificados puede brindarte muchos beneficios adicionales. Esto se debe a que estas personas están especializadas en desarrollar e implementar programas de ejercicios desafiantes y altamente efectivos para sus clientes. En resumen: resulta mucho más fácil responsabilizarte, no implica conjeturas y te permite superar tus objetivos. [...] Trabajar con un entrenador personal puede ayudarte a implementar hábitos positivos de salud y fitnes que cambiarán tu vida. Un entrenador personal se esfuerza por infundi",
+            "published": "",
+            "relevance": 0.83,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "5 beneficios de entrenar con un entrenador personal",
+            "url": "https://columbusch.com/es/news/5-benefits-of-working-out-with-a-personal-trainer",
+            "snippet": "Estos entrenadores profesionales te guiarán para que aprendas la postura y la técnica correctas, aproveches al máximo tus entrenamientos y",
+            "published": "",
+            "relevance": 0.77,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Ventajas de entrenar con un entrenador personal",
+            "url": "https://www.orangetheory.com/es-es/articles/benefits-of-training-with-a-personal-trainer",
+            "snippet": "Durante el entrenamiento, nuestros entrenadores supervisarán la situación y el rendimiento de cada persona individualmente para comprobar su situación y aplicar",
+            "published": "",
+            "relevance": 0.75,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de entrenar con un coach especializado",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.306,
+          0.241
+        ]
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Volver a entrenar después de un tiempo puede generar ...",
+            "url": "https://www.instagram.com/p/Dcy4tPUnZoI",
+            "snippet": "Volver a entrenar después de un tiempo puede generar muchas dudas: ¿por dónde empiezo?, ¿cuánto debería hacer?, ¿será suficiente?",
+            "published": "",
+            "relevance": 0.69,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "dudas comunes sobre el regreso al entrenamiento",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.3,
+          0.28,
+          0.198,
+          0.072
+        ]
+      }
+    }
+  ],
+  "latency_s": 183.3551468750229,
+  "prompt_tokens": 9548,
+  "completion_tokens": 771
+}
