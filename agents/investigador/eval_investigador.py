@@ -154,6 +154,7 @@ async def run_eval(args) -> None:
         "trigger_version": args.trigger,
         "model": single.investigador.model_id(),
         "model_provider": single.investigador.provider(),
+        "model_retry_attempts": single.investigador.retry_attempts(),
         "temperature": "default" if args.temperature is None else args.temperature,
         "search_backend": single.tools.get_backend(),
         "tools_version": single.tools.TOOLS_VERSION,
@@ -165,6 +166,9 @@ async def run_eval(args) -> None:
     }
     print(f"=== Eval {eval_id}: {len(args.briefs)} briefs × {args.reps} repeticiones = {total} corridas ===")
     print(f"    prompt {args.prompt_version} · trigger {args.trigger} · modelo {config['model']} · búsqueda {config['search_backend']}")
+    if config["model_provider"] == "gemini":
+        print(f"    reintentos ante 429/503: {config['model_retry_attempts']} intentos por llamada"
+              + ("" if single.investigador.retries_supported() else " (NO disponibles en esta versión de ADK)"))
 
     experiment_id = setup_mlflow()
     rows: list[dict] = []

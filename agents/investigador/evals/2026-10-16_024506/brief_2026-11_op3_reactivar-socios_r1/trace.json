@@ -1,0 +1,191 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "como retomar ejercicio despues de dejarlo asistencia constancia"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "6 Consejos para reanudar la actividad física tras un periodo sedentario.",
+            "url": "https://www.orangetheory.com/es-es/articles/6-tips-for-resuming-physical-activity-after-a-sedentary-period",
+            "snippet": "No intente empezar con ejercicios muy intensos para ganar tiempo o acortar el proceso, porque el resultado empeorará la situación y puede favorecer las lesiones por sobreesfuerzo físico.\n\nLo importante es retomar la constancia e ir aumentando a medida que tu cuerpo vuelva a estar preparado, siempre siguiendo los consejos de un profesional.\n\nEmpieza por adoptar pequeños hábitos que indiquen a tu cuerpo que el movimiento está de vuelta, como por ejemplo [...] No te preocupes, porque con trabajo duro y perseverancia, volverás al mismo nivel que tenías, sólo tienes que tener paciencia y prestar at",
+            "published": "",
+            "relevance": 0.65,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Cómo retomar el entrenamiento después de meses sin ir al gimnasio",
+            "url": "https://www.glamour.es/articulos/como-retomar-el-entrenamiento-despues-de-meses-de-paron",
+            "snippet": "“Lo primero es asumir que el punto de partida ha cambiado. Antes de retomar, es importante evaluar cómo responde el cuerpo hoy, especialmente a nivel articular, cardiovascular y de control del movimiento”, recomienda la fundadora de Fitclub Collective y coach, Camila Monguzzi. “La recomendación es empezar con una frecuencia moderada, entre dos y tres sesiones por semana, priorizando ejercicios básicos bien ejecutados. Volver con la misma exigencia de antes suele generar sobrecarga innecesaria [...] Prepárate para los cambios (y adáptate)\n\nAntes de retomar tu rutina de entrenamiento, hay alguna",
+            "published": "",
+            "relevance": 0.61,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Cómo retomar el ejercicio después de mucho tiempo",
+            "url": "https://es-share.upmc.com/2023/03/ejercicio-despues-de-mucho-tiempo",
+            "snippet": "Esta interrupción puede ser frustrante sin importar la causa: el COVID-19, una lesión, una enfermedad o cualquier otra razón. Pero, ¿cómo volver a hacer ejercicio después de mucho tiempo?\n\nEn primer lugar, asegúrese de estar sano para hacer ejercicio. Si hace tiempo que no visita a su médico programe una cita para hablar de su vuelta a la actividad física.\n\nA continuación, respire profundo. ¡Puede hacerlo! Si alguna vez tuvo una rutina de ejercicio, puede volver a tenerla. [...] Solo necesita seguir algunas estrategias para volver a hacer ejercicio después de una larga pausa.\n\n## Estrategia nº",
+            "published": "",
+            "relevance": 0.59,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Después de una pausa, retomar el ejercicio de forma ...",
+            "url": "https://www.instagram.com/reel/DT2PIQQlg4e",
+            "snippet": "Lo importante es conocer la intensidad de cada actividad y encontrar una combinación que puedas sostener en el tiempo. Actividad ligera:",
+            "published": "",
+            "relevance": 0.46,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "como retomar ejercicio despues de dejarlo asistencia constancia",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.301
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "recuperar condicion fisica perdida despues de pausa entrenamiento"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Cómo volver a entrenar después de una pausa",
+            "url": "https://www.freeletics.com/es/blog/posts/entrenar-despues-de-un-paron",
+            "snippet": "Pero a pesar de toda esta parte negativa, no todo son malas noticias. Aunque tu fuerza puede acabar mermada después de un tiempo de descanso, la memoria muscular ayuda a tu cuerpo a recuperar los niveles de forma física anteriores. ¡No todo está perdido!\n\n### Efectos psicológicos\n\nLa dura realidad es que volver a entrenar después de un parón no es nada fácil. A veces, dudarás de tus capacidades para rendir como antes, y tu autoestima y confianza puede desplomarse. [...] Consigue tu Coach\n\nEntrenamiento\n\n# Cómo volver a entrenar después de una pausa\n\ngetting-back-to-exercise-header.jpg\n\nRecuper",
+            "published": "",
+            "relevance": 0.82,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Cómo volver al gimnasio tras una pausa larga sin lesionarte – VivaGym",
+            "url": "https://www.vivagym.com/es-es/como-volver-al-gimnasio",
+            "snippet": "En la mayoría de casos, entre 4 y 8 semanas de entrenamiento consistente y progresivo son suficientes para recuperar el 80-90% del nivel anterior. La memoria muscular y las adaptaciones neuromusculares se reconstituyen mucho más rápido que cuando entrenaste por primera vez. Los factores que más influyen son la regularidad (3-4 días por semana), la calidad del sueño y la ingesta proteica suficiente.\n\n### ¿Es normal tener más agujetas al volver que cuando empecé a entrenar por primera vez? [...] Si no sabes por dónde empezar con la sala de musculación, la app VivaGym incluye planes de entrenamie",
+            "published": "",
+            "relevance": 0.66,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "¿Cuánto se tarda en recuperar la condición física?",
+            "url": "https://blog.runningcoach.me/es/2023/02/10/con-que-rapidez-se-pierde-la-forma-durante-una-pausa-en-el-entrenamiento",
+            "snippet": "Entre 4 y 9 semanas sin entrenar, las pérdidas oscilan entre el 8% y el 20% del VO2max (el dato es relativo, porque perdemos un porcentaje de",
+            "published": "",
+            "relevance": 0.63,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Cómo retomar el ejercicio después de mucho tiempo",
+            "url": "https://es-share.upmc.com/2023/03/ejercicio-despues-de-mucho-tiempo",
+            "snippet": "Sin embargo, el dicho “úsalo o piérdelo” aplica para todas las personas. De hecho, a partir de los 50 años perdemos de forma natural entre un 12 % y un 14 % de nuestra fuerza muscular cada década. Si añadimos un periodo de inactividad, el aumento puede ser mayor.\n\nTodo esto quiere decir que después de una interrupción en el ejercicio, no se puede simplemente continuar donde lo dejó. Hay que recuperar lo perdido. De lo contrario, corre el riesgo de sufrir lesiones y, simplemente, de frustrarse. [...] Solo necesita seguir algunas estrategias para volver a hacer ejercicio después de una larga pau",
+            "published": "",
+            "relevance": 0.59,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "recuperar condicion fisica perdida despues de pausa entrenamiento",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.219
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de correr en grupo motivacion constancia deporte"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Beneficios de correr en grupo",
+            "url": "https://www.brooksrunning.com/es_es/blog/advice-tips/social-benefits-of-running.html",
+            "snippet": "Salir a correr en grupo proporciona mucho más que forma física: hacer amistades, encontrar nuevas rutas e inspirarte para cada zancada.",
+            "published": "",
+            "relevance": 0.74,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Los beneficios de salir a correr en compañía",
+            "url": "https://www.runnersworld.com/es/training/a45201430/beneficios-correr-compania",
+            "snippet": "Las ventajas de correr en compañía · Motivación incrementada · Ritmo y desafío personal · Compañía social · Seguridad y apoyo · Diversidad de rutas y",
+            "published": "",
+            "relevance": 0.74,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Los beneficios y desventajas de correr todos los días. Nike",
+            "url": "https://www.nike.com/us/es/a/beneficios-de-correr-todos-los-dias",
+            "snippet": "## Crea constancia\n\nAdquirir el hábito de hacer ejercicio es difícil para muchas personas, dice Mack. Concretamente, para los runners principiantes, puede resultarles difícil establecer un horario constante. Por eso, correr a diario puede ser un atajo para desarrollar una constancia mejor y más duradera. [...] ## Menos motivación para hacer cross training\n\nHacer de correr a diario tu principal forma de ejercicio puede generar que no tengas tanta motivación a la hora de añadir otros tipos de ejercicios, sobre todo de fuerza, como apunta Mack. Esa es una forma más de aumentar el riesgo de lesion",
+            "published": "",
+            "relevance": 0.54,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Motivación y Responsabilidad: Correr con otros puede ...",
+            "url": "https://www.facebook.com/100064368592601/posts/correr-en-grupocorrer-en-grupo-ofrece-numerosos-beneficios-incluyendo-motivaci%C3%B3n/1302571401898467",
+            "snippet": "- Responsabilidad y Consistencia: Las carreras en grupo pueden ayudarte a establecer una rutina de carrera consistente y mantenerte responsable",
+            "published": "",
+            "relevance": 0.79,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Ventajas del entrenamiento de running en grupo 1. Motivación ...",
+            "url": "https://www.instagram.com/reel/DYuWlCJR-Gp",
+            "snippet": "2. Disciplina y compromiso. Tener horarios y compañeros crea responsabilidad: es menos probable “quedarse en casa”. 3. Mejora del rendimiento",
+            "published": "",
+            "relevance": 0.71,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de correr en grupo motivacion constancia deporte",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    }
+  ],
+  "latency_s": 10.701096083037555,
+  "prompt_tokens": 20173,
+  "completion_tokens": 1181
+}

@@ -1,0 +1,48 @@
+{
+  "schema_errors": [],
+  "correcciones": [
+    {
+      "id": 1,
+      "tema": "¿Cuáles son las ventajas de contar con un plan y seguimiento de entrenamiento personalizado?",
+      "fuente": "https://www.esneca.com/blog/ventajas-entrenamiento-personalizado",
+      "motivo": "recomendado con fuente con poco contenido; se quitó la recomendación"
+    },
+    {
+      "id": 3,
+      "tema": "¿Por qué es importante el seguimiento constante de tus entrenamientos?",
+      "fuente": "https://us.yonka.com/es/blogs/blog/tracking-workouts",
+      "motivo": "recomendado con fuente con poco contenido; se quitó la recomendación"
+    },
+    {
+      "id": 5,
+      "tema": "¿Cómo influye formar parte de una comunidad deportiva en tus resultados?",
+      "fuente": "https://www.sportium.com.mx/blog/se-parte-de-una-comunidad-deportiva",
+      "motivo": "recomendado con fuente con poco contenido; se quitó la recomendación"
+    }
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 1.0,
+    "n_schema_errors": 0.0,
+    "n_hallazgos": 5.0,
+    "n_alta": 4.0,
+    "n_recomendados": 2.0,
+    "n_tendencias": 0.0,
+    "pct_fuentes_stub": 0.0,
+    "pct_fuentes_url": 1.0,
+    "n_tool_calls": 4.0,
+    "n_search_errors": 0.0,
+    "pct_fuentes_verificadas": 1.0,
+    "search_pass_rate": 0.85,
+    "avg_relevance": 0.6588235294117647,
+    "n_fuentes_repetidas": 0.0,
+    "pct_fuentes_aprovechadas": 0.29411764705882354,
+    "prioridad_sin_variacion": 0.0,
+    "n_temas_copia_busqueda": 0.0,
+    "n_recomendados_corregidos": 3.0,
+    "run_failed": 0.0,
+    "latency_s": 21.15,
+    "prompt_tokens": 26407.0,
+    "completion_tokens": 1007.0
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios membresia gimnasio vs app fitness"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Gimnasio vs App de Fitness: Coste por Sesión | FitCraft",
+            "url": "https://getfitcraft.com/es/blog/gym-vs-app-cost",
+            "snippet": "Resumen La membresía promedio de gimnasio tiene un coste real del primer año significativamente mayor de lo que parece, pero el 67% no se usa. Un estudio de 2006 en American Economic Review encontró que los miembros sobreestiman su asistencia un 70%. Las apps de fitness elimina la fricción de desplazamiento, horarios y toma de decisiones. Una app bien diseñada tiene un coste por entrenamiento muy inferior al de un gimnasio dependiendo del uso real. [...] ### ¿Se pueden obtener buenos resultados solo con una app?\n\nSí. Un entrenamiento en casa con peso corporal y equipo mínimo puede producir gan",
+            "published": "",
+            "relevance": 0.84,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "¿Vale la pena la membresía de un gimnasio? - Artículos",
+            "url": "https://www.consumerscu.org/es/blog/is-a-gym-membership-worth-it",
+            "snippet": "Las aplicaciones te ayudan a mantener el rumbo. Las aplicaciones de fitness son una alternativa a la membresía de un gimnasio. Mucha gente",
+            "published": "",
+            "relevance": 0.73,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Membresías de gimnasios | Desde $15 | Planeta Fitness",
+            "url": "https://www.planetfitness.com/es/gym-memberships",
+            "snippet": "WiFi gratis ; Beneficios: recompensas y descuentos de compañías asociadas ; Ejercicios en la aplicación de PF ; Entrenamientos exclusivos en la aplicación PF+.",
+            "published": "",
+            "relevance": 0.62,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Planet Fitness - App Store",
+            "url": "https://apps.apple.com/mx/app/planet-fitness/id399857015",
+            "snippet": "BENEFICIOS PARA MIEMBROS: FITNESS CON AMIGOS • Los miembros de PF obtienen 1 mes de membresía gratis por cada amigo. Descárgate la aplicación Planet Fitness",
+            "published": "",
+            "relevance": 0.61,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Beneficios de acondicionamiento físico y membresías de gimnasio de Medicare Advantage | SCAN",
+            "url": "https://www.scanhealthplan.com/es-us/plans-and-benefits/supplemental-benefits/2026/supplemental-benefits/fitness-membership",
+            "snippet": "One Pass includes access to fitness options that may support strength, balance, and fall prevention. Age Bold is a personalized online exercise program with live and on-demand classes designed to help improve strength and balance and reduce the risk of falls.\n\nPrograms and availability vary by plan. Talk with an appropriate healthcare professional before beginning an exercise program or deciding which activities may be right for you. [...] Algunos planes Medicare Advantage incluyen beneficios de acondicionamiento físico que van más allá de Original Medicare. Según el plan, estos beneficios pue",
+            "published": "",
+            "relevance": 0.47,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios membresia gimnasio vs app fitness",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "ventajas de pertenecer a una comunidad deportiva local"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Sé parte de una comunidad deportiva",
+            "url": "https://www.sportium.com.mx/blog/se-parte-de-una-comunidad-deportiva",
+            "snippet": "Llegar a tus metas es más sencillo cuando compartes el camino con personas que te inspiran, te apoyan y te impulsan a dar lo mejor de ti.",
+            "published": "",
+            "relevance": 0.71,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "5 beneficios de tener una comunidad deportiva en tu ...",
+            "url": "https://www.linkedin.com/pulse/5-beneficios-de-tener-una-comunidad-deportiva-en-tu-fernando",
+            "snippet": "1.Mejora el clima laboral ・ formar parte de una comunidad deportiva y ・ 2. Reduce el absentismo Practicar deporte de forma moderada ・ 3.",
+            "published": "",
+            "relevance": 0.83,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "El deporte también construye comunidad: acompañar estos ...",
+            "url": "https://www.facebook.com/ariel.puysoria/posts/el-deporte-tambi%C3%A9n-construye-comunidad-acompa%C3%B1ar-estos-espacios-es-fortalecer-va/27188301244144541",
+            "snippet": "El deporte también construye comunidad: acompañar estos espacios es fortalecer valores, vínculos y oportunidades. Entendemos el hábitat como",
+            "published": "",
+            "relevance": 0.42,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "ventajas de pertenecer a una comunidad deportiva local",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.366,
+          0.321
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "importancia del seguimiento personalizado en el entrenamiento fisico"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "¿Ejercicios personalizados?",
+            "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ejercicios-personalizados",
+            "snippet": "Hacer suficiente actividad física puede hacer que tanto su cuerpo como su mente se sientan mejor. También puede ayudar a prevenir o retrasar problemas de",
+            "published": "",
+            "relevance": 0.42,
+            "tipo_fuente": "certificada",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "7 ventajas de seguir un entrenamiento personalizado",
+            "url": "https://www.esneca.com/blog/ventajas-entrenamiento-personalizado",
+            "snippet": "Seguir un plan de entrenamiento personalizado es una buena idea si quieres ver tus metas cumplidas en poco tiempo.",
+            "published": "",
+            "relevance": 0.78,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Por qué deberías realizar un seguimiento de tus entrenamientos",
+            "url": "https://us.yonka.com/es/blogs/blog/tracking-workouts",
+            "snippet": "El seguimiento de tus entrenamientos te permite ver cómo evoluciona tu progreso con el tiempo y te asegura que estás avanzando hacia tus objetivos incluso antes",
+            "published": "",
+            "relevance": 0.61,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Descubre los beneficios de un plan de entrenamiento ...",
+            "url": "https://www.clinicaalemana.cl/articulos/detalle/2025/descubre-los-beneficios-de-un-plan-de-entrenamiento-personalizado",
+            "snippet": "Beneficios del entrenamiento personalizado. Entrega múltiples beneficios para tu cuerpo y tu mente, tales como: Mejorar el rendimiento físico",
+            "published": "",
+            "relevance": 0.6,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Un entrenador personal analiza los cambios en técnicas y ...",
+            "url": "https://www.facebook.com/womenshealth.es/posts/un-entrenador-personal-analiza-los-cambios-en-t%C3%A9cnicas-y-entrenamientos-que-podr/1492871936054056",
+            "snippet": "... seguimiento constante. Los beneficios del entrenamiento personalizado son: Lograr objetivos en menor tiempo. Reducción en el riesgo de",
+            "published": "",
+            "relevance": 0.72,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "importancia del seguimiento personalizado en el entrenamiento fisico",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de evaluar la movilidad corporal con fisioterapeuta"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Los beneficios clave de la flexibilidad y la movilidad | Banner Health",
+            "url": "https://www.bannerhealth.com/es/healthcareblog/advise-me/the-key-benefits-of-flexibility-and-mobility",
+            "snippet": "“Aumentar la flexibilidad y la movilidad puede ayudar con el dolor articular, la postura e incluso al caminar”, afirmó Sarah Chapman , fisioterapeuta de Banner Health. “La rigidez en los músculos de las piernas puede contribuir al dolor de espalda . La rigidez en los músculos del pecho afecta la postura y puede provocar dolor de espalda de hombros, cuello y parte superior de la espalda. Una mayor flexibilidad permite que las articulaciones se muevan de forma óptima”. [...] Las herramientas de movilidad pueden ayudarte a mejorar tu flexibilidad y tu función física general. Pueden mejorar tus es",
+            "published": "",
+            "relevance": 0.76,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Beneficios de la terapia manual en fisioterapia - Blog SaludOnNet",
+            "url": "https://www.saludonnet.com/blog/beneficios-de-la-terapia-manual-en-fisioterapia",
+            "snippet": "La movilización de tejidos blandos es una técnica fundamental utilizada por fisioterapeutas para mejorar la flexibilidad, reducir la tensión muscular y promover la recuperación en pacientes con una variedad de condiciones musculoesqueléticas. Implica la aplicación de presión controlada sobre los tejidos musculares y conectivos, incluyendo músculos, tendones, ligamentos y fascia, con el objetivo de mejorar la elasticidad, la flexibilidad y la circulación sanguínea en la zona afectada. [...] Mejora de la flexibilidad y la amplitud de movimiento. La movilización de tejidos blandos puede ayudar a ",
+            "published": "",
+            "relevance": 0.75,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Cómo la fisioterapia apoya la salud y movilidad de las articulaciones - Suffolk",
+            "url": "https://suffolkhealth.com/es/como-la-fisioterapia-apoya-la-salud-articular-y-la-movilidad",
+            "snippet": "Terapeutas evaluar la postura y los patrones de movimiento para descubrir estos problemas. Una espalda superior redondeada, pronación excesiva del pie o una inclinación pélvica pueden contribuir a la disfunción articular.\n\nMediante estrategias de corrección postural, fortalecimiento del core, orientación ergonómica y ejercicios de propiocepción, los terapeutas ayudan a realinear tu cuerpo y reducir estrés en articulaciones vulnerables. [...] Los músculos débiles ejercen una tensión excesiva en las articulaciones. Si tus músculos no están dando el soporte adecuado a tus articulaciones, corres u",
+            "published": "",
+            "relevance": 0.68,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "💪✨ La fisioterapia es movimiento, prevención y bienestar. ...",
+            "url": "https://www.facebook.com/EsSaludPeruOficial/posts/-la-fisioterapia-es-movimiento-prevenci%C3%B3n-y-bienestar-descubre-sus-beneficios-y-/1215739743917622",
+            "snippet": "Los fisioterapeutas pueden evaluar tu cuerpo y estilo de vida para identificar posibles desequilibrios musculares, mejorar tu postura y",
+            "published": "",
+            "relevance": 0.65,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de evaluar la movilidad corporal con fisioterapeuta",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.348
+        ]
+      }
+    }
+  ],
+  "latency_s": 21.15127258299617,
+  "prompt_tokens": 26407,
+  "completion_tokens": 1007
+}

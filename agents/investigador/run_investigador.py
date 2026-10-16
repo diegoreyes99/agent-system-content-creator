@@ -186,6 +186,7 @@ def log_to_mlflow(args, run_id: str, run_dir: Path, metrics: dict, temperature) 
             "trigger_version": args.trigger,
             "model": investigador.model_id(),
             "model_provider": investigador.provider(),
+            "model_retry_attempts": investigador.retry_attempts(),
             "temperature": "default" if temperature is None else temperature,
             "search_backend": tools.get_backend(),
             "tools_version": tools.TOOLS_VERSION,
@@ -250,6 +251,7 @@ def print_summary(metrics: dict, errors: list[str], run_dir: Path, corrections: 
 
 
 TIPO_FUENTE_LABELS = {"certificada": "fuente certificada", "web": "fuente web", "red_social": "red social",
+                      "competidor": "OTRO GIMNASIO: usar solo la información general, sin citarlo",
                       "no_verificada": "FUENTE NO VERIFICADA"}
 
 
@@ -445,6 +447,8 @@ def main() -> None:
     run_dir = HERE / "runs" / run_id
     brief_text = args.brief.read_text(encoding="utf-8")
     print(f"=== Investigador {args.prompt_version}/{args.trigger} · modelo {investigador.model_id()} · búsqueda {tools.get_backend()} ===")
+    if investigador.provider() == "gemini":
+        print(f"    reintentos ante 429/503: {'activos, ' + str(investigador.retry_attempts()) + ' intentos' if investigador.retries_supported() else 'NO disponibles en esta versión de ADK'}")
 
     # Un solo ciclo asíncrono para todas las rondas: LiteLLM reutiliza su conexión.
     loop = asyncio.new_event_loop()

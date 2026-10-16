@@ -32,7 +32,10 @@ from urllib.parse import urlparse
 #   v3: clasifica cada resultado por su dominio (certificada / web / red social,
 #       según trusted_sources.txt), marca si tiene contenido suficiente y
 #       ordena primero las certificadas (calificación humana del v6, 2026-10-15).
-TOOLS_VERSION = "v3"
+#   v4: also marks results from other gyms and studios as "competidor"
+#       (competitor_sources.txt) and puts them last (human rating of Gemini v7,
+#       2026-10-15: 2 of 10 topics came from competitor blogs).
+TOOLS_VERSION = "v4"
 
 VALID_BACKENDS = {"tavily", "stub"}
 DEFAULT_BACKEND = "tavily"
@@ -48,14 +51,24 @@ MIN_CONTENT_CHARS = 250
 SOCIAL_DOMAINS = ("instagram.com", "facebook.com", "tiktok.com", "youtube.com", "x.com",
                   "twitter.com", "threads.net", "linkedin.com", "pinterest.com")
 TRUSTED_SOURCES_FILE = Path(__file__).resolve().parent / "trusted_sources.txt"
-_TYPE_ORDER = {"certificada": 0, "web": 1, "red_social": 2}
+COMPETITOR_SOURCES_FILE = Path(__file__).resolve().parent / "competitor_sources.txt"
+_TYPE_ORDER = {"certificada": 0, "web": 1, "red_social": 2, "competidor": 3}
+
+
+def _load_domains(path: Path) -> list[str]:
+    """Reads a domain list (one per line, # for comments)."""
+    if not path.exists():
+        return []
+    lines = path.read_text(encoding="utf-8").splitlines()
+    return [l.strip().lower() for l in lines if l.strip() and not l.strip().startswith("#")]
 
 
 def _trusted_domains() -> list[str]:
-    if not TRUSTED_SOURCES_FILE.exists():
-        return []
-    lines = TRUSTED_SOURCES_FILE.read_text(encoding="utf-8").splitlines()
-    return [l.strip().lower() for l in lines if l.strip() and not l.strip().startswith("#")]
+    return _load_domains(TRUSTED_SOURCES_FILE)
+
+
+def _competitor_domains() -> list[str]:
+    return _load_domains(COMPETITOR_SOURCES_FILE)
 
 
 def _domain_matches(host: str, entry: str) -> bool:
@@ -65,10 +78,13 @@ def _domain_matches(host: str, entry: str) -> bool:
 
 
 def classify_source(url: str) -> str:
-    """certificada (lista de fuentes confiables), red_social o web. Solo por dominio."""
+    """certificada (lista de fuentes confiables), competidor (otro gimnasio o estudio),
+    red_social o web. Solo por dominio."""
     host = (urlparse(url).hostname or "").lower()
     if any(_domain_matches(host, d) for d in _trusted_domains()):
         return "certificada"
+    if any(_domain_matches(host, d) for d in _competitor_domains()):
+        return "competidor"
     if any(_domain_matches(host, d) for d in SOCIAL_DOMAINS):
         return "red_social"
     return "web"

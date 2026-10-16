@@ -188,8 +188,8 @@ def quality_metrics(hallazgos: list[dict], calls: list[dict], returned_urls: set
 
 
 def apply_source_rules(output: dict | None, trace: list[dict], prompt_version: str) -> list[dict]:
-    """Regla en código (desde v7): un tema con fuente de red social o con poco
-    contenido nunca llega a Dani como recomendado, aunque el modelo lo haya
+    """Regla en código (desde v7): un tema con fuente de red social, de un
+    competidor (tools v4) o con poco contenido nunca llega a Dani como recomendado, aunque el modelo lo haya
     marcado así. Además anota en cada tema el tipo de fuente y si tiene
     contenido suficiente, tomados de lo que regresó la búsqueda (no del modelo).
 
@@ -215,6 +215,8 @@ def apply_source_rules(output: dict | None, trace: list[dict], prompt_version: s
             reasons.append("fuente no verificada: la URL no salió de ninguna búsqueda")
         elif h["tipo_fuente"] == "red_social":
             reasons.append("fuente de red social")
+        elif h["tipo_fuente"] == "competidor":
+            reasons.append("fuente de otro gimnasio o estudio (competidor)")
         if h["tipo_fuente"] != "no_verificada" and not h["contenido_suficiente"]:
             reasons.append("fuente con poco contenido")
         if reasons and h.get("recomendado") is True:

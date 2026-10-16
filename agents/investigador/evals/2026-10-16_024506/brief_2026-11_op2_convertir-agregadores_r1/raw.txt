@@ -1,0 +1,52 @@
+```json
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Cuáles son las ventajas de contar con un plan y seguimiento de entrenamiento personalizado?",
+      "que_dice_la_fuente": "Seguir un plan de entrenamiento personalizado permite ver metas cumplidas en menor tiempo, mejorar el rendimiento físico y asegura un avance progresivo hacia los objetivos.",
+      "fuente": "https://www.esneca.com/blog/ventajas-entrenamiento-personalizado",
+      "responde_a": "Prioridad del mes: convertir usuarios de TotalPass/Fitpass a membresía directa / Duda recurrente: ¿Qué incluye la membresía directa que no tenga con mi plataforma?",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Qué beneficios aportan la evaluación y mejora de la movilidad corporal con un fisioterapeuta?",
+      "que_dice_la_fuente": "Aumentar la flexibilidad y la movilidad ayuda con el dolor articular, mejora la postura, reduce la tensión muscular y permite que las articulaciones se muevan de forma óptima.",
+      "fuente": "https://www.bannerhealth.com/es/healthcareblog/advise-me/the-key-benefits-of-flexibility-and-mobility",
+      "responde_a": "Evento del mes y novedad: Evaluación de movilidad con Leo (fisioterapeuta) / Lo que incluye la membresía directa.",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 3,
+      "tema": "¿Por qué es importante el seguimiento constante de tus entrenamientos?",
+      "que_dice_la_fuente": "El seguimiento de los entrenamientos te permite ver cómo evoluciona tu progreso con el tiempo y te asegura que estás avanzando hacia tus objetivos.",
+      "fuente": "https://us.yonka.com/es/blogs/blog/tracking-workouts",
+      "responde_a": "Prioridad del mes: mostrar el valor de la membresía directa y el acompañamiento del coach frente a las plataformas.",
+      "prioridad": "media",
+      "recomendado": true
+    },
+    {
+      "id": 4,
+      "tema": "¿Cuáles son las diferencias al entrenar en un centro especializado frente a otras alternativas?",
+      "que_dice_la_fuente": "Las membresías tradicionales de gimnasio implican costos y compromisos a largo plazo, mientras que plataformas y apps eliminan fricciones pero difieren en la experiencia de uso real.",
+      "fuente": "https://getfitcraft.com/es/blog/gym-vs-app-cost",
+      "responde_a": "Objeción de la comunidad: '¿Para qué pago una membresía si con TotalPass ya puedo entrar?'",
+      "prioridad": "alta",
+      "recomendado": true
+    },
+    {
+      "id": 5,
+      "tema": "¿Cómo influye formar parte de una comunidad deportiva en tus resultados?",
+      "que_dice_la_fuente": "Llegar a tus metas es más sencillo cuando compartes el camino con personas que te inspiran, apoyan e impulsan a dar lo mejor de ti.",
+      "fuente": "https://www.sportium.com.mx/blog/se-parte-de-una-comunidad-deportiva",
+      "responde_a": "Público prioritario y voz de la comunidad: usuarios de plataforma que ya entrenan pero se sienten 'de visita' y no parte del grupo.",
+      "prioridad": "alta",
+      "recomendado": true
+    }
+  ],
+  "resumen_ejecutivo": "Se investigaron temas enfocados en el valor de la membresía directa frente a plataformas, destacando las ventajas del seguimiento personalizado, la comunidad, la evaluación fisioterapéutica de movilidad y el análisis general de costos y beneficios en el entrenamiento."
+}
+```

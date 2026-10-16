@@ -9,6 +9,7 @@ Primer agente real del sistema. Corre solo, fuera del baseline. Spec:
 | `tools.py` | `search_web` con búsqueda real en **Tavily** (default) o **stub** (sin internet). Desde v3 clasifica cada fuente (certificada / web / red social) y marca las que tienen poco contenido |
 | `model_errors.csv` | Bitácora acumulada de cada error del modelo (de esquema y correcciones de fuente), con fecha, corrida, versión y brief. Se crea con la primera corrida que tenga errores |
 | `trusted_sources.txt` | Lista editable de dominios que cuentan como fuente certificada (instituciones de salud, universidades, asociaciones, organizaciones oficiales) |
+| `competitor_sources.txt` | Lista editable de dominios de otros gimnasios y estudios: sus resultados se marcan `competidor` y nunca se recomiendan |
 | `output_checks.py` | Parseo del JSON, validación contra el esquema del prompt y métricas proxy |
 | `tracking.py` | Configuración de MLflow (todo local en `agents_dopa_final_project/mlruns/`) |
 | `run_investigador.py` | Corre el agente, guarda la salida en `runs/<fecha>/` y la registra en MLflow |

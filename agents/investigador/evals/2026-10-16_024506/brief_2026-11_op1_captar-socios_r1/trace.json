@@ -1,0 +1,249 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de entrenar fuerza en habitos de ejercicio"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Beneficios del ejercicio: MedlinePlus en español",
+            "url": "https://medlineplus.gov/spanish/benefitsofexercise.html",
+            "snippet": "Fortalecer sus huesos y músculos: El ejercicio regular puede ayudar a hacer más fuertes los huesos de niños y adolescentes. Con los años, también puede disminuir la pérdida de densidad ósea relacionada con la edad. Hacer actividades de fortalecimiento muscular puede ayudarle a aumentar o mantener la masa muscular y la fuerza. En el caso de adultos mayores esto puede significar que se mantengan independientes como para, por ejemplo, ser capaces de levantarse de una silla o de la cama sin ayuda [...] Lo hemos oído muchas veces: el ejercicio regular es bueno para la salud y puede ayudarle a manej",
+            "published": "",
+            "relevance": 0.52,
+            "tipo_fuente": "certificada",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Haga ejercicio: 7 beneficios de la actividad física regular - Mayo Clinic",
+            "url": "https://www.mayoclinic.org/es/healthy-lifestyle/fitness/in-depth/exercise/art-20048389",
+            "snippet": "¿Queda sin aliento después de hacer las compras o los quehaceres domésticos? La actividad física regular puede mejorar la fuerza muscular y aumentar la resistencia.\n\nEl ejercicio envía oxígeno y nutrientes a los tejidos y ayuda a que el sistema cardiovascular funcione con mayor eficacia. Y cuando su salud cardíaca y pulmonar mejoran, tiene más energía para hacer las tareas diarias.\n\n## 5. El ejercicio permite dormir mejor [...] ## 2. El ejercicio combate afecciones de salud y enfermedades\n\n¿Le preocupan las enfermedades cardíacas? ¿Espera poder prevenir la presión arterial alta? Sin importar c",
+            "published": "",
+            "relevance": 0.49,
+            "tipo_fuente": "certificada",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "13 beneficios para la salud del entrenamiento de fuerza",
+            "url": "https://www.freeletics.com/es/blog/posts/beneficios-salud-entrenamiento-fuerza",
+            "snippet": "Cuando haces ejercicio, incluido el entrenamiento de fuerza, se liberan neurotransmisores como dopamina y serotonina que regulan el estado de ánimo y reducen el estrés.15\n\nJuntos, pueden ayudar a combatir trastornos depresivos, aumentar los niveles de energía y mejorar el estado de alerta de una forma similar a la medicación. [...] El entrenamiento de fuerza, también conocido como entrenamiento con pesas o de resistencia, es cualquier ejercicio en el que tu cuerpo se mueve contra algún tipo de resistencia, como bandas de resistencia, pesas, máquinas de ejercicio o incluso su propio peso.\n\nEl e",
+            "published": "",
+            "relevance": 0.82,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Beneficios del Entrenamiento de Fuerza Según Expertos │ Bupa Latinoamérica",
+            "url": "https://www.bupasalud.com/salud/beneficios-entrenamiento-fuerza",
+            "snippet": "Sleep Foundation destaca que el entrenamiento de fuerza puede mejorar la calidad del sueño y favorecer un descanso más profundo. Las guías del U.S. Department of Health and Human Services recomiendan incluir al menos dos días de entrenamiento de fuerza en cualquier rutina de ejercicio semanal. [...] El ejercicio en general, según un artículo de la National Library of Medicine, tiene un efecto positivo sobre la autoestima, mejorando la percepción que las personas tienen de sí mismas y de sus capacidades. El entrenamiento de fuerza, en particular, produce cambios visibles en la composición corpo",
+            "published": "",
+            "relevance": 0.81,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "ENTRENAMIENTO DE FUERZA ¡Conoce sus beneficios!",
+            "url": "https://www.youtube.com/watch?v=Oi0-2uuvnt4",
+            "snippet": "Ayuda a fortalecer huesos, proteger las articulaciones, mejorar el metabolismo y prevenir enfermedades a largo plazo. es clave para vivir mejor",
+            "published": "",
+            "relevance": 0.71,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de entrenar fuerza en habitos de ejercicio",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "como empezar entrenamiento funcional fuerza rutinas"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Entrenamiento Funcional: Mejora tu Fuerza y Movilidad │ Bupa Latinoamérica",
+            "url": "https://www.bupasalud.com/salud/entrenamiento-funcional",
+            "snippet": "## ¿Cómo realizar entrenamiento funcional?\n\nPara aprovechar al máximo el entrenamiento funcional y evitar lesiones, hay que prestar atención a la técnica y la postura desde el principio. Empezar sin una base técnica adecuada es uno de los errores más frecuentes.\n\nLo ideal es comenzar con una valoración por parte de un profesional que diseñe un programa adaptado a tus objetivos y nivel físico.\n\n### Técnicas y posturas correctas [...] El entrenamiento funcional de fuerza, según Verywell Fit, trabaja el cuerpo a través de patrones de movimiento que desarrollan fuerza aplicable a gestos cotidianos",
+            "published": "",
+            "relevance": 0.74,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Entrenamiento funcional: qué es, beneficios y cómo empezar ...",
+            "url": "https://entrenamientoflame.com/guia-completa-de-entrenamiento-funcional-beneficios-tipos-y-consejos-para-empezar",
+            "snippet": "Se suelen trabajar ejercicios como sentadillas, peso muerto, zancadas, empujes, tracciones, trabajo de core, movilidad, equilibrio y ejercicios con cargas o",
+            "published": "",
+            "relevance": 0.58,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Rutina de FUERZA Fácil en Casa",
+            "url": "https://www.youtube.com/watch?v=pxFbGpXOCyA",
+            "snippet": "--\n\n¿Acabas de empezar a entrenar y no sabes por dónde comenzar? Esta rutina de fuerza está pensada especialmente para ti. No necesitas ir al gimnasio ni tener mucho material —con una sola mancuerna y un poco de espacio en casa es suficiente para activar todo tu cuerpo.\n\n💥 En esta clase vamos a trabajar piernas, glúteos, brazos y espalda con 5 ejercicios simples pero muy efectivos:\n\nZancada – para fortalecer piernas y glúteos.\n\nPuente de glúteo – activa toda la cadena posterior. [...] Press desde el suelo – trabaja pecho y hombros sin dañar el cuello.\n\nRemo – ideal para la espalda y mejorar la",
+            "published": "",
+            "relevance": 0.73,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "como empezar entrenamiento funcional fuerza rutinas",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.388,
+          0.3
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "que es hyrox entrenamiento hibrido resistencia fuerza"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Cómo combinar fuerza y carrera en HYROX: Guía para ...",
+            "url": "https://cursoshighfitness.com/como-combinar-fuerza-y-carrera-en-hyrox-guia-para-reducir-la-interferencia-y-optimizar-el-rendimiento",
+            "snippet": "HYROX es un desafío único que pone a prueba, de manera simultánea, la fuerza y la resistencia. ntrenamiento concurrente es la inclusión de estí",
+            "published": "",
+            "relevance": 0.87,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Entrenamiento híbrido: desarrolla fuerza, resistencia y una condición física versátil | On Estados Unidos",
+            "url": "https://www.on.com/es-us/stories/hybrid-training",
+            "snippet": "Esta variedad no solo reduce el riesgo de sufrir lesiones, sino que también te ayuda a romper esos momentos de estancamiento al trabajar la fuerza y la resistencia al mismo tiempo, para que sigas progresando.\n\n## El entrenamiento híbrido en acción\n\nUn gran ejemplo de entrenamiento híbrido en competición es la carrera de fitness Hyrox. Como explica Churchill: “El CrossFit es una forma de entrenamiento híbrido, pero se centra más en la fuerza. El Hyrox se inclina más hacia el running”. [...] “Para mí, el entrenamiento híbrido mezcla varias disciplinas”, afirma Churchill. “Puedes pensar en el dec",
+            "published": "",
+            "relevance": 0.86,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "HYROX: Trucos de entrenamiento híbrido con Jake Dearden",
+            "url": "https://www.redbull.com/es-es/entrenamiento-hibrido-correr-fuerza",
+            "snippet": "En esencia, el entrenamiento híbrido consiste en combinar trabajo con pesas y cardio. Por ejemplo, si entrenas cinco veces por semana, podrías",
+            "published": "",
+            "relevance": 0.77,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "¿Qué es HYROX?  ¡El entrenamiento híbrido ...",
+            "url": "https://www.facebook.com/pizzurnofitnesstrainer/posts/qu%C3%A9-es-hyrox-%EF%B8%8F%EF%B8%8F%EF%B8%8F-el-entrenamiento-h%C3%ADbrido-llevado-al-siguiente-nivel-de-competen/1601424641350105",
+            "snippet": "El HYROX es una competencia de fitness popular que combina 8 kilómetros de carrera con 8 ejercicios de fuerza y resistencia. Es una carrera",
+            "published": "",
+            "relevance": 0.92,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "¿Qué es HÍBRIDO? HÍBRIDO es un entrenamiento ...",
+            "url": "https://www.instagram.com/reel/DbWIc_oCXFJ",
+            "snippet": "HÍBRIDO es un entrenamiento que combina carrera y fuerza para desarrollar un rendimiento completo. Vas a trabajar resistencia, potencia,",
+            "published": "",
+            "relevance": 0.73,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "que es hyrox entrenamiento hibrido resistencia fuerza",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "constancia reto de 21 dias habitos ejercicio fuerza"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Reto de 21 días para principiantes en Año Nuevo",
+            "url": "https://www.bjornborg.com/es/stories/workouts/21-day-fitness-challenge-for-beginners",
+            "snippet": "Con tan solo 15–30 minutos al día, este reto se enfoca en entrenamientos de cuerpo completo, cardio ligero y ejercicios de flexibilidad, ganar fuerza y",
+            "published": "",
+            "relevance": 0.73,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Reto 21 Dias Actualizado Links | PDF",
+            "url": "https://www.scribd.com/document/580803731/Reto-21-dias-actualizado-links",
+            "snippet": "1. Escribe 10 metas. Realiza la actividad fisica que prefieras, teniendo en cuenta que debe incluir aerobico y ejercicios de esfuerzo, como por ejemplo fuerza",
+            "published": "",
+            "relevance": 0.68,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "**¡Comienza hoy tu Reto de 21 Días!** Un pequeño esfuerzo ...",
+            "url": "https://www.facebook.com/100077885293059/videos/-comienza-hoy-tu-reto-de-21-d%C3%ADas-un-peque%C3%B1o-esfuerzo-diario-puede-marcar-una-gra/1769631627361513",
+            "snippet": "Este reto está diseñado para ayudarte a crear el hábito de entrenar, mejorar tu condición física y sentirte más fuerte cada semana. No",
+            "published": "",
+            "relevance": 0.76,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "9 días de nuestro Reto 21 días y ya se siente el cambio.Más ...",
+            "url": "https://www.instagram.com/reel/DYhZVbBxbI5",
+            "snippet": "9 días de nuestro Reto 21 días y ya se siente el cambio. Más energía, más fuerza y más mujeres creyendo en sí mismas cada día. . View all",
+            "published": "",
+            "relevance": 0.58,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "constancia reto de 21 dias habitos ejercicio fuerza",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.392
+        ]
+      }
+    }
+  ],
+  "latency_s": 14.171858999994583,
+  "prompt_tokens": 29090,
+  "completion_tokens": 1150
+}

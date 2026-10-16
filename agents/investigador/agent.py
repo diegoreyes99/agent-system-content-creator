@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from google.adk.agents import Agent
+from google.adk.models.google_llm import Gemini
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.tools.base_tool import BaseTool
 from google.adk.tools.tool_context import ToolContext
@@ -35,6 +36,13 @@ MAX_SEARCH_CALLS = 5
 VALID_PROVIDERS = {"local", "gemini"}
 DEFAULT_GEMINI_MODEL_ID = "gemini-3.1-flash-lite"  # same model family used in Class 4
 
+# Retries with exponential backoff for Gemini (Class 7 pattern). Google answers
+# 429 when we exceed the per-minute quota and 503 when the model is overloaded;
+# both are temporary, so instead of losing the run we wait and try again:
+# 5 s, 10 s, 20 s, 40 s (plus a little random jitter), then give up.
+GEMINI_RETRY_ATTEMPTS = 5  # first try + 4 retries
+GEMINI_RETRY_STATUS_CODES = [408, 429, 500, 502, 503, 504]
+
 
 def provider() -> str:
     value = os.environ.get("MODEL_PROVIDER", "local").strip().lower()
@@ -50,12 +58,34 @@ def model_id() -> str:
     return os.environ.get("LM_STUDIO_MODEL_ID", "qwen/qwen3-vl-4b")
 
 
+def retries_supported() -> bool:
+    """True if this ADK version accepts retry_options on its Gemini model."""
+    return "retry_options" in getattr(Gemini, "model_fields", {})
+
+
+def retry_attempts() -> int:
+    """Attempts per model call (1 = no retries). Logged to MLflow."""
+    return GEMINI_RETRY_ATTEMPTS if provider() == "gemini" and retries_supported() else 1
+
+
 def build_model():
-    """Gemini is native to ADK (a model string); the local model goes through LiteLLM."""
+    """Gemini is native to ADK; the local model goes through LiteLLM."""
     if provider() == "gemini":
         # Use the Gemini API with GOOGLE_API_KEY, not Vertex AI.
         os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "FALSE")
-        return model_id()
+        if not retries_supported():
+            return model_id()
+        return Gemini(
+            model=model_id(),
+            retry_options=types.HttpRetryOptions(
+                attempts=GEMINI_RETRY_ATTEMPTS,
+                initial_delay=5.0,
+                max_delay=60.0,
+                exp_base=2.0,
+                jitter=1.0,
+                http_status_codes=GEMINI_RETRY_STATUS_CODES,
+            ),
+        )
     # timeout: si LM Studio no responde en 5 min, la corrida falla con error
     # en vez de quedarse esperando para siempre.
     return LiteLlm(model=f"openai/{model_id()}", timeout=300)
