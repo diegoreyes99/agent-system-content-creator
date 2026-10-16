@@ -1,0 +1,50 @@
+{
+  "status": "aprobado",
+  "ronda_aprobada": 1,
+  "seleccion": [
+    {
+      "id": 1,
+      "tema": "¿Cómo ayuda el Pilates a aliviar el dolor lumbar y cuidar la espalda?",
+      "que_dice_la_fuente": "Una revisión sistemática y el método tradicional respaldan que el pilates alivia el dolor lumbar mediante el fortalecimiento del torso, la mejora de la postura y la flexibilidad de la columna.",
+      "fuente": "https://www.aarp.org/espanol/salud/vida-saludable/info-2024/beneficios-pilates-cuerpo-mente.html",
+      "responde_a": "Prioridad principal: llenar clases de Pilates (martes y jueves 09:00 a 10:00). Público: Rosa, que busca movilidad y cuidar espalda y rodillas, pero teme lastimarse.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Por qué el Pilates es ideal para mejorar la movilidad y proteger las articulaciones sin impacto?",
+      "que_dice_la_fuente": "El Pilates se basa en el control y la fluidez, ofreciendo una forma segura y altamente adaptable que no busca la fuerza bruta, sino la funcionalidad y el alivio del dolor articular.",
+      "fuente": "https://doctorluisgallego.com/pilates-para-mayores-y-beneficios-para-tus-articulaciones",
+      "responde_a": "Público prioritario: Rosa (45 a 55+ años) que busca movilidad y salud articular. Voz de la comunidad: miedo a que el entrenamiento sea muy intenso o lastimarse.",
+      "prioridad": "alta",
+      "recomendado": false,
+      "tipo_fuente": "no_verificada",
+      "contenido_suficiente": false
+    },
+    {
+      "id": 4,
+      "tema": "¿Qué son los ejercicios de bajo impacto y cómo cuidan tus articulaciones?",
+      "que_dice_la_fuente": "Los ejercicios de bajo impacto reducen la presión sobre las rodillas, caderas y columna en comparación con actividades intensas, permitiendo desarrollar fuerza y flexibilidad de forma segura.",
+      "fuente": "https://www.cigna.com/es-us/knowledge-center/what-is-low-impact-exercise",
+      "responde_a": "Prioridad principal del mes y objeción de la comunidad sobre el miedo a lastimarse las rodillas o la espalda.",
+      "prioridad": "media",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    }
+  ],
+  "historial": [
+    {
+      "ronda": 1,
+      "accion": "aprobar",
+      "ids": [
+        1,
+        2,
+        4
+      ]
+    }
+  ]
+}

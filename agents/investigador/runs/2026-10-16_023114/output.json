@@ -1,0 +1,49 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Cómo ayuda el Pilates a aliviar el dolor lumbar y cuidar la espalda?",
+      "que_dice_la_fuente": "Una revisión sistemática y el método tradicional respaldan que el pilates alivia el dolor lumbar mediante el fortalecimiento del torso, la mejora de la postura y la flexibilidad de la columna.",
+      "fuente": "https://www.aarp.org/espanol/salud/vida-saludable/info-2024/beneficios-pilates-cuerpo-mente.html",
+      "responde_a": "Prioridad principal: llenar clases de Pilates (martes y jueves 09:00 a 10:00). Público: Rosa, que busca movilidad y cuidar espalda y rodillas, pero teme lastimarse.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Por qué el Pilates es ideal para mejorar la movilidad y proteger las articulaciones sin impacto?",
+      "que_dice_la_fuente": "El Pilates se basa en el control y la fluidez, ofreciendo una forma segura y altamente adaptable que no busca la fuerza bruta, sino la funcionalidad y el alivio del dolor articular.",
+      "fuente": "https://doctorluisgallego.com/pilates-para-mayores-y-beneficios-para-tus-articulaciones",
+      "responde_a": "Público prioritario: Rosa (45 a 55+ años) que busca movilidad y salud articular. Voz de la comunidad: miedo a que el entrenamiento sea muy intenso o lastimarse.",
+      "prioridad": "alta",
+      "recomendado": false,
+      "tipo_fuente": "no_verificada",
+      "contenido_suficiente": false
+    },
+    {
+      "id": 3,
+      "tema": "¿Necesitas experiencia previa para empezar a hacer Pilates?",
+      "que_dice_la_fuente": "No se requiere ninguna base de fuerza, flexibilidad ni coordinación previa para empezar, ya que los movimientos y resistencias se adaptan a la capacidad de cada persona.",
+      "fuente": "https://pinarpilates.com/pilates-maquinas-principiantes/",
+      "responde_a": "Duda recurrente de la comunidad: \"¿Necesito experiencia previa en Pilates?\" y público de principiantes.",
+      "prioridad": "alta",
+      "recomendado": false,
+      "tipo_fuente": "no_verificada",
+      "contenido_suficiente": false
+    },
+    {
+      "id": 4,
+      "tema": "¿Qué son los ejercicios de bajo impacto y cómo cuidan tus articulaciones?",
+      "que_dice_la_fuente": "Los ejercicios de bajo impacto reducen la presión sobre las rodillas, caderas y columna en comparación con actividades intensas, permitiendo desarrollar fuerza y flexibilidad de forma segura.",
+      "fuente": "https://www.cigna.com/es-us/knowledge-center/what-is-low-impact-exercise",
+      "responde_a": "Prioridad principal del mes y objeción de la comunidad sobre el miedo a lastimarse las rodillas o la espalda.",
+      "prioridad": "media",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    }
+  ],
+  "resumen_ejecutivo": "Se investigó sobre los beneficios de Pilates enfocándose en el alivio del dolor de espalda, la salud articular, la movilidad en adultos y la accesibilidad para principiantes sin experiencia previa. Se identificaron 4 temas altamente relevantes que responden de manera directa a la prioridad de llenar las clases de Pilates y mitigar los miedos del público de Rosa."
+}
