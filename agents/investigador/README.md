@@ -42,9 +42,21 @@ El `.env` está en `.gitignore`: la key nunca se sube a GitHub.
 
 ## 2. Corre el agente
 
-Con LM Studio abierto y el servidor local encendido (el mismo modelo del
-baseline). El script toma `TAVILY_API_KEY` de `agents/investigador/.env` y
-`LM_STUDIO_MODEL_ID` del `baseline/.env` que ya tienes.
+Desde el 2026-10-20 el modelo por defecto es **Gemini 3.5 Flash Lite**
+(necesita `GOOGLE_API_KEY` en `agents/investigador/.env`). Para usar el modelo
+local, agrega `--model local` con LM Studio abierto y el servidor encendido
+(toma `LM_STUDIO_MODEL_ID` del `baseline/.env`).
+
+**Por qué Gemini** (eval v7, mismos 5 briefs de noviembre, 1 repetición):
+
+| | Local (qwen3-vl-4b) | Gemini 3.5 Flash Lite |
+|---|---|---|
+| Corridas útiles | 1 de 5 | 5 de 5 |
+| Esquema válido | 60% | 100% |
+| Rúbrica: relevancia / fidelidad / accionabilidad | 2.9 / 2.3 / 2.5 | 2.9 / 2.7 / 2.8 |
+| Tiempo por corrida | ~200 s | 15 s (hasta ~140 s cuando espera la cuota del plan gratuito) |
+
+Con Gemini, cada llamada se reintenta sola ante 429 o 503 (hasta 5 intentos).
 
 ```bash
 python agents/investigador/run_investigador.py --brief baseline/briefs/ciclo-1-brief.md
@@ -81,8 +93,8 @@ python agents/investigador/eval_investigador.py --prompt-version v4 --trigger t2
 ```
 
 Corre los 5 briefs de noviembre 2026 (`baseline/briefs/brief_2026-11_op*.md`)
-3 veces cada uno: 15 corridas, unos 50 minutos con el modelo local y unas
-60 búsquedas de Tavily. Si una corrida falla, se registra como fallida y
+3 veces cada uno: 15 corridas, unos 50 minutos con el modelo local (bastante menos con
+Gemini) y unas 60 búsquedas de Tavily. Si una corrida falla, se registra como fallida y
 el eval sigue. Al final imprime el resumen; los archivos quedan en
 `agents/investigador/evals/<fecha>/` y en MLflow como una corrida padre
 `eval-...` con una corrida hija por caso.

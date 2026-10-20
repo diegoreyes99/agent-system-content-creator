@@ -34,7 +34,9 @@ MAX_SEARCH_CALLS = 5
 # Model provider: "local" (LM Studio, OpenAI-compatible) or "gemini" (Gemini API).
 # Selected with MODEL_PROVIDER or with --model in run_investigador.py / eval_investigador.py.
 VALID_PROVIDERS = {"local", "gemini"}
-DEFAULT_GEMINI_MODEL_ID = "gemini-3.1-flash-lite"  # same model family used in Class 4
+# Default since 2026-10-20: the model actually evaluated (v7 eval + human rubric).
+# gemini-3.1-flash-lite (Class 4) never finished a run: 503, model overloaded.
+DEFAULT_GEMINI_MODEL_ID = "gemini-3.5-flash-lite"
 
 # Retries with exponential backoff for Gemini (Class 7 pattern). Google answers
 # 429 when we exceed the per-minute quota and 503 when the model is overloaded;
@@ -45,7 +47,7 @@ GEMINI_RETRY_STATUS_CODES = [408, 429, 500, 502, 503, 504]
 
 
 def provider() -> str:
-    value = os.environ.get("MODEL_PROVIDER", "local").strip().lower()
+    value = os.environ.get("MODEL_PROVIDER", "gemini").strip().lower()  # default since 2026-10-20
     if value not in VALID_PROVIDERS:
         raise ValueError(f"MODEL_PROVIDER='{value}' is not valid. Options: {sorted(VALID_PROVIDERS)}")
     return value

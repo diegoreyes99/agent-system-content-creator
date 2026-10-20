@@ -114,7 +114,7 @@ def main() -> None:
     parser.add_argument("--reps", type=int, default=3)
     parser.add_argument("--briefs", type=Path, nargs="+", default=GOLDEN_SET)
     parser.add_argument("--model", choices=sorted(single.investigador.VALID_PROVIDERS), default=None,
-                        help="local (LM Studio, default) or gemini (Gemini API, needs GOOGLE_API_KEY)")
+                        help="gemini (Gemini API, default, needs GOOGLE_API_KEY) or local (LM Studio)")
     parser.add_argument("--search-backend", choices=sorted(single.tools.VALID_BACKENDS), default=None)
     args = parser.parse_args()
 

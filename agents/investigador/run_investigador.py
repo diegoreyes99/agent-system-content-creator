@@ -422,7 +422,7 @@ def main() -> None:
     parser.add_argument("--trigger", choices=sorted(TRIGGERS), default="t1",
                         help="Versión del mensaje de arranque (ver TRIGGERS)")
     parser.add_argument("--model", choices=sorted(investigador.VALID_PROVIDERS), default=None,
-                        help="local (LM Studio, default) or gemini (Gemini API, needs GOOGLE_API_KEY)")
+                        help="gemini (Gemini API, default, needs GOOGLE_API_KEY) or local (LM Studio)")
     parser.add_argument("--search-backend", choices=sorted(tools.VALID_BACKENDS), default=None)
     parser.add_argument("--sin-aprobacion", action="store_true",
                         help="No pedir la selección de Dani al final (para pruebas)")
