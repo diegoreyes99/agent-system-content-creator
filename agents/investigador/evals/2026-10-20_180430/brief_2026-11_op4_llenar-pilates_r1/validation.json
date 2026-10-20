@@ -1,0 +1,36 @@
+{
+  "schema_errors": [],
+  "correcciones": [
+    {
+      "id": 1,
+      "tema": "¿Cómo ayuda el método Pilates a aliviar el dolor de espalda y proteger las rodillas?",
+      "fuente": "https://iacolumna.com/pilates-una-solucion-eficaz-para-aliviar-el-dolor-de-espalda-y-meloror-la-salud-de-la-columna-vertebral",
+      "motivo": "recomendado con fuente no verificada: la URL no salió de ninguna búsqueda; se quitó la recomendación"
+    }
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 1.0,
+    "n_schema_errors": 0.0,
+    "n_hallazgos": 5.0,
+    "n_alta": 3.0,
+    "n_recomendados": 3.0,
+    "n_tendencias": 0.0,
+    "pct_fuentes_stub": 0.0,
+    "pct_fuentes_url": 1.0,
+    "n_tool_calls": 3.0,
+    "n_search_errors": 0.0,
+    "pct_fuentes_verificadas": 0.8,
+    "search_pass_rate": 0.9333333333333333,
+    "avg_relevance": 0.8014285714285715,
+    "n_fuentes_repetidas": 0.0,
+    "pct_fuentes_aprovechadas": 0.2857142857142857,
+    "prioridad_sin_variacion": 0.0,
+    "n_temas_copia_busqueda": 0.0,
+    "n_recomendados_corregidos": 1.0,
+    "run_failed": 0.0,
+    "latency_s": 132.13,
+    "prompt_tokens": 22019.0,
+    "completion_tokens": 1117.0
+  }
+}

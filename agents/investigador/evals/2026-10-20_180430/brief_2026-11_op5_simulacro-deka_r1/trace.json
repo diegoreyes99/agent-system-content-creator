@@ -1,0 +1,209 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios entrenamiento funcional hibrido salud"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "¿Qué es el entrenamiento híbrido? Ciencia y ejemplos",
+            "url": "https://enfaf.com/entrenamiento-hibrido",
+            "snippet": "Aunque esta modalidad tiene defensores y detractores, entrenar de forma híbrida tiene beneficios claros cuando se planifica bien:\n\n### Mejora la fuerza y la resistencia simultáneamente\n\nAl combinar entrenamiento de fuerza y cardiovascular, se obtienen mejoras tanto en el desarrollo muscular como en el sistema cardiovascular. Y según la revisión más reciente, añadir trabajo aeróbico no impidió ganar músculo ni fuerza máxima respecto a entrenar solo fuerza (2).\n\n### Ahorro de tiempo [...] Es un método que combina ejercicios de fuerza con trabajo de resistencia cardiovascular, buscando un desarro",
+            "published": "",
+            "relevance": 0.82,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Entrenamiento híbrido: qué es y por qué dominará el fitness en 2026 | Helathness | Ecus Fitness",
+            "url": "https://www.ecusfitness.com/blog/entrenamiento-hibrido-que-es-beneficios-fitness-2026",
+            "snippet": "Eventos como HYROX han impulsado esta tendencia, combinando carreras y estaciones funcionales en un mismo formato.\n\n### 3. Optimización del tiempo\n\nPermite trabajar múltiples capacidades en menos tiempo, ideal para agendas exigentes.\n\n### 4. Enfoque en salud y longevidad\n\nMejora masa muscular, capacidad cardiovascular y movilidad: tres pilares clave del bienestar a largo plazo.\n\n## Beneficios del entrenamiento híbrido\n\n### Mejor rendimiento global [...] Un cuerpo más adaptable y eficiente en distintas actividades.\n\n### Mayor eficiencia metabólica\n\nMejor uso de energía, favoreciendo resistencia",
+            "published": "",
+            "relevance": 0.8,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "What is hybrid training, its benefits, differences and how im",
+            "url": "https://singularwod.com/blogs/news/que-es-el-entrenamiento-hibrido",
+            "snippet": "## Which is hybrid training and how its benefits enhances strength, resistance, health and performance in any discipline\n\n1.        Full physical development: It combines strength, resistance, mobility and control.\n\n2.        Better adhesion to the plan: Being varied and progressive, avoid monotony.\n\n3.        Reduction of injury risk: Not focusing only on a quality, there is less specific overload.\n\n4.        Time efficiency: You train more in less time. [...] All these materials allow simulating the environment of a hybrid competition and adapting training in both boxes and outdoors.\n\nHybrid",
+            "published": "",
+            "relevance": 0.79,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "¿Cuál es la diferencia entre entrenamiento funcional y entrenamiento híbrido? – Eryx Fitness",
+            "url": "https://www.eryxfitness.com/es/cual-es-la-diferencia-entre-entrenamiento-funcional-y-entrenamiento-hibrido",
+            "snippet": "El entrenamiento funcional se centra en el desarrollo global de las capacidades físicas para mejorar el rendimiento diario y la salud general. Su objetivo es preparar el cuerpo para todas las situaciones posibles integrando una variedad de movimientos y patrones motores. Así que se trata de ser «bueno» en todas partes. [...] Por otra parte, el entrenamiento híbrido amplía los límites combinando modalidades de entrenamiento que a menudo son opuestas, como la fuerza y la resistencia, para destacar simultáneamente en varias disciplinas. Los atletas híbridos demuestran una notable capacidad para r",
+            "published": "",
+            "relevance": 0.75,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Beneficios del Entrenamiento Híbrido: Mejora Tu Salud Física y ...",
+            "url": "https://www.tiktok.com/@fitnesshibridoesp/video/7399282790543510817",
+            "snippet": "Descubre los beneficios del entrenamiento híbrido que combina fuerza y resistencia para mejorar tu salud cardiovascular, muscular y metabólica.",
+            "published": "",
+            "relevance": 0.87,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios entrenamiento funcional hibrido salud",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "diferencia entre hyrox y deka fit fitness"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "HYROX vs DEKA Fit – Race Formats, Workouts & Training Differences",
+            "url": "https://roxzone.training/blog/hyrox-vs-deka-fit-comparison",
+            "snippet": "In summary, HYROX workouts are fewer in number but higher in volume/intensity, demanding more strength endurance (think heavy pushes, long grinds of reps), whereas DEKA Fit workouts are more numerous but each is quicker, emphasizing fast transitions and a wider variety of functional skills. HYROX might favor an athlete who can endure a drawn-out burn (e.g. churning through 100 wall balls fatigued), while DEKA favors those who can explode into each station and recover rapidly (e.g. spiking heart [...] A: The HYROX format is 8x1km runs, each followed by one of 8 workout stations (8 runs, 8 exerc",
+            "published": "",
+            "relevance": 0.94,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "HYROX vs DEKA FIT 2026: Diferencias y Cuál Elegir",
+            "url": "https://www.correrjuntos.com/blog/hyrox-vs-deka-fit",
+            "snippet": "La diferencia más obvia es la distancia de carrera. HYROX exige 8 km con tramos de 1 km entre estaciones. DEKA FIT solo 5 km con tramos de 500 m",
+            "published": "",
+            "relevance": 0.92,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Hyrox vs. Deka Fit: Which Race Should You Try First?",
+            "url": "https://www.trxtraining.com/blogs/news/hyrox-vs-deka-fit",
+            "snippet": "TRX Training\n\n## Hyrox vs Deka Fit at a Glance\n\nHyrox is a longer, heavier endurance race built around eight functional stations and eight kilometers of running. Deka Fit is a shorter, denser sprint through 10 zones with about five kilometers of running. Both push hybrid athletes hard, but they reward different builds. Hyrox pays off steady pacing. Deka Fit pays off short bursts of power. The TRX Ignite Games sits between them as a lower-cost, community-first entry point. [...] Hyrox is the longer, heavier, globally accessible race for endurance-leaning athletes who want the marquee event. Dek",
+            "published": "",
+            "relevance": 0.91,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "DEKA Fit vs Hyrox Guide | Find Your Hybrid Competition",
+            "url": "https://hyperwear.com/blogs/blog/deka-fit-vs-hyrox-which-competition-fits-your-training-style",
+            "snippet": "New fitness competitions continue to grow off of the foundation of the CrossFit Games. Selecting between DEKA Fit and Hyrox ultimately depends on your personal strengths and fitness goals. If you prefer strength and functional benchmarks, DEKA Fit is a fantastic option. For endurance enthusiasts who love the challenge of combining running with strength tasks, Hyrox provides an exhilarating athletic test. [...] ### Hyrox\n\nHyrox combines running with functional fitness tasks. Competitors alternate between 1-kilometer runs and fitness stations such as sled pushes, rowing, and burpees. Hyrox typic",
+            "published": "",
+            "relevance": 0.87,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "¿Qué diferencia hay entre HYROX, DEKA y OCR? Nos lo ...",
+            "url": "https://www.instagram.com/reel/DO_EFtRCq14?hl=en",
+            "snippet": "HYROX → El hermano mayor del fitness híbrido 1.000 m de carrera + estaciones con mucho peso y repeticiones. Exigente, potente y diseñado para",
+            "published": "",
+            "relevance": 0.81,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "diferencia entre hyrox y deka fit fitness",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "como empezar en simulacro fitness principiantes"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Ejercitarse como principiante: Comenzando tu viaje de acondicionamiento físico",
+            "url": "https://www.orangetheory.com/es-pr/articles/launching-your-fitness-journey-a-guide-to-gym-routine-for-beginners",
+            "snippet": "‍\n\nA continuación se muestra una rutina semanal de ejemplo que puedes seguir o usar como inspiración para comenzar. Incluye los principales movimientos que deseas incorporar (empujar, tirar, sentadillas, estocadas, bisagra y core). Recuerda, si estás apuntando a 20 minutos de cardio, eso podría significar que hagas diez minutos por la mañana y diez minutos por la tarde. Comienza cada entrenamiento con un calentamiento dinámico y termina con un enfriamiento/estiramiento. [...] Comenzar una rutina de gym puede ser intimidante, confuso e incluso frustrante, especialmente después de un largo parón",
+            "published": "",
+            "relevance": 0.43,
+            "tipo_fuente": "competidor",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "como empezar en simulacro fitness principiantes",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.374,
+          0.273,
+          0.197,
+          0.185
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "consejos para primer evento deportivo o competencia fitness"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "10 Consejos para prepararse para un Torneo Deportivo | Business Sports",
+            "url": "https://business-sports.es/10-consejos-para-prepararse-para-un-torneo-deportivo",
+            "snippet": "Organiza simulacros y competencias de práctica para simular las condiciones del torneo. Esto te ayudará a acostumbrarte a la presión y a tomar decisiones bajo estrés. También es una oportunidad para identificar áreas de mejora antes del evento real.\n\n## 8. Planifica con anticipación\n\nPlanifica todos los detalles logísticos con anticipación. Asegúrate de tener todo el equipo y la ropa necesarios en orden. Evita el estrés de última hora organizando tus cosas con tiempo de sobra. [...] ## 9. Mantén la calma el día del torneo\n\nEl día del torneo, mantén la calma y sigue tus rutinas habituales de pr",
+            "published": "",
+            "relevance": 0.64,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          }
+        ],
+        "backend": "tavily",
+        "query": "consejos para primer evento deportivo o competencia fitness",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.399,
+          0.094,
+          0.055,
+          0.025
+        ]
+      }
+    }
+  ],
+  "latency_s": 148.7792893750011,
+  "prompt_tokens": 27899,
+  "completion_tokens": 1040
+}

@@ -1,0 +1,60 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Qué es DEKA Fit y en qué se diferencia de Hyrox?",
+      "que_dice_la_fuente": "Hyrox combina tramos de 1 km de carrera con 8 estaciones pesadas de resistencia, mientras que DEKA Fit es una prueba más corta de 5 km dividida en tramos de 500 m y 10 zonas funcionales con énfasis en transiciones rápidas y agilidad.",
+      "fuente": "https://roxzone.training/blog/hyrox-vs-deka-fit-comparison",
+      "responde_a": "Duda que más se repite en la voz de la comunidad: '¿Qué es Deka y en qué se diferencia de Hyrox?' y prioridad secundaria del mes.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Por qué el entrenamiento híbrido mejora la fuerza y la resistencia al mismo tiempo?",
+      "que_dice_la_fuente": "Combinar entrenamiento de fuerza y cardiovascular en una modalidad híbrida aporta beneficios claros como el desarrollo muscular simultáneo, la optimización del tiempo y la mejora de la salud y longevidad a largo plazo.",
+      "fuente": "https://enfaf.com/entrenamiento-hibrido",
+      "responde_a": "Público prioritario (Ana): profesionista que busca eficiencia y optimización del tiempo en su entrenamiento.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 3,
+      "tema": "¿Cómo prepararse para un simulacro o competencia de fitness por primera vez?",
+      "que_dice_la_fuente": "Organizar simulacros y competencias de práctica ayuda a simular las condiciones reales, acostumbrarse a la presión, evaluar el rendimiento y planificar la logística con anticipación para evitar el estrés.",
+      "fuente": "https://business-sports.es/10-consejos-para-prepararse-para-un-torneo-deportivo",
+      "responde_a": "Prioridad principal del mes: llenar el Simulacro Deka abierto del sábado 21 de noviembre.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 4,
+      "tema": "Hyrox vs. DEKA Fit: ¿Cuál formato elegir para empezar?",
+      "que_dice_la_fuente": "DEKA Fit destaca por benchmarks de fuerza y agilidad con series cortas de potencia, ideal para quienes buscan empezar en formatos híbridos, mientras que Hyrox es un evento de resistencia más largo enfocado en ritmos constantes.",
+      "fuente": "https://www.trxtraining.com/blogs/news/hyrox-vs-deka-fit",
+      "responde_a": "Objeción o miedo principal de la comunidad: 'Deka es solo para atletas; yo no estoy a ese nivel.'",
+      "prioridad": "media",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 5,
+      "tema": "¿Cuáles son los pilares del entrenamiento híbrido para el bienestar general?",
+      "que_dice_la_fuente": "El entrenamiento híbrido combina fuerza, resistencia, movilidad y control físico completo, reduciendo el riesgo de lesiones por sobrecarga específica y mejorando la eficiencia metabólica.",
+      "fuente": "https://singularwod.com/blogs/news/que-es-el-entrenamiento-hibrido",
+      "responde_a": "Temas técnicos e interés general del público sobre acondicionamiento físico.",
+      "prioridad": "media",
+      "recomendado": false,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    }
+  ],
+  "resumen_ejecutivo": "Se investigaron los conceptos clave sobre formatos de competencia híbrida (DEKA vs. Hyrox), los beneficios del entrenamiento híbrido para profesionistas con poco tiempo y consejos para simulacros deportivos. Las fuentes respaldan perfectamente las dudas frecuentes de la comunidad y la promoción del simulacro de noviembre."
+}

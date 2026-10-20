@@ -1,0 +1,60 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Cómo ayuda el método Pilates a aliviar el dolor de espalda y proteger las rodillas?",
+      "que_dice_la_fuente": "El Pilates reduce la tensión en los músculos de la zona lumbar, mejora la postura y es recomendado para la recuperación y prevención de lesiones en espalda, cadera o rodilla.",
+      "fuente": "https://iacolumna.com/pilates-una-solucion-eficaz-para-aliviar-el-dolor-de-espalda-y-meloror-la-salud-de-la-columna-vertebral",
+      "responde_a": "Prioridad principal del mes: Llenar clases de Pilates (martes y jueves 09:00 a 10:00) para mujeres de 45 a 55+ que buscan cuidar espalda y rodillas.",
+      "prioridad": "alta",
+      "recomendado": false,
+      "tipo_fuente": "no_verificada",
+      "contenido_suficiente": false
+    },
+    {
+      "id": 2,
+      "tema": "¿Por qué el Pilates de bajo impacto es ideal para empezar a entrenar sin miedo a lastimarse?",
+      "que_dice_la_fuente": "El Pilates se adapta perfectamente a los principiantes con ejercicios sencillos y progresivos, centrando la atención en el control y la respiración para evitar gestos bruscos o lesiones.",
+      "fuente": "https://www.poses-studio.com/es/principiante-de-pilates",
+      "responde_a": "Voz de la comunidad (objeción): 'Me da miedo que sea muy intenso o lastimarme la espalda' y '¿Necesito experiencia previa?'. Público: Rosa.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 3,
+      "tema": "Consejos clave para dar tus primeros pasos en el mundo del Pilates",
+      "que_dice_la_fuente": "Las clases de Pilates pueden ser suaves o exigentes según se modifiquen los ejercicios; se recomienda comenzar con clases adaptadas, respetando los límites del cuerpo para asegurar una práctica segura.",
+      "fuente": "https://www.nytimes.com/es/2025/02/10/espanol/estilos-de-vida/pilates-principiantes-consejos.html",
+      "responde_a": "Duda recurrente de la comunidad: '¿Necesito experiencia previa en Pilates?' y el enfoque para principiantes.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 4,
+      "tema": "¿Qué papel juega la movilidad articular en el bienestar y la independencia al envejecer?",
+      "que_dice_la_fuente": "Los ejercicios de movilidad para personas mayores ayudan a mantener la autonomía, mejoran la flexibilidad y el equilibrio, y reducen el riesgo de caídas y lesiones.",
+      "fuente": "https://www.amavir.es/cuidar-al-mayor/la-importancia-de-promover-la-movilidad-en-los-adultos-mayores",
+      "responde_a": "Público prioritario: Rosa (45-55+ años) que busca movilidad y salud articular.",
+      "prioridad": "media",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 5,
+      "tema": "¿Cómo se benefician las articulaciones con una rutina regular de movilidad y bajo impacto?",
+      "que_dice_la_fuente": "Las actividades de bajo impacto son mejores para los cuerpos que envejecen, ya que proporcionan los beneficios del ejercicio sin el riesgo de lesiones o dolor articular.",
+      "fuente": "https://www.planetfitness.com/es/blog/articles/exercises-for-seniors",
+      "responde_a": "Público prioritario: Rosa, interesada en movilidad y con temor a lastimarse con entrenamientos rudos.",
+      "prioridad": "media",
+      "recomendado": false,
+      "tipo_fuente": "competidor",
+      "contenido_suficiente": true
+    }
+  ],
+  "resumen_ejecutivo": "Se investigaron los beneficios del Pilates para el dolor de espalda y rodillas, la adaptación para principiantes y la importancia de la movilidad en adultos. Se hallaron fuentes web certificadas y generales que respaldan cómo el entrenamiento de bajo impacto reduce la tensión lumbar y previene lesiones, respondiendo directamente a la prioridad de llenar las clases de Pilates y disipar los miedos de la comunidad de Rosa."
+}

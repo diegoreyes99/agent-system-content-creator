@@ -1,0 +1,60 @@
+{
+  "hallazgos": [
+    {
+      "id": 1,
+      "tema": "¿Cuáles son los beneficios de un desafío de 21 días para crear hábitos saludables?",
+      "que_dice_la_fuente": "Los estudios sugieren que se necesitan unos 21 días para crear un hábito, lo que ayuda a sentirse más fuerte, tener más energía y desarrollar confianza para continuar el viaje fitness.",
+      "fuente": "https://www.bjornborg.com/es/stories/workouts/21-day-fitness-challenge-for-beginners",
+      "responde_a": "Prioridad principal: Captar socios nuevos con el Reto 21 días de noviembre.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 2,
+      "tema": "¿Por qué combinar fuerza y cardio mejora tus resultados físicos?",
+      "que_dice_la_fuente": "La combinación de ejercicio de fuerza y ejercicio aeróbico es la estrategia más efectiva para mejorar la salud cardiovascular, apoyar el crecimiento muscular y reducir los factores de riesgo.",
+      "fuente": "https://www.fisiologiadelejercicio.com/beneficios-cardiovasculares-del-ejercicio-de-fuerza",
+      "responde_a": "Público prioritario: Ana, profesionista que busca eficiencia y entrenamiento estructurado.",
+      "prioridad": "alta",
+      "recomendado": true,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 3,
+      "tema": "Todo lo que necesitas saber sobre el entrenamiento híbrido: fuerza y resistencia",
+      "que_dice_la_fuente": "El entrenamiento híbrido combina fuerza, resistencia y capacidad funcional para mejorar el rendimiento físico integral, integrando ejercicios de fuerza, cardio y potencia en una misma rutina.",
+      "fuente": "https://www.nike.com/us/es/a/que-es-entrenamiento-hibrido",
+      "responde_a": "Tema técnico / Interés de la comunidad sobre entrenamiento funcional e híbrido.",
+      "prioridad": "media",
+      "recomendado": false,
+      "tipo_fuente": "web",
+      "contenido_suficiente": false
+    },
+    {
+      "id": 4,
+      "tema": "¿Cómo integrar un nuevo hábito de ejercicio diario en tu rutina?",
+      "que_dice_la_fuente": "Al disciplinarse para hacer ejercicio a diario durante 21 días, se logra integrar un nuevo hábito en la vida, permitiendo realizarlo sin pensarlo y avanzar hacia siguientes objetivos.",
+      "fuente": "https://movimientociudadano.mx/noticias/crea-un-habito-de-ejercicio-en-21-dias",
+      "responde_a": "Prioridad principal: Captar socios nuevos con el Reto 21 días de noviembre.",
+      "prioridad": "alta",
+      "recomendado": false,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    },
+    {
+      "id": 5,
+      "tema": "Beneficios de combinar cardio moderado y fuerza muscular",
+      "que_dice_la_fuente": "El cardio moderado no afecta el desarrollo muscular al combinarse con fuerza; de lo contrario, apoya la función circulatoria y la capacidad de recuperación del cuerpo.",
+      "fuente": "https://www.nike.com/us/es/a/entrenamientos-cardio-y-fuerza",
+      "responde_a": "Público prioritario: Ana, que busca eficiencia en sus sesiones de entrenamiento.",
+      "prioridad": "media",
+      "recomendado": false,
+      "tipo_fuente": "web",
+      "contenido_suficiente": true
+    }
+  ],
+  "resumen_ejecutivo": "Se investigaron los ejes centrales del brief: los retos de 21 días para la creación de hábitos, la combinación de fuerza con cardio, y el concepto de entrenamiento híbrido. Se identificaron fuentes confiables y web que respaldan los beneficios físicos y psicológicos de estos enfoques, ideales para conectar con el público objetivo y la prioridad del mes."
+}

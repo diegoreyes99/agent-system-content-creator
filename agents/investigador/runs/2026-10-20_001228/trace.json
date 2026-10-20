@@ -1,0 +1,218 @@
+{
+  "trace": [
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de crear habitos de ejercicio de 21 dias"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Desafío de fitness para principiantes en Año Nuevo: 21 días para hábitos saludables | Björn Borg",
+            "url": "https://www.bjornborg.com/es/stories/workouts/21-day-fitness-challenge-for-beginners",
+            "snippet": "¿Cuáles son los beneficios de un desafío fitness de 21 días?  \n  Te sentirás más fuerte, tendrás más energía y desarrollarás la confianza para continuar tu viaje fitness.\n ¿Necesito equipo para este plan de entrenamiento?  \n  No. Todos los entrenamientos se pueden realizar en casa con un equipo mínimo.\n ¿Puedo hacer este desafío si soy completamente nuevo en el ejercicio? [...] Los estudios sugieren que se necesitan unos 21 días para crear un hábito, lo que hace que este reto sea ideal para principiantes que desean integrar el fitness en su vida diaria. Ya sea que empieces desde cero o retomes",
+            "published": "",
+            "relevance": 0.86,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Crea un hábito de ejercicio en 21 días | Movimiento Ciudadano - Movimiento-Ciudadano",
+            "url": "https://movimientociudadano.mx/noticias/crea-un-habito-de-ejercicio-en-21-dias",
+            "snippet": "Sigue estos consejos y disciplínate para hacer ejercicio a diario durante 21 días, verás que conseguirás integrar un nuevo hábito en tu vida. Una vez lo hayas logrado, te sentirás más realizado y estarás orgulloso de ti mismo. Podrás hacer tu hábito sin pensarlo e ir por el siguiente objetivo de tu lista.\n\nTambién te puede interesar:\n\n Crea tu propio huerto urban\n Mejora tu home office\n Compra loca\n\nCompartir\n\nArtículos relacionados\n\nTambién pueden interesarte\n\nBoletines | 15 sep. 2020 [...] 1. Haz una evaluación: a lo largo de los 21 días puedes ir evaluando cómo va tu progreso, para poder co",
+            "published": "",
+            "relevance": 0.83,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Haz este ejercicio por 21 días seguidos",
+            "url": "https://www.facebook.com/licluischicaiza/posts/haz-este-ejercicio-por-21-d%C3%ADas-seguidos/1462117189298023",
+            "snippet": "21 días para integrar una forma saludable de comer y mejorar nuestra salud, fortalecer sistema inmune. ¿QUÉ ES RETO 21? Un hábito se crea al",
+            "published": "",
+            "relevance": 0.77,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de crear habitos de ejercicio de 21 dias",
+        "min_score": 0.4,
+        "discarded": 2,
+        "discarded_scores": [
+          0.308,
+          0.302
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "beneficios de entrenar fuerza y cardio combinados funcional"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Los beneficios de entrenar cardio y fuerza. Nike",
+            "url": "https://www.nike.com/us/es/a/entrenamientos-cardio-y-fuerza",
+            "snippet": "El cardio de intensidad moderada no afectará el desarrollo muscular cuando se realiza en combinación con el entrenamiento de fuerza. De hecho, puede ayudar al crecimiento muscular y apoyar tanto la función circulatoria como la capacidad del cuerpo para recuperarse. Sin embargo, el cardio intenso y los déficits calóricos pueden limitar el desarrollo muscular si te excedes y la recuperación se ve afectada. Si tu objetivo es el crecimiento muscular, una dieta equilibrada, mucho descanso y cardio [...] Combinar ambos tipos de ejercicio parece ser lo más efectivo para vivir de forma saludable y dur",
+            "published": "",
+            "relevance": 0.87,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Por qué combinar fuerza y cardio mejora tus resultados",
+            "url": "https://beatsfitness.es/por-que-combinar-fuerza-y-cardio-mejora-tus-resultados",
+            "snippet": "Aumento de la masa muscular: Uno de los beneficios más conocidos del entrenamiento de fuerza es el desarrollo de la masa muscular. · Mejora de la fuerza y la",
+            "published": "",
+            "relevance": 0.82,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Beneficios cardiovasculares del ejercicio de fuerza - Fisiología del Ejercicio by Dr. López Chicharro",
+            "url": "https://www.fisiologiadelejercicio.com/beneficios-cardiovasculares-del-ejercicio-de-fuerza",
+            "snippet": "Es crucial que los profesionales de la salud reconozcan los beneficios del ejercicio de fuerza y lo incluyan en sus recomendaciones clínicas para los pacientes, tanto en la prevención primaria como en la secundaria de las enfermedades cardiovasculares. La combinación de ejercicio de fuerza y ejercicio aeróbico parece ser la estrategia más efectiva para mejorar la salud cardiovascular y reducir los factores de riesgo. [...] Las guías clínicas más recientes, como las de la Sociedad Europea de Cardiología y el Colegio Americano de Medicina del Deporte, recomiendan la inclusión del ejercicio de fu",
+            "published": "",
+            "relevance": 0.76,
+            "tipo_fuente": "web",
+            "contenido_suficiente": true
+          },
+          {
+            "title": "Cómo combinar fuerza y cardio en una semana",
+            "url": "https://enfaf.com/como-combinar-fuerza-y-cardio-en-una-semana",
+            "snippet": "Saber cómo combinar fuerza y cardio en la semana es clave para mejorar el rendimiento, reducir grasa corporal y cuidar la salud metabólica.",
+            "published": "",
+            "relevance": 0.73,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "beneficios de entrenar fuerza y cardio combinados funcional",
+        "min_score": 0.4,
+        "discarded": 1,
+        "discarded_scores": [
+          0.189
+        ]
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "entrenamiento funcional hibrido rendimiento fisico salud"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "¿Qué es entrenamiento híbrido?",
+            "url": "https://www.nike.com/us/es/a/que-es-entrenamiento-hibrido",
+            "snippet": "Se basa en los principios del entrenamiento funcional, que integran ejercicios de fuerza, cardio y potencia en una misma rutina. Este enfoque de",
+            "published": "",
+            "relevance": 0.59,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "¿Cuál es la diferencia entre entrenamiento funcional y ...",
+            "url": "https://www.eryxfitness.com/es/cual-es-la-diferencia-entre-entrenamiento-funcional-y-entrenamiento-hibrido",
+            "snippet": "El entrenamiento híbrido es un enfoque que consiste en mezclar varios métodos de entrenamiento -generalmente dos, a veces más- que suelen ser «opuestos» en el",
+            "published": "",
+            "relevance": 0.55,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "¿Qué es el entrenamiento híbrido? Ciencia y ejemplos",
+            "url": "https://enfaf.com/entrenamiento-hibrido",
+            "snippet": "Una rutina de entrenamiento híbrido podría combinar ejercicios de fuerza, resistencia, velocidad y potencia, lo que permitiría llevar a cabo un",
+            "published": "",
+            "relevance": 0.45,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "Inka Challenge",
+            "url": "https://www.facebook.com/inkachallenge/posts/el-entrenamiento-hybrid-combina-fuerza-resistencia-y-capacidad-funcional-para-me/1572500778244000",
+            "snippet": "El entrenamiento Hybrid combina fuerza, resistencia y capacidad funcional para mejorar tu rendimiento físico integral. ✅ Mejorarás tu energía,",
+            "published": "",
+            "relevance": 0.85,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          },
+          {
+            "title": "¿QUÉ ES EL ENTRENAMIENTO HÍBRIDO?  ...",
+            "url": "https://www.instagram.com/reel/DNA98crsktJ?hl=en",
+            "snippet": "Este tipo de entrenamiento es ideal para quienes buscan rendimiento real, estética física y salud funcional, sin limitarse a una sola metodolog",
+            "published": "",
+            "relevance": 0.83,
+            "tipo_fuente": "red_social",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "entrenamiento funcional hibrido rendimiento fisico salud",
+        "min_score": 0.4,
+        "discarded": 0,
+        "discarded_scores": []
+      }
+    },
+    {
+      "type": "tool_call",
+      "tool": "search_web",
+      "args": {
+        "query": "como elegir un gimnasio clase grupal cupo limitado"
+      }
+    },
+    {
+      "type": "tool_result",
+      "tool": "search_web",
+      "response": {
+        "status": "success",
+        "results": [
+          {
+            "title": "Descubre los mejores estudios de fitness y lugares ...",
+            "url": "https://gym-mikolo.com/es/blogs/home-gym/discover-the-best-fitness-studios-and-workout-places-for-group-classes",
+            "snippet": "Cómo elegir el mejor gimnasio para clases grupales Al seleccionar el mejor gimnasio con clases, considera tus objetivos de fitness, horario y preferencias.",
+            "published": "",
+            "relevance": 0.65,
+            "tipo_fuente": "web",
+            "contenido_suficiente": false
+          }
+        ],
+        "backend": "tavily",
+        "query": "como elegir un gimnasio clase grupal cupo limitado",
+        "min_score": 0.4,
+        "discarded": 4,
+        "discarded_scores": [
+          0.309,
+          0.279,
+          0.237,
+          0.149
+        ]
+      }
+    }
+  ],
+  "latency_s": 14.248714167042635,
+  "prompt_tokens": 27439,
+  "completion_tokens": 1007
+}
