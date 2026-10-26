@@ -1,0 +1,6 @@
+chromadb>=0.5
+sentence-transformers>=3.0
+mlflow>=3.0
+# google-adk 2.12 requires opentelemetry <= 1.42.1; chromadb would upgrade it and break the agents.
+opentelemetry-api<=1.42.1
+opentelemetry-sdk<=1.42.1

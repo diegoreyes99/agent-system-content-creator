@@ -22,8 +22,10 @@ f45training.com
 goldsgym.com
 planetfitness.com
 24hourfitness.com
+sportcity.com.mx
+commandostudio.com
+
 
 # Boutique studios
-barrysbootcamp.com
-solidcore.co
-clubpilates.com
+lumofit.mx
+strngr.fitcolatam.com

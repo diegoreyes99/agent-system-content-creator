@@ -1,0 +1,777 @@
+{
+  "config": {
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "embedding_backend": "local",
+    "retriever_version": "v01",
+    "chunker_version": "v1",
+    "content_hash": "e46f61a6cb58",
+    "eval_set_version": "v1",
+    "k": 4,
+    "tag_filter": true,
+    "n_questions": 23
+  },
+  "summary": {
+    "hit_at_4": 0.9565217391304348,
+    "recall_at_4": 0.8043478260869565,
+    "precision_at_4": 0.30434782608695654,
+    "mrr": 0.7427536231884058
+  },
+  "by_agent": {
+    "copywriter": {
+      "hit_at_4": 1.0,
+      "recall_at_4": 0.8571428571428571,
+      "precision_at_4": 0.32142857142857145,
+      "mrr": 1.0
+    },
+    "disenador": {
+      "hit_at_4": 1.0,
+      "recall_at_4": 0.9166666666666666,
+      "precision_at_4": 0.3333333333333333,
+      "mrr": 0.6805555555555556
+    },
+    "estratega": {
+      "hit_at_4": 0.9,
+      "recall_at_4": 0.7,
+      "precision_at_4": 0.275,
+      "mrr": 0.6
+    }
+  },
+  "questions": [
+    {
+      "id": "e01",
+      "agent": "estratega",
+      "question": "¿Cuántos socios directos necesita el estudio para llegar a su punto de equilibrio?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 0.3333333333333333,
+      "rank_first_relevant": 3,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 7. Público Actual vs. Público Deseado › ¿Quiénes son sus socios hoy? Perfil General",
+          "score": 0.826,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 2. Misión, Visión y Valores › Visión — Hacia dónde van",
+          "score": 0.823,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 11. Objetivos de Negocio a Mediano y Largo Plazo",
+          "score": 0.811,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio",
+          "score": 0.809,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e02",
+      "agent": "estratega",
+      "question": "¿Qué problemas tiene hoy el negocio que el contenido debería ayudar a resolver?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 12. Retos y Dolores Actuales del Negocio",
+          "score": 0.82,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 1. Historia y Origen del Negocio › ¿Qué los motivó a invertir en marketing y contenido en este momento?",
+          "score": 0.819,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 9. Trayectoria y Presencia de Marketing › ¿Qué ha funcionado y qué no en marketing?",
+          "score": 0.796,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 9. Trayectoria y Presencia de Marketing",
+          "score": 0.789,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e03",
+      "agent": "estratega",
+      "question": "¿Con qué capacidad de producción de fotos y contenido cuenta DOPA?",
+      "hit": 0.0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "mrr": 0.0,
+      "rank_first_relevant": null,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 1. Historia y Origen del Negocio › ¿Qué los motivó a invertir en marketing y contenido en este momento?",
+          "score": 0.835,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Personalidad de marca",
+          "score": 0.834,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Quiénes somos",
+          "score": 0.823,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › ¿Qué hace único a DOPA MX frente a otros gimnasios?",
+          "score": 0.821,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e04",
+      "agent": "estratega",
+      "question": "¿Qué tipo de publicaciones le han funcionado a DOPA en redes y cuáles no?",
+      "hit": 1.0,
+      "recall": 0.5,
+      "precision": 0.25,
+      "mrr": 0.3333333333333333,
+      "rank_first_relevant": 3,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 1. Historia y Origen del Negocio › ¿Qué los motivó a invertir en marketing y contenido en este momento?",
+          "score": 0.827,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › FICHA RÁPIDA DEL NEGOCIO",
+          "score": 0.823,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 9. Trayectoria y Presencia de Marketing › ¿Qué ha funcionado y qué no en marketing?",
+          "score": 0.818,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 12. Retos y Dolores Actuales del Negocio",
+          "score": 0.818,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e05",
+      "agent": "estratega",
+      "question": "¿Qué gimnasios de la zona compiten con DOPA y en qué se diferencia de ellos?",
+      "hit": 1.0,
+      "recall": 0.6666666666666666,
+      "precision": 0.5,
+      "mrr": 0.5,
+      "rank_first_relevant": 2,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › ¿Qué hace único a DOPA MX frente a otros gimnasios?",
+          "score": 0.884,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 8. Panorama Competitivo (parte 1 de 2)",
+          "score": 0.881,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Quiénes somos",
+          "score": 0.88,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 8. Panorama Competitivo (parte 2 de 2)",
+          "score": 0.863,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "e06",
+      "agent": "estratega",
+      "question": "¿Qué hace que una profesionista ocupada decida inscribirse después de probar una clase?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 0.5,
+      "rank_first_relevant": 2,
+      "retrieved": [
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › G. Triggers de Conversión",
+          "score": 0.817,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › G. Triggers de Conversión",
+          "score": 0.811,
+          "relevant": true
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › E. Dolores y Frustraciones",
+          "score": 0.81,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › C. Relación con el Ejercicio",
+          "score": 0.809,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e07",
+      "agent": "estratega",
+      "question": "¿Qué le preocupa a una mujer de más de 45 años antes de empezar a entrenar fuerza?",
+      "hit": 1.0,
+      "recall": 0.5,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › E. Dolores y Frustraciones",
+          "score": 0.853,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › A quién le hablamos",
+          "score": 0.841,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › C. Relación con el Ejercicio",
+          "score": 0.84,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › E. Dolores y Frustraciones",
+          "score": 0.839,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e08",
+      "agent": "estratega",
+      "question": "¿En qué redes sociales pasa más tiempo el público de mayor edad?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › H. Hábitos Digitales y Consumo de Contenido",
+          "score": 0.817,
+          "relevant": true
+        },
+        {
+          "route": "Buyer personas › RESUMEN COMPARATIVO DE PERSONAS (parte 1 de 2)",
+          "score": 0.797,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › H. Hábitos Digitales y Consumo de Contenido",
+          "score": 0.796,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 9. Trayectoria y Presencia de Marketing",
+          "score": 0.791,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e09",
+      "agent": "estratega",
+      "question": "¿Qué certificaciones y alianzas con competencias deportivas tiene el gimnasio?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.5,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 1. Historia y Origen del Negocio › Hitos importantes en su trayectoria",
+          "score": 0.849,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › Logros, Certificaciones y Reconocimientos",
+          "score": 0.835,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › ¿Qué hace único a DOPA MX frente a otros gimnasios?",
+          "score": 0.824,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 3. Modelo de Negocio y Estructura",
+          "score": 0.809,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "agent": "estratega",
+      "question": "¿Qué porcentaje del mercado objetivo representa cada perfil de cliente?",
+      "hit": 1.0,
+      "recall": 0.3333333333333333,
+      "precision": 0.25,
+      "mrr": 0.3333333333333333,
+      "rank_first_relevant": 3,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 7. Público Actual vs. Público Deseado › ¿Quiénes son sus socios hoy? Perfil General",
+          "score": 0.826,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › A quién le hablamos",
+          "score": 0.82,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas",
+          "score": 0.819,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 7. Público Actual vs. Público Deseado › ¿A quién les gustaría atraer que hoy no tienen?",
+          "score": 0.818,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "agent": "copywriter",
+      "question": "¿Con qué palabras describe la profesionista joven lo que busca en un gimnasio?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › I. Lenguaje y Frases Textuales",
+          "score": 0.829,
+          "relevant": true
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › E. Dolores y Frustraciones",
+          "score": 0.827,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 10. Percepción de Marca › Personalidad en 3 Palabras (Visión Interna)",
+          "score": 0.825,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › I. Lenguaje y Frases Textuales",
+          "score": 0.82,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "agent": "copywriter",
+      "question": "¿Cuál es la personalidad y el tono de la marca?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.5,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Personalidad de marca",
+          "score": 0.843,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 10. Percepción de Marca › Personalidad en 3 Palabras (Visión Interna)",
+          "score": 0.824,
+          "relevant": true
+        },
+        {
+          "route": "Buyer personas",
+          "score": 0.82,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 10. Percepción de Marca › ¿Cómo quieren ser percibidos hacia el exterior?",
+          "score": 0.815,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "agent": "copywriter",
+      "question": "¿Cuál es el manifiesto de DOPA?",
+      "hit": 1.0,
+      "recall": 0.5,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 2. Misión, Visión y Valores › Manifiesto / Frase de Identidad Textual",
+          "score": 0.866,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Personalidad de marca",
+          "score": 0.857,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Quiénes somos",
+          "score": 0.854,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 2. Misión, Visión y Valores › Visión — Hacia dónde van",
+          "score": 0.841,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "agent": "copywriter",
+      "question": "¿Cuánto cuestan la mensualidad y la inscripción?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.5,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 5. Servicios, Instalaciones y Catálogo › Tarifas Oficiales de Membresías, Clases Grupales y Planes de Acceso (parte 1 de 2)",
+          "score": 0.861,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 5. Servicios, Instalaciones y Catálogo › Tarifas Oficiales de Membresías, Clases Grupales y Planes de Acceso (parte 2 de 2)",
+          "score": 0.851,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 5. Servicios, Instalaciones y Catálogo › Servicios Adicionales y Costos",
+          "score": 0.829,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 4. Equipo y Organización (parte 2 de 2)",
+          "score": 0.819,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "agent": "copywriter",
+      "question": "¿Qué clase se da cada día de la semana?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 5. Servicios, Instalaciones y Catálogo › Programación Semanal de Clases y Metodología",
+          "score": 0.809,
+          "relevant": true
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › B. Estilo de Vida y Rutina",
+          "score": 0.809,
+          "relevant": false
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › G. Triggers de Conversión",
+          "score": 0.796,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 3. Modelo de Negocio y Estructura",
+          "score": 0.794,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "agent": "copywriter",
+      "question": "¿Tienen servicio de nutrición o de fisioterapia?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 5. Servicios, Instalaciones y Catálogo › Servicios Adicionales y Costos",
+          "score": 0.88,
+          "relevant": true
+        },
+        {
+          "route": "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › E. Dolores y Frustraciones",
+          "score": 0.825,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Quiénes somos",
+          "score": 0.823,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 4. Equipo y Organización (parte 1 de 2)",
+          "score": 0.821,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "agent": "copywriter",
+      "question": "¿Qué diferencia a DOPA de un gimnasio comercial?",
+      "hit": 1.0,
+      "recall": 0.5,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › ¿Qué hace único a DOPA MX frente a otros gimnasios?",
+          "score": 0.884,
+          "relevant": true
+        },
+        {
+          "route": "Brief de negocio › 1. Historia y Origen del Negocio › ¿Cómo y por qué nació el gimnasio? Historia breve",
+          "score": 0.88,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 1. Fundamentos de marca › Quiénes somos",
+          "score": 0.877,
+          "relevant": false
+        },
+        {
+          "route": "Brief de negocio › 8. Panorama Competitivo (parte 2 de 2)",
+          "score": 0.858,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "d01",
+      "agent": "disenador",
+      "question": "¿Qué colores forman el degradado de la marca?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 0.3333333333333333,
+      "rank_first_relevant": 3,
+      "retrieved": [
+        {
+          "route": "Manual de identidad › 3. Sistema cromático › 3.4 Usos correctos e incorrectos del color",
+          "score": 0.861,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 3. Sistema cromático › 3.3 Proporción y jerarquía de uso del color",
+          "score": 0.859,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 3. Sistema cromático › 3.1 Paleta primaria — el degradado DOPA",
+          "score": 0.859,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 5. Sistema gráfico y estilo visual › 5.1 El degradado como recurso gráfico",
+          "score": 0.838,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "d02",
+      "agent": "disenador",
+      "question": "¿Qué tipografía se usa en títulos y llamados a la acción?",
+      "hit": 1.0,
+      "recall": 0.5,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Manual de identidad › 4. Sistema tipográfico › 4.2 Tipografía principal — Poppins",
+          "score": 0.839,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 4. Sistema tipográfico › 4.4 Usos correctos e incorrectos",
+          "score": 0.81,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 4. Sistema tipográfico › 4.3 Tipografía secundaria — Inter",
+          "score": 0.8,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 3. Sistema cromático › 3.3 Proporción y jerarquía de uso del color",
+          "score": 0.792,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "d03",
+      "agent": "disenador",
+      "question": "¿Cuánto espacio libre debe quedar alrededor del logo?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Manual de identidad › 2. El logotipo › 2.3 Área de protección",
+          "score": 0.854,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 6. Composición y aplicaciones › 6.1 Principios de composición",
+          "score": 0.822,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 2. El logotipo › 2.2 Variantes del logotipo",
+          "score": 0.819,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 3. Sistema cromático › 3.3 Proporción y jerarquía de uso del color",
+          "score": 0.815,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "d04",
+      "agent": "disenador",
+      "question": "¿Qué estilo de fotografía hay que usar en las piezas?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.25,
+      "mrr": 0.25,
+      "rank_first_relevant": 4,
+      "retrieved": [
+        {
+          "route": "Manual de identidad › 6. Composición y aplicaciones › 6.1 Principios de composición",
+          "score": 0.827,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 3. Sistema cromático › 3.3 Proporción y jerarquía de uso del color",
+          "score": 0.824,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 6. Composición y aplicaciones › 6.3 Combinaciones recomendadas",
+          "score": 0.81,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 5. Sistema gráfico y estilo visual › 5.3 Fotografía",
+          "score": 0.807,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "d05",
+      "agent": "disenador",
+      "question": "¿Qué medidas en pixeles lleva una historia de Instagram?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.5,
+      "mrr": 1.0,
+      "rank_first_relevant": 1,
+      "retrieved": [
+        {
+          "route": "Manual de identidad › 6. Composición y aplicaciones › 6.4 Medidas recomendadas para Instagram (parte 1 de 2)",
+          "score": 0.868,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 6. Composición y aplicaciones › 6.4 Medidas recomendadas para Instagram (parte 2 de 2)",
+          "score": 0.859,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 4. Sistema tipográfico › 4.3 Tipografía secundaria — Inter",
+          "score": 0.802,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 5. Sistema gráfico y estilo visual › 5.3 Fotografía",
+          "score": 0.798,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "d06",
+      "agent": "disenador",
+      "question": "¿Qué versión del logotipo va sobre un fondo oscuro?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "precision": 0.5,
+      "mrr": 0.5,
+      "rank_first_relevant": 2,
+      "retrieved": [
+        {
+          "route": "Manual de identidad › 2. El logotipo › 2.1 Logotipo principal",
+          "score": 0.857,
+          "relevant": false
+        },
+        {
+          "route": "Manual de identidad › 2. El logotipo › 2.2 Variantes del logotipo",
+          "score": 0.84,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 2. El logotipo › 2.6 Criterios para elegir cada versión",
+          "score": 0.838,
+          "relevant": true
+        },
+        {
+          "route": "Manual de identidad › 5. Sistema gráfico y estilo visual › 5.1 El degradado como recurso gráfico",
+          "score": 0.818,
+          "relevant": false
+        }
+      ]
+    }
+  ]
+}

@@ -18,3 +18,10 @@ __pycache__/
 # MLflow local (corridas y artefactos; se ven con `mlflow ui`)
 mlruns/
 mlflow.db
+
+# Google service account keys (they live in ~/.config/dopa/, never in the repo)
+*service_account*.json
+
+# RAG: chunks and vector index hold DOPA's private documents; rebuilt with rag/build_index.py
+rag/data/
+rag/index/
