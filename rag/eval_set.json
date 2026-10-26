@@ -1,29 +1,206 @@
 {
-  "version": "v1",
-  "notes": "Preguntas como las haría cada agente, redactadas sin copiar el texto de los documentos. 'relevant' son fragmentos que responden la pregunta: cuenta si la ruta del fragmento contiene alguno de esos textos ('=' al inicio exige la ruta exacta).",
+  "version": "v2",
+  "notes": "Preguntas como las haría cada agente, redactadas sin copiar el texto de los documentos. 'relevant' son fragmentos que responden la pregunta: cuenta si la ruta del fragmento contiene alguno de esos textos ('=' al inicio exige la ruta exacta). v2 (2026-10-26): agrega e11, sobre Rosa y su hija (brief de negocio, sección 7).",
   "questions": [
-    {"id": "e01", "agent": "estratega", "question": "¿Cuántos socios directos necesita el estudio para llegar a su punto de equilibrio?", "relevant": ["11. Objetivos de Negocio"]},
-    {"id": "e02", "agent": "estratega", "question": "¿Qué problemas tiene hoy el negocio que el contenido debería ayudar a resolver?", "relevant": ["12. Retos y Dolores"]},
-    {"id": "e03", "agent": "estratega", "question": "¿Con qué capacidad de producción de fotos y contenido cuenta DOPA?", "relevant": ["13. Recursos y Limitaciones"]},
-    {"id": "e04", "agent": "estratega", "question": "¿Qué tipo de publicaciones le han funcionado a DOPA en redes y cuáles no?", "relevant": ["¿Qué ha funcionado y qué no", "9. Trayectoria y Presencia de Marketing"]},
-    {"id": "e05", "agent": "estratega", "question": "¿Qué gimnasios de la zona compiten con DOPA y en qué se diferencia de ellos?", "relevant": ["8. Panorama Competitivo"]},
-    {"id": "e06", "agent": "estratega", "question": "¿Qué hace que una profesionista ocupada decida inscribirse después de probar una clase?", "relevant": ["ANA PÉREZ › G. Triggers"]},
-    {"id": "e07", "agent": "estratega", "question": "¿Qué le preocupa a una mujer de más de 45 años antes de empezar a entrenar fuerza?", "relevant": ["ROSA MARTÍNEZ › F. Objeciones", "ROSA MARTÍNEZ › E. Dolores"]},
-    {"id": "e08", "agent": "estratega", "question": "¿En qué redes sociales pasa más tiempo el público de mayor edad?", "relevant": ["ROSA MARTÍNEZ › H. Hábitos"]},
-    {"id": "e09", "agent": "estratega", "question": "¿Qué certificaciones y alianzas con competencias deportivas tiene el gimnasio?", "relevant": ["Logros, Certificaciones", "Hitos importantes"]},
-    {"id": "e10", "agent": "estratega", "question": "¿Qué porcentaje del mercado objetivo representa cada perfil de cliente?", "relevant": ["=Buyer personas", "RESUMEN COMPARATIVO"]},
-    {"id": "c01", "agent": "copywriter", "question": "¿Con qué palabras describe la profesionista joven lo que busca en un gimnasio?", "relevant": ["ANA PÉREZ › I. Lenguaje"]},
-    {"id": "c02", "agent": "copywriter", "question": "¿Cuál es la personalidad y el tono de la marca?", "relevant": ["Personalidad de marca", "Personalidad en 3 Palabras"]},
-    {"id": "c03", "agent": "copywriter", "question": "¿Cuál es el manifiesto de DOPA?", "relevant": ["Manifiesto"]},
-    {"id": "c04", "agent": "copywriter", "question": "¿Cuánto cuestan la mensualidad y la inscripción?", "relevant": ["Tarifas Oficiales"]},
-    {"id": "c05", "agent": "copywriter", "question": "¿Qué clase se da cada día de la semana?", "relevant": ["Programación Semanal"]},
-    {"id": "c06", "agent": "copywriter", "question": "¿Tienen servicio de nutrición o de fisioterapia?", "relevant": ["Servicios Adicionales"]},
-    {"id": "c07", "agent": "copywriter", "question": "¿Qué diferencia a DOPA de un gimnasio comercial?", "relevant": ["› Diferenciadores", "¿Qué hace único"]},
-    {"id": "d01", "agent": "disenador", "question": "¿Qué colores forman el degradado de la marca?", "relevant": ["3.1 Paleta primaria"]},
-    {"id": "d02", "agent": "disenador", "question": "¿Qué tipografía se usa en títulos y llamados a la acción?", "relevant": ["4.2 Tipografía principal", "4.1 Por qué esta pareja"]},
-    {"id": "d03", "agent": "disenador", "question": "¿Cuánto espacio libre debe quedar alrededor del logo?", "relevant": ["2.3 Área de protección"]},
-    {"id": "d04", "agent": "disenador", "question": "¿Qué estilo de fotografía hay que usar en las piezas?", "relevant": ["5.3 Fotografía"]},
-    {"id": "d05", "agent": "disenador", "question": "¿Qué medidas en pixeles lleva una historia de Instagram?", "relevant": ["6.4 Medidas recomendadas"]},
-    {"id": "d06", "agent": "disenador", "question": "¿Qué versión del logotipo va sobre un fondo oscuro?", "relevant": ["2.6 Criterios para elegir", "2.2 Variantes"]}
+    {
+      "id": "e01",
+      "agent": "estratega",
+      "question": "¿Cuántos socios directos necesita el estudio para llegar a su punto de equilibrio?",
+      "relevant": [
+        "11. Objetivos de Negocio"
+      ]
+    },
+    {
+      "id": "e02",
+      "agent": "estratega",
+      "question": "¿Qué problemas tiene hoy el negocio que el contenido debería ayudar a resolver?",
+      "relevant": [
+        "12. Retos y Dolores"
+      ]
+    },
+    {
+      "id": "e03",
+      "agent": "estratega",
+      "question": "¿Con qué capacidad de producción de fotos y contenido cuenta DOPA?",
+      "relevant": [
+        "13. Recursos y Limitaciones"
+      ]
+    },
+    {
+      "id": "e04",
+      "agent": "estratega",
+      "question": "¿Qué tipo de publicaciones le han funcionado a DOPA en redes y cuáles no?",
+      "relevant": [
+        "¿Qué ha funcionado y qué no",
+        "9. Trayectoria y Presencia de Marketing"
+      ]
+    },
+    {
+      "id": "e05",
+      "agent": "estratega",
+      "question": "¿Qué gimnasios de la zona compiten con DOPA y en qué se diferencia de ellos?",
+      "relevant": [
+        "8. Panorama Competitivo"
+      ]
+    },
+    {
+      "id": "e06",
+      "agent": "estratega",
+      "question": "¿Qué hace que una profesionista ocupada decida inscribirse después de probar una clase?",
+      "relevant": [
+        "ANA PÉREZ › G. Triggers"
+      ]
+    },
+    {
+      "id": "e07",
+      "agent": "estratega",
+      "question": "¿Qué le preocupa a una mujer de más de 45 años antes de empezar a entrenar fuerza?",
+      "relevant": [
+        "ROSA MARTÍNEZ › F. Objeciones",
+        "ROSA MARTÍNEZ › E. Dolores"
+      ]
+    },
+    {
+      "id": "e08",
+      "agent": "estratega",
+      "question": "¿En qué redes sociales pasa más tiempo el público de mayor edad?",
+      "relevant": [
+        "ROSA MARTÍNEZ › H. Hábitos"
+      ]
+    },
+    {
+      "id": "e09",
+      "agent": "estratega",
+      "question": "¿Qué certificaciones y alianzas con competencias deportivas tiene el gimnasio?",
+      "relevant": [
+        "Logros, Certificaciones",
+        "Hitos importantes"
+      ]
+    },
+    {
+      "id": "e10",
+      "agent": "estratega",
+      "question": "¿Qué porcentaje del mercado objetivo representa cada perfil de cliente?",
+      "relevant": [
+        "=Buyer personas",
+        "RESUMEN COMPARATIVO"
+      ]
+    },
+    {
+      "id": "e11",
+      "agent": "estratega",
+      "question": "¿A quién más conviene dirigir contenido para atraer a mujeres mayores de 45 años?",
+      "relevant": [
+        "¿Quiénes son sus socios hoy?"
+      ]
+    },
+    {
+      "id": "c01",
+      "agent": "copywriter",
+      "question": "¿Con qué palabras describe la profesionista joven lo que busca en un gimnasio?",
+      "relevant": [
+        "ANA PÉREZ › I. Lenguaje"
+      ]
+    },
+    {
+      "id": "c02",
+      "agent": "copywriter",
+      "question": "¿Cuál es la personalidad y el tono de la marca?",
+      "relevant": [
+        "Personalidad de marca",
+        "Personalidad en 3 Palabras"
+      ]
+    },
+    {
+      "id": "c03",
+      "agent": "copywriter",
+      "question": "¿Cuál es el manifiesto de DOPA?",
+      "relevant": [
+        "Manifiesto"
+      ]
+    },
+    {
+      "id": "c04",
+      "agent": "copywriter",
+      "question": "¿Cuánto cuestan la mensualidad y la inscripción?",
+      "relevant": [
+        "Tarifas Oficiales"
+      ]
+    },
+    {
+      "id": "c05",
+      "agent": "copywriter",
+      "question": "¿Qué clase se da cada día de la semana?",
+      "relevant": [
+        "Programación Semanal"
+      ]
+    },
+    {
+      "id": "c06",
+      "agent": "copywriter",
+      "question": "¿Tienen servicio de nutrición o de fisioterapia?",
+      "relevant": [
+        "Servicios Adicionales"
+      ]
+    },
+    {
+      "id": "c07",
+      "agent": "copywriter",
+      "question": "¿Qué diferencia a DOPA de un gimnasio comercial?",
+      "relevant": [
+        "› Diferenciadores",
+        "¿Qué hace único"
+      ]
+    },
+    {
+      "id": "d01",
+      "agent": "disenador",
+      "question": "¿Qué colores forman el degradado de la marca?",
+      "relevant": [
+        "3.1 Paleta primaria"
+      ]
+    },
+    {
+      "id": "d02",
+      "agent": "disenador",
+      "question": "¿Qué tipografía se usa en títulos y llamados a la acción?",
+      "relevant": [
+        "4.2 Tipografía principal",
+        "4.1 Por qué esta pareja"
+      ]
+    },
+    {
+      "id": "d03",
+      "agent": "disenador",
+      "question": "¿Cuánto espacio libre debe quedar alrededor del logo?",
+      "relevant": [
+        "2.3 Área de protección"
+      ]
+    },
+    {
+      "id": "d04",
+      "agent": "disenador",
+      "question": "¿Qué estilo de fotografía hay que usar en las piezas?",
+      "relevant": [
+        "5.3 Fotografía"
+      ]
+    },
+    {
+      "id": "d05",
+      "agent": "disenador",
+      "question": "¿Qué medidas en pixeles lleva una historia de Instagram?",
+      "relevant": [
+        "6.4 Medidas recomendadas"
+      ]
+    },
+    {
+      "id": "d06",
+      "agent": "disenador",
+      "question": "¿Qué versión del logotipo va sobre un fondo oscuro?",
+      "relevant": [
+        "2.6 Criterios para elegir",
+        "2.2 Variantes"
+      ]
+    }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "errors": [],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 1.0,
+    "n_errors": 0.0,
+    "n_piezas": 17.0,
+    "n_feed": 12.0,
+    "n_historias": 5.0,
+    "n_carruseles": 7.0,
+    "feed_por_semana_min": 2.0,
+    "feed_por_semana_max": 4.0,
+    "feed_por_semana_mean": 3.0,
+    "n_semanas_sin_feed": 0.0,
+    "pct_temas_cubiertos": 1.0,
+    "pct_piezas_brief": 0.5294117647058824,
+    "pct_etapa_coherente": 1.0,
+    "desviacion_mezcla": 0.1235294117647059,
+    "n_menciones_competidor": 0.0,
+    "n_fuentes_conocimiento": 3.0,
+    "pct_descubrimiento": 0.17647058823529413,
+    "pct_consideracion": 0.35294117647058826,
+    "pct_conversion": 0.35294117647058826,
+    "pct_fidelizacion": 0.11764705882352941,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 15.44,
+    "prompt_tokens": 22677.0,
+    "completion_tokens": 5773.0,
+    "run_failed": 0.0
+  }
+}

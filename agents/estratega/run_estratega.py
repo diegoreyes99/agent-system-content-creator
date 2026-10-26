@@ -14,7 +14,7 @@ saved in runs/<fecha>/parrilla.json: that is what the Copywriter receives.
 
 Useful options:
   --model-id gemini-3.8-flash   model to use (default ESTRATEGA_MODEL_ID or gemini-3.5-flash-lite)
-  --prompt-version v5           prompt in prompts/estratega_<v>.md
+  --prompt-version v6           prompt in prompts/estratega_<v>.md
   --sheet-tab "2026-11 prueba"  tab name (default: the month)
   --sin-aprobacion              no Sheet, no approval (for quick tests)
   --desde-corrida runs/<fecha>  skip the model: send that run's grid to the Sheet for approval
@@ -61,6 +61,7 @@ from google.adk.runners import InMemoryRunner  # noqa: E402
 from google.genai import types  # noqa: E402
 
 import agent as estratega  # noqa: E402
+import pricing  # noqa: E402
 import inputs as estratega_inputs  # noqa: E402
 import tools  # noqa: E402
 from output_checks import append_error_log, compute_metrics, extract_json, trace_metrics, validate  # noqa: E402
@@ -83,7 +84,7 @@ async def run_agent(instruction: str, message: str, temperature: float | None) -
     session_id = f"estratega-{uuid.uuid4().hex[:8]}"
     await runner.session_service.create_session(app_name=APP_NAME, user_id=USER_ID, session_id=session_id)
     trace, final_text = [], ""
-    prompt_tokens = completion_tokens = 0
+    prompt_tokens = completion_tokens = thinking_tokens = 0
     started = time.perf_counter()
     async for event in runner.run_async(user_id=USER_ID, session_id=session_id,
                                         new_message=types.Content(role="user", parts=[types.Part(text=message)]),
@@ -93,6 +94,7 @@ async def run_agent(instruction: str, message: str, temperature: float | None) -
         if event.usage_metadata:
             prompt_tokens += event.usage_metadata.prompt_token_count or 0
             completion_tokens += event.usage_metadata.candidates_token_count or 0
+            thinking_tokens += getattr(event.usage_metadata, "thoughts_token_count", None) or 0
         for call in event.get_function_calls():
             trace.append({"type": "tool_call", "tool": call.name, "args": dict(call.args or {})})
         for resp in event.get_function_responses():
@@ -103,8 +105,8 @@ async def run_agent(instruction: str, message: str, temperature: float | None) -
     await runner.close()
     if not final_text.strip():
         raise RuntimeError(f"El Estratega no devolvió texto (modelo {estratega.model_id()}). Revisa GOOGLE_API_KEY.")
-    return {"raw": final_text, "trace": trace, "latency_s": latency,
-            "prompt_tokens": prompt_tokens, "completion_tokens": completion_tokens}
+    return {"raw": final_text, "trace": trace, "latency_s": latency, "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens, "thinking_tokens": thinking_tokens}
 
 
 def evaluate(result: dict, inputs: dict) -> tuple[dict | None, list[str], dict]:
@@ -116,7 +118,12 @@ def evaluate(result: dict, inputs: dict) -> tuple[dict | None, list[str], dict]:
     metrics = compute_metrics(output, errors, inputs)
     metrics.update(trace_metrics(result["trace"]))
     metrics.update({"latency_s": round(result["latency_s"], 2), "prompt_tokens": float(result["prompt_tokens"]),
-                    "completion_tokens": float(result["completion_tokens"])})
+                    "completion_tokens": float(result["completion_tokens"]),
+                    "thinking_tokens": float(result.get("thinking_tokens", 0))})
+    usd = pricing.cost_usd(estratega.model_id(), result["prompt_tokens"], result["completion_tokens"],
+                           result.get("thinking_tokens", 0))
+    if usd is not None:
+        metrics["costo_usd"] = round(usd, 6)
     return output, errors, metrics
 
 
@@ -124,7 +131,7 @@ def save_run(run_dir: Path, result: dict, output: dict | None, errors: list[str]
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "raw.txt").write_text(result["raw"], encoding="utf-8")
     (run_dir / "trace.json").write_text(json.dumps(
-        {k: result[k] for k in ("trace", "latency_s", "prompt_tokens", "completion_tokens")},
+        {k: result.get(k) for k in ("trace", "latency_s", "prompt_tokens", "completion_tokens", "thinking_tokens")},
         ensure_ascii=False, indent=2, default=str), encoding="utf-8")
     if output is not None:
         (run_dir / "output.json").write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -141,6 +148,7 @@ def print_summary(output: dict | None, errors: list[str], metrics: dict, run_dir
           f"historias {int(metrics.get('n_historias', 0))}) · temas cubiertos {metrics.get('pct_temas_cubiertos', 0):.0%} · "
           f"piezas del negocio {metrics.get('pct_piezas_brief', 0):.0%} · búsquedas RAG {int(metrics.get('n_rag_calls', 0))} · "
           f"esquema {'ok' if metrics.get('schema_valid') else 'con errores'} · {metrics.get('latency_s', 0)} s")
+    print(f"Costo de esta llamada: {pricing.describe(metrics.get('costo_usd'))}")
     for e in errors:
         print(f"  ! {e}")
     print(f"Resultados en {run_dir}")
@@ -319,7 +327,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Corre el Estratega y lo registra en MLflow.")
     parser.add_argument("--brief", type=Path, required=True)
     parser.add_argument("--seleccion", type=Path, required=True, help="seleccion.json del Investigador")
-    parser.add_argument("--prompt-version", default="v5")
+    parser.add_argument("--prompt-version", default="v6")
     parser.add_argument("--model-id", default=None, help="modelo de Gemini (default gemini-3.5-flash-lite)")
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--sheet-tab", default=None)
@@ -338,6 +346,7 @@ def main() -> None:
             sys.exit(f"No existe: {path}")
 
     inputs = estratega_inputs.build_inputs(args.brief.read_text(encoding="utf-8"), args.seleccion)
+    inputs["prompt_version"] = args.prompt_version
     instruction = estratega_inputs.fill_prompt(estratega.prompt_path(args.prompt_version).read_text(encoding="utf-8"), inputs)
     run_id = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H%M%S")
     run_dir = HERE / "runs" / run_id
@@ -348,7 +357,7 @@ def main() -> None:
         args.no_mlflow = True  # that run is already in MLflow
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "inputs.json").write_text(json.dumps(
-        {k: v for k, v in inputs.items() if k != "estandares_instagram"}, ensure_ascii=False, indent=2), encoding="utf-8")
+        {k: v for k, v in inputs.items() if k not in ("estandares_instagram", "contenidos_green")}, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"=== Estratega {args.prompt_version} · modelo {estratega.model_id()} · mes {inputs['mes']} · "
           f"{len(inputs['temas_aprobados'])} temas aprobados · prioridad: {inputs['prioridad_principal']} ===")
@@ -387,6 +396,12 @@ def main() -> None:
         loop.run_until_complete(loop.shutdown_asyncgens())
         loop.close()
 
+    total_usd = metrics.get("costo_usd", 0.0) + sum(
+        json.loads(p.read_text(encoding="utf-8"))["metrics"].get("costo_usd", 0.0)
+        for p in run_dir.glob("ronda_*/validation.json"))
+    if not args.desde_corrida:
+        metrics["costo_total_usd"] = round(total_usd, 6)
+        print(f"\nCosto total de la corrida (incluye rondas de cambios): {pricing.describe(total_usd)}")
     if not args.no_mlflow:
         log_to_mlflow(args, run_id, run_dir, inputs, metrics)
         print("Corrida registrada en MLflow (experimento 'dopa-estratega').")

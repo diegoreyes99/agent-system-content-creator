@@ -1,0 +1,36 @@
+{
+  "errors": [
+    "2026-11-P04: 'Tráfico' no corresponde a la etapa 'conversion'",
+    "2026-11-P16: 'Crecimiento de audiencia' no corresponde a la etapa 'fidelizacion'"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_errors": 2.0,
+    "n_piezas": 16.0,
+    "n_feed": 13.0,
+    "n_historias": 3.0,
+    "n_carruseles": 7.0,
+    "feed_por_semana_min": 3.0,
+    "feed_por_semana_max": 4.0,
+    "feed_por_semana_mean": 3.25,
+    "n_semanas_sin_feed": 0.0,
+    "pct_temas_cubiertos": 1.0,
+    "pct_piezas_brief": 0.4375,
+    "pct_etapa_coherente": 0.875,
+    "desviacion_mezcla": 0.16249999999999998,
+    "n_menciones_competidor": 0.0,
+    "n_fuentes_conocimiento": 6.0,
+    "pct_descubrimiento": 0.125,
+    "pct_consideracion": 0.3125,
+    "pct_conversion": 0.4375,
+    "pct_fidelizacion": 0.125,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 14.47,
+    "prompt_tokens": 21440.0,
+    "completion_tokens": 5511.0,
+    "run_failed": 0.0
+  }
+}

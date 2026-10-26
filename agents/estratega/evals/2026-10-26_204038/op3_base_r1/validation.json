@@ -1,0 +1,38 @@
+{
+  "errors": [
+    "2026-11-P07: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'",
+    "2026-11-P11: 'Tráfico' no corresponde a la etapa 'conversion'",
+    "2026-11-P14: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'",
+    "2026-11-P16: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_errors": 4.0,
+    "n_piezas": 18.0,
+    "n_feed": 14.0,
+    "n_historias": 4.0,
+    "n_carruseles": 6.0,
+    "feed_por_semana_min": 3.0,
+    "feed_por_semana_max": 4.0,
+    "feed_por_semana_mean": 3.5,
+    "n_semanas_sin_feed": 0.0,
+    "pct_temas_cubiertos": 1.0,
+    "pct_piezas_brief": 0.6111111111111112,
+    "pct_etapa_coherente": 0.7777777777777778,
+    "desviacion_mezcla": 0.11666666666666668,
+    "n_menciones_competidor": 0.0,
+    "n_fuentes_conocimiento": 5.0,
+    "pct_descubrimiento": 0.16666666666666666,
+    "pct_consideracion": 0.2777777777777778,
+    "pct_conversion": 0.2222222222222222,
+    "pct_fidelizacion": 0.3333333333333333,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 15.95,
+    "prompt_tokens": 22953.0,
+    "completion_tokens": 5900.0,
+    "run_failed": 0.0
+  }
+}

@@ -16,3 +16,6 @@
 - **Métricas medibles hoy (proxy, en MLflow):** `schema_valid`, `n_hallazgos`, `n_recomendados`, `pct_fuentes_verificadas`, `search_pass_rate`, `n_tool_calls`, `latency_s`, tokens; en corridas con aprobación, `aprobado`, `n_rondas` y `n_seleccionados`. La métrica de negocio se mide con lo que Dani elige y lo que el Estratega usa.
 - **Reintentos (Gemini):** ante 429 (cuota por minuto) o 503 (modelo saturado), cada llamada al modelo se reintenta hasta 5 veces con espera exponencial (5, 10, 20 y 40 s).
 - **Modelo de respaldo automático:** decisión pospuesta (2026-10-22) hasta acercarse a la Fase 6. Opciones evaluadas: otro modelo de Gemini (p. ej. 3.6 Flash, cuota separada) para desarrollo, o un modelo de otro proveedor vía LiteLLM para producción. Hoy el respaldo es manual con `--model local`.
+
+## Pendientes
+- **Briefs cortos → más temas y más variados (Diego, 2026-10-26, por analizar con calma).** Cuando el brief trae poco contenido, la parrilla del Estratega se repite. Idea: que el Investigador genere más temas (y más variados) en proporción a lo poco que diga el brief, siempre derivados del brief. Antes de cambiar el prompt hay que definir: cómo medir que un brief es "corto", cuántos temas pedir y cómo evitar temas de relleno. Se evalúa con el eval del Estratega (casos `op3_pocos_temas`) y la rúbrica.

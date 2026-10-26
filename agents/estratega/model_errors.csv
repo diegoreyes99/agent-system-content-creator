@@ -1,3 +1,34 @@
 fecha,origen,carpeta,prompt_version,modelo,brief,detalle
 2026-10-26 12:44,run,runs/2026-10-26_184415,v4,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P06: 'Tráfico' no corresponde a la etapa 'descubrimiento'
 2026-10-26 12:44,run,runs/2026-10-26_184415,v4,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P14: 'Tráfico' no corresponde a la etapa 'descubrimiento'
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P10: 'Atención y confianza' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P16: 'Crecimiento de audiencia' no corresponde a la etapa 'consideracion'
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P17: 'Tráfico' no corresponde a la etapa 'descubrimiento'
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P01: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P03: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P04: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P07: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P09: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P12: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P12: tipo_objetivo 'Reto y lealtad' no está en la lista de referencia
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P13: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P13: tipo_objetivo 'Reto y lealtad' no está en la lista de referencia
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P15: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op1_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P17: faltan ['tema_ref']
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op2_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op2_convertir-agregadores.md,2026-11-P06: tipo_objetivo 'Retorica y lealtad' no está en la lista de referencia
+2026-10-26 14:41,eval,evals/2026-10-26_204038/op2_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op2_convertir-agregadores.md,2026-11-P09: 'Tráfico' no corresponde a la etapa 'conversion'
+2026-10-26 14:42,eval,evals/2026-10-26_204038/op3_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op3_reactivar-socios.md,2026-11-P07: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:42,eval,evals/2026-10-26_204038/op3_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op3_reactivar-socios.md,2026-11-P11: 'Tráfico' no corresponde a la etapa 'conversion'
+2026-10-26 14:42,eval,evals/2026-10-26_204038/op3_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op3_reactivar-socios.md,2026-11-P14: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:42,eval,evals/2026-10-26_204038/op3_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op3_reactivar-socios.md,2026-11-P16: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:42,eval,evals/2026-10-26_204038/op3_base_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op3_reactivar-socios.md,2026-11-P11: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:42,eval,evals/2026-10-26_204038/op4_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op4_llenar-pilates.md,2026-11-P07: 'Tráfico' no corresponde a la etapa 'conversion'
+2026-10-26 14:43,eval,evals/2026-10-26_204038/op5_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op5_simulacro-deka.md,2026-11-P09: 'Tráfico' no corresponde a la etapa 'conversion'
+2026-10-26 14:43,eval,evals/2026-10-26_204038/op5_base_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op5_simulacro-deka.md,2026-11-P18: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:43,eval,evals/2026-10-26_204038/op2_tema_dani_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op2_convertir-agregadores.md,2026-11-P08: 'Tráfico' no corresponde a la etapa 'conversion'
+2026-10-26 14:43,eval,evals/2026-10-26_204038/op2_tema_dani_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op2_convertir-agregadores.md,2026-11-P04: 'Tráfico' no corresponde a la etapa 'conversion'
+2026-10-26 14:43,eval,evals/2026-10-26_204038/op2_tema_dani_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op2_convertir-agregadores.md,2026-11-P16: 'Crecimiento de audiencia' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:44,eval,evals/2026-10-26_204038/op3_pocos_temas_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op3_reactivar-socios.md,JSON no parseable: Expecting ':' delimiter: line 161 column 13 (char 8790)
+2026-10-26 14:44,eval,evals/2026-10-26_204038/op1_muchos_temas_r1,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,JSON no parseable: Expecting property name enclosed in double quotes: line 147 column 7 (char 8402)
+2026-10-26 14:45,eval,evals/2026-10-26_204038/op1_muchos_temas_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P14: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'
+2026-10-26 14:45,eval,evals/2026-10-26_204038/op1_muchos_temas_r2,v5,gemini-3.5-flash-lite,brief_2026-11_op1_captar-socios.md,2026-11-P18: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'

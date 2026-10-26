@@ -1,0 +1,18 @@
+{
+  "errors": [
+    "JSON no parseable: Expecting property name enclosed in double quotes: line 147 column 7 (char 8402)"
+  ],
+  "metrics": {
+    "json_parsed": 0.0,
+    "schema_valid": 0.0,
+    "n_errors": 1.0,
+    "n_piezas": 0.0,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 17.96,
+    "prompt_tokens": 23401.0,
+    "completion_tokens": 7198.0,
+    "run_failed": 0.0
+  }
+}

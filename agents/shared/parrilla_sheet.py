@@ -35,13 +35,14 @@ COLUMNS = [
     "Etapa del embudo",     # Estratega: descubrimiento, consideración, conversión o fidelización
     "Objetivo",             # Estratega: "<objective type> — <specific, measurable objective>"
     "Mensaje clave",        # Estratega
+    "Recursos visuales",    # Estratega: which photos or graphics the piece uses
     "Copy in",              # Copywriter (text on the image; may be empty)
     "Copy out",             # Copywriter (caption; always has text)
     "Diseño",               # Diseñador
     "Estado",               # Dani (dropdown)
     "Comentarios de Dani",  # Dani
 ]
-COLUMN_WIDTHS = [90, 110, 100, 85, 95, 340, 130, 280, 260, 220, 320, 200, 115, 260]
+COLUMN_WIDTHS = [90, 110, 100, 85, 95, 340, 130, 280, 260, 220, 220, 320, 200, 115, 260]
 
 STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED = "Pendiente", "Aprobado", "Cambios", "Descartado"
 STATUS_OPTIONS = [STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED]
@@ -117,6 +118,7 @@ def piece_to_row(piece: dict) -> list[str]:
         FUNNEL_STAGES.get(str(piece.get("etapa_embudo", "")).strip().lower(), str(piece.get("etapa_embudo", ""))),
         _objective_text(piece),
         str(piece.get("mensaje_clave", "")),
+        str(piece.get("recursos_visuales", "")),
         str(piece.get("copy_in", "")), str(piece.get("copy_out", "")), str(piece.get("diseno", "")),
         _STATUS_FROM_JSON.get(status, status if status in STATUS_OPTIONS else STATUS_PENDING),
         str(piece.get("comentarios_dani", "")),

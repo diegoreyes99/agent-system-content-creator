@@ -6,7 +6,7 @@ cada agente busca con las suyas (`config.AGENT_TAGS`).
 
 | Archivo | Qué hace |
 |---|---|
-| `ingest.py` | Lee los `.docx` de `llms/RAG/` y los parte por sección (un fragmento por subsección, con su ruta al inicio; tablas fila por fila) |
+| `ingest.py` | Lee los `.docx` (y documentos `.md`, si se registran) de `llms/RAG/` y los parte por sección (un fragmento por subsección, con su ruta al inicio; tablas fila por fila) |
 | `build_index.py` | Calcula los embeddings con el modelo local y guarda el índice en ChromaDB (`rag/index/`) |
 | `retriever.py` | La búsqueda que usarán los agentes: `search(pregunta, k, tags)` |
 | `eval_set.json` | 23 preguntas típicas de cada agente con sus fragmentos esperados |

@@ -13,8 +13,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 FORMATS = {"post", "carrusel", "historia"}
 FEED_FORMATS = {"post", "carrusel"}
-AUDIENCES = {"Ana", "Rosa", "Ambas"}
-ORIGINS = {"tema_aprobado", "brief"}
+AUDIENCES = {"Ana", "Rosa", "Ambas", "Hija de Rosa"}
+ORIGINS = {"tema_aprobado", "brief", "green"}
 STATES = {"pendiente_aprobacion", "aprobado", "descartado"}
 
 # Funnel stages and the objective types that belong to each (instagram_standards.md, sections 8-9).
@@ -41,6 +41,7 @@ TOP_KEYS = ("mes", "objetivo_del_mes", "estrategia_del_mes", "mezcla_por_etapa",
 PIECE_KEYS = ("id", "fecha_sugerida", "canal", "formato", "origen_pieza", "tema_ref", "elemento_del_brief",
               "tema", "publico", "etapa_embudo", "tipo_objetivo", "objetivo", "mensaje_clave",
               "responsable_aprobacion", "estado")
+PIECE_KEYS_V6 = ("green_ref", "recursos_visuales")  # required from prompt v6 on
 
 
 def extract_json(raw: str) -> dict:
@@ -107,7 +108,8 @@ def validate(output: dict, inputs: dict) -> list[str]:
             errors.append(f"pieza {i}: no es un objeto")
             continue
         pid = p.get("id", f"#{i}")
-        missing = [k for k in PIECE_KEYS if k not in p]
+        required = PIECE_KEYS + (PIECE_KEYS_V6 if inputs.get("prompt_version", "v5") >= "v6" else ())
+        missing = [k for k in required if k not in p]
         if missing:
             errors.append(f"{pid}: faltan {missing}")
         if pid in seen_ids:
@@ -130,6 +132,8 @@ def validate(output: dict, inputs: dict) -> list[str]:
             errors.append(f"{pid}: tema_ref '{p.get('tema_ref')}' no es un tema aprobado")
         elif origin == "brief" and not str(p.get("elemento_del_brief") or "").strip():
             errors.append(f"{pid}: pieza del negocio sin elemento_del_brief")
+        elif origin == "green" and p.get("green_ref") not in inputs.get("green_refs", []):
+            errors.append(f"{pid}: green_ref '{p.get('green_ref')}' no es un contenido green")
         if p.get("publico") not in AUDIENCES:
             errors.append(f"{pid}: público '{p.get('publico')}' inválido")
         stage, kind = p.get("etapa_embudo"), p.get("tipo_objetivo")
@@ -167,9 +171,25 @@ def validate(output: dict, inputs: dict) -> list[str]:
     return errors
 
 
+# Errors about the strategy itself. Everything else (JSON, missing fields, a
+# value outside the allowed lists, a type that does not match its funnel
+# stage) is a format error: it breaks the chaining, but not the proposal.
+CONTENT_ERROR_MARKERS = ("no es de", "sin ninguna pieza", "competidor", "sin publicaciones de feed",
+                         "no es un tema aprobado", "sin elemento_del_brief", "no es un contenido green",
+                         "marcó la pieza como aprobada")
+
+
+def split_errors(errors: list[str]) -> tuple[list[str], list[str]]:
+    content = [e for e in errors if any(m in e for m in CONTENT_ERROR_MARKERS)]
+    return [e for e in errors if e not in content], content
+
+
 def compute_metrics(output: dict | None, errors: list[str], inputs: dict) -> dict[str, float]:
+    format_errors, content_errors = split_errors(errors)
     if not output or not isinstance(output.get("piezas"), list):
-        return {"json_parsed": 0.0, "schema_valid": 0.0, "n_errors": float(len(errors)), "n_piezas": 0.0}
+        return {"json_parsed": 0.0, "schema_valid": 0.0, "n_errors": float(len(errors)),
+                "n_errores_forma": float(len(format_errors)), "n_errores_contenido": float(len(content_errors)),
+                "n_piezas": 0.0}
     pieces = [p for p in output["piezas"] if isinstance(p, dict)]
     n = len(pieces) or 1
     refs = {t["ref"] for t in inputs["temas_aprobados"]}
@@ -196,6 +216,8 @@ def compute_metrics(output: dict | None, errors: list[str], inputs: dict) -> dic
         "json_parsed": 1.0,
         "schema_valid": 1.0 if not errors else 0.0,
         "n_errors": float(len(errors)),
+        "n_errores_forma": float(len(format_errors)),
+        "n_errores_contenido": float(len(content_errors)),
         "n_piezas": float(len(pieces)),
         "n_feed": float(sum(1 for p in pieces if p.get("formato") in FEED_FORMATS)),
         "n_historias": float(sum(1 for p in pieces if p.get("formato") == "historia")),
@@ -206,6 +228,7 @@ def compute_metrics(output: dict | None, errors: list[str], inputs: dict) -> dic
         "n_semanas_sin_feed": float(sum(1 for c in full_counts if c == 0)),
         "pct_temas_cubiertos": len(refs & covered) / len(refs) if refs else 1.0,
         "pct_piezas_brief": sum(1 for p in pieces if p.get("origen_pieza") == "brief") / n,
+        "pct_piezas_green": sum(1 for p in pieces if p.get("origen_pieza") == "green") / n,
         "pct_etapa_coherente": consistent / n,
         "desviacion_mezcla": deviation,  # 0 = same as the reference mix, 1 = completely different; -1 = no reference
         "n_menciones_competidor": float(competitor_errors),

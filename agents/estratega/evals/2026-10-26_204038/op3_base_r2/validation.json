@@ -1,0 +1,35 @@
+{
+  "errors": [
+    "2026-11-P11: 'Interacción y comunidad' no corresponde a la etapa 'fidelizacion'"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_errors": 1.0,
+    "n_piezas": 15.0,
+    "n_feed": 12.0,
+    "n_historias": 3.0,
+    "n_carruseles": 5.0,
+    "feed_por_semana_min": 2.0,
+    "feed_por_semana_max": 3.0,
+    "feed_por_semana_mean": 2.75,
+    "n_semanas_sin_feed": 0.0,
+    "pct_temas_cubiertos": 1.0,
+    "pct_piezas_brief": 0.6666666666666666,
+    "pct_etapa_coherente": 0.9333333333333333,
+    "desviacion_mezcla": 0.06666666666666667,
+    "n_menciones_competidor": 0.0,
+    "n_fuentes_conocimiento": 3.0,
+    "pct_descubrimiento": 0.13333333333333333,
+    "pct_consideracion": 0.26666666666666666,
+    "pct_conversion": 0.2,
+    "pct_fidelizacion": 0.4,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 13.33,
+    "prompt_tokens": 22500.0,
+    "completion_tokens": 4755.0,
+    "run_failed": 0.0
+  }
+}

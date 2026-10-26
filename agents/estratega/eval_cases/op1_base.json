@@ -1,0 +1,44 @@
+{
+  "status": "aprobado",
+  "brief": "brief_2026-11_op1_captar-socios.md",
+  "nota": "Captar socios: los 4 recomendados",
+  "fuente_temas": "agents/investigador/evals/2026-10-16_024506/brief_2026-11_op1_captar-socios_r1",
+  "seleccion": [
+    {
+      "tema": "¿Qué es el entrenamiento híbrido y cómo combina fuerza y resistencia?",
+      "que_dice_la_fuente": "El entrenamiento híbrido consiste en combinar trabajo con pesas o fuerza y cardio, integrando disciplinas para desarrollar una condición física versátil y reducir el riesgo de lesiones.",
+      "fuente": "https://www.on.com/es-us/stories/hybrid-training",
+      "responde_a": "Prioridad principal del mes: Captar socios nuevos con el Reto 21 días de entrenamiento funcional y fuerza híbrida.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "¿Por qué el entrenamiento de fuerza es clave para tu salud física y mental?",
+      "que_dice_la_fuente": "El entrenamiento de fuerza produce cambios visibles en la composición corporal, mejora la autoestima, reduce el estrés y libera neurotransmisores como dopamina y serotonina.",
+      "fuente": "https://www.freeletics.com/es/blog/posts/beneficios-salud-entrenamiento-fuerza",
+      "responde_a": "Público prioritario: Ana, profesionista que busca eficiencia, un espacio seguro y cerrar el año entrenando en serio.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "Beneficios del entrenamiento de fuerza según los expertos",
+      "que_dice_la_fuente": "Las guías recomiendan incluir al menos dos días de entrenamiento de fuerza a la semana, destacando que mejora la calidad del sueño, fortalece los huesos y músculos, y previene la pérdida de densidad ósea.",
+      "fuente": "https://medlineplus.gov/spanish/benefitsofexercise.html",
+      "responde_a": "Prioridad principal del mes: Captar socios nuevos y comunicar los beneficios de entrenar fuerza en lugar de solo cardio.",
+      "tipo_fuente": "certificada",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "¿Cómo empezar en el entrenamiento funcional con la técnica correcta?",
+      "que_dice_la_fuente": "Para aprovechar al máximo el entrenamiento funcional y evitar lesiones, es clave prestar atención a la técnica y la postura desde el principio mediante programas adaptados a los objetivos y nivel físico.",
+      "fuente": "https://www.bupasalud.com/salud/entrenamiento-funcional",
+      "responde_a": "Voz de la comunidad: Dudas sobre cómo empezar o qué esperar de las clases y la estructura del entrenamiento.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    }
+  ]
+}

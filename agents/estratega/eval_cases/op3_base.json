@@ -1,0 +1,44 @@
+{
+  "status": "aprobado",
+  "brief": "brief_2026-11_op3_reactivar-socios.md",
+  "nota": "Reactivar socios: incluye un tema con fuente de competidor (Orangetheory)",
+  "fuente_temas": "agents/investigador/evals/2026-10-16_024506/brief_2026-11_op3_reactivar-socios_r1",
+  "seleccion": [
+    {
+      "tema": "¿Cómo recuperar la condición física y la fuerza después de una pausa en el entrenamiento?",
+      "que_dice_la_fuente": "La memoria muscular y las adaptaciones neuromusculares permiten recuperar entre el 80% y 90% del nivel anterior con 4 a 8 semanas de entrenamiento progresivo, siendo clave empezar con una frecuencia moderada y sin la misma exigencia inicial.",
+      "fuente": "https://www.vivagym.com/es-es/como-volver-al-gimnasio",
+      "responde_a": "Prioridad principal del mes: Retener socios actuales o reactivar a los que dejaron de venir. Voz de la comunidad / Objeción: 'Ya dejé de ir varias semanas, perdí condición y me da pena regresar.' Público: Ambas / Socios que dejaron de venir en octubre y sienten que perdieron condición.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "Consejos prácticos para reanudar la actividad física tras un periodo sedentario sin lesiones",
+      "que_dice_la_fuente": "No se debe intentar empezar con ejercicios muy intensos para ganar tiempo, ya que esto empeora la situación y favorece las lesiones por sobreesfuerzo; lo importante es adoptar pequeños hábitos y aumentar progresivamente.",
+      "fuente": "https://www.orangetheory.com/es-es/articles/6-tips-for-resuming-physical-activity-after-a-sedentary-period",
+      "responde_a": "Prioridad principal del mes: Retener socios actuales o reactivar a los que dejaron de venir. Voz de la comunidad / Objeción: 'Ya dejé de ir varias semanas, perdí condición y me da pena regresar.'",
+      "tipo_fuente": "competidor",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "Cómo lidiar con la frustración y la caída de confianza al volver a entrenar después de un parón",
+      "que_dice_la_fuente": "Volver a entrenar después de un descanso no es fácil y puede provocar dudas sobre las capacidades para rendir como antes, afectando la autoestima y la confianza, aunque la memoria muscular ayuda a recuperar la forma.",
+      "fuente": "https://www.freeletics.com/es/blog/posts/entrenar-despues-de-un-paron",
+      "responde_a": "Público: Socios que dejaron de venir en octubre y les da pena regresar. Voz de la comunidad / Objeción: 'Ya dejé de ir varias semanas, perdí condición y me da pena regresar.'",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "La importancia de evaluar el punto de partida y ajustar la intensidad al regresar al gimnasio",
+      "que_dice_la_fuente": "Antes de retomar la rutina es fundamental evaluar cómo responde el cuerpo hoy a nivel articular y cardiovascular, recomendando empezar con una frecuencia moderada de dos a tres sesiones por semana.",
+      "fuente": "https://www.glamour.es/articulos/como-retomar-el-entrenamiento-despues-de-meses-de-paron",
+      "responde_a": "Temas técnicos / Temas que quieres tocar: Cómo regresar después de dos o tres semanas sin entrenar sin lastimarte con progresiones y regresiones.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    }
+  ]
+}

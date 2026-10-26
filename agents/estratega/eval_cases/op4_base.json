@@ -1,0 +1,35 @@
+{
+  "status": "aprobado",
+  "brief": "brief_2026-11_op4_llenar-pilates.md",
+  "nota": "Llenar Pilates: los 3 recomendados",
+  "fuente_temas": "agents/investigador/evals/2026-10-20_180430/brief_2026-11_op4_llenar-pilates_r1",
+  "seleccion": [
+    {
+      "tema": "¿Por qué el Pilates de bajo impacto es ideal para empezar a entrenar sin miedo a lastimarse?",
+      "que_dice_la_fuente": "El Pilates se adapta perfectamente a los principiantes con ejercicios sencillos y progresivos, centrando la atención en el control y la respiración para evitar gestos bruscos o lesiones.",
+      "fuente": "https://www.poses-studio.com/es/principiante-de-pilates",
+      "responde_a": "Voz de la comunidad (objeción): 'Me da miedo que sea muy intenso o lastimarme la espalda' y '¿Necesito experiencia previa?'. Público: Rosa.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "Consejos clave para dar tus primeros pasos en el mundo del Pilates",
+      "que_dice_la_fuente": "Las clases de Pilates pueden ser suaves o exigentes según se modifiquen los ejercicios; se recomienda comenzar con clases adaptadas, respetando los límites del cuerpo para asegurar una práctica segura.",
+      "fuente": "https://www.nytimes.com/es/2025/02/10/espanol/estilos-de-vida/pilates-principiantes-consejos.html",
+      "responde_a": "Duda recurrente de la comunidad: '¿Necesito experiencia previa en Pilates?' y el enfoque para principiantes.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "¿Qué papel juega la movilidad articular en el bienestar y la independencia al envejecer?",
+      "que_dice_la_fuente": "Los ejercicios de movilidad para personas mayores ayudan a mantener la autonomía, mejoran la flexibilidad y el equilibrio, y reducen el riesgo de caídas y lesiones.",
+      "fuente": "https://www.amavir.es/cuidar-al-mayor/la-importancia-de-promover-la-movilidad-en-los-adultos-mayores",
+      "responde_a": "Público prioritario: Rosa (45-55+ años) que busca movilidad y salud articular.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    }
+  ]
+}

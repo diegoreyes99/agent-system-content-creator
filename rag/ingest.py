@@ -27,7 +27,7 @@ PROJECT_ROOT = HERE.parent                      # agents_dopa_final_project/
 DEFAULT_DOCS_DIR = PROJECT_ROOT.parents[1] / "RAG"   # llms/RAG, outside the repo
 CHUNKS_FILE = HERE / "data" / "chunks.jsonl"
 
-CHUNKER_VERSION = "v1"
+CHUNKER_VERSION = "v2"  # v2: can also read Markdown (.md) documents
 MAX_WORDS = 250  # multilingual-e5-base reads up to 512 tokens; ~250 Spanish words stays below that
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
@@ -124,6 +124,20 @@ def _blocks(docx_path: Path):
                 yield ("text", 0, line)
 
 
+def _markdown_blocks(md_path: Path):
+    """Same blocks as _blocks(), for Markdown notes: '##' = section, '###' = subsection."""
+    for line in md_path.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("# "):
+            continue  # blank lines and the document title
+        if stripped.startswith("### "):
+            yield ("heading", 2, stripped[4:].strip())
+        elif stripped.startswith("## "):
+            yield ("heading", 1, stripped[3:].strip())
+        else:
+            yield ("text", 0, stripped)
+
+
 def _tag_for(route: list[str], cfg: dict) -> str:
     joined = " › ".join(route).lower()
     for needle, tag in cfg["tag_rules"]:
@@ -168,7 +182,8 @@ def chunk_document(docx_path: Path) -> list[dict]:
                 "n_words": len(text.split()), "chunker_version": CHUNKER_VERSION,
             })
 
-    for kind, level, text in _blocks(docx_path):
+    blocks = _markdown_blocks(docx_path) if docx_path.suffix == ".md" else _blocks(docx_path)
+    for kind, level, text in blocks:
         if kind == "heading" and level in (1, 2):
             flush()
             lines = []
@@ -187,7 +202,7 @@ def build_chunks() -> list[dict]:
     missing = [name for name in DOCUMENTS if not (folder / name).exists()]
     if missing:
         raise SystemExit(f"No se encontraron en {folder}: {missing}")
-    extra = sorted(p.name for p in folder.glob("*.docx") if p.name not in DOCUMENTS)
+    extra = sorted(p.name for p in [*folder.glob("*.docx"), *folder.glob("*.md")] if p.name not in DOCUMENTS)
     if extra:
         print(f"Aviso: estos documentos de {folder} no están configurados y se ignoran: {extra}")
     return [c for name in DOCUMENTS for c in chunk_document(folder / name)]

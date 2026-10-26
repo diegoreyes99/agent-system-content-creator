@@ -12,6 +12,7 @@ import tools
 
 HERE = Path(__file__).resolve().parent
 STANDARDS_FILE = HERE / "instagram_standards.md"
+GREEN_FILE = HERE / "green_content.md"
 
 # Fields of each approved topic that the Estratega needs (the rest is Investigador bookkeeping).
 TOPIC_FIELDS = ("tema", "que_dice_la_fuente", "fuente", "responde_a", "tipo_fuente", "contenido_suficiente")
@@ -62,7 +63,16 @@ def build_inputs(brief_text: str, selection_path: Path) -> dict:
         "temas_aprobados": topics,
         "contexto_operativo": context or "(No disponible: construye el RAG con python rag/build_index.py.)",
         "estandares_instagram": STANDARDS_FILE.read_text(encoding="utf-8"),
+        "contenidos_green": GREEN_FILE.read_text(encoding="utf-8") if GREEN_FILE.exists() else "(sin contenidos green)",
+        "green_refs": green_refs(),
     }
+
+
+def green_refs() -> list[str]:
+    """G1, G2... as defined in green_content.md (headings "## G1 · ...")."""
+    if not GREEN_FILE.exists():
+        return []
+    return re.findall(r"^## (G\d+)\b", GREEN_FILE.read_text(encoding="utf-8"), flags=re.M)
 
 
 def fill_prompt(template: str, inputs: dict) -> str:
@@ -72,6 +82,7 @@ def fill_prompt(template: str, inputs: dict) -> str:
         "temas_aprobados": json.dumps(inputs["temas_aprobados"], ensure_ascii=False, indent=2),
         "contexto_operativo": inputs["contexto_operativo"],
         "estandares_instagram": inputs["estandares_instagram"],
+        "contenidos_green": inputs.get("contenidos_green", ""),
     }
     for key, value in values.items():
         template = template.replace("{" + key + "}", value)

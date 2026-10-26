@@ -1,0 +1,91 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "case": "op1_base",
+      "brief": "baseline/briefs/brief_2026-11_op1_captar-socios.md",
+      "seleccion": "agents/estratega/eval_cases/op1_base.json",
+      "nota": "Captar socios: los 4 recomendados",
+      "n_temas": 4,
+      "tipos_fuente": [
+        "certificada",
+        "web"
+      ]
+    },
+    {
+      "case": "op2_base",
+      "brief": "baseline/briefs/brief_2026-11_op2_convertir-agregadores.md",
+      "seleccion": "agents/estratega/eval_cases/op2_base.json",
+      "nota": "Convertir agregadores: 2 recomendados + 1 alternativa",
+      "n_temas": 3,
+      "tipos_fuente": [
+        "web"
+      ]
+    },
+    {
+      "case": "op3_base",
+      "brief": "baseline/briefs/brief_2026-11_op3_reactivar-socios.md",
+      "seleccion": "agents/estratega/eval_cases/op3_base.json",
+      "nota": "Reactivar socios: incluye un tema con fuente de competidor (Orangetheory)",
+      "n_temas": 4,
+      "tipos_fuente": [
+        "competidor",
+        "web"
+      ]
+    },
+    {
+      "case": "op4_base",
+      "brief": "baseline/briefs/brief_2026-11_op4_llenar-pilates.md",
+      "seleccion": "agents/estratega/eval_cases/op4_base.json",
+      "nota": "Llenar Pilates: los 3 recomendados",
+      "n_temas": 3,
+      "tipos_fuente": [
+        "web"
+      ]
+    },
+    {
+      "case": "op5_base",
+      "brief": "baseline/briefs/brief_2026-11_op5_simulacro-deka.md",
+      "seleccion": "agents/estratega/eval_cases/op5_base.json",
+      "nota": "Llenar un evento (simulacro Deka): los 4 recomendados",
+      "n_temas": 4,
+      "tipos_fuente": [
+        "web"
+      ]
+    },
+    {
+      "case": "op2_tema_dani",
+      "brief": "baseline/briefs/brief_2026-11_op2_convertir-agregadores.md",
+      "seleccion": "agents/estratega/eval_cases/op2_tema_dani.json",
+      "nota": "Un tema propio de Dani, sin fuente",
+      "n_temas": 3,
+      "tipos_fuente": [
+        "dani",
+        "web"
+      ]
+    },
+    {
+      "case": "op3_pocos_temas",
+      "brief": "baseline/briefs/brief_2026-11_op3_reactivar-socios.md",
+      "seleccion": "agents/estratega/eval_cases/op3_pocos_temas.json",
+      "nota": "Solo 2 temas aprobados: el volumen debe salir de la estrategia",
+      "n_temas": 2,
+      "tipos_fuente": [
+        "web"
+      ]
+    },
+    {
+      "case": "op1_muchos_temas",
+      "brief": "baseline/briefs/brief_2026-11_op1_captar-socios.md",
+      "seleccion": "agents/estratega/eval_cases/op1_muchos_temas.json",
+      "nota": "8 temas aprobados (6 del Investigador + 2 de Dani): variedad y volumen razonable",
+      "n_temas": 8,
+      "tipos_fuente": [
+        "certificada",
+        "dani",
+        "red_social",
+        "web"
+      ]
+    }
+  ]
+}

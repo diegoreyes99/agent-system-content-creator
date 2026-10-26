@@ -1,0 +1,18 @@
+{
+  "errors": [
+    "JSON no parseable: Expecting ':' delimiter: line 161 column 13 (char 8790)"
+  ],
+  "metrics": {
+    "json_parsed": 0.0,
+    "schema_valid": 0.0,
+    "n_errors": 1.0,
+    "n_piezas": 0.0,
+    "n_tool_calls": 3.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 2.0,
+    "latency_s": 18.36,
+    "prompt_tokens": 41448.0,
+    "completion_tokens": 6274.0,
+    "run_failed": 0.0
+  }
+}

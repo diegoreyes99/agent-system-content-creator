@@ -1,0 +1,26 @@
+{
+  "status": "aprobado",
+  "brief": "brief_2026-11_op3_reactivar-socios.md",
+  "nota": "Solo 2 temas aprobados: el volumen debe salir de la estrategia",
+  "fuente_temas": "agents/investigador/evals/2026-10-16_024506/brief_2026-11_op3_reactivar-socios_r1",
+  "seleccion": [
+    {
+      "tema": "¿Cómo recuperar la condición física y la fuerza después de una pausa en el entrenamiento?",
+      "que_dice_la_fuente": "La memoria muscular y las adaptaciones neuromusculares permiten recuperar entre el 80% y 90% del nivel anterior con 4 a 8 semanas de entrenamiento progresivo, siendo clave empezar con una frecuencia moderada y sin la misma exigencia inicial.",
+      "fuente": "https://www.vivagym.com/es-es/como-volver-al-gimnasio",
+      "responde_a": "Prioridad principal del mes: Retener socios actuales o reactivar a los que dejaron de venir. Voz de la comunidad / Objeción: 'Ya dejé de ir varias semanas, perdí condición y me da pena regresar.' Público: Ambas / Socios que dejaron de venir en octubre y sienten que perdieron condición.",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    },
+    {
+      "tema": "Cómo lidiar con la frustración y la caída de confianza al volver a entrenar después de un parón",
+      "que_dice_la_fuente": "Volver a entrenar después de un descanso no es fácil y puede provocar dudas sobre las capacidades para rendir como antes, afectando la autoestima y la confianza, aunque la memoria muscular ayuda a recuperar la forma.",
+      "fuente": "https://www.freeletics.com/es/blog/posts/entrenar-despues-de-un-paron",
+      "responde_a": "Público: Socios que dejaron de venir en octubre y les da pena regresar. Voz de la comunidad / Objeción: 'Ya dejé de ir varias semanas, perdí condición y me da pena regresar.'",
+      "tipo_fuente": "web",
+      "origen": "investigador",
+      "ronda": 1
+    }
+  ]
+}
