@@ -16,7 +16,7 @@ apertura todavía, solo sembrar interés).
   todavía en proceso de adaptación) — comunicar como "próximamente", no
   como disponible ya.
 - Contenido tipo "cómo llegar a DOPA" (ubicación: C. Juan Sánchez Azcona
-  541, Narvarte Poniente) para resolver la fricción de acceso que
+  529, Narvarte Poniente) para resolver la fricción de acceso que
   históricamente ha costado prospectos.
 - Aprovechar el "Reto 21 días" de noviembre como prueba social: si tuvo
   buena respuesta, un "Reto de Año Nuevo" similar pero más grande es el

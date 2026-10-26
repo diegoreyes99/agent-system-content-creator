@@ -1,0 +1,6 @@
+{
+  "trace": [],
+  "latency_s": 13.580891416000668,
+  "prompt_tokens": 15304,
+  "completion_tokens": 6355
+}

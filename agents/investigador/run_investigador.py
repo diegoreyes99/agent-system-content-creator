@@ -334,7 +334,8 @@ def ask_own_topics(can_search: bool) -> tuple[list[str], str | None]:
     while True:
         prompt = "\n2) ¿Quieres agregar un tema tuyo? Escríbelo" + (" (otro más)" if own else "") + ", o Enter para terminar: "
         tema = input(prompt).strip()
-        if not tema:
+        # "no" / "ninguno" mean the same as Enter (2026-10-20: "No" was saved as a topic).
+        if not tema or tema.lower().strip(".! ") in ("no", "n", "ninguno", "ninguna", "nada", "listo"):
             return own, None
         if can_search:
             while True:

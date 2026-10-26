@@ -1,0 +1,35 @@
+{
+  "errors": [
+    "2026-11-P06: 'Tráfico' no corresponde a la etapa 'descubrimiento'",
+    "2026-11-P14: 'Tráfico' no corresponde a la etapa 'descubrimiento'"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_errors": 2.0,
+    "n_piezas": 16.0,
+    "n_feed": 16.0,
+    "n_historias": 0.0,
+    "n_carruseles": 8.0,
+    "feed_por_semana_min": 3.0,
+    "feed_por_semana_max": 4.0,
+    "feed_por_semana_mean": 3.75,
+    "n_semanas_sin_feed": 0.0,
+    "pct_temas_cubiertos": 1.0,
+    "pct_piezas_brief": 0.75,
+    "pct_etapa_coherente": 0.875,
+    "desviacion_mezcla": 0.08750000000000002,
+    "n_menciones_competidor": 0.0,
+    "n_fuentes_conocimiento": 4.0,
+    "pct_descubrimiento": 0.3125,
+    "pct_consideracion": 0.3125,
+    "pct_conversion": 0.25,
+    "pct_fidelizacion": 0.125,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 30.39,
+    "prompt_tokens": 23133.0,
+    "completion_tokens": 5171.0
+  }
+}

@@ -32,6 +32,7 @@ COLUMNS = [
     "Canal",                # Estratega (always Instagram for now)
     "Formato",              # Estratega
     "Tema",                 # Estratega (descriptive: what the piece covers and from which angle)
+    "Etapa del embudo",     # Estratega: descubrimiento, consideración, conversión o fidelización
     "Objetivo",             # Estratega: "<objective type> — <specific, measurable objective>"
     "Mensaje clave",        # Estratega
     "Copy in",              # Copywriter (text on the image; may be empty)
@@ -40,7 +41,7 @@ COLUMNS = [
     "Estado",               # Dani (dropdown)
     "Comentarios de Dani",  # Dani
 ]
-COLUMN_WIDTHS = [90, 110, 100, 85, 95, 340, 280, 260, 220, 320, 200, 115, 260]
+COLUMN_WIDTHS = [90, 110, 100, 85, 95, 340, 130, 280, 260, 220, 320, 200, 115, 260]
 
 STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED = "Pendiente", "Aprobado", "Cambios", "Descartado"
 STATUS_OPTIONS = [STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED]
@@ -50,6 +51,10 @@ STATUS_COLORS = {  # light background per status, so Dani sees progress at a gla
     STATUS_CHANGES: (0.99, 0.88, 0.80),
     STATUS_DISCARDED: (0.90, 0.90, 0.90),
 }
+# Funnel stage of each piece: JSON value -> label shown to Dani.
+FUNNEL_STAGES = {"descubrimiento": "Descubrimiento", "consideracion": "Consideración",
+                 "conversion": "Conversión", "fidelizacion": "Fidelización"}
+
 WEEKDAYS_ES = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 
 # Agent-side status values mapped to the sheet's dropdown.
@@ -109,6 +114,7 @@ def piece_to_row(piece: dict) -> list[str]:
     return [
         str(piece.get("id", "")), fecha, weekday_es(fecha),
         str(piece.get("canal", "")), str(piece.get("formato", "")), str(piece.get("tema", "")),
+        FUNNEL_STAGES.get(str(piece.get("etapa_embudo", "")).strip().lower(), str(piece.get("etapa_embudo", ""))),
         _objective_text(piece),
         str(piece.get("mensaje_clave", "")),
         str(piece.get("copy_in", "")), str(piece.get("copy_out", "")), str(piece.get("diseno", "")),

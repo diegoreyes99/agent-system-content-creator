@@ -21,13 +21,13 @@ SAMPLE_PIECES = [
     {"id": "2026-11-P01", "fecha_sugerida": "2026-11-03", "canal": "instagram", "formato": "carrusel",
      "tema": "Qué es el entrenamiento híbrido: un carrusel que explica, para quien nunca lo ha probado, cómo se "
              "combinan fuerza y resistencia en una misma sesión y por qué da mejores resultados que hacer solo una",
-     "tipo_objetivo": "Reconocimiento de marca",
+     "etapa_embudo": "descubrimiento", "tipo_objetivo": "Reconocimiento de marca",
      "objetivo": "Que gente que no conoce DOPA descubra el entrenamiento híbrido y guarde o comparta el carrusel",
      "mensaje_clave": "Fuerza y resistencia en un mismo plan", "estado": "pendiente_aprobacion"},
     {"id": "2026-11-P02", "fecha_sugerida": "2026-11-05", "canal": "instagram", "formato": "post",
      "tema": "Clase de prueba del Reto 21 días: post que invita a principiantes a reservar su primera clase, "
              "respondiendo la objeción de 'necesito estar en forma antes de entrar'",
-     "tipo_objetivo": "Generación de leads",
+     "etapa_embudo": "conversion", "tipo_objetivo": "Generación de leads",
      "objetivo": "Que principiantes escriban por DM o WhatsApp para reservar su clase de prueba del Reto 21 días",
      "mensaje_clave": "Empiezas como estás; el reto se adapta a tu nivel", "estado": "pendiente_aprobacion"},
 ]

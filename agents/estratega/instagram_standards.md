@@ -1,6 +1,6 @@
 # Estándares de publicación en Instagram y blog — referencia del Estratega
 
-*Versión 1 · 2026-10-22 · Investigado por Claude, pendiente de revisión de Diego.*
+*Versión 2 · 2026-10-26 (v1 2026-10-22, revisada por Diego; v2 agrega el embudo, sección 9).*
 
 El Estratega usa esta referencia para decidir cuántas piezas publicar y cómo
 repartirlas. Son promedios de estudios con miles de cuentas, **no reglas**:
@@ -87,6 +87,44 @@ Reglas para el Estratega:
 2. Cada objetivo específico dice qué acción se espera y de quién, y se puede medir con las métricas de su tipo.
 3. Una sola pieza no persigue todo: un objetivo principal por pieza.
 
+## 9. Embudo de marketing: cómo distribuir y clasificar las piezas
+
+Cada pieza pertenece a una etapa del embudo, según su tipo de objetivo. El
+Estratega usa el embudo para dos cosas: **cuánto** contenido va a cada etapa
+(la mezcla del mes) y **en qué orden** (primero se calienta al público, después
+se le pide que compre).
+
+| Etapa | Qué busca | Tipos de objetivo (sección 8) | Piezas típicas para DOPA |
+|---|---|---|---|
+| **Descubrimiento** (arriba, TOFU) | Que gente que no conoce DOPA la descubra | Reconocimiento de marca, Crecimiento de audiencia | Carruseles educativos (qué es el entrenamiento híbrido, beneficios de la fuerza), fotos reales de entrenamiento, comunidad en acción |
+| **Consideración** (medio, MOFU) | Que el interesado confíe y vea a DOPA como opción | Interacción y comunidad, Tráfico, Atención y confianza | Cómo es una clase, coaches y método, objeciones resueltas ("no necesitas estar en forma"), testimonios, preguntas frecuentes en historias |
+| **Conversión** (abajo, BOFU) | Que el interesado actúe: escriba, reserve, se inscriba | Generación de leads, Conversión | Oferta activa, clase de prueba, convocatoria y cierre de un evento o reto, cupos limitados |
+| **Fidelización** (después de la compra) | Que los socios sigan, regresen y recomienden | Retención y lealtad | Logros de socios, retos internos, reconocimiento a la comunidad, reactivación de quien dejó de venir |
+
+**Mezcla de referencia.** Regla general en redes sociales: alrededor del **80%**
+del contenido debe aportar valor (educar, inspirar, entretener, generar
+comunidad) y solo alrededor del **20%** debe promover directamente la marca o la
+venta [11]. La conversión es la etapa "que vende", así que normalmente no pasa del
+20%–30% del mes. Puntos de partida por prioridad del brief (**criterio interno
+de este sistema, no un estudio**; se ajusta con lo que mida el Analista):
+
+| Prioridad del mes | Descubrimiento | Consideración | Conversión | Fidelización |
+|---|---|---|---|---|
+| Captar socios nuevos | 40% | 30% | 25% | 5% |
+| Llenar un evento o un reto propio | 30% | 30% | 30% | 10% |
+| Llenar clases u horarios con baja asistencia | 30% | 35% | 25% | 10% |
+| Convertir usuarios de agregadores a membresía directa | 10% | 35% | 30% | 25% |
+| Retener o reactivar socios | 15% | 25% | 15% | 45% |
+
+Un mes de evento u oferta puede pasar del 20% de piezas promocionales si la
+prioridad lo pide; el Estratega lo justifica en `criterio_de_volumen`.
+
+**Secuencia dentro del mes:**
+1. Antes de pedir una acción (conversión) sobre algo, publica al menos una pieza de descubrimiento o consideración sobre lo mismo.
+2. En un evento o reto: descubrimiento y consideración en las primeras semanas, conversión hacia la fecha límite, y recordatorios en historias los últimos días.
+3. La fidelización se reparte a lo largo del mes, no se junta al final.
+4. Las piezas del negocio (ofertas, convocatorias) suelen ser de conversión; los temas aprobados suelen alimentar descubrimiento y consideración.
+
 ## Fuentes
 
 1. Buffer — [How Often Should You Post on Instagram in 2026? What Data From 2 Million Posts Tells Us](https://buffer.com/library/how-often-to-post-on-instagram/)
@@ -99,3 +137,4 @@ Reglas para el Estratega:
 8. Fronetics — [Are You Blogging Enough?](https://fronetics.com/are-you-blogging-enough/) (cita datos de HubSpot)
 9. Sprout Social — [Social media goals](https://sproutsocial.com/insights/social-media-goals/)
 10. Influee — [Meta Campaign Objectives: All 6 ODAX Goals](https://influee.co/blog/meta-campaign-objectives)
+11. Social Media Today — [The 80/20 rule: why just 20% of your social media content should be about your brand](https://www.socialmediatoday.com/content/8020-rule-why-just-20-your-social-media-content-should-be-about-your-brand)

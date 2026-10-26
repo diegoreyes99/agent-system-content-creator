@@ -14,7 +14,7 @@
 
 ### Prioridad secundaria (opcional, máximo una)
 
-Resolver la fricción de ubicación: que quien nos busque sepa exactamente cómo llegar y por dónde entrar (C. Juan Sánchez Azcona 541, Narvarte Poniente).
+Resolver la fricción de ubicación: que quien nos busque sepa exactamente cómo llegar y por dónde entrar (C. Juan Sánchez Azcona 529, Narvarte Poniente).
 
 ---
 
@@ -70,7 +70,7 @@ Preguntan si pueden entrenar en top sin sentirse observadas.
 ### Evento 1
 - **Nombre:** Reto 21 días de noviembre
 - **Fecha y horario:** Del martes 3 al lunes 23 de noviembre, en cualquier clase del horario regular
-- **Lugar o punto de encuentro:** DOPA, C. Juan Sánchez Azcona 541, Narvarte Poniente
+- **Lugar o punto de encuentro:** DOPA, C. Juan Sánchez Azcona 529, Narvarte Poniente
 - **Quién puede ir (nivel y cupo):** Todos los niveles; aforo de 15 a 20 personas por clase
 - **Costo (socios / externos):** Incluido para socios / externos: membresía mensual $1,850 (inscripción sin costo)
 - **Marcas aliadas o patrocinadores:** Habits (por confirmar si da muestras al cierre del reto)
