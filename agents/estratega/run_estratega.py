@@ -14,7 +14,7 @@ saved in runs/<fecha>/parrilla.json: that is what the Copywriter receives.
 
 Useful options:
   --model-id gemini-3.8-flash   model to use (default ESTRATEGA_MODEL_ID or gemini-3.5-flash-lite)
-  --prompt-version v8           prompt in prompts/estratega_<v>.md
+  --prompt-version v10          prompt in prompts/estratega_<v>.md
   --sheet-tab "2026-11 prueba"  tab name (default: the month)
   --sin-aprobacion              no Sheet, no approval (for quick tests)
   --desde-corrida runs/<fecha>  skip the model: send that run's grid to the Sheet for approval
@@ -116,7 +116,7 @@ def evaluate(result: dict, inputs: dict) -> tuple[dict | None, list[str], dict]:
     try:
         output = extract_json(result["raw"], repaired)
         errors = validate(output, inputs)
-        if inputs.get("prompt_version", "v5") >= "v8":
+        if inputs.get("prompt_version", "v5") == "v8":  # from v9 photos are no longer checked against the brief
             result["correcciones_foto"] = apply_photo_rules(output, inputs["brief_del_mes"])
     except (ValueError, json.JSONDecodeError) as exc:
         output, errors = None, [f"JSON no parseable: {exc}"]
@@ -335,7 +335,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Corre el Estratega y lo registra en MLflow.")
     parser.add_argument("--brief", type=Path, required=True)
     parser.add_argument("--seleccion", type=Path, required=True, help="seleccion.json del Investigador")
-    parser.add_argument("--prompt-version", default="v8")
+    parser.add_argument("--prompt-version", default="v10")
     parser.add_argument("--model-id", default=None, help="modelo de Gemini (default gemini-3.5-flash-lite)")
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--sheet-tab", default=None)

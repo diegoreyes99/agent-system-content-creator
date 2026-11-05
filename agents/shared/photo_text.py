@@ -28,6 +28,12 @@ def photo_text(photo) -> str:
     if not isinstance(photo, dict):
         return str(photo)
     idea = str(photo.get("idea") or "").strip()
+    if photo.get("tipo") == "imagen":  # v10
+        return f"🖼️ Imagen por crear (lo hace el Diseñador; si Dani tiene una foto real que sirva, puede subirla). Idea: {idea}"
+    if photo.get("tipo") == "foto_dopa":  # v9
+        return f"📷 Foto real de DOPA: la sube Dani al aprobar (si no la sube, la pieza pasa a gráfico). Idea: {idea}"
+    if photo.get("tipo") == "imagen_generica":  # v9
+        return f"🖼️ Imagen genérica: la crea el Diseñador, sin hacerse pasar por DOPA. Idea: {idea}"
     if photo.get("tipo") == "grafico":
         return f"🎨 Gráfico por crear (lo hace el Diseñador). Idea: {idea}"
     support = photo.get("respaldo_brief")
@@ -38,3 +44,26 @@ def photo_text(photo) -> str:
         return (f"⏳ Pendiente: se tomará el {_date_es(photo.get('fecha_toma'))}, antes de publicar "
                 f"(según el brief: «{support}»). Toma: {idea}")
     return f"⚠️ Esta foto aún no existe: la creará el Diseñador. Idea: {idea}"
+
+
+def photo_short(photo) -> str:
+    """Short version for Dani's main view: status icon and the idea, no brief quote."""
+    if not photo:
+        return ""
+    if not isinstance(photo, dict):
+        return str(photo)
+    idea = str(photo.get("idea") or "").strip()
+    if photo.get("tipo") == "imagen":
+        return f"🖼️ Imagen: {idea}"
+    if photo.get("tipo") == "foto_dopa":
+        return f"📷 Foto de DOPA (la sube Dani): {idea}"
+    if photo.get("tipo") == "imagen_generica":
+        return f"🖼️ Imagen genérica: {idea}"
+    if photo.get("tipo") == "grafico":
+        return f"🎨 Gráfico: {idea}"
+    status = photo.get("disponibilidad")
+    if status == "existe":
+        return f"✅ Ya existe: {idea}"
+    if status == "pendiente":
+        return f"⏳ Se toma el {_date_es(photo.get('fecha_toma'))}: {idea}"
+    return f"⚠️ Por crear: {idea}"

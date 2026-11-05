@@ -46,19 +46,31 @@ PIECE_KEYS_V6 = ("green_ref", "recursos_visuales")  # required from prompt v6 on
 PIECE_KEYS_V7 = ("angulo", "puntos_clave", "cta", "foto_sugerida")  # required from prompt v7 on
 
 
+def vnum(version: str) -> int:
+    """Prompt version as a number, so "v10" comes after "v9" (as strings it would not)."""
+    digits = re.sub(r"\D", "", str(version))
+    return int(digits) if digits else 0
+
+
 def required_piece_keys(version: str) -> tuple:
     """v6 added green_ref and recursos_visuales; v7 angle, key points, CTA and suggested photo;
     v8 merged the visual fields into one structured foto_sugerida (no recursos_visuales)."""
-    keys = PIECE_KEYS
-    if version >= "v6":
-        keys += ("green_ref",) + (("recursos_visuales",) if version < "v8" else ())
-    if version >= "v7":
-        keys += PIECE_KEYS_V7 if version < "v8" else tuple(k for k in PIECE_KEYS_V7 if k != "cta")
+    keys, v = PIECE_KEYS, vnum(version)
+    if v >= 6:
+        keys += ("green_ref",) + (("recursos_visuales",) if v < 8 else ())
+    if v >= 7:
+        keys += PIECE_KEYS_V7 if v < 8 else tuple(k for k in PIECE_KEYS_V7 if k != "cta")
     return keys
 
 
 PHOTO_TYPES = {"foto", "grafico"}
 PHOTO_STATUSES = {"existe", "pendiente", "no_existe"}
+# From v9 the Estratega only says what kind of visual the piece needs; Dani decides which real photo to use
+# (decision 2026-11-05). "foto_dopa": Dani uploads it; the others are created by the Diseñador.
+VISUAL_TYPES_V9 = {"foto_dopa", "imagen_generica", "grafico"}
+# From v10 the Diseñador creates every visual from scratch, assuming no DOPA photos exist;
+# Dani may upload a real photo, optionally (decision 2026-11-05).
+VISUAL_TYPES_V10 = {"imagen", "grafico"}
 # Words that mean a photo that does not exist yet: from v7 on it belongs in foto_sugerida, not in recursos_visuales.
 PHOTO_REQUEST_MARKERS = ("pendiente", "por tomar", "sesión nueva", "nueva sesión", "agendar", "tomar foto")
 
@@ -87,7 +99,8 @@ def repair_json(text: str) -> str:
     """Fixes the mechanical slips the light model makes in long JSON outputs
     (eval 2026-10-26): a key without its opening quote (`puntos_clave": [`, `$tema: "…"`),
     a list without its key (only puntos_clave is a list inside a piece) and a stray
-    string alone on a line inside an object (`"post",`). Each line is fixed before it
+    string alone on a line inside an object (`"post",`) and a markdown bullet before a
+    list item (`- "texto",`) and a missing comma between two fields. Each line is fixed before it
     is scanned, so a broken quote never confuses what comes after it."""
     stack: list = []
     in_string = False
@@ -104,6 +117,14 @@ def repair_json(text: str) -> str:
             # A bare string inside an object is not valid JSON: drop it.
             if re.match(r'^\s*"[^"]*"\s*,?\s*$', line):
                 continue
+            # A missing comma between two fields: "tipo_objetivo": "x"  /  "objetivo": … (eval 2026-11-05, 3.8 Flash).
+            if re.match(r'^\s*"[^"]+"\s*:', line) and fixed:
+                prev = fixed[-1].rstrip()
+                if prev and prev[-1] not in ",{[" and re.search(r'("|\d|true|false|null|\]|\})$', prev):
+                    fixed[-1] = prev + ","
+        # A markdown bullet before a list item: - "texto", (eval 2026-11-05, prompt v9).
+        if not in_string and stack and stack[-1] == "[":
+            line = re.sub(r'^(\s*)[-*•]\s+(?=")', r"\1", line)
         in_string = _scan(line, stack, in_string)
         fixed.append(line)
     return "\n".join(fixed)
@@ -181,6 +202,7 @@ def validate(output: dict, inputs: dict) -> list[str]:
             continue
         pid = p.get("id", f"#{i}")
         version = inputs.get("prompt_version", "v5")
+        v = vnum(version)
         required = required_piece_keys(version)
         missing = [k for k in required if k not in p]
         if missing:
@@ -207,7 +229,7 @@ def validate(output: dict, inputs: dict) -> list[str]:
             errors.append(f"{pid}: pieza del negocio sin elemento_del_brief")
         elif origin == "green" and p.get("green_ref") not in inputs.get("green_refs", []):
             errors.append(f"{pid}: green_ref '{p.get('green_ref')}' no es un contenido green")
-        if p.get("publico") not in (AUDIENCES_V8 if inputs.get("prompt_version", "v5") >= "v8" else AUDIENCES):
+        if p.get("publico") not in (AUDIENCES_V8 if v >= 8 else AUDIENCES):
             errors.append(f"{pid}: público '{p.get('publico')}' inválido")
         stage, kind = p.get("etapa_embudo"), p.get("tipo_objetivo")
         if stage not in STAGE_OBJECTIVES:
@@ -216,18 +238,26 @@ def validate(output: dict, inputs: dict) -> list[str]:
             errors.append(f"{pid}: tipo_objetivo '{kind}' no está en la lista de referencia")
         elif stage in STAGE_OBJECTIVES and kind not in STAGE_OBJECTIVES[stage]:
             errors.append(f"{pid}: '{kind}' no corresponde a la etapa '{stage}'")
-        if version >= "v8":
+        if v >= 10:
+            photo = p.get("foto_sugerida")
+            if not isinstance(photo, dict) or photo.get("tipo") not in VISUAL_TYPES_V10 or not str(photo.get("idea") or "").strip():
+                errors.append(f"{pid}: foto_sugerida debe traer tipo (imagen o grafico) e idea")
+        elif v == 9:
+            photo = p.get("foto_sugerida")
+            if not isinstance(photo, dict) or photo.get("tipo") not in VISUAL_TYPES_V9 or not str(photo.get("idea") or "").strip():
+                errors.append(f"{pid}: foto_sugerida debe traer tipo (foto_dopa, imagen_generica o grafico) e idea")
+        elif v == 8:
             photo = p.get("foto_sugerida")
             if not isinstance(photo, dict) or photo.get("tipo") not in PHOTO_TYPES or not str(photo.get("idea") or "").strip():
                 errors.append(f"{pid}: foto_sugerida debe traer tipo (foto o grafico) e idea")
             elif photo.get("tipo") == "foto" and photo.get("disponibilidad") not in PHOTO_STATUSES:
                 errors.append(f"{pid}: disponibilidad de la foto '{photo.get('disponibilidad')}' inválida")
-        if version == "v7":
+        if v == 7:
             visuals = str(p.get("recursos_visuales") or "").lower()
             if any(m in visuals for m in PHOTO_REQUEST_MARKERS):
                 errors.append(f"{pid}: recursos_visuales incluye una foto que no existe; va en foto_sugerida ('{p.get('recursos_visuales')}')")
 
-        if version >= "v7":
+        if v >= 7:
             points = p.get("puntos_clave")
             if "puntos_clave" in p and (not isinstance(points, list) or not 2 <= len(points) <= 4):
                 errors.append(f"{pid}: puntos_clave debe ser una lista de 2 a 4")
@@ -282,24 +312,61 @@ def _plain(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip(" .")
 
 
+# Small words that say nothing about the photo itself.
+_SUPPORT_STOPWORDS = set("""a al con de del el en la las lo los para por que se su sus un una y o
+este esta mes fotos foto banco disponibles""".split())
+# A brief sentence with these words says the photo is missing, not ready or only scheduled.
+_NOT_READY = ("falta", "faltan", "no estan listas", "no esta lista", "todavia no", "por confirmar", "se agenda",
+              "se agendan", "por tomar", "pendiente")
+
+
+def _content_words(text: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9]+", _plain(text)) if w not in _SUPPORT_STOPWORDS and len(w) > 2}
+
+
+def _support_problem(quote: str, brief_text: str, status: str) -> str | None:
+    """None if the brief backs the photo; otherwise the reason. The model often paraphrases
+    a little ("Banco de Mike: clases y coaches" for "banco de Mike con clases y coaches"),
+    so the check compares key words against the most similar sentence of the brief
+    instead of demanding the exact phrase (fix after the v8 eval, 2026-11-05)."""
+    words = _content_words(quote)
+    if len(words) < 2:
+        return "el respaldo no dice qué foto es"
+    # Sentences of the brief (split on periods, semicolons and line breaks, not on colons:
+    # "Banco de Mike: clases y coaches" is one idea).
+    sentences = [s for s in re.split(r"(?<=[.;])\s+|\n+", brief_text) if s.strip()]
+    # A quote may join two consecutive sentences ("Banco de Mike: clases y coaches. Fotos del Cosmic Run…").
+    sentences += [f"{a} {b}" for a, b in zip(sentences, sentences[1:])]
+    best, overlap = "", 0.0
+    for sentence in sentences:
+        share = len(words & _content_words(sentence)) / len(words)
+        if share > overlap:
+            best, overlap = sentence, share
+    if overlap < 0.75:
+        return "la frase de respaldo no está en el brief"
+    plain_best = _plain(best)
+    not_ready = any(m in plain_best for m in _NOT_READY)
+    if status == "existe" and not_ready:
+        return "el brief dice que esa foto falta o todavía no está lista"
+    if status == "pendiente" and not not_ready and not re.search(r"\b(sesion|se tom|se agend)", plain_best):
+        return "el brief no dice que esa foto se vaya a tomar"
+    return None
+
+
 def apply_photo_rules(output: dict | None, brief_text: str) -> list[dict]:
-    """Code rule (prompt v8): a photo is "existe" or "pendiente" only if its respaldo_brief
-    really is in the brief and, if pending, the shoot is before the piece is published.
+    """Code rule (prompt v8): a photo is "existe" or "pendiente" only if the brief backs it
+    (see _support_problem) and, if pending, the shoot is before the piece is published.
     Otherwise it becomes "no_existe" (Dani decides). Changes `output` in place and
     returns one correction per change, to log every time the model got it wrong."""
     if not output:
         return []
-    brief = _plain(brief_text)
     corrections = []
     for p in output.get("piezas") or []:
         photo = p.get("foto_sugerida") if isinstance(p, dict) else None
         if not isinstance(photo, dict) or photo.get("tipo") != "foto" or photo.get("disponibilidad") not in ("existe", "pendiente"):
             continue
-        reason = None
-        support = _plain(photo.get("respaldo_brief") or "")
-        if len(support) < 8 or support not in brief:
-            reason = "la frase de respaldo no está en el brief"
-        elif photo["disponibilidad"] == "pendiente":
+        reason = _support_problem(photo.get("respaldo_brief") or "", brief_text, photo["disponibilidad"])
+        if reason is None and photo["disponibilidad"] == "pendiente":
             try:
                 if date.fromisoformat(str(photo.get("fecha_toma"))) >= date.fromisoformat(str(p.get("fecha_sugerida"))):
                     reason = "la sesión de fotos es el mismo día o después de la publicación"
@@ -371,6 +438,9 @@ def compute_metrics(output: dict | None, errors: list[str], inputs: dict) -> dic
         metrics["n_fotos_pendientes"] = float(sum(1 for f in photos if f.get("tipo") == "foto" and f.get("disponibilidad") == "pendiente"))
         metrics["n_fotos_no_existen"] = float(sum(1 for f in photos if f.get("tipo") == "foto" and f.get("disponibilidad") == "no_existe"))
         metrics["n_graficos"] = float(sum(1 for f in photos if f.get("tipo") == "grafico"))
+        metrics["n_fotos_dopa"] = float(sum(1 for f in photos if f.get("tipo") == "foto_dopa"))
+        metrics["n_imagenes_genericas"] = float(sum(1 for f in photos if f.get("tipo") == "imagen_generica"))
+        metrics["n_imagenes"] = float(sum(1 for f in photos if f.get("tipo") == "imagen"))
     return metrics
 
 

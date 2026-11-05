@@ -1,0 +1,616 @@
+```json
+{
+  "mes": "2026-11",
+  "objetivo_del_mes": "Llenar las clases de Pilates matutinas (martes y jueves 09:00–10:00) a un mínimo de 10 personas por clase y lograr 5 inscripciones al plan de Pilates mensual ($1,599), atrayendo al público Rosa (mujeres de 45-55+ años) y a hijas (perfil Ana) que buscan un espacio seguro para su salud y movilidad articular.",
+  "estrategia_del_mes": "La parrilla de noviembre se estructura con un enfoque táctico hacia la conversión y consideración de las clases de Pilates, combinando pilares educativos sobre movilidad y seguridad (temas aprobados T1, T2 y T3), piezas de contenido green de apoyo (técnica y constancia) y la difusión intensiva de la oferta comercial (clase de prueba gratis todo noviembre) y la clase abierta del 12 de noviembre. Se equilibra la atención al público Rosa y a sus hijas (Ana) con un 35% de consideración, 30% de conversión, 25% de descubrimiento y 10% de fidelización, asegurando un flujo constante de reservas sin descuidar el valor de la comunidad boutique.",
+  "mezcla_por_etapa": {
+    "descubrimiento": 5,
+    "consideracion": 7,
+    "conversion": 6,
+    "fidelizacion": 2
+  },
+  "mezcla_de_objetivos": {
+    "Reconocimiento de marca": 3,
+    "Crecimiento de audiencia": 2,
+    "Interacción y comunidad": 3,
+    "Atención y confianza": 4,
+    "Generación de leads": 3,
+    "Conversión": 3,
+    "Retención y lealtad": 2
+  },
+  "criterio_de_volumen": "Se programan 20 piezas en total durante el mes (equivalente a un promedio sólido de 4 publicaciones en el feed por semana, combinando carruseles e imágenes únicas, acompañadas de historias regulares), cumpliendo con los estándares recomendados (3-5 piezas semanales). El volumen se concentra en posicionar el Pilates matutino de martes y jueves, impulsar la clase abierta del 12 de noviembre y destacar la oferta de la primera clase gratis.",
+  "supuestos": [
+    "Se asume que la sesión de fotos programada con Mike el 3 de noviembre aportará material visual real de Pilates para ilustrar las piezas de la segunda quincena.",
+    "Se asume que la clase abierta del jueves 12 de noviembre cuenta con los 15 lugares disponibles descritos en el brief.",
+    "El costo del plan mensual de Pilates ($1,599) y la primera clase gratis se mantienen vigentes durante todo noviembre según las condiciones del brief."
+  ],
+  "fuentes_de_conocimiento": [
+    "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › F. Objeciones y Barreras de Compra",
+    "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › J. Relación con DOPA MX",
+    "Brief de negocio › 5. Servicios, Instalaciones y Catálogo › Tarifas Oficiales de Membresías, Clases Grupales y Planes de Acceso (parte 2 de 2)",
+    "Brief de negocio › 7. Público Actual vs. Público Deseado › ¿Quiénes son sus socios hoy? Perfil General"
+  ],
+  "piezas": [
+    {
+      "id": "2026-11-P01",
+      "fecha_sugerida": "2026-11-03",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T1",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "Pilates sin miedo",
+      "tema": "Carrusel explicando por qué el Pilates de bajo impacto es ideal para empezar a entrenar sin miedo a lastimarse, enfocado en el control y la respiración.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Resolver la objeción de miedo a la intensidad o a lastimarse la espalda en mujeres de 45 a 55+ años.",
+      "mensaje_clave": "El Pilates se adapta a ti con ejercicios progresivos y controlados para cuidar tu espalda.",
+      "angulo": "Desmitificar que entrenar fuerza o movilidad requiere experiencia previa o rutinas rudas.",
+      "puntos_clave": [
+        "Ejercicios sencillos y adaptados a tu nivel",
+        "Enfoque en la respiración y control corporal",
+        "Acompañamiento cercano de coaches certificados"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Persona madura realizando un estiramiento controlado en mat, transmitiendo serenidad y seguridad."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P02",
+      "fecha_sugerida": "2026-11-04",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Oferta: primera clase de Pilates gratis",
+      "green_ref": null,
+      "tema_central": "clase gratis pilates",
+      "tema": "Anuncio de la primera clase de Pilates gratis en DOPA para quienes nunca han venido al estudio.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Incentivar que interesadas de la Narvarte escriban por WhatsApp para apartar su clase de prueba gratuita.",
+      "mensaje_clave": "Ven a vivir tu primera clase de Pilates gratis y conoce nuestro espacio en la Narvarte.",
+      "angulo": "Invitación directa y sin riesgo para probar el método en un estudio boutique.",
+      "puntos_clave": [
+        "Válido todo noviembre para nuevos alumnos",
+        "Incluye clase matutina de martes o jueves (09:00–10:00)",
+        "Requiere reserva previa por WhatsApp al 56 5149 3075"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Diseño claro con tipografía legible indicando 'Primera clase de Pilates gratis' y el contacto de WhatsApp."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P03",
+      "fecha_sugerida": "2026-11-05",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G3",
+      "tema_central": "movilidad y descanso",
+      "tema": "Carrusel sobre la importancia de la movilidad suave y el descanso como parte fundamental del bienestar físico.",
+      "publico": "Rosa",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Posicionar a DOPA como un centro enfocado en la salud integral y el cuidado articular.",
+      "mensaje_clave": "Cuidar tus articulaciones y descansar bien es tan importante como entrenar.",
+      "angulo": "Revalorizar la movilidad y el autocuidado diario para mantener la independencia y vitalidad.",
+      "puntos_clave": [
+        "Movilidad articular para el día a día",
+        "Diferencia entre fatiga normal y sobreentrenamiento",
+        "Espacios diseñados para entrenar con cabeza"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Manos estirándose o postura relajada en ambiente luminoso, evocando bienestar."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P04",
+      "fecha_sugerida": "2026-11-06",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T3",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "movilidad articular",
+      "tema": "Publicación estática destacando cómo la movilidad articular favorece la independencia y previene lesiones al envejecer.",
+      "publico": "Rosa",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Atraer la atención de mujeres de 45 a 55+ años interesadas en mantener flexibilidad y equilibrio.",
+      "mensaje_clave": "Moverte con libertad hoy asegura tu independencia y bienestar mañana.",
+      "angulo": "Enfocar el ejercicio como una herramienta de longevidad y salud articular.",
+      "puntos_clave": [
+        "Beneficios directos en la flexibilidad y el equilibrio",
+        "Reducción del riesgo de caídas y molestias cotidianas",
+        "Ejercicios accesibles para todas las edades"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Mujer madura sonriendo mientras realiza un movimiento fluido de brazos y columna."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P05",
+      "fecha_sugerida": "2026-11-09",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T2",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "primeros pasos pilates",
+      "tema": "Carrusel con consejos prácticos para dar los primeros pasos en Pilates respetando los límites del cuerpo.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Responder a la duda frecuente '¿Necesito experiencia previa en Pilates?' demostrando accesibilidad.",
+      "mensaje_clave": "No necesitas experiencia previa; cada clase se adapta a tu ritmo y condición actual.",
+      "angulo": "Acompañamiento paso a paso para derribar el miedo a no encajar en una clase.",
+      "puntos_clave": [
+        "Comienza con clases adaptadas para principiantes",
+        "Respeta los tiempos y límites de tu cuerpo",
+        "Atención personalizada con cupo limitado a 15-20 personas"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Coach ajustando con atención la postura de una socia en clase de Pilates."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P06",
+      "fecha_sugerida": "2026-11-10",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Convocatoria a clase abierta de Pilates del 12 de noviembre",
+      "green_ref": null,
+      "tema_central": "clase abierta pilates",
+      "tema": "Invitación a la clase abierta de Pilates para principiantes este jueves 12 de noviembre de 09:00 a 10:00 hrs.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Llenar los 15 lugares disponibles para la clase abierta especial del jueves 12 de noviembre.",
+      "mensaje_clave": "Reserva tu lugar gratis para nuestra clase especial de Pilates para principiantes este jueves.",
+      "angulo": "Urgencia y oportunidad única para probar el estudio sin costo en horario matutino.",
+      "puntos_clave": [
+        "Fecha: Jueves 12 de noviembre, 09:00–10:00 hrs",
+        "Cupo estrictamente limitado a 15 lugares",
+        "Aparta tu lugar por WhatsApp 56 5149 3075"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Anuncio visual limpio con fecha, hora y llamada a la acción por WhatsApp."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P07",
+      "fecha_sugerida": "2026-11-11",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Enfoque en Pilates matutino y salud de espalda",
+      "green_ref": null,
+      "tema_central": "pilates espalda sana",
+      "tema": "Carrusel explicando cómo las clases de Pilates de martes y jueves de 09:00 a 10:00 ayudan específicamente a cuidar espalda y rodillas.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Generar confianza en mujeres con molestias lumbares mostrando la especialidad del horario matutino.",
+      "mensaje_clave": "Fortalece tu centro, protege tu espalda y recupera tu movilidad sin impacto.",
+      "angulo": "Enfocarse en un beneficio físico muy concreto (espalda y rodillas libres de dolor).",
+      "puntos_clave": [
+        "Clases martes y jueves de 09:00 a 10:00 hrs",
+        "Ejercicios específicos para soporte lumbar y estabilidad",
+        "Adaptaciones guiadas por profesionales"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Socias entrenando en el estudio de DOPA con enfoque en postura corporal."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P08",
+      "fecha_sugerida": "2026-11-12",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Recordatorio clase abierta de Pilates de hoy",
+      "green_ref": null,
+      "tema_central": "hoy clase abierta",
+      "tema": "Recordatorio en el feed de la clase abierta de Pilates de hoy a las 09:00 hrs en DOPA.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Captar de última hora a interesadas de la zona para cubrir los últimos lugares disponibles.",
+      "mensaje_clave": "¡Es hoy! Aún estás a tiempo de sumarte a nuestra clase abierta de Pilates a las 9:00 am.",
+      "angulo": "Acción inmediata aprovechando el evento del día.",
+      "puntos_clave": [
+        "Hoy jueves 12 de noviembre, 09:00–10:00 hrs",
+        "Ven con ropa cómoda y calcetas",
+        "Escríbenos por WhatsApp para confirmar último lugar"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Ambiente matutino en el estudio DOPA listo para recibir a las asistentes."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P09",
+      "fecha_sugerida": "2026-11-17",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G2",
+      "tema_central": "técnica y seguridad",
+      "tema": "Carrusel sobre la importancia de la técnica y el movimiento seguro para evitar lesiones a cualquier edad.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Demostrar el rigor técnico y la supervisión constante de los coaches de DOPA.",
+      "mensaje_clave": "Entrenar con seguridad significa tener un coach atento a cada uno de tus movimientos.",
+      "angulo": "Destacar el valor de la supervisión profesional frente al entrenamiento sin guía.",
+      "puntos_clave": [
+        "Corrección postural en tiempo real",
+        "Adaptación de cargas y rangos de movimiento",
+        "Ambiente seguro y sin aglomeraciones en Narvarte"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Coach supervisando de cerca la ejecución de un ejercicio en el estudio."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P10",
+      "fecha_sugerida": "2026-11-18",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Plan Pilates mensual ($1,599)",
+      "green_ref": null,
+      "tema_central": "plan pilates mensual",
+      "tema": "Publicación promocional presentando el plan Pilates mensual de DOPA por $1,599 MXN.",
+      "publico": "Rosa",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Impulsar la contratación de inscripciones al plan mensual de Pilates para alcanzar la meta de 5 nuevas socias.",
+      "mensaje_clave": "Haz del Pilates un hábito constante para tu salud por solo $1,599 al mes.",
+      "angulo": "Valor accesible y constancia para cuidar la movilidad todo el mes.",
+      "puntos_clave": [
+        "Acceso ilimitado a clases de Pilates matutino",
+        "Clases martes y jueves de 09:00 a 10:00 hrs",
+        "Inscripción directa por WhatsApp o en recepción"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Diseño estético con el precio del plan mensual ($1,599) y sus beneficios principales."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P11",
+      "fecha_sugerida": "2026-11-19",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T1",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "empezar sin miedo",
+      "tema": "Carrusel enfocado en derribar mitos sobre el inicio en el ejercicio y cómo el Pilates ofrece un punto de partida amable.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Disipar dudas recurrentes sobre la exigencia física en DOPA para el público maduro.",
+      "mensaje_clave": "Nunca es tarde para empezar; aquí entrenas a tu ritmo y con acompañamiento experto.",
+      "angulo": "Empatía con el temor a dar el primer paso en un centro de entrenamiento.",
+      "puntos_clave": [
+        "Sin presiones ni comparaciones con atletas de alto rendimiento",
+        "Progreso medible basado en tu bienestar",
+        "Comunidad cálida y respetuosa en la Narvarte"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Sonrisa de una socia madura al finalizar su clase matutina en DOPA."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P12",
+      "fecha_sugerida": "2026-11-20",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G4",
+      "tema_central": "constancia y hábitos",
+      "tema": "Publicación estática sobre cómo sostener el ejercicio como un hábito disfrutable sin agobios.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Conectar con personas que buscan un estilo de vida saludable sostenible a largo plazo.",
+      "mensaje_clave": "La constancia no se trata de intensidad extrema, sino de elegir un espacio al que disfrutes volver.",
+      "angulo": "Filosofía de bienestar sostenible frente a las modas pasajeras de ejercicio.",
+      "puntos_clave": [
+        "Metas realistas adaptadas a tu agenda",
+        "Entrenar acompañada hace la diferencia",
+        "Bienestar real sin castigos"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Zapatos deportivos y termo de agua listos para la sesión matutina."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P13",
+      "fecha_sugerida": "2026-11-23",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T3",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "salud y articulaciones",
+      "tema": "Carrusel detallando ejercicios de movilidad para proteger rodillas y cadera en adultos.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Resolver objeciones sobre el cuidado de rodillas y articulaciones frágiles.",
+      "mensaje_clave": "Mantén tus rodillas y caderas fuertes y lubricadas con movimientos inteligentes.",
+      "angulo": "Educación preventiva enfocada en la salud articular cotidiana.",
+      "puntos_clave": [
+        "Importancia de la lubricación articular",
+        "Ejercicios de bajo impacto para proteger cartílagos",
+        "Guía experta de fisioterapia en DOPA"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Coach explicando suavemente un movimiento de movilidad articular a una alumna."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P14",
+      "fecha_sugerida": "2026-11-24",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Invitación a invitar a mamá / familiar (Enfoque Ana hacia Rosa)",
+      "green_ref": null,
+      "tema_central": "invita a tu mamá",
+      "tema": "Publicación dirigida a hijas (perfil Ana) para invitar a su mamá o familiar a entrenar juntas Pilates en DOPA.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Movilizar al segmento Ana para que regalen una clase de prueba de Pilates a sus mamás o tías.",
+      "mensaje_clave": "Cuida a quien más quieres compartiendo una clase de Pilates diseñada para su bienestar.",
+      "angulo": "El vínculo familiar y el regalo de salud para las mujeres más grandes de la familia.",
+      "puntos_clave": [
+        "Clases matutinas de martes y jueves (09:00–10:00)",
+        "Primera clase gratis para nuevos alumnos",
+        "Espacio seguro y supervisado por profesionales"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Dos mujeres de distintas generaciones sonriendo juntas antes de iniciar su clase en el estudio."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P15",
+      "fecha_sugerida": "2026-11-25",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T2",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "beneficios del método",
+      "tema": "Carrusel explicando cómo el método de Pilates en DOPA combina fuerza, postura y control respiratorio.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Interacción y comunidad",
+      "objetivo": "Fomentar guardados y compartidos explicando los pilares fundamentales del método.",
+      "mensaje_clave": "Un buen entrenamiento de Pilates transforma tu postura y tu energía diaria.",
+      "angulo": "Explicación clara y didáctica de los beneficios del método en la salud general.",
+      "puntos_clave": [
+        "Alineación postural consciente",
+        "Fortalecimiento del core sin impacto articular",
+        "Mejora evidente en la calidad del sueño y descanso"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Ilustración o foto limpia mostrando esquemáticamente la postura corporal alineada."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P16",
+      "fecha_sugerida": "2026-11-26",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Cierre de mes y oferta de Pilates",
+      "green_ref": null,
+      "tema_central": "últimos días prueba",
+      "tema": "Publicación recordando que quedan pocos días de noviembre para aprovechar la primera clase de Pilates gratis.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Acelerar los últimos registros de prueba y conversiones al plan mensual antes de finalizar noviembre.",
+      "mensaje_clave": "No dejes pasar noviembre: aparta tu clase gratis de Pilates y empieza a cuidar tu espalda.",
+      "angulo": "Urgencia temporal para cerrar el mes con nuevos registros.",
+      "puntos_clave": [
+        "Cierre de vigencia de la promoción de noviembre",
+        "Reserva inmediata por WhatsApp al 56 5149 3075",
+        "Planes mensuales accesibles ($1,599)"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Gráfico llamativo con llamada a la acción urgente para reservar clase gratis."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P17",
+      "fecha_sugerida": "2026-11-27",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G1",
+      "tema_central": "fuerza longevidad",
+      "tema": "Carrusel sobre por qué entrenar fuerza y movilidad es la inversión más importante para la longevidad.",
+      "publico": "Rosa",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Construir autoridad de marca posicionando el entrenamiento funcional como pilar de salud.",
+      "mensaje_clave": "La fuerza y la movilidad a cualquier edad son la clave para una vida independiente.",
+      "angulo": "Visión a largo plazo de la salud física y muscular.",
+      "puntos_clave": [
+        "Masa muscular y salud ósea conectadas",
+        "Independencia en las actividades diarias",
+        "Entrenamiento inteligente adaptado a ti"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Persona madura caminando con energía y vitalidad al aire libre."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P18",
+      "fecha_sugerida": "2026-11-30",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G4",
+      "tema_central": "comunidad y bienestar",
+      "tema": "Publicación celebrando la comunidad de DOPA y el valor de entrenar en un espacio cercano y humano.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Reforzar el sentido de pertenencia y lealtad de la comunidad actual de socios.",
+      "mensaje_clave": "Gracias por formar parte de nuestra comunidad; aquí cada logro se construye en equipo.",
+      "angulo": "Calidez humana y sentido de tribu en el estudio boutique de la Narvarte.",
+      "puntos_clave": [
+        "Comunidad unida y sin masificaciones",
+        "Acompañamiento cercano en cada clase",
+        "Preparando nuevos retos para diciembre"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Fotografía grupal cálida de socios y coaches en el piso de DOPA."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P19",
+      "fecha_sugerida": "2026-11-13",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G1",
+      "tema_central": "fuerza accesible",
+      "tema": "Publicación estática rompiendo el mito de que el entrenamiento de fuerza no es para principiantes o adultos mayores.",
+      "publico": "Rosa",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Captar la atención de nuevos seguidores interesados en salud y fuerza sin lesiones.",
+      "mensaje_clave": "Entrenar fuerza de forma segura es posible y necesario a cualquier edad.",
+      "angulo": "Desmitificar el entrenamiento de fuerza frente al miedo a lastimarse.",
+      "puntos_clave": [
+        "Progresiones seguras para cada nivel",
+        "Supervisión experta de fisierapeutas y coaches",
+        "Mejora de la densidad ósea y tono muscular"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Pesas ligeras y mat ordenados en un estudio iluminado."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P20",
+      "fecha_sugerida": "2026-11-26",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G3",
+      "tema_central": "descanso muscular",
+      "tema": "Publicación estática sobre la importancia del descanso y la recuperación en las rutinas de bienestar.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Aportar valor de retención a los socios actuales sobre el cuidado integral fuera de clases.",
+      "mensaje_clave": "El descanso es donde ocurre la verdadera evolución de tu cuerpo.",
+      "angulo": "Cuidado holístico del deportista y alumno.",
+      "puntos_clave": [
+        "Dormir bien para recuperar fibras musculares",
+        "Importancia de la hidratación y nutrición",
+        "Escuchar las señales del cuerpo"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Ambiente de descanso y tranquilidad, infusiones o espacio relajado."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    }
+  ]
+}
+```

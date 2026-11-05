@@ -20,34 +20,44 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from photo_text import photo_text
+from photo_text import photo_short, photo_text
 
 load_dotenv(Path(__file__).resolve().parent / ".env")
 
 DEFAULT_KEY_FILE = "~/.config/dopa/google_service_account.json"
 
 # Columns of the grid, in order, and which agent fills each one.
-# The grid's columns: the same in Dani's Sheet and in the eval's rating Excel
+# The same columns in Dani's Sheet and in the eval's rating Excel
 # (decision 2026-11-05: what is rated must be exactly what is delivered).
-COLUMNS = [
+#
+# Reduced view (decision 2026-11-05): the first block is what Dani needs to
+# approve; the detail block is for the agents and is collapsed in the Sheet.
+# The agents read parrilla.json, not the Sheet, so hiding columns removes nothing.
+MAIN_COLUMNS = [
     "ID",                   # Estratega
     "Fecha de publicación", # Estratega
     "Día de publicación",   # computed from the publication date
-    "Canal",                # Estratega (always Instagram for now)
     "Formato",              # Estratega
     "Tema",                 # Estratega (descriptive: what the piece covers and from which angle)
     "Público",              # Estratega: Ana, Rosa or Ambas
-    "Objetivo",             # Estratega: "<funnel stage> · <objective type> — <specific objective>"
-    "Mensaje clave",        # Estratega: key message + angle
-    "Puntos clave",         # Estratega: what the piece must say, with its data
-    "Foto sugerida",        # Estratega: the visual and whether it exists, is pending or the Diseñador creates it
-    "Copy in",              # Copywriter (text on the image; may be empty)
-    "Copy out",             # Copywriter (caption with its CTA; always has text)
-    "Diseño",               # Diseñador
+    "Mensaje clave",        # Estratega
+    "Foto",                 # Estratega: short version (status icon + idea)
     "Estado",               # Dani (dropdown)
     "Comentarios de Dani",  # Dani
 ]
-COLUMN_WIDTHS = [90, 110, 100, 85, 95, 340, 80, 360, 340, 320, 380, 220, 320, 200, 115, 260]
+DETAIL_COLUMNS = [
+    "Objetivo",             # Estratega: "<funnel stage> · <objective type> — <specific objective>"
+    "Ángulo",               # Estratega
+    "Puntos clave",         # Estratega: what the piece must say, with its data
+    "Foto sugerida",        # Estratega: full text (brief quote, shooting date) for the Diseñador
+    "Copy in",              # Copywriter (text on the image; may be empty)
+    "Copy out",             # Copywriter (caption with its CTA; always has text)
+    "Diseño",               # Diseñador
+]
+COLUMNS = MAIN_COLUMNS + DETAIL_COLUMNS
+COLUMN_WIDTHS = [90, 110, 100, 95, 340, 80, 340, 300, 115, 260,   # main
+                 360, 300, 320, 380, 220, 320, 200]                 # detail
+DETAIL_START = len(MAIN_COLUMNS)  # 0-based index of the first detail column
 
 STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED = "Pendiente", "Aprobado", "Cambios", "Descartado"
 STATUS_OPTIONS = [STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED]
@@ -115,12 +125,6 @@ def _objective_text(piece: dict) -> str:
     return f"{head} — {detail}" if head and detail else head or detail
 
 
-def _message_text(piece: dict) -> str:
-    """Key message and angle in one column."""
-    message, angle = str(piece.get("mensaje_clave", "")).strip(), str(piece.get("angulo", "")).strip()
-    return f"{message}\nÁngulo: {angle}" if message and angle else message or angle
-
-
 def _points_text(piece: dict) -> str:
     points = piece.get("puntos_clave")
     if isinstance(points, list):
@@ -133,16 +137,20 @@ def piece_to_row(piece: dict) -> list[str]:
     status = str(piece.get("estado", "pendiente_aprobacion"))
     fecha = str(piece.get("fecha_sugerida", ""))
     audience = str(piece.get("publico", ""))
+    photo = piece.get("foto_sugerida")
     return [
+        # main view
         str(piece.get("id", "")), fecha, weekday_es(fecha),
-        str(piece.get("canal", "")), str(piece.get("formato", "")), str(piece.get("tema", "")),
+        str(piece.get("formato", "")), str(piece.get("tema", "")),
         "Ana" if audience == "Hija de Rosa" else audience,
-        _objective_text(piece), _message_text(piece), _points_text(piece),
-        photo_text(piece.get("foto_sugerida")),
-        str(piece.get("copy_in", "")), str(piece.get("copy_out", "")), str(piece.get("diseno", "")),
+        str(piece.get("mensaje_clave", "")), photo_short(photo),
         _STATUS_FROM_JSON.get(status, status if status in STATUS_OPTIONS else STATUS_PENDING),
         str(piece.get("comentarios_dani", "")),
+        # detail (collapsed in the Sheet)
+        _objective_text(piece), str(piece.get("angulo", "")), _points_text(piece), photo_text(photo),
+        str(piece.get("copy_in", "")), str(piece.get("copy_out", "")), str(piece.get("diseno", "")),
     ]
+
 
 def tab_url(spreadsheet, worksheet) -> str:
     return f"https://docs.google.com/spreadsheets/d/{spreadsheet.id}/edit#gid={worksheet.id}"
@@ -197,6 +205,16 @@ def _format(spreadsheet, worksheet, n_pieces: int) -> None:
                                "rule": {"condition": {"type": "ONE_OF_LIST",
                                                       "values": [{"userEnteredValue": s} for s in STATUS_OPTIONS]},
                                         "showCustomUi": True, "strict": True}}},
+    ]
+    detail = {"sheetId": sid, "dimension": "COLUMNS", "startIndex": DETAIL_START, "endIndex": n_cols}
+    requests += [
+        {"repeatCell": {"range": {"sheetId": sid, "startRowIndex": 0, "endRowIndex": 1,
+                                  "startColumnIndex": DETAIL_START, "endColumnIndex": n_cols},
+                        "cell": {"userEnteredFormat": {"backgroundColor": {"red": 0.45, "green": 0.45, "blue": 0.45}}},
+                        "fields": "userEnteredFormat.backgroundColor"}},
+        {"addDimensionGroup": {"range": detail}},
+        {"updateDimensionGroup": {"dimensionGroup": {"range": detail, "depth": 1, "collapsed": True},
+                                  "fields": "collapsed"}},
     ]
     for i, width in enumerate(COLUMN_WIDTHS):
         requests.append({"updateDimensionProperties": {

@@ -147,6 +147,9 @@ def export(folder: Path, sample: int, seed: int) -> None:
                 cell.alignment = wrap
         for i, width in enumerate(parrilla_sheet.COLUMN_WIDTHS, start=1):
             g.column_dimensions[get_column_letter(i)].width = max(8, width / 7)
+        # Detail block grouped like in the Sheet, but left open: the rubric needs it.
+        g.column_dimensions.group(get_column_letter(parrilla_sheet.DETAIL_START + 1),
+                                  get_column_letter(len(parrilla_sheet.COLUMNS)), hidden=False)
 
         # --- Row in the ratings tab ---
         ws.append([tab, inputs.get("prioridad_principal", ""), len(pieces), len(errors)] + [None] * len(CRITERIA) + [""])

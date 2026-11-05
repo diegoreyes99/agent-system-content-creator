@@ -23,7 +23,7 @@ from tools import get_month_calendar, search_dopa_knowledge  # noqa: E402
 # Candidates compared in the eval (decision 2026-10-26: start with Gemini).
 #   gemini-3.5-flash-lite: baseline, same as the Investigador.
 #   gemini-3.8-flash: more capable, for planning with many rules.
-DEFAULT_MODEL_ID = "gemini-3.5-flash-lite"
+DEFAULT_MODEL_ID = "gemini-3.8-flash"  # chosen 2026-11-05 (specs/estratega.md, "Modelo")
 
 # Least privilege (Class 4, Block A): only read-only tools, each with a cap.
 TOOL_LIMITS = {"get_month_calendar": 2, "search_dopa_knowledge": 6}

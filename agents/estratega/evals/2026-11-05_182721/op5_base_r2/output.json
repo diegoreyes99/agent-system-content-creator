@@ -1,0 +1,501 @@
+{
+  "mes": "2026-11",
+  "objetivo_del_mes": "Llenar los 30 cupos del Simulacro Deka abierto del 21 de noviembre (captando al menos 10 personas externas), posicionando a DOPA como el centro de referencia en entrenamiento híbrido en Narvarte mediante una narrativa previa que desmitifique la complejidad de Deka frente a Hyrox.",
+  "estrategia_del_mes": "La estrategia se estructura en una secuencia educativa de calentamiento durante las primeras dos semanas para resolver las dudas sobre qué es Deka frente a Hyrox y derribar la objeción 'Deka es solo para atletas'. A partir de esa confianza y con el apoyo de dos clínicas técnicas previas (7 y 14 de noviembre), se acelera la conversión hacia el evento del 21 de noviembre. Para no fatigar a la audiencia con el simulacro, se alternan temas de entrenamiento funcional, técnica de fuerza, la relación madre-hija para activar al público Rosa a través de Ana, y contenidos green de recuperación, cerrando la última semana del mes sin ruido comercial para proteger la atención ante el Black Friday.",
+  "mezcla_por_etapa": {
+    "descubrimiento": 5,
+    "consideracion": 5,
+    "conversion": 4,
+    "fidelizacion": 2
+  },
+  "mezcla_de_objetivos": {
+    "Reconocimiento de marca": 3,
+    "Crecimiento de audiencia": 2,
+    "Atención y confianza": 3,
+    "Interacción y comunidad": 1,
+    "Tráfico": 1,
+    "Generación de leads": 2,
+    "Conversión": 2,
+    "Retención y lealtad": 2
+  },
+  "criterio_de_volumen": "Se definieron 16 piezas en el mes (11 en feed: 7 carruseles y 4 posts; más 5 historias estratégicas). Esta frecuencia de 3 a 4 publicaciones de feed por semana entre lunes y jueves cumple con los estándares óptimos de interacción y permite a Dani y Mike un flujo de producción sostenible con el banco de imágenes híbridas. La mezcla respeta el modelo de 'llenar un evento propio' (31% descubrimiento, 31% consideración, 25% conversión y 13% fidelización). Las piezas de conversión se concentran entre el 5 y el 18 de noviembre para agotar los 30 lugares antes del evento, mientras que la última semana baja la intensidad comercial para blindar a la cuenta del ruido publicitario del Black Friday.",
+  "supuestos": [
+    "Las fotos de Mike del evento Deka del 4 de octubre no estarán listas de inmediato; se utilizará el banco de imágenes de entrenamientos híbridos y coaches para el inicio de mes, complementando con gráficos limpios donde se requiera.",
+    "El patrocinio de Habits para el simulacro se asume en confirmación, por lo que no se menciona su entrega de producto como obligatoria en los puntos clave.",
+    "Los horarios especiales de los días feriados (2 y 16 de noviembre) se comunican en historias matutinas sin afectar la programación principal del feed."
+  ],
+  "fuentes_de_conocimiento": [
+    "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › E. Dolores y Frustraciones",
+    "Buyer personas › RESUMEN COMPARATIVO DE PERSONAS (parte 1 de 2)",
+    "Brief de negocio › 1. Historia y Origen del Negocio › Hitos importantes en su trayectoria",
+    "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › Logros, Certificaciones y Reconocimientos",
+    "Brief de negocio › 7. Público Actual vs. Público Deseado › ¿Quiénes son sus socios hoy? Perfil General",
+    "Brief de negocio › 9. Trayectoria y Presencia de Marketing › ¿Qué ha funcionado y qué no en marketing?"
+  ],
+  "piezas": [
+    {
+      "id": "2026-11-P01",
+      "fecha_sugerida": "2026-11-02",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Avisos operativos para historias (cierres, mantenimiento, cambios de horario: Lunes 2 de noviembre Día de Muertos)",
+      "green_ref": null,
+      "tema_central": "horarios operativos",
+      "tema": "Historia de servicio a la comunidad informando el horario especial por Día de Muertos y recordando la importancia de mantener la constancia en el entrenamiento semanal.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Mantener informados a los socios actuales sobre las sesiones activas en día festivo para asegurar asistencia y evitar confusiones en mostrador.",
+      "mensaje_clave": "En DOPA tu constancia no se detiene en días festivos: revisa los horarios especiales de hoy.",
+      "angulo": "Servicio directo, cercanía y respeto a las tradiciones sin perder la disciplina física.",
+      "puntos_clave": [
+        "Horario especial de clases matutinas y vespertinas para este lunes 2 de noviembre",
+        "Recordatorio de apartar lugar con antelación en dopa.mx o WhatsApp",
+        "Regreso a horario habitual a partir del martes 3"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Gráfico limpio con la tipografía oficial de DOPA indicando los bloques de horario del 2 de noviembre y el enlace directo de reserva."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P02",
+      "fecha_sugerida": "2026-11-03",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T1",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "Deka vs Hyrox",
+      "tema": "Carrusel educativo que explica de manera sencilla qué es DEKA Fit, cómo se compone su formato y en qué se diferencia exactamente de Hyrox en distancias y zonas de trabajo.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Generar alcance y guardados educando a corredores y profesionistas que conocen Hyrox pero desconocen el formato DEKA, posicionando a DOPA como centro de referencia.",
+      "mensaje_clave": "DEKA Fit combina 5 km divididos en tramos cortos con 10 zonas funcionales, haciéndolo una prueba dinámica, ágil y medible.",
+      "angulo": "Comparativa directa y sin rodeos técnicos: entender las diferencias para saber qué esperar de cada prueba.",
+      "puntos_clave": [
+        "Hyrox combina 1 km de carrera con 8 estaciones pesadas de resistencia continua",
+        "DEKA Fit consiste en 5 km fraccionados en 500 m intercalados con 10 zonas de agilidad y potencia",
+        "DEKA permite medir transiciones rápidas y es ideal tanto para quienes ya corren como para quienes quieren evaluar su fuerza funcional"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Gráfico comparativo estilo infografía lado a lado entre Hyrox y DEKA Fit desglosando distancia total, número de zonas y tipo de esfuerzo."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P03",
+      "fecha_sugerida": "2026-11-04",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G1",
+      "tema_central": "fuerza y carrera",
+      "tema": "Carrusel dirigido a corredores de 5K a 21K que desmiente el mito de que levantar peso resta velocidad, explicando por qué la fuerza funcional previene lesiones y mejora la zancada.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Atraer a corredoras recreativas de la zona Narvarte–Del Valle interesadas en complementar su fondo con fuerza específica.",
+      "mensaje_clave": "Correr no es suficiente para blindar tus articulaciones: la fuerza estructurada te hace más rápida y resistente.",
+      "angulo": "Ruptura de mitos: el entrenamiento de fuerza no te vuelve pesada, optimiza cada kilómetro que corres.",
+      "puntos_clave": [
+        "El impacto repetitivo en asfalto exige estabilidad de cadera, rodillas y zona media",
+        "La fuerza híbrida trabaja cadenas musculares completas que el trote plano no estimula",
+        "60 minutos de fuerza bien dosificada a la semana protegen tus tendones y retrasan la fatiga en distancias medias"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Socia de perfil Ana realizando zancadas con mancuernas en el estudio de DOPA, mostrando concentración y trabajo muscular real."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P04",
+      "fecha_sugerida": "2026-11-05",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Simulacro Deka abierto (sábado 21 de noviembre) y Evento 2: Clínicas técnicas de estaciones",
+      "green_ref": null,
+      "tema_central": "Simulacro Deka abierto",
+      "tema": "Post de anuncio formal y apertura de inscripciones para el Simulacro Deka abierto del 21 de noviembre en DOPA, detallando la inclusión de las clínicas técnicas previas.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Captar las primeras 15 solicitudes de registro y preguntas por DM y WhatsApp de personas interesadas en apartar su lugar para el 21 de noviembre.",
+      "mensaje_clave": "Vive el formato Deka en un simulacro real en Narvarte: cupo limitado a 30 lugares con clínica técnica incluida.",
+      "angulo": "Oportunidad práctica de ponerte a prueba sin el estrés de una competencia masiva.",
+      "puntos_clave": [
+        "Fecha del simulacro: sábado 21 de noviembre, 08:00 a 11:00 hrs en DOPA (salidas por grupos controlados)",
+        "Inscripción gratuita para socios DOPA y $320 para externos (incluye clínica técnica de estaciones los sábados 7 o 14 de noviembre)",
+        "Cupo estrictamente limitado a 30 participantes; reserva directa vía WhatsApp al 56 5149 3075 o dopa.mx"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Toma general del área funcional de DOPA con trineo de empuje y SkiErg listos para acción, transmitiendo profesionalismo y orden."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P05",
+      "fecha_sugerida": "2026-11-07",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 2: Clínica técnica de estaciones Deka (Sábado 7 de noviembre)",
+      "green_ref": null,
+      "tema_central": "Simulacro Deka abierto",
+      "tema": "Secuencia de historias en vivo mostrando el desarrollo de la primera clínica técnica de estaciones, invitando a externos y socios indecisos a asegurar su lugar antes de la segunda clínica.",
+      "publico": "Ana",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Motivar a quienes vieron la convocatoria a enviar DM para inscribirse al simulacro y aprovechar la clínica técnica del sábado 14.",
+      "mensaje_clave": "La técnica correcta ahorra energía y evita frustraciones: aprende a dominar cada estación antes del simulacro.",
+      "angulo": "Acompañamiento y accesibilidad: en DOPA te enseñamos paso a paso para que no llegues con dudas.",
+      "puntos_clave": [
+        "Primera sesión de clínica técnica en marcha con ajustes individuales de postura",
+        "Aprender a dosificar en SkiErg, remo y empuje de trineo",
+        "Quedan lugares disponibles para el simulacro del 21; envía mensaje para asegurar tu cupo"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Coach explicando a dos alumnas el agarre ergonómico en el remo Concept2 dentro del estudio DOPA."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P06",
+      "fecha_sugerida": "2026-11-09",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T2",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "entrenamiento híbrido",
+      "tema": "Carrusel técnico-educativo sobre cómo el entrenamiento híbrido estimula la fuerza muscular y la resistencia cardiovascular en una misma sesión de 60 minutos sin interferencias.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Posicionar la metodología de DOPA ante profesionistas ocupadas como la solución más eficiente para ganar tono muscular y capacidad aeróbica.",
+      "mensaje_clave": "No necesitas pasar dos horas en el gimnasio: el método híbrido combina fuerza y cardio funcional en 60 minutos exactos.",
+      "angulo": "Eficiencia para agendas saturadas: la ciencia de maximizar resultados en el menor tiempo posible.",
+      "puntos_clave": [
+        "La combinación programada de fuerza y capacidad aeróbica genera adaptaciones neuromusculares superiores",
+        "Optimización del tiempo para agendas exigentes: liquidar fuerza y resistencia en una sola sesión de 60 minutos",
+        "Mejora metabólica y longevidad articular sustentada en movimientos funcionales globales"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Atleta femenina realizando ejercicio de trineo en un espacio de entrenamiento moderno, enfocada en la potencia del movimiento."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P07",
+      "fecha_sugerida": "2026-11-10",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T4",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "Deka vs Hyrox",
+      "tema": "Carrusel de orientación que aborda la objeción 'Deka es solo para atletas', explicando por qué sus estaciones de esfuerzo corto y cargas escalables lo hacen el formato ideal para iniciarse.",
+      "publico": "Ana",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Eliminar la intimidación hacia el formato Deka logrando que al menos 8 personas dudosas pregunten por los niveles de escalamiento.",
+      "mensaje_clave": "Deka no es exclusivo de atletas de élite: está diseñado con estaciones graduables para que cualquier persona activa pueda probarlo.",
+      "angulo": "Empatía y desmitificación: derribar la creencia de que se requiere nivel élite antes de inscribirse a un evento.",
+      "puntos_clave": [
+        "A diferencia de eventos de resistencia extrema de más de una hora, DEKA Fit trabaja con series cortas de potencia y tramos de carrera de 500 m",
+        "Las 10 zonas funcionales permiten adaptar el ritmo y la escala de movimiento según tu nivel actual",
+        "El objetivo no es sobrevivir ni competir contra otros, sino establecer tu propia marca personal en un ambiente seguro"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Diseño gráfico con iconografía accesible mostrando cómo se escalan 3 estaciones clave de Deka (wall balls, farmer carry, lunges) para nivel intermedio."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P08",
+      "fecha_sugerida": "2026-11-11",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Voz de la comunidad: Socios que nunca habían competido terminaron la competencia Deka que organizamos el 4 de octubre",
+      "green_ref": null,
+      "tema_central": "comunidad Deka",
+      "tema": "Post testimonial destacando la experiencia de socios reales de DOPA que debutaron en la competencia Deka de octubre, compartiendo sus miedos iniciales y la satisfacción de cruzar la meta.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Interacción y comunidad",
+      "objetivo": "Generar comentarios de apoyo de la comunidad actual y transmitir confianza a usuarios externos para que se inscriban al simulacro.",
+      "mensaje_clave": "El verdadero logro no fue el tiempo en el cronómetro, sino atreverse a estar en la línea de salida.",
+      "angulo": "Inspiración comunitaria y validación social: si personas con tu misma rutina pudieron, tú también puedes.",
+      "puntos_clave": [
+        "Testimonio de socias que entrenan en los horarios habituales de DOPA y debutaron en la competencia de octubre",
+        "El acompañamiento de los coaches en pista para regular el esfuerzo de principio a fin",
+        "El simulacro del 21 de noviembre es el espacio perfecto para vivir esa misma energía sin presiones de competencia oficial"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Foto de Dani chocando las manos con un grupo de socios en el piso de DOPA tras culminar una prueba funcional, sonriendo y con medalla o toalla."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P09",
+      "fecha_sugerida": "2026-11-12",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G2",
+      "tema_central": "técnica y movilidad",
+      "tema": "Carrusel técnico sobre preparación articular y movilidad dinámica antes de esfuerzos híbridos, enfocado en cadera, hombros y tobillos para moverse con seguridad.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Generar guardados y demostrar la rigurosidad técnica y biomecánica con la que el staff de DOPA cuida a sus socios en cada clase.",
+      "mensaje_clave": "Un buen calentamiento no es sudar 5 minutos en caminadora: es preparar tus articulaciones para soportar carga con estabilidad.",
+      "angulo": "Educación preventiva y cuidado físico: entrenar fuerte requiere primero moverse bien.",
+      "puntos_clave": [
+        "3 ejercicios de apertura de cadera y movilidad torácica indispensables antes de cargar trineos o hacer sentadillas",
+        "Por qué estirar estático antes de entrenar reduce la potencia muscular",
+        "En DOPA cada sesión inicia con movilidad guiada por coaches certificados y fisioterapeutas"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Coach de DOPA asistiendo a una socia en la alineación de cadera durante un ejercicio de movilidad en el tapete."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P10",
+      "fecha_sugerida": "2026-11-13",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 2: Clínica técnica 14 de noviembre y cupos restantes del Simulacro",
+      "green_ref": null,
+      "tema_central": "Simulacro Deka abierto",
+      "tema": "Recordatorio urgente de la última clínica técnica del sábado 14 y aviso de últimos 10 lugares disponibles para el Simulacro del 21 de noviembre.",
+      "publico": "Ana",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Cerrar inscripciones inmediatas de prospectos externos que han interactuado con los carruseles previos antes de agotar aforo.",
+      "mensaje_clave": "Mañana es la última clínica técnica: asegura tu lugar en el Simulacro Deka antes de que se llenen los 30 cupos.",
+      "angulo": "Urgencia real y oportunidad única de practicar con coaches certificados.",
+      "puntos_clave": [
+        "Sábado 14 de noviembre: segunda y última clínica técnica a las 09:30 hrs",
+        "Revisión puntual de wall balls, SkiErg y trineo normado",
+        "Últimos 10 lugares para el evento del 21; link directo a WhatsApp en la historia"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Sticker gráfico de cuenta regresiva con aviso tipográfico de cupos limitados y botón de enlace a WhatsApp."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P11",
+      "fecha_sugerida": "2026-11-16",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Avisos operativos para historias (Lunes 16 descanso oficial Revolución Mexicana) + cuenta regresiva evento 21 nov",
+      "green_ref": null,
+      "tema_central": "Simulacro Deka abierto",
+      "tema": "Historia de servicio informando el horario operativo del feriado del 16 de noviembre y marcando la cuenta regresiva oficial a 5 días del Simulacro Deka.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Tráfico",
+      "objetivo": "Dirigir tráfico al perfil y al sitio dopa.mx para confirmar reservas de clase y consultar detalles del simulacro del sábado.",
+      "mensaje_clave": "Horario especial de puente en DOPA y entramos en la recta final: a 5 días de vivir el Simulacro Deka.",
+      "angulo": "Claridad operativa combinada con expectativa y energía previa al evento.",
+      "puntos_clave": [
+        "Horario especial de clases matutinas para este lunes festivo 16 de noviembre",
+        "Faltan exactamente 5 días para el Simulacro Deka abierto del sábado 21",
+        "Consulta salidas por grupo y detalles logísticos en el enlace de la bio"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Diseño con caja de texto de alto contraste anunciando el horario del 16 de noviembre y un contador gráfico '5 DÍAS PARA EL SIMULACRO'."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P12",
+      "fecha_sugerida": "2026-11-17",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T3",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "preparación simulacro",
+      "tema": "Carrusel práctico con consejos logísticos, nutricionales y mentales para afrontar un primer simulacro o prueba funcional sin estrés ni sobrecargas.",
+      "publico": "Ana",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Tranquilizar a los inscritos al simulacro y generar guardados de prospectos que planean medirse en eventos futuros.",
+      "mensaje_clave": "La preparación para un simulacro se define en cómo llegas descansada, hidratada y con una estrategia clara de ritmo.",
+      "angulo": "Guía práctica y tranquilidad: resolver dudas de qué desayunar, cómo calentar y cómo gestionar la energía.",
+      "puntos_clave": [
+        "Planifica tu descanso: no entrenes pesado las 48 horas previas al sábado",
+        "Estrategia de ritmo: salir al 80% en los primeros 500 m para mantener fuerza en las estaciones finales",
+        "Qué llevar en tu maleta: ropa cómoda, tenis con buen agarre para trineo e hidratación"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Coach Dani revisando una tabla de tiempos y estaciones con una socia en el área de pesas de DOPA, transmitiendo preparación y cercanía."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P13",
+      "fecha_sugerida": "2026-11-18",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Prioridad principal: Llenar el Simulacro Deka abierto del 21 de noviembre (30 lugares, $320 externos / gratis socios)",
+      "green_ref": null,
+      "tema_central": "Simulacro Deka abierto",
+      "tema": "Post de cierre de convocatoria para el Simulacro Deka del sábado 21 de noviembre, anunciando los últimos lugares disponibles y destacando el equipamiento normado de DOPA.",
+      "publico": "Ana",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Agotar los últimos cupos disponibles (meta: 30 personas totales, con al menos 10 externos registrados) mediante llamado directo a WhatsApp.",
+      "mensaje_clave": "Últimos lugares para el Simulacro Deka de este sábado: vive el reto con equipo oficial y la guía directa de nuestros coaches.",
+      "angulo": "Llamado a la acción definitivo: equipamiento oficial en Narvarte, cupos finales y atención personalizada.",
+      "puntos_clave": [
+        "Sábado 21 de noviembre, de 08:00 a 11:00 hrs en DOPA (Juan Sánchez Azcona 529, Narvarte)",
+        "Equipo completo normado: remos Concept2, SkiErg, trineos, pesas y wall balls",
+        "Costo de recuperación para externos: $320 MXN; gratis para socios DOPA. Escribe al WhatsApp 56 5149 3075 para asegurar tu lugar hoy"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Encuadre vertical potente de un socio empujando el trineo en el carril de césped sintético de DOPA con luz natural de fondo."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P14",
+      "fecha_sugerida": "2026-11-19",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Conocimiento DOPA: Rosa llega por recomendación de su hija (Ana); contenido dirigido a la hija para traer a su familiar",
+      "green_ref": null,
+      "tema_central": "entrenar en familia",
+      "tema": "Post dirigido a Ana (hija profesionista) que la invita a traer a su mamá o tía a DOPA para cuidar su masa muscular y movilidad articular con supervisión profesional.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Estimular que socias de perfil Ana compartan la publicación con familiares o pregunten por clases adaptadas para sus mamás (activando el segmento Rosa).",
+      "mensaje_clave": "Cuidar la longevidad de quien más quieres empieza por ayudarle a moverse con fuerza en un espacio seguro.",
+      "angulo": "Afecto, cuidado familiar y salud preventiva: la fuerza es el mejor seguro de vida para las personas maduras.",
+      "puntos_clave": [
+        "El entrenamiento de fuerza después de los 45 años es indispensable para preservar hueso, articulaciones y autonomía motriz",
+        "En DOPA no dejamos a nadie sola: aforos chicos de 15 personas donde los coaches adaptan cada ejercicio por su nombre",
+        "Invita a tu mamá o tía a conocer una forma de entrenar donde el respeto y la técnica están por encima de la velocidad"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Coach de DOPA explicando amablemente un ejercicio a una mujer de perfil maduro (Rosa) en un ambiente relajado y luminoso."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P15",
+      "fecha_sugerida": "2026-11-21",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Simulacro Deka abierto (cobertura del día del evento)",
+      "green_ref": null,
+      "tema_central": "Simulacro Deka abierto",
+      "tema": "Cobertura en historias en tiempo real del Simulacro Deka en DOPA, capturando la energía de los grupos, el apoyo entre participantes y el cierre con medallas de esfuerzo.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Celebrar el esfuerzo de los participantes, reforzar el orgullo de pertenencia comunitaria y sembrar interés para futuros eventos.",
+      "mensaje_clave": "Comunidad, esfuerzo real y superación: así se vivió el Simulacro Deka en DOPA.",
+      "angulo": "Orgullo comunitario y celebración auténtica: no es sobrevivir, es disfrutar el proceso de empujar tus límites.",
+      "puntos_clave": [
+        "Salidas por grupos desde las 08:00 hrs con apoyo total entre socios y externos",
+        "Ambiente de respeto y compañerismo en cada una de las 10 estaciones",
+        "Agradecimiento a los 30 participantes por demostrar la fuerza de la comunidad DOPA"
+      ],
+      "foto_sugerida": {
+        "tipo": "foto_dopa",
+        "idea": "Foto grupal espontánea al terminar el simulacro, con participantes y coaches sonriendo juntos en el estudio."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P16",
+      "fecha_sugerida": "2026-11-24",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": "Fechas a evitar: Última semana de noviembre (Black Friday: evitar saturación comercial con contenido de valor y descanso)",
+      "green_ref": "G3",
+      "tema_central": "recuperación y descanso",
+      "tema": "Carrusel educativo sobre los pilares de la recuperación muscular activa tras semanas de alta exigencia física, enfocado en sueño, nutrición básica e hidratación.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Generar guardados y compartidos aportando valor genuino sin vender ni promocionar ofertas agresivas durante la saturada semana de Black Friday.",
+      "mensaje_clave": "El músculo no crece mientras entrenas duro, sino mientras descansas profundo: prioriza tu recuperación.",
+      "angulo": "Bienestar integral y ciencia del descanso: por qué parar a tiempo es la mejor estrategia para no estancarse.",
+      "puntos_clave": [
+        "Diferencia entre fatiga muscular natural de adaptación y sobreentrenamiento del sistema nervioso",
+        "Por qué dormir 7-8 horas tiene mayor impacto en tu rendimiento que cualquier suplemento",
+        "Movilidad suave, caminata y descanso programado como aceleradores del progreso físico"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen_generica",
+        "idea": "Persona hidratándose y relajándose sobre un tapete de ejercicio tras entrenar, en un ambiente limpio y sereno."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    }
+  ]
+}

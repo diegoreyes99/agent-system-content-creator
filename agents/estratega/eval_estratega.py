@@ -36,7 +36,7 @@ SUMMARY_METRICS = [
     "schema_valid", "json_reparado", "n_errors", "n_errores_forma", "n_errores_contenido", "n_piezas", "n_feed", "n_historias", "feed_por_semana_mean",
     "feed_por_semana_max", "n_semanas_sin_feed", "pct_temas_cubiertos", "pct_piezas_brief", "pct_piezas_green", "pct_etapa_coherente",
     "desviacion_mezcla", "n_menciones_competidor", "n_fotos_corregidas", "n_fotos_existen",
-    "n_fotos_pendientes", "n_fotos_no_existen", "n_graficos", "n_rag_calls", "n_calendar_calls",
+    "n_fotos_pendientes", "n_fotos_no_existen", "n_graficos", "n_fotos_dopa", "n_imagenes_genericas", "n_imagenes", "n_rag_calls", "n_calendar_calls",
     "latency_s", "prompt_tokens", "completion_tokens", "thinking_tokens", "costo_usd",
 ]
 
@@ -167,12 +167,12 @@ async def run_eval(args, cases: list[dict]) -> None:
                   f"rango {summary[f'{key}_min']:.2f}–{summary[f'{key}_max']:.2f}")
     print(f"\n  Costo del eval: {single.pricing.describe(summary['costo_total_usd'])} "
           f"(promedio por corrida {single.pricing.describe(summary.get('costo_usd_mean'))})")
-    print(f"\nArchivos en {eval_dir}\nCalifica con: python agents/estratega/rate_estratega.py {eval_dir.relative_to(single.PROJECT_ROOT)}")
+    print(f"\nArchivos en {eval_dir}\nPara calificar: python agents/estratega/rate_estratega.py export {eval_dir.relative_to(single.PROJECT_ROOT)}")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Evalúa el Estratega contra el golden set.")
-    parser.add_argument("--prompt-version", default="v8")
+    parser.add_argument("--prompt-version", default="v10")
     parser.add_argument("--model-id", default=None)
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--reps", type=int, default=2)
