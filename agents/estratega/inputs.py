@@ -11,7 +11,7 @@ from pathlib import Path
 import tools
 
 HERE = Path(__file__).resolve().parent
-STANDARDS_FILE = HERE / "instagram_standards.md"
+STANDARDS_FILE = HERE.parent / "shared" / "instagram_standards.md"  # shared with the Copywriter and the Diseñador
 GREEN_FILE = HERE / "green_content.md"
 
 # Fields of each approved topic that the Estratega needs (the rest is Investigador bookkeeping).
@@ -56,6 +56,7 @@ def load_approved_topics(selection_path: Path) -> list[dict]:
 def build_inputs(brief_text: str, selection_path: Path) -> dict:
     topics = load_approved_topics(selection_path)
     context = tools.get_operational_context()
+    visual = tools.get_visual_guidelines()
     return {
         "mes": month_from_brief(brief_text),
         "prioridad_principal": main_priority(brief_text),
@@ -63,6 +64,7 @@ def build_inputs(brief_text: str, selection_path: Path) -> dict:
         "temas_aprobados": topics,
         "contexto_operativo": context or "(No disponible: construye el RAG con python rag/build_index.py.)",
         "estandares_instagram": STANDARDS_FILE.read_text(encoding="utf-8"),
+        "lineamientos_visuales": visual or "(No disponible: construye el RAG con python rag/build_index.py.)",
         "contenidos_green": GREEN_FILE.read_text(encoding="utf-8") if GREEN_FILE.exists() else "(sin contenidos green)",
         "green_refs": green_refs(),
     }
@@ -83,6 +85,7 @@ def fill_prompt(template: str, inputs: dict) -> str:
         "contexto_operativo": inputs["contexto_operativo"],
         "estandares_instagram": inputs["estandares_instagram"],
         "contenidos_green": inputs.get("contenidos_green", ""),
+        "lineamientos_visuales": inputs.get("lineamientos_visuales", ""),
     }
     for key, value in values.items():
         template = template.replace("{" + key + "}", value)

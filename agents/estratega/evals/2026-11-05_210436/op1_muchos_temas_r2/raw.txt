@@ -1,0 +1,545 @@
+{
+  "mes": "2026-11",
+  "objetivo_del_mes": "Captar +8 socios nuevos con membresía directa al 30 de noviembre (pasando de 30 a 38), apalancando el Reto 21 días de noviembre, la clase muestra abierta y resolviendo la fricción de ubicación en Narvarte Poniente.",
+  "estrategia_del_mes": "La estrategia concentra el esfuerzo de conversión en la primera quincena del mes para detonar inscripciones al Reto 21 días y a la Clase muestra abierta antes del vencimiento de la oferta el 15 de noviembre. Se equilibra con un fuerte componente de descubrimiento y consideración educativa que posiciona el entrenamiento de fuerza e híbrido como la mejor alternativa para profesionistas (Ana) que buscan eficiencia de 60 minutos sin lidiar con gimnasios saturados ni acoso. La última semana minimiza la venta directa para proteger a la marca de la saturación publicitaria de Black Friday, enfocándose en fidelización comunitaria y contenido green sobre derribar mitos de la fuerza.",
+  "mezcla_por_etapa": {
+    "descubrimiento": 6,
+    "consideracion": 6,
+    "conversion": 4,
+    "fidelizacion": 1
+  },
+  "mezcla_de_objetivos": {
+    "Reconocimiento de marca": 3,
+    "Crecimiento de audiencia": 3,
+    "Atención y confianza": 3,
+    "Tráfico": 1,
+    "Interacción y comunidad": 2,
+    "Generación de leads": 2,
+    "Conversión": 2,
+    "Retención y lealtad": 1
+  },
+  "criterio_de_volumen": "Se establecieron 17 piezas en el mes (promedio de 3 a 4 publicaciones semanales en feed complementadas con historias estratégicas). Se concentró el volumen entre la semana 2 y la semana 4 para respaldar el arranque del Reto 21 días, la Clase muestra del 7 de noviembre y el vencimiento de la promoción de inscripción sin costo el 15 de noviembre. En la semana 5 se redujo deliberadamente la carga comercial a 2 publicaciones de feed y 1 historia para acatar la restricción de evitar el ruido de Black Friday. Se incluyó una pieza green (G1) hacia el cierre para refrescar los ángulos de fuerza sin saturar con promociones.",
+  "supuestos": [
+    "Se asume que la sesión fotográfica de la fachada con Mike en la primera semana de noviembre proveerá material de apoyo o, en su defecto, el diseñador elaborará un gráfico esquemático con referencias claras para la pieza de ubicación.",
+    "Para el lunes festivo 16 de noviembre, se asume que DOPA mantendrá clases matutinas especiales notificadas vía historias/WhatsApp, mientras que el contenido del feed servirá como valor educativo guardable.",
+    "No se mencionan marcas de patrocinadores que no estén 100% confirmadas (como Habits) ni datos personales de socias en los testimonios de progreso."
+  ],
+  "fuentes_de_conocimiento": [
+    "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › D. Objetivos y Motivaciones",
+    "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › E. Dolores y Frustraciones",
+    "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › F. Objeciones y Barreras de Compra",
+    "Buyer personas › RESUMEN COMPARATIVO DE PERSONAS (parte 1 de 2)",
+    "Brief de negocio › FICHA RÁPIDA DEL NEGOCIO",
+    "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › ¿Qué hace único a DOPA MX frente a otros gimnasios?",
+    "Manual de identidad › 1. Fundamentos de marca › Quiénes somos"
+  ],
+  "piezas": [
+    {
+      "id": "2026-11-P01",
+      "fecha_sugerida": "2026-11-02",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Fechas clave y avisos operativos: Lunes 2 de noviembre Día de Muertos",
+      "green_ref": null,
+      "tema_central": "horarios festivos",
+      "tema": "Historia informativa sobre los horarios especiales por Día de Muertos y recordatorio del inicio del Reto 21 días el día de mañana, para mantener informada a la comunidad y prospectos.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Resolver de forma proactiva dudas sobre la operación de día festivo y registrar al menos 15 respuestas o preguntas directas sobre el arranque de actividades de la semana.",
+      "mensaje_clave": "Ajustamos nuestro horario por Día de Muertos para que no pierdas tu ritmo; mañana arrancamos con todo.",
+      "angulo": "Claridad y consideración: cuidar el tiempo de la comunidad comunicando con anticipación los horarios festivos.",
+      "puntos_clave": [
+        "Horario especial de atención y clases por el 2 de noviembre",
+        "Mañana martes 3 arranca el Reto 21 días de noviembre",
+        "Dudas y confirmación de asistencia por WhatsApp al 56 5149 3075"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Capa neutra oscura sobre una toma de material de entrenamiento en descanso con iluminación cálida de fondo, destacando el texto del horario con tipografía limpia y acento de color."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P02",
+      "fecha_sugerida": "2026-11-03",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Reto 21 días de noviembre y Oferta comercial activa",
+      "green_ref": null,
+      "tema_central": "Reto 21 días",
+      "tema": "Carrusel de lanzamiento del Reto 21 días de noviembre explicando la dinámica de acompañamiento de coach para cerrar el año más fuerte y la oferta de inscripción sin costo ($1,850 membresía mensual).",
+      "publico": "Ana",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Generar al menos 10 solicitudes de inscripción por mensaje directo o WhatsApp durante las primeras 48 horas de lanzamiento del reto.",
+      "mensaje_clave": "21 días de entrenamiento funcional y fuerza guiada para cerrar el año con estructura y sin pretextos.",
+      "angulo": "Eficiencia y compromiso real: terminar el año construyendo fuerza sin fórmulas milagro ni falsas promesas de peso.",
+      "puntos_clave": [
+        "Duración: del martes 3 al lunes 23 de noviembre en cualquier clase regular",
+        "Seguimiento de coach, estaciones asignadas y cupos limitados a 15-20 personas",
+        "Promoción activa: inscripción sin costo ($0 en lugar de $599) en membresía mensual de $1,850",
+        "Válido solo para socios nuevos con membresía directa al reservar en dopa.mx o WhatsApp"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer en sus treintas terminando una serie de peso muerto en un ambiente boutique cálido y enfocado, con titular de impacto sobre el inicio del Reto 21 días."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P03",
+      "fecha_sugerida": "2026-11-04",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T1",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "entrenamiento híbrido",
+      "tema": "Carrusel educativo que explica el concepto de entrenamiento híbrido y cómo integra la fuerza con la resistencia metabólica para construir una condición física completa y protegida de lesiones.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Lograr más de 50 guardados y alcanzar al menos 800 cuentas no seguidoras interesadas en fitness funcional en Benito Juárez.",
+      "mensaje_clave": "El entrenamiento híbrido une lo mejor de dos mundos: la solidez de las cargas de fuerza con la potencia cardiovascular.",
+      "angulo": "Desmitificar el entrenamiento aislado: por qué hacer solo cardio o solo pesas no te da la condición atlética integral que buscas.",
+      "puntos_clave": [
+        "Definición de entrenamiento híbrido: combinación estratégica de trabajo con pesas/fuerza y acondicionamiento aeróbico",
+        "Desarrollo de resistencia sin sacrificar masa muscular ni densidad ósea",
+        "Transferencia a la vida diaria: agilidad, potencia y menor índice de sobrecargas musculares",
+        "Cómo se aplica en sesiones de 60 minutos con estaciones de trabajo organizadas"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Atleta ejecutando empuje con trineo o utilizando mancuernas con iluminación cálida de estudio que resalte el esfuerzo y dinamismo del entrenamiento híbrido."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P04",
+      "fecha_sugerida": "2026-11-05",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 2: Clase muestra abierta: Sábado Hybrid",
+      "green_ref": null,
+      "tema_central": "clase muestra abierta",
+      "tema": "Publicación estática para convocar a la Clase muestra abierta 'Sábado Hybrid' del 7 de noviembre, comunicando los 5 cupos exclusivos sin costo para externos que nunca han entrenado en DOPA.",
+      "publico": "Ana",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Llenar los 5 lugares para no socios en menos de 24 horas a través de registro por WhatsApp o web.",
+      "mensaje_clave": "Prueba el método híbrido este sábado: 90 minutos de pura energía funcional totalmente gratis.",
+      "angulo": "Exclusividad y baja fricción: una sesión abierta con cupo muy limitado para experimentar la dinámica boutique sin compromiso inicial.",
+      "puntos_clave": [
+        "Fecha y horario: Sábado 7 de noviembre de 08:00 a 09:30",
+        "Ubicación: DOPA en C. Juan Sánchez Azcona 529, Narvarte Poniente",
+        "Costo: Gratis para personas de primer ingreso (únicamente 5 cupos disponibles)",
+        "Requisitos: Llevar ropa deportiva, toalla y botella de agua; apartar lugar al WhatsApp 56 5149 3075"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Grupo pequeño de personas entrenando enérgicamente con wall balls y mancuernas en un espacio estético, con badge destacado en coral que señale '5 lugares disponibles'."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P05",
+      "fecha_sugerida": "2026-11-06",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 2: Clase muestra abierta: Sábado Hybrid (recordatorio)",
+      "green_ref": null,
+      "tema_central": "clase muestra abierta",
+      "tema": "Secuencia de historias con sticker interactivo de cuenta regresiva y botón de enlace directo para reclamar los últimos 2 cupos para la clase muestra de mañana sábado.",
+      "publico": "Ana",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Agotar los últimos cupos libres y recibir al menos 5 mensajes directos de personas en lista de espera.",
+      "mensaje_clave": "Mañana se entrena en comunidad: últimos lugares disponibles para vivir el Sábado Hybrid.",
+      "angulo": "Urgencia y llamada a la acción directa: recordatorio de última oportunidad para asegurar estación en la sesión abierta.",
+      "puntos_clave": [
+        "Horario de mañana: 08:00 a 09:30 am",
+        "Quedan los últimos 2 lugares de los 5 abiertos para externos",
+        "Envía mensaje al WhatsApp 56 5149 3075 con tu nombre para apartar tu lugar"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Detalle de mancuernas y kettlebells listas en fila sobre el piso de caucho bajo luz cálida matutina, con sticker interactivo colocado en la zona superior."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P06",
+      "fecha_sugerida": "2026-11-09",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T2",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "fuerza y salud",
+      "tema": "Carrusel que desglosa cómo el entrenamiento de fuerza transforma la composición corporal, regula el estrés corporativo y detona neurotransmisores como dopamina y serotonina.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Generar más de 35 compartidos en historias por profesionistas que buscan desahogo mental y sumar al menos 20 seguidores con perfil afín a Ana.",
+      "mensaje_clave": "Levantar peso no solo tonifica tu cuerpo; es el reinicio mental que tu mente necesita tras 8 horas de oficina.",
+      "angulo": "Bienestar integral y salud mental corporativa: el entrenamiento de fuerza como herramienta de descompresión neuroquímica y autoestima.",
+      "puntos_clave": [
+        "El entrenamiento de fuerza produce cambios medibles en composición corporal sin depender de dietas extremas",
+        "Liberación de dopamina y serotonina: el antídoto neuroquímico al cortisol del trabajo corporativo",
+        "Ganancia de masa muscular como inversión de salud y vitalidad para los próximos años",
+        "Sensación de empoderamiento al progresar en cargas sesión a sesión"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer profesionista de unos 32 años tomando un respiro sonriente con las manos en las rodillas tras una serie exigente, transmitiendo alivio y logro personal."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P07",
+      "fecha_sugerida": "2026-11-10",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T7",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "experiencia en clase",
+      "tema": "Carrusel guiado paso a paso por Dani que narra exactamente qué ocurre desde que cruzas la puerta en DOPA hasta que terminas tus 60 minutos, resolviendo el miedo a la saturación y desorden.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Derribar la barrera de 'no saber qué me espera' logrando al menos 40 guardados y 8 consultas por mensaje directo sobre cómo reservar la primera visita.",
+      "mensaje_clave": "Aquí nunca esperas aparatos: 60 minutos exactos, tu estación asignada y un coach atento a cada repetición.",
+      "angulo": "Transparencia y control: erradicar la incertidumbre de la primera clase mostrando el orden y respeto por el tiempo del socio.",
+      "puntos_clave": [
+        "Llegada y bienvenida: cómo ingresar y ubicar la zona de casilleros sin complicaciones",
+        "Aforo estrictamente limitado a 15-20 personas: sin amontonamientos ni filas de espera",
+        "Estructura precisa: movilidad articular inicial, bloque principal de fuerza híbrida y cierre funcional en 60 minutos cronometrados",
+        "Coach presente en piso corrigiendo postura y graduando las cargas a tu nivel real"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Coach explicando con empatía la técnica de un ejercicio a una socia en una estación perfectamente ordenada con mancuernas y colchoneta."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P08",
+      "fecha_sugerida": "2026-11-11",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T3",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "beneficios de fuerza",
+      "tema": "Carrusel respaldado en evidencia médica (MedlinePlus) que expone los beneficios clínicos de entrenar fuerza al menos dos veces por semana para proteger la densidad ósea y regular el sueño.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Alcanzar a más de 700 cuentas locales y conseguir al menos 30 compartidos dirigidos a familiares (hijas compartiendo a mamás para animarlas a entrenar).",
+      "mensaje_clave": "La ciencia médica lo confirma: entrenar fuerza dos veces por semana es el mejor seguro de vida para tus huesos y tu vitalidad.",
+      "angulo": "Autoridad científica y longevidad: el ejercicio con peso como prescripción de salud obligatoria, sin importar la edad.",
+      "puntos_clave": [
+        "Recomendación oficial de guías de salud: mínimo dos sesiones semanales de fortalecimiento muscular",
+        "Preservación y aumento de la densidad mineral ósea: prevención efectiva contra la osteopenia",
+        "Mejora sustancial en la profundidad del descanso nocturno y regulación metabólica",
+        "Apto para cualquier punto de partida cuando los movimientos se adaptan biomecánicamente"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Dos mujeres de distintas generaciones (una de 30 y otra de más de 50 años) entrenando lado a lado en un circuito de fuerza con expresión de confianza."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P09",
+      "fecha_sugerida": "2026-11-12",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Prioridad secundaria y Novedades: pieza fija de cómo llegar a DOPA (C. Juan Sánchez Azcona 529)",
+      "green_ref": null,
+      "tema_central": "ubicación y acceso",
+      "tema": "Guía práctica en carrusel tipo 'Cómo encontrarnos en Narvarte Poniente': mapa esquemático, referencias urbanas desde vialidades clave y detalle exacto de la entrada para no perderte.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Tráfico",
+      "objetivo": "Generar al menos 35 clics en el enlace de la biografía para abrir la ubicación en Google Maps y 50 guardados para consulta permanente.",
+      "mensaje_clave": "Llegar a DOPA es fácil: estamos en el corazón de Narvarte Poniente, a pasos de las principales avenidas.",
+      "angulo": "Solución de fricción urbana: eliminar el obstáculo de 'no encuentro la entrada' con indicaciones visuales claras y puntos de referencia.",
+      "puntos_clave": [
+        "Dirección exacta: C. Juan Sánchez Azcona 529, Narvarte Poniente, Benito Juárez",
+        "Vías de acceso cercanas: conexión rápida desde Eje 4 Sur Xola, Gabriel Mancera, Cuauhtémoc y Obrero Mundial",
+        "Referencia de la entrada: qué buscar a nivel de calle para identificar el acceso al centro boutique",
+        "Enlace directo a Google Maps y Waze disponible en el enlace de la bio"
+      ],
+      "foto_sugerida": {
+        "tipo": "grafico",
+        "idea": "Mapa gráfico vectorial minimalista y estético de Narvarte Poniente con los colores de marca de DOPA, señalando avenidas principales y el pin exacto de Juan Sánchez Azcona 529 con un indicador de entrada."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P10",
+      "fecha_sugerida": "2026-11-13",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Oferta comercial activa: vigencia al 15 de noviembre ($0 inscripción)",
+      "green_ref": null,
+      "tema_central": "oferta membresía mensual",
+      "tema": "Historia de cuenta regresiva recordando que este domingo 15 de noviembre vence el beneficio de inscripción sin costo ($599 de ahorro) al adquirir la membresía mensual de $1,850.",
+      "publico": "Ana",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Cerrar al menos 3 membresías directas antes del fin de semana mediante mensajes directos iniciados con el sticker de enlace.",
+      "mensaje_clave": "Últimas 48 horas para ahorrarte la inscripción y arrancar tu membresía mensual en DOPA.",
+      "angulo": "Cierre de ciclo de oferta: fecha límite impostergable para aprovechar el beneficio económico de bienvenida.",
+      "puntos_clave": [
+        "Ahorro de $599: inscripción $0 al contratar tu mensualidad de $1,850",
+        "Válido exclusivamente hasta el domingo 15 de noviembre",
+        "Aplica para membresía directa de nuevos socios",
+        "Escribe 'MEMBRESÍA' por mensaje directo o toca el sticker para apartar tu lugar"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Fotografía estética de un atleta colocando sus correas o ajustando su botella antes de entrar a clase, con franja gráfica superior indicando 'Vence este domingo'."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P11",
+      "fecha_sugerida": "2026-11-16",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T6",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "rutina de fuerza",
+      "tema": "Carrusel técnico que explica cómo estructurar una sesión básica de cuerpo completo con 4 patrones fundamentales (zancadas, puentes de glúteo, press y remos) para construir base sólida.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Conseguir más de 70 guardados en un día de descanso oficial aprovechando que la audiencia revisa contenido de entrenamiento con calma.",
+      "mensaje_clave": "No necesitas complicar tus rutinas: dominar los 4 patrones básicos es el secreto para volverte fuerte de verdad.",
+      "angulo": "Simplicidad y efectividad técnica: quitar la saturación de ejercicios innecesarios enfocándose en los movimientos biomecánicos que sí dan resultados.",
+      "puntos_clave": [
+        "Zancadas y sentadillas: reclutamiento de tren inferior y estabilidad funcional",
+        "Puente de glúteo / bisagra de cadera: activación de cadena posterior y cuidado lumbar",
+        "Press de empuje y remo de tracción: equilibrio escapular y fuerza en torso",
+        "Cómo combinamos estos pilares en las clases híbridas de DOPA para progresar en cargas"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Secuencia de diapositivas fotográficas con una persona demostrando la postura correcta en un remo con mancuerna y zancada con foco en la alineación corporal."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P12",
+      "fecha_sugerida": "2026-11-17",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T8",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "entrenamiento y oficina",
+      "tema": "Carrusel con la guía de Dani para organizar 4 entrenamientos por semana cuando tienes horario corporativo demandante, aprovechando los bloques de 06:00–07:00 am o 18:30–19:30 pm.",
+      "publico": "Ana",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Interacción y comunidad",
+      "objetivo": "Generar más de 25 comentarios de profesionistas compartiendo en qué horario prefieren entrenar y cómo coordinan su semana.",
+      "mensaje_clave": "Tu agenda no tiene que pelear con tu salud: 60 minutos antes o después de la oficina bastan para transformar tu semana.",
+      "angulo": "Empatía con la vida corporativa: organización estratégica del calendario laboral para blindar el tiempo propio sin culpas.",
+      "puntos_clave": [
+        "La regla de los bloques fijos: cómo agendar tus 4 sesiones como juntas no negociables",
+        "Ventajas del bloque matutino (06:00–07:00): liquidar el entrenamiento antes de que empiece el caos de correos",
+        "Ventajas del bloque vespertino (18:30–19:30): cerrar la laptop y descargar las tensiones de la jornada",
+        "Clases puntuales de 60 minutos con estaciones listas para que salgas directo a tu día"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer profesionista en ropa deportiva recogiendo su maleta de entrenamiento temprano en la mañana con expresión de satisfacción y determinación."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P13",
+      "fecha_sugerida": "2026-11-18",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T4",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "técnica y postura",
+      "tema": "Carrusel informativo sobre cómo iniciar en entrenamiento funcional con técnica y postura impecables para entrenar con total seguridad y evitar cualquier molestia en articulaciones.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Desactivar el temor a sufrir lesiones en personas que llevan tiempo sin hacer ejercicio, logrando al menos 40 guardados.",
+      "mensaje_clave": "El peso se gana con técnica: en DOPA primero aprendes a moverte bien y después agregamos intensidad.",
+      "angulo": "Prevención y seguridad biomecánica: quitar el miedo a lastimarse mediante adaptaciones personalizadas y supervisión técnica constante.",
+      "puntos_clave": [
+        "La técnica manda sobre los kilos: bases posturales antes de cargar peso",
+        "Correcciones inmediatas: el rol activo del coach en piso observando tu rango articular",
+        "Variaciones para cada nivel: si un movimiento incomoda, existe una opción alternativa inmediata",
+        "Ideal para invitar a tu mamá o retomar el hábito tras meses de pausa"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Coach ajustando la postura de la espalda y hombros de una alumna durante una sentadilla con kettlebell en un entorno iluminado y seguro."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P14",
+      "fecha_sugerida": "2026-11-19",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T5",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "descanso y sueño",
+      "tema": "Carrusel educativo que comparte los hallazgos de Mayo Clinic sobre cómo el esfuerzo muscular de fuerza regula los ciclos de sueño profundo y facilita la recuperación del sistema nervioso.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Obtener al menos 50 compartidos entre personas que padecen insomnio por estrés laboral y sumar nuevos seguidores al perfil.",
+      "mensaje_clave": "Si te cuesta dormir por darle vueltas a pendientes, el entrenamiento de fuerza es el mejor inductor de descanso profundo.",
+      "angulo": "Salud regenerativa: la relación directa entre la fatiga muscular adaptativa y la calidad del sueño reparador.",
+      "puntos_clave": [
+        "El esfuerzo con peso acelera el inicio del sueño de ondas lentas (fase delta)",
+        "Disminución de despertares nocturnos causados por ansiedad o sobrecarga mental",
+        "La recuperación muscular ocurre mientras duermes: el círculo virtuoso de entrenar y descansar bien",
+        "Diferencia entre cansancio por fatiga mental sedentaria y cansancio físico gratificante"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Primer plano de una persona relajada hidratándose tras una sesión exigente de fuerza, reflejando tranquilidad y descompresión física."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P15",
+      "fecha_sugerida": "2026-11-23",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Fechas clave: Cierre del Reto 21 días (lunes 23 de noviembre) y Victoria de la comunidad",
+      "green_ref": null,
+      "tema_central": "Reto 21 días",
+      "tema": "Publicación comunitaria celebrando el cierre del Reto 21 días de noviembre, reconociendo la constancia de las socias que cumplieron sus sesiones y aumentaron sus marcas en sentadilla y peso muerto sin fallar.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Fortalecer la retención y el sentido de orgullo de las participantes, alcanzando al menos 60 'me gusta' y más de 20 comentarios celebrando los logros del grupo.",
+      "mensaje_clave": "21 días de disciplina no se resumen en un número: se sienten en cada repetición y en el orgullo de haber cumplido.",
+      "angulo": "Celebración de la constancia colectiva: honrar el progreso medible en cargas y fuerza sin caer en mensajes superficiales sobre peso.",
+      "puntos_clave": [
+        "Cierre oficial del Reto 21 días de noviembre: felicitaciones a quienes no faltaron a una sola sesión",
+        "Subida de cargas reales en ejercicios principales como sentadilla y peso muerto",
+        "El verdadero cambio no es una báscula, es saberte más fuerte, ágil e independiente",
+        "La constancia se construyó día a día gracias al apoyo mutuo en cada clase"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Grupo de socias y socios chocando los puños y sonriendo tras terminar un entrenamiento duro, mostrando camaradería genuina y sudor de satisfacción."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P16",
+      "fecha_sugerida": "2026-11-24",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G1",
+      "tema_central": "fuerza sin mitos",
+      "tema": "Carrusel de base sobre mitos de la fuerza: desarmando el miedo a 'ponerse enorme', la libertad de entrenar en ropa cómoda o top sintiéndose seguras y por qué levantar peso es indispensable a cualquier edad.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Generar más de 60 compartidos orgánicos entre mujeres de Narvarte/Del Valle y alcanzar a 900 cuentas no seguidoras en semana de alta competencia publicitaria.",
+      "mensaje_clave": "Entrenar fuerza no te hace grande ni tosca: te hace funcional, resistente y segura en tu propia piel.",
+      "angulo": "Empoderamiento y espacio seguro: derribar mitos estéticos arcaicos y reafirmar a DOPA como un entorno libre de juicios y miradas incómodas.",
+      "puntos_clave": [
+        "Mito 'levantar pesado me hará voluminosa': la fisiología femenina responde tonificando y fortaleciendo",
+        "Fuerza para el día a día: subir escaleras con bolsas, cargar maletas y cuidar la postura sin dolor de espalda",
+        "Espacio seguro: entrena en top o como te sientas más cómoda sin miradas invasivas ni juicios",
+        "La fuerza es para ti a los 28, a los 42 o a los 55 años"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer en top deportivo ejecutando con técnica y naturalidad un press con mancuernas en un entorno limpio y respetuoso, transmitiendo libertad y comodidad corporal."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P17",
+      "fecha_sugerida": "2026-11-26",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Público prioritario (cerrar el año en serio) y Voz de la comunidad",
+      "green_ref": null,
+      "tema_central": "espacio seguro",
+      "tema": "Caja de preguntas interactiva en historias para resolver dudas sobre los grupos de diciembre, aforo y cómo integrarse a clases en DOPA sin prisas ni presiones comerciales de fin de mes.",
+      "publico": "Ana",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Interacción y comunidad",
+      "objetivo": "Recibir al menos 12 preguntas de seguidoras que buscan empezar en diciembre y canalizar a 4 de ellas a clase de prueba por DM.",
+      "mensaje_clave": "Diciembre no tiene que ser un mes de pausa: resuelve tus dudas y planifica tus mañanas o tardes de entrenamiento.",
+      "angulo": "Cercanía y escucha activa: abrir conversación genuina sin empujar descuentos forzados en pleno Black Friday.",
+      "puntos_clave": [
+        "Sticker de caja de preguntas: ¿Qué te falta para animarte a entrenar en DOPA antes de que acabe el año?",
+        "Recordatorio de aforo cuidado: clases reducidas a 15-20 personas con coach asignado",
+        "Respuesta personalizada por Dani vía DM a cada inquietud recibida"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Fotografía en plano detalle de una pizarra con la programación del día y el cronómetro de fondo desenfocado, con espacio libre central para colocar el sticker interactivo."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    }
+  ]
+}

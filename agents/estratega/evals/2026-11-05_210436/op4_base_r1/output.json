@@ -1,0 +1,526 @@
+{
+  "mes": "2026-11",
+  "objetivo_del_mes": "Llenar el horario de Pilates de martes y jueves (09:00 a 10:00) alcanzando un promedio de al menos 10 personas por clase y cerrar noviembre con 5 nuevas inscritas al plan Pilates mensual ($1,599 MXN), atrayendo principalmente a mujeres de 45 a 55+ años (Rosa) mediante la resolución del miedo a lastimarse y la promoción de la clase abierta y la oferta de primera sesión gratuita.",
+  "estrategia_del_mes": "La estrategia concentra el esfuerzo en derribar la barrera de entrada para el público Rosa (miedo al dolor lumbar, a ejercicios lesivos o a no encajar), apalancando la autoridad técnica de Dani como coach certificada y Leo como fisioterapeuta. Durante la primera quincena calentamos a la audiencia con contenido educativo de bajo impacto (T1 y T2) y convocamos a la Clase Abierta del 12 de noviembre junto con la oferta de primera clase gratis, involucrando también a Ana para que invite a su mamá. En la segunda quincena consolidamos con movilidad articular (T3), el testimonio de alivio lumbar y contenidos green de postura y recuperación (G2, G3) para dar variedad, sembrando además la expectativa de Hot Pilates como innovación futura sin saturar con venta directa.",
+  "mezcla_por_etapa": {
+    "descubrimiento": 5,
+    "consideracion": 5,
+    "conversion": 5,
+    "fidelizacion": 2
+  },
+  "mezcla_de_objetivos": {
+    "Reconocimiento de marca": 4,
+    "Crecimiento de audiencia": 1,
+    "Atención y confianza": 3,
+    "Tráfico": 1,
+    "Interacción y comunidad": 1,
+    "Generación de leads": 2,
+    "Conversión": 3,
+    "Retención y lealtad": 2
+  },
+  "criterio_de_volumen": "Se definieron 17 piezas en el mes (12 publicaciones en el feed —carruseles y posts estáticos de lunes a jueves— y 5 historias distribuidas en momentos clave y fechas festivas). Este volumen se apega a la recomendación de 3 publicaciones semanales en feed para estudios boutique, respetando los tiempos de producción visual y aprobación de Dani. La distribución del embudo asigna aproximadamente 29% a descubrimiento, 29% a consideración, 29% a conversión y 12% a fidelización; se incrementó ligeramente la conversión respecto a la base del 25% debido a la concentración de dos llamados a la acción concretos del brief: el evento presencial gratuito del 12 de noviembre y el cierre de la oferta de primera clase de Pilates gratis de fin de mes.",
+  "supuestos": [
+    "Se asume que la capacidad del estudio para la clase abierta del 12 de noviembre está estrictamente topada a 15 asistentes para garantizar atención personalizada.",
+    "Se asume que el aliado Kavana Yoga & Mindfulness confirmará un obsequio o beneficio de recuperación para los asistentes a la clase abierta, pero la comunicación no depende de este para ser efectiva.",
+    "Se asume que el horario de servicio durante los festivos del 2 y 16 de noviembre contempla ajustes operativos en piso que se notifican oportunamente vía historias."
+  ],
+  "fuentes_de_conocimiento": [
+    "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › E. Dolores y Frustraciones",
+    "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › F. Objeciones y Barreras de Compra",
+    "Brief de negocio › 7. Público Actual vs. Público Deseado › ¿Quiénes son sus socios hoy? Perfil General",
+    "Manual de identidad › 1. Fundamentos de marca › A quién le hablamos",
+    "Brief de negocio › 5. Servicios, Instalaciones y Catálogo › Tarifas Oficiales de Membresías, Clases Grupales y Planes de Acceso (parte 2 de 2)",
+    "Brief de negocio › 4. Equipo y Organización (parte 1 de 2)"
+  ],
+  "piezas": [
+    {
+      "id": "2026-11-P01",
+      "fecha_sugerida": "2026-11-02",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Avisos operativos para historias: Lunes 2 de noviembre (Día de Muertos)",
+      "green_ref": null,
+      "tema_central": "horario festivo",
+      "tema": "Historia informativa que comunica el horario operativo especial por Día de Muertos y recuerda el arranque de las clases de Pilates matutinas del mes a partir del martes.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Aclarar el horario especial del día inhábil para evitar confusiones y motivar la asistencia a la clase de Pilates del martes 3 a las 09:00.",
+      "mensaje_clave": "Hoy descansamos y honramos nuestras tradiciones; mañana martes te esperamos a las 09:00 para empezar la semana cuidando tu cuerpo.",
+      "angulo": "Cercanía y claridad operativa para planear la semana de entrenamiento sin contratiempos.",
+      "puntos_clave": [
+        "Horario especial de atención por Día de Muertos",
+        "Reanudación de clases normales el martes 3 de noviembre desde las 06:00",
+        "Clase de Pilates activa martes y jueves de 09:00 a 10:00"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Tapete de ejercicio extendido en un piso de madera iluminado por luz matutina cálida con una taza de té al lado, transmitiendo calma y bienestar."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P02",
+      "fecha_sugerida": "2026-11-03",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T1",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "Pilates sin impacto",
+      "tema": "Carrusel educativo sobre por qué el Pilates de bajo impacto es la mejor opción para volver a ejercitarse sin riesgo de lastimarse la espalda o las rodillas.",
+      "publico": "Rosa",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Lograr que mujeres de 45 a 55 años guarden y compartan la publicación al reconocer que el bajo impacto elimina el riesgo de lesión.",
+      "mensaje_clave": "Moverte sin impacto cuida tu espalda mientras fortaleces todo tu cuerpo desde el control y la respiración.",
+      "angulo": "Derribar la creencia de que para ponerse en forma hay que sufrir impactos fuertes o movimientos bruscos.",
+      "puntos_clave": [
+        "El bajo impacto fortalece la musculatura profunda sin comprimir articulaciones",
+        "El control y la respiración guían cada fase para prevenir dolor lumbar",
+        "Ideal para quienes buscan retomar el ejercicio de forma progresiva y segura"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer adulta de aproximadamente 50 años realizando un puente de glúteo controlado sobre un mat, con expresión serena y concentrada en ambiente luminoso."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P03",
+      "fecha_sugerida": "2026-11-04",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Oferta activa: Primera clase de Pilates gratis para quien nunca ha venido a DOPA",
+      "green_ref": null,
+      "tema_central": "primera clase gratis",
+      "tema": "Post promocional que anuncia la oferta de bienvenida de noviembre: una primera clase de Pilates sin costo para personas que visitan DOPA por primera vez.",
+      "publico": "Rosa",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Generar al menos 8 mensajes directos o clics a WhatsApp solicitando agendar la clase de prueba de Pilates.",
+      "mensaje_clave": "Tu primera clase de Pilates en DOPA es completamente gratis durante todo noviembre para que compruebes cómo se siente entrenar sin dolor.",
+      "angulo": "Invitación sin riesgo a experimentar una clase cuidada y guiada por especialistas.",
+      "puntos_clave": [
+        "Válido durante todo el mes de noviembre para personas de nuevo ingreso",
+        "Requiere reserva previa con 1 día de anticipación",
+        "Horarios disponibles: martes y jueves de 09:00 a 10:00"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Detalle de una persona ajustando suavemente su postura sobre un tapete con apoyo de una pelota suave de pilates, con texto gráfico sobre fondo cálido indicando 'Tu primera clase es gratis'."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P04",
+      "fecha_sugerida": "2026-11-05",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Clase abierta de Pilates para principiantes (12 de noviembre)",
+      "green_ref": null,
+      "tema_central": "clase abierta Pilates",
+      "tema": "Carrusel de convocatoria oficial para la Clase Abierta de Pilates para principiantes del jueves 12 de noviembre, explicando dinámica, cupos y requisitos.",
+      "publico": "Rosa",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Completar el registro de los 15 lugares disponibles para la clase abierta antes del 10 de noviembre mediante mensaje directo o WhatsApp.",
+      "mensaje_clave": "Una clase diseñada de cero para principiantes: ven a descubrir cómo fortalecer tu cuerpo a tu propio ritmo este jueves 12 de noviembre.",
+      "angulo": "Cero intimidación: un espacio exclusivo para quienes nunca han tomado Pilates y quieren empezar con el pie derecho.",
+      "puntos_clave": [
+        "Fecha y hora: Jueves 12 de noviembre de 09:00 a 10:00 en DOPA",
+        "Sin costo, cupo limitado a 15 personas para atención personalizada",
+        "Solo necesitas traer ropa cómoda y calcetas; aparta tu lugar vía WhatsApp al 56 5149 3075 o en dopa.mx"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Espacio amplio de entrenamiento con tapetes alineados y bloques de soporte listos para clase, con luz solar suave entrando por ventanas y tipografía elegante con los detalles del evento."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P05",
+      "fecha_sugerida": "2026-11-09",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T2",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "Pilates principiantes",
+      "tema": "Carrusel de guía práctica que brinda 4 consejos clave para quien asiste por primera vez a una sesión de Pilates, respondiendo a la duda de si se necesita experiencia previa.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Despejar la objeción 'no sé si podré seguir la clase' e incrementar la confianza de las interesadas en asistir a la clase abierta.",
+      "mensaje_clave": "No necesitas experiencia ni flexibilidad previa: cada ejercicio de Pilates se gradúa al nivel exacto en el que hoy está tu cuerpo.",
+      "angulo": "Acompañamiento pedagógico: qué esperar y cómo prepararte mental y físicamente para tu primera sesión.",
+      "puntos_clave": [
+        "Usa ropa elástica que te permita moverte sin presiones y calcetas cómodas",
+        "Avisa a tu coach sobre cirugías o molestias previas para adaptar cada postura",
+        "El éxito de la clase está en la precisión del movimiento, no en la velocidad"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Dos mujeres de distintas edades practicando estiramiento de columna en tapete, apoyadas y sonriendo, proyectando seguridad y asesoría cercana."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P06",
+      "fecha_sugerida": "2026-11-10",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Clase abierta de Pilates para principiantes (12 de noviembre)",
+      "green_ref": null,
+      "tema_central": "clase abierta Pilates",
+      "tema": "Historia de cuenta regresiva y urgencia informando los últimos lugares disponibles para la Clase Abierta de Pilates de este jueves 12 de noviembre.",
+      "publico": "Rosa",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Llenar los últimos 3 a 5 lugares restantes para la clase abierta mediante botón de enlace directo a WhatsApp.",
+      "mensaje_clave": "¡Quedan muy pocos lugares! Este jueves 12 a las 09:00 nos vemos en el mat para tu clase abierta de Pilates.",
+      "angulo": "Último llamado con cupo limitado para asegurar atención personalizada.",
+      "puntos_clave": [
+        "Faltan solo 2 días para nuestra clase abierta gratuita",
+        "Últimos 15 lugares disponibles para principiantes",
+        "Toca el enlace para apartar tu lugar al WhatsApp 56 5149 3075"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Composición limpia con gráfico de cuenta regresiva sobre fondo fotográfico cálido de elementos de pilates (aro y banda elástica)."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P07",
+      "fecha_sugerida": "2026-11-11",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Público actual vs deseado: Rosa llega por recomendación de su hija",
+      "green_ref": null,
+      "tema_central": "ejercicio en familia",
+      "tema": "Post reflexivo dirigido a Ana invitándola a traer a su mamá o tía a Pilates en DOPA como un acto de cuidado hacia su movilidad y salud articular.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Motivar que socias jóvenes y seguidoras del perfil Ana compartan la publicación con sus mamás o las etiqueten en comentarios.",
+      "mensaje_clave": "Cuidar a mamá también es regalarle un espacio donde pueda moverse con seguridad, sin miedo al dolor y con coaches que la cuidan.",
+      "angulo": "El bienestar de mamá en manos profesionales: amor y prevención a través del movimiento seguro.",
+      "puntos_clave": [
+        "Muchas de nuestras socias Rosa llegaron porque su hija las animó a dar el primer paso",
+        "En Pilates matutino martes y jueves a las 09:00 cuidamos su espalda paso a paso",
+        "Sorpréndela invitándola a su primera clase de prueba sin costo"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Dos mujeres (madre e hija de unos 52 y 28 años) caminando juntas con ropa deportiva tras una sesión, platicando de forma distendida."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P08",
+      "fecha_sugerida": "2026-11-12",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T3",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "movilidad articular",
+      "tema": "Carrusel informativo sobre cómo el trabajo de movilidad articular previene caídas, preserva la autonomía física y protege la independencia al envejecer.",
+      "publico": "Rosa",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Crecimiento de audiencia",
+      "objetivo": "Atraer a nuevas seguidoras interesadas en salud articular y longevidad activa logrando al menos 25 guardados del carrusel.",
+      "mensaje_clave": "Cuidar tus articulaciones hoy es la garantía de mantener tu autonomía, agilidad y libertad de movimiento durante toda la vida.",
+      "angulo": "Salud preventiva y longevidad: el ejercicio como inversión en tu autonomía futura.",
+      "puntos_clave": [
+        "La movilidad articular mantiene la lubricación de rodillas, caderas y columna",
+        "Reduce drásticamente el riesgo de caídas y la rigidez matutina",
+        "Pilates ofrece el rango de movimiento perfecto sin impacto articular"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Secuencia de una persona adulta realizando una extensión suave de cadera y brazos en tapete, reflejando soltura y equilibrio corporal."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P09",
+      "fecha_sugerida": "2026-11-12",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Clase abierta de Pilates para principiantes (cierre)",
+      "green_ref": null,
+      "tema_central": "comunidad Pilates",
+      "tema": "Historia de agradecimiento a las 15 asistentes a la Clase Abierta de Pilates, celebrando su esfuerzo y extendiendo la invitación a continuar en el horario habitual.",
+      "publico": "Rosa",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Validar el esfuerzo de las asistentes y motivar a que den continuidad inscribiéndose al plan mensual de martes y jueves.",
+      "mensaje_clave": "¡Gracias por acompañarnos hoy en la clase abierta! Dieron el paso más importante: empezar a moverse con confianza.",
+      "angulo": "Celebración de la comunidad y reconocimiento al primer paso dado hacia el bienestar.",
+      "puntos_clave": [
+        "Agradecimiento a todas las que vinieron a compartir el tapete hoy",
+        "Las clases regulares continúan todos los martes y jueves a las 09:00",
+        "El grupo matutino está listo para recibirlas semana a semana"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Tapetes recogidos y termos de agua al término de la clase en ambiente de vestíbulo cálido, con texto de felicitación y agradecimiento a las asistentes."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P10",
+      "fecha_sugerida": "2026-11-16",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Avisos operativos para historias: Lunes 16 de noviembre (día festivo Revolución Mexicana)",
+      "green_ref": null,
+      "tema_central": "horario festivo",
+      "tema": "Historia de aviso operativo sobre el horario del puente de Revolución Mexicana y recordatorio para reservar la sesión de Pilates de mañana martes.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Tráfico",
+      "objetivo": "Canalizar a la comunidad al link de WhatsApp o web para agendar su lugar de clase de Pilates del martes 17 a las 09:00.",
+      "mensaje_clave": "Aprovecha el día de descanso para recargar pila y no olvides asegurar tu lugar para Pilates mañana a las 09:00.",
+      "angulo": "Claridad en horarios y fomento del hábito constante tras el fin de semana largo.",
+      "puntos_clave": [
+        "Horario especial de operación en DOPA por descanso oficial del 16 de noviembre",
+        "Clase de Pilates en horario normal mañana martes a las 09:00",
+        "Enlace directo para reservar tu lugar con un día de anticipación"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Reloj de pared elegante y sobrio junto a ropa de entrenamiento doblada, con placa informativa superpuesta sobre los horarios del día festivo."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P11",
+      "fecha_sugerida": "2026-11-17",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Voz de la comunidad: Una victoria reciente que valga la pena contar (alumna de 55 años)",
+      "green_ref": null,
+      "tema_central": "salud lumbar",
+      "tema": "Carrusel testimonial conceptual (sin foto ni nombre) que narra la historia de una alumna de 55 años que eliminó el dolor lumbar y mejoró su calidad de sueño con Pilates.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Demostrar con un caso real anónimo que el dolor lumbar crónico puede revertirse con constancia en Pilates, logrando consultas por DM.",
+      "mensaje_clave": "Dejar de sentir dolor de espalda al agacharte y volver a dormir profundo no es un milagro: es el resultado de moverte con la técnica adecuada.",
+      "angulo": "Historia real y cercana de transformación cotidiana sin tecnicismos ni pretensiones.",
+      "puntos_clave": [
+        "Llegó con miedo a lastimarse la espalda baja tras meses de sedentarismo",
+        "Con trabajo progresivo de core y movilidad lumbar, las molestias desaparecieron",
+        "Hoy duerme mejor, tiene más energía y no falta a sus clases de 09:00"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Silueta de espaldas de una mujer madura en postura erguida y relajada contemplando la luz natural, transmitiendo alivio y ligereza en la espalda."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P12",
+      "fecha_sugerida": "2026-11-18",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Prioridad secundaria: Sembrar interés en Hot Pilates como 'próximamente', sin fecha ni precio",
+      "green_ref": null,
+      "tema_central": "Hot Pilates",
+      "tema": "Post teaser que anticipa la llegada de Hot Pilates a DOPA como una nueva experiencia de calor, control y desintoxicación, sin revelar fechas ni precios.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Generar curiosidad y conversación en comentarios sobre la nueva modalidad de calor en acondicionamiento sin comprometer fechas.",
+      "mensaje_clave": "El control del Pilates clásico se prepara para encontrarse con la intensidad del calor en un espacio renovado: muy pronto en DOPA.",
+      "angulo": "Expectativa e innovación: una pista de lo que viene para transformar tu entrenamiento.",
+      "puntos_clave": [
+        "Adaptación especial de temperatura para profundizar en la flexibilidad y resistencia",
+        "La precisión de siempre con un estímulo metabólico diferente",
+        "Próximamente en nuestras instalaciones de Narvarte Poniente"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Detalle sutil de gotas de sudor y vapor ligero sobre la piel de un hombro en movimiento, con iluminación cálida en tonos dorados de marca y texto 'Próximamente'."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P13",
+      "fecha_sugerida": "2026-11-19",
+      "canal": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G3",
+      "tema_central": "descanso y articulaciones",
+      "tema": "Carrusel sobre recuperación consciente: cómo el sueño reparador y los días de descanso permiten regenerar articulaciones y consolidar los avances del ejercicio.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Interacción y comunidad",
+      "objetivo": "Fomentar interacción pidiendo a la comunidad en comentarios que compartan cuántas horas duermen y cómo cuidan sus descansos.",
+      "mensaje_clave": "Descansar no es perder el tiempo: tus músculos y cartílagos se reparan y fortalecen mientras duermes bien.",
+      "angulo": "Recuperación integral: la mitad del resultado de entrenar ocurre cuando paras.",
+      "puntos_clave": [
+        "La diferencia entre fatiga muscular natural y dolor de sobrecarga articular",
+        "Por qué alternar días de entrenamiento activo con pausas cuida tus rodillas",
+        "Pequeños hábitos nocturnos para despertar con el cuerpo flexible y sin rigidez"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Persona recostada plácidamente en postura de relajación (savasana) sobre un tapete, cubierta con una toalla ligera en sala iluminada cálidamente."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P14",
+      "fecha_sugerida": "2026-11-24",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Duda de comunidad: ¿Puedo venir solo a Pilates sin membresía completa? / Plan Pilates mensual $1,599 / Supervisión de Dani y Leo",
+      "green_ref": null,
+      "tema_central": "plan Pilates mensual",
+      "tema": "Carrusel informativo que resuelve la duda recurrente de si se puede asistir solo a Pilates, presentando el Plan Pilates mensual de $1,599 y el respaldo técnico de Dani y Leo.",
+      "publico": "Rosa",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Conseguir al menos 5 solicitudes directas de inscripción para el plan exclusivo de Pilates matutino.",
+      "mensaje_clave": "Sí puedes venir solo a Pilates: entrena martes y jueves con el Plan Pilates mensual de $1,599, con coach certificada y respaldo de fisioterapia.",
+      "angulo": "Transparencia, accesibilidad y tranquilidad profesional: una opción pensada exactamente para lo que necesitas.",
+      "puntos_clave": [
+        "Plan Pilates mensual por $1,599 MXN: acceso a todas las clases matutinas de martes y jueves",
+        "Dani está certificada en Pilates y Leo es fisioterapeuta: cada movimiento se adapta a ti",
+        "Sin compromisos forzosos ni necesidad de pagar la membresía general del gimnasio"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Coach explicando con una sonrisa un ajuste de postura a una mujer en tapete, mostrando cercanía, corrección profesional y ambiente de confianza."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P15",
+      "fecha_sugerida": "2026-11-25",
+      "canal": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G2",
+      "tema_central": "técnica y postura",
+      "tema": "Carrusel técnico con 3 ajustes posturales cotidianos para proteger la zona lumbar al estar sentada en la oficina, cargar bolsas o agacharse en casa.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Alcanzar cuentas nuevas de mujeres en Narvarte y alrededores mediante contenido educativo de alta utilidad postural.",
+      "mensaje_clave": "Lo que aprendes en el tapete protege tu columna las otras 23 horas de tu día.",
+      "angulo": "Utilidad práctica inmediata: biomecánica sencilla aplicada a la rutina diaria.",
+      "puntos_clave": [
+        "Cómo flexionar las rodillas y mantener la columna neutra al levantar peso del piso",
+        "El apoyo de isquiones al sentarse para no colapsar la zona baja de la espalda",
+        "La activación del transverso abdominal como faja natural en todo movimiento"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Comparativa limpia de postura sentada y de pie con líneas sutiles de alineación que ilustran una columna cuidada y sin tensión."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P16",
+      "fecha_sugerida": "2026-11-26",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Oferta activa: Primera clase de Pilates gratis (cierre de mes)",
+      "green_ref": null,
+      "tema_central": "primera clase gratis",
+      "tema": "Post de cierre de mes que recuerda los últimos días de la promoción de primera clase de Pilates gratis de noviembre, invitando a apartar lugar.",
+      "publico": "Rosa",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Cerrar reservas de clases de prueba para los últimos horarios disponibles de fin de mes y asegurar inscripciones para diciembre.",
+      "mensaje_clave": "Última llamada de noviembre: agenda tu primera clase de Pilates sin costo y comienza a sentir tu espalda más ligera desde esta misma semana.",
+      "angulo": "Sentido de oportunidad antes de que termine el mes: no postergues tu bienestar para el próximo año.",
+      "puntos_clave": [
+        "Últimas sesiones de noviembre para redimir tu primera clase de prueba gratuita",
+        "Martes y jueves de 09:00 a 10:00 en Narvarte Poniente",
+        "Envía mensaje directo con la palabra 'PILATES' para apartar tu tapete"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Tapete desenrollándose suavemente en primer plano con luz de mañana y texto lateral destacado invitando a aprovechar la clase de bienvenida."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P17",
+      "fecha_sugerida": "2026-11-30",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Meta del mes: consolidar 10 personas por clase y bienvenida a nuevas inscritas",
+      "green_ref": null,
+      "tema_central": "constancia y comunidad",
+      "tema": "Historia de cierre mensual dando una cálida bienvenida a las nuevas alumnas incorporadas en noviembre y reconociendo la constancia del grupo matutino.",
+      "publico": "Rosa",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Reforzar el sentido de pertenencia y compromiso de las socias para mantener su asistencia durante el mes de diciembre.",
+      "mensaje_clave": "Cerramos noviembre más fuertes, con nuevas caras en el mat y la misma dedicación de cuidar cada articulación juntas.",
+      "angulo": "Comunidad, calidez y reconocimiento mutuo al cerrar el ciclo mensual.",
+      "puntos_clave": [
+        "Bienvenida a todas las que iniciaron su camino en Pilates este mes",
+        "Reconocimiento al grupo de martes y jueves por su disciplina y avance postural",
+        "Diciembre viene con más movimiento para seguir cuidándonos"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Manos de socias y coach guardando equipo de entrenamiento en armonía tras la sesión, con iluminación cálida y mensaje de agradecimiento."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    }
+  ]
+}

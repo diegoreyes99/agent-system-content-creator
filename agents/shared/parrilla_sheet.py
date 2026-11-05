@@ -20,7 +20,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from photo_text import photo_short, photo_text
+from photo_text import photo_short
 
 load_dotenv(Path(__file__).resolve().parent / ".env")
 
@@ -41,7 +41,7 @@ MAIN_COLUMNS = [
     "Tema",                 # Estratega (descriptive: what the piece covers and from which angle)
     "Público",              # Estratega: Ana, Rosa or Ambas
     "Mensaje clave",        # Estratega
-    "Foto",                 # Estratega: short version (status icon + idea)
+    "Idea visual",          # Estratega: image or graphic + the main visual idea (the direction, not the final image)
     "Estado",               # Dani (dropdown)
     "Comentarios de Dani",  # Dani
 ]
@@ -49,14 +49,14 @@ DETAIL_COLUMNS = [
     "Objetivo",             # Estratega: "<funnel stage> · <objective type> — <specific objective>"
     "Ángulo",               # Estratega
     "Puntos clave",         # Estratega: what the piece must say, with its data
-    "Foto sugerida",        # Estratega: full text (brief quote, shooting date) for the Diseñador
-    "Copy in",              # Copywriter (text on the image; may be empty)
+    "Copy in",              # Copywriter: text on the image, numbered per slide or screen
+    "Imagen por lámina",    # Copywriter: image of each slide or screen, same numbering as Copy in
     "Copy out",             # Copywriter (caption with its CTA; always has text)
     "Diseño",               # Diseñador
 ]
 COLUMNS = MAIN_COLUMNS + DETAIL_COLUMNS
 COLUMN_WIDTHS = [90, 110, 100, 95, 340, 80, 340, 300, 115, 260,   # main
-                 360, 300, 320, 380, 220, 320, 200]                 # detail
+                 360, 300, 320, 260, 320, 320, 200]                 # detail
 DETAIL_START = len(MAIN_COLUMNS)  # 0-based index of the first detail column
 
 STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED = "Pendiente", "Aprobado", "Cambios", "Descartado"
@@ -125,6 +125,13 @@ def _objective_text(piece: dict) -> str:
     return f"{head} — {detail}" if head and detail else head or detail
 
 
+def _numbered(value) -> str:
+    """A per-slide list as "1. …" lines (Copy in, Imagen por lámina); plain text as is."""
+    if isinstance(value, list):
+        return "\n".join(f"{i}. {x}" for i, x in enumerate(value, start=1))
+    return str(value or "")
+
+
 def _points_text(piece: dict) -> str:
     points = piece.get("puntos_clave")
     if isinstance(points, list):
@@ -147,8 +154,9 @@ def piece_to_row(piece: dict) -> list[str]:
         _STATUS_FROM_JSON.get(status, status if status in STATUS_OPTIONS else STATUS_PENDING),
         str(piece.get("comentarios_dani", "")),
         # detail (collapsed in the Sheet)
-        _objective_text(piece), str(piece.get("angulo", "")), _points_text(piece), photo_text(photo),
-        str(piece.get("copy_in", "")), str(piece.get("copy_out", "")), str(piece.get("diseno", "")),
+        _objective_text(piece), str(piece.get("angulo", "")), _points_text(piece),
+        _numbered(piece.get("copy_in")), _numbered(piece.get("imagen_por_lamina")),
+        str(piece.get("copy_out", "")), str(piece.get("diseno", "")),
     ]
 
 

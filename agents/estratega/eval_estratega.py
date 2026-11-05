@@ -172,7 +172,7 @@ async def run_eval(args, cases: list[dict]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Evalúa el Estratega contra el golden set.")
-    parser.add_argument("--prompt-version", default="v10")
+    parser.add_argument("--prompt-version", default="v11")
     parser.add_argument("--model-id", default=None)
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--reps", type=int, default=2)

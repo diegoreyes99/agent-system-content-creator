@@ -30,6 +30,12 @@ MAX_CHUNK_CHARS = 1500  # keeps each result readable without filling the context
 # image bank, approval times, budget). Injected in the prompt, not searched:
 # the RAG eval showed the search can miss it (question e03).
 OPERATIONAL_CONTEXT_ROUTE = "Brief de negocio › 13. Recursos y Limitaciones"
+# Sections of the identity manual that decide photo vs. graphic (prompt v11, decision 2026-11-05):
+# color proportion (60% neutral or photo, 30% gradient, "high moments") and photography direction.
+VISUAL_GUIDELINE_ROUTES = (
+    "Manual de identidad › 3. Sistema cromático › 3.3",
+    "Manual de identidad › 5. Sistema gráfico y estilo visual › 5.3",
+)
 
 
 def _nth_weekday(year: int, month: int, weekday: int, n: int) -> date:
@@ -141,6 +147,24 @@ def search_dopa_knowledge(question: str) -> dict:
         body = h["text"].split("\n", 1)[1] if "\n" in h["text"] else h["text"]
         results.append({"ruta": h["route"], "texto": body[:MAX_CHUNK_CHARS]})
     return {"status": "success", "question": question, "results": results}
+
+
+def _chunks_by_route(prefixes: tuple[str, ...]) -> list[str]:
+    """Chunks whose route starts with one of the prefixes, read straight from the chunks file."""
+    chunks_file = PROJECT_ROOT / "rag" / "data" / "chunks.jsonl"
+    if not chunks_file.exists():
+        return []
+    found = []
+    for line in chunks_file.read_text(encoding="utf-8").splitlines():
+        chunk = json.loads(line)
+        if chunk["text"].startswith(prefixes):
+            found.append(chunk["text"].strip())
+    return found
+
+
+def get_visual_guidelines() -> str:
+    """Identity-manual sections the Estratega uses to choose photo or graphic (with their routes)."""
+    return "\n\n".join(_chunks_by_route(VISUAL_GUIDELINE_ROUTES))
 
 
 def get_operational_context() -> str:

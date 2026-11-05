@@ -1,0 +1,500 @@
+{
+  "mes": "2026-11",
+  "objetivo_del_mes": "Convertir al menos a 10 usuarios activos de TotalPass y Fitpass a membresía directa en DOPA MX aprovechando el incentivo de inscripción sin costo ($599 de ahorro), mientras se fortalece la retención y pertenencia comunitaria de los 30 socios directos actuales.",
+  "estrategia_del_mes": "Noviembre se enfoca en resolver la objeción '¿para qué pagar membresía si ya entro con mi plataforma?' demostrando el valor diferencial de la membresía directa: seguimiento cercano del coach, evaluaciones de movilidad con Leo, aforo garantizado de 15 a 20 personas sin filas y verdadera vida de comunidad frente a sentirse solo 'de visita'. La parrilla distribuye la secuencia calentando primero con consideración técnica y diferenciación (T1, T2, G1), convocando al evento presencial de movilidad del 14 de noviembre como detonador relacional, desplegando la oferta comercial de inscripción gratis ($599) con testimonios reales (T3) y cerrando con urgencia hacia el 30 de noviembre. Se incorporan contenidos green (G1 y G2) para que la conversación no sea puramente transaccional y mantenga valor educativo sobre fuerza y técnica.",
+  "mezcla_por_etapa": {
+    "descubrimiento": 2,
+    "consideracion": 5,
+    "conversion": 5,
+    "fidelizacion": 4
+  },
+  "mezcla_de_objetivos": {
+    "Reconocimiento de marca": 2,
+    "Atención y confianza": 4,
+    "Interacción y comunidad": 1,
+    "Generación de leads": 2,
+    "Conversión": 3,
+    "Retención y lealtad": 4
+  },
+  "criterio_de_volumen": "Se establecieron 16 publicaciones totales (12 en feed y 4 historias) distribuidas a lo largo de las 4 semanas completas y los días hábiles clave de noviembre. En el feed se mantiene un ritmo óptimo de 2 a 3 piezas semanales de lunes a jueves (respetando los festivos del 2 y 16 de noviembre), complementado con historias estratégicas para soporte de eventos y urgencia de conversión. La mezcla sigue la pauta de 'Convertir usuarios de agregadores a membresía directa' (12.5% descubrimiento, 31.25% consideración, 31.25% conversión y 25% fidelización), dando peso específico a conversión para empujar la meta de 10 nuevos socios directos y a fidelización para cuidar a los 30 socios existentes.",
+  "supuestos": [
+    "Se asume que los usuarios de TotalPass y Fitpass siguen activamente la cuenta de Instagram de DOPA MX o son etiquetados por otros miembros en publicaciones de comunidad.",
+    "Se asume que el taller de movilidad del sábado 14 de noviembre servirá como punto de contacto personal para perfilar a los asistentes hacia la membresía directa.",
+    "El material gráfico y fotográfico se apoya en el banco existente y en fotografías de stock atléticas y cálidas, sin requerir fotos de socios que no han dado consentimiento ni revelando identidades reales protegidas."
+  ],
+  "fuentes_de_conocimiento": [
+    "Brief de negocio › 7. Público Actual vs. Público Deseado › ¿Quiénes son sus socios hoy? Perfil General",
+    "Brief de negocio › 6. Propuesta de Valor y Diferenciadores › ¿Qué hace único a DOPA MX frente a otros gimnasios?",
+    "Brief de negocio › 12. Retos y Dolores Actuales del Negocio",
+    "Manual de identidad › 1. Fundamentos de marca › A quién le hablamos",
+    "Manual de identidad › 1. Fundamentos de marca › Personalidad de marca",
+    "Buyer personas › FICHA DE BUYER PERSONA #1: ANA PÉREZ › F. Objeciones y Barreras de Compra",
+    "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › F. Objeciones y Barreras de Compra"
+  ],
+  "piezas": [
+    {
+      "id": "2026-11-P01",
+      "fecha_sugerida": "2026-11-03",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Oferta comercial activa: Inscripción sin costo (ahorro de $599) para usuarios de TotalPass/Fitpass del 3 al 30 de noviembre",
+      "green_ref": null,
+      "tema_central": "membresía directa",
+      "tema": "Anuncio de apertura del beneficio especial de noviembre para usuarios activos de TotalPass y Fitpass que desean dar el paso a membresía directa sin pagar cuota de inscripción.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Generar al menos 8 solicitudes de información vía mensaje directo o WhatsApp de usuarios de plataformas interesados en las opciones de membresía.",
+      "mensaje_clave": "Si ya entrenas en DOPA, este mes tu inscripción corre por nuestra cuenta al dar el paso a socio directo.",
+      "angulo": "Reconocer a quienes ya entrenan en casa y darles un beneficio exclusivo para formalizar su lugar en la tribu.",
+      "puntos_clave": [
+        "Inscripción sin costo ($0 en lugar de $599 de cuota regular) durante todo noviembre.",
+        "Exclusivo para usuarios con al menos una visita registrada en los últimos 3 meses.",
+        "Aplica para plan mensual ($1,850), trimestral ($5,400), semestral ($10,545) y anual ($19,980)."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Atleta en descanso sobre una banca de entrenamiento sosteniendo una botella de agua y sonriendo con calidez, con tipografía limpia en bloque que resalta la frase 'Tu lugar en DOPA, sin costo de inscripción'."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P02",
+      "fecha_sugerida": "2026-11-04",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T2",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "entrenamiento especializado",
+      "tema": "Carrusel comparativo que analiza la diferencia entre solo 'ir a usar instalaciones por plataforma' frente a seguir una metodología planificada en un centro boutique de fuerza híbrida.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Aclarar la duda común sobre por qué una membresía directa genera mejores resultados físicos que entrar por una app genérica, logrando al menos 25 guardados.",
+      "mensaje_clave": "Entrenar con un plan y un coach que te conoce marca la diferencia entre solo sudar y progresar de verdad.",
+      "angulo": "Comparación constructiva de experiencia: la libertad de una plataforma frente al valor transformador del acompañamiento continuo.",
+      "puntos_clave": [
+        "Las plataformas son una excelente puerta de entrada, pero no estructuran tu sobrecarga progresiva.",
+        "En un centro especializado, el coach ajusta el peso, vigila tu técnica y conoce tu historial sesión tras sesión.",
+        "Aforo estrictamente controlado a 15-20 personas por hora: cero filas y estaciones asignadas."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Serie de fotos en luz cálida mostrando en la portada a un usuario recibiendo indicaciones de corrección técnica por parte de un coach atento, con detalles de mancuernas ordenadas."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P03",
+      "fecha_sugerida": "2026-11-05",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G1",
+      "tema_central": "fuerza funcional",
+      "tema": "Carrusel educativo sobre los mitos del entrenamiento de fuerza en mujeres y adultos: por qué cargar peso no te hace 'enorme' sino resistente, ágil e independiente.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Atraer a nuevas usuarias de la zona Narvarte y romper el miedo a levantar barras pesadas, alcanzando más de 800 cuentas alcanzadas orgánicamente.",
+      "mensaje_clave": "El entrenamiento de fuerza es la mejor inversión para tu postura, tus articulaciones y tu energía diaria.",
+      "angulo": "Desmitificar el volumen muscular excesivo y asociar la fuerza con longevidad, salud ósea y bienestar cotidiano.",
+      "puntos_clave": [
+        "La fuerza no te vuelve tosca: estiliza, tonifica y protege la densidad ósea.",
+        "Facilita actividades diarias: cargar compras, subir escaleras y sentarse sin molestias.",
+        "El entrenamiento híbrido equilibra fuerza muscular con capacidad aeróbica real."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer adulta realizando un peso muerto rumano con mancuernas con postura impecable y expresión de enfoque sereno, en un entorno de gimnasio boutique iluminado con luz natural."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P04",
+      "fecha_sugerida": "2026-11-09",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T1",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "evaluación de movilidad",
+      "tema": "Carrusel formativo explicando cómo evaluar la movilidad con un fisioterapeuta previene dolores de espalda y hombros, optimizando cada levantamiento.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Posicionar la evaluación fisioterapéutica como un beneficio diferenciador de alto valor en DOPA, consiguiendo más de 20 comentarios o guardados.",
+      "mensaje_clave": "Para entrenar con fuerza primero necesitas moverte sin restricciones ni dolor.",
+      "angulo": "El puente entre la salud articular y el rendimiento físico: cómo una evaluación previa evita lesiones crónicas.",
+      "puntos_clave": [
+        "Aumentar flexibilidad y movilidad alivia el dolor articular y reduce la tensión acumulada.",
+        "Identificar asimetrías antes de cargar peso protege tu espalda baja y rodillas.",
+        "En DOPA, la visión de fisioterapia está integrada directamente en la metodología de entrenamiento."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Especialista asistiendo suavemente a una persona en una prueba de movilidad de cadera en colchoneta, transmitiendo cuidado clínico y profesionalismo cálido."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P05",
+      "fecha_sugerida": "2026-11-10",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Evaluación de movilidad con Leo (fisioterapeuta) el sábado 14 de noviembre",
+      "green_ref": null,
+      "tema_central": "taller de movilidad",
+      "tema": "Convocatoria formal y apertura de lugares para la Evaluación y Taller de Movilidad impartido por Leo en DOPA, exclusivo para socios y usuarios de plataformas.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Llenar los 12 lugares disponibles para la sesión del sábado 14 mediante registros directos por WhatsApp o web en 48 horas.",
+      "mensaje_clave": "Ven a conocer el rango de tus articulaciones y entrena mejor: taller gratuito de movilidad con nuestro fisioterapeuta Leo.",
+      "angulo": "Oportunidad presencial gratuita de vivir en persona el valor diferencial del equipo de coaches de DOPA.",
+      "puntos_clave": [
+        "Sábado 14 de noviembre de 09:30 a 11:00 en DOPA.",
+        "Cupo estrictamente topado a 12 participantes para atención personalizada.",
+        "Completamente gratuito para socios directos y usuarios de TotalPass/Fitpass; reserva al WhatsApp 56 5149 3075."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Entrenador guiando un estiramiento dinámico de movilidad torácica a un grupo reducido en un espacio amplio de entrenamiento, con acentos cálidos y la fecha del taller destacada en una caja lateral de color."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P06",
+      "fecha_sugerida": "2026-11-12",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Recordatorio de cupos para Evaluación de movilidad con Leo",
+      "green_ref": null,
+      "tema_central": "taller de movilidad",
+      "tema": "Historia de cuenta regresiva y aviso de últimos lugares disponibles para el taller y evaluación de movilidad del sábado.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Generación de leads",
+      "objetivo": "Completar los últimos lugares libres del cupo de 12 personas a través del sticker de enlace a WhatsApp.",
+      "mensaje_clave": "Quedan pocos lugares para la evaluación de movilidad con Leo este sábado. Reserva el tuyo antes de que se agoten.",
+      "angulo": "Urgencia y escasez justificada por el límite de aforo para asegurar atención técnica de calidad.",
+      "puntos_clave": [
+        "Sábado 14 de noviembre, 09:30 a 11:00.",
+        "Solo 12 lugares para garantizar corrección uno a uno.",
+        "Sticker de enlace directo a WhatsApp para confirmar asistencia."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Primer plano de un atleta colocando una banda de resistencia en el tobillo para trabajo articular, con sticker interactivo de cuenta regresiva y enlace sobre fondo oscuro."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P07",
+      "fecha_sugerida": "2026-11-14",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Cobertura presencial del Taller de Movilidad y comunidad",
+      "green_ref": null,
+      "tema_central": "comunidad DOPA",
+      "tema": "Secuencia de historias compartiendo el ambiente, los ejercicios y la energía vivida durante el taller de movilidad de la mañana del sábado.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Fomentar el sentido de pertenencia y orgullo comunitario, generando respuestas e interacciones de agradecimiento entre los asistentes.",
+      "mensaje_clave": "Así se vivió nuestra mañana de movilidad: cuerpo suelto, técnica corregida y la mejor vibra en comunidad.",
+      "angulo": "Celebración de la experiencia compartida y visibilidad del valor humano de los entrenadores.",
+      "puntos_clave": [
+        "Agradecimiento a los socios directos y usuarios de plataformas que compartieron la sesión.",
+        "Muestra de ajustes posturales y pruebas de rango articular supervisadas.",
+        "Cierre invitando a integrar lo aprendido en sus clases regulares de la semana."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Momento espontáneo al término de la sesión donde varios participantes ríen y chocan los puños en colchonetas tras completar la práctica, con iluminación suave y cálida."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P08",
+      "fecha_sugerida": "2026-11-17",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T3",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "experiencia de socia",
+      "tema": "Narrativa testimonial en carrusel que relata el proceso de transición de una usuaria: cómo pasó de sentirse 'visitante' con app a ser parte fundamental del grupo con membresía directa.",
+      "publico": "Ana",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Empatizar con la sensación de los 55 usuarios de agregadores que se sienten 'de visita' e inspirarles a buscar el arraigo de la membresía.",
+      "mensaje_clave": "Dejar de sentirte de visita y saberte en tu casa transforma completamente la constancia de tus entrenamientos.",
+      "angulo": "Pertenencia y seguimiento personalizado frente al anonimato de acudir esporádicamente mediante una aplicación.",
+      "puntos_clave": [
+        "El cambio comenzó cuando el coach conocía sus metas y la esperaba cada mañana.",
+        "Poder reservar con anticipación sin depender de cupos limitados por terceros.",
+        "Integrarse a los grupos de entrenamiento para retos y eventos de la comunidad."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Retrato de espaldas y perfil de una mujer atlética de unos 35 años colocándose magnesia en las manos frente a la barra, con atmósfera de concentración y pertenencia en un box limpio."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P09",
+      "fecha_sugerida": "2026-11-18",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Voz de la comunidad: socia que llegó por plataforma, logró dominadas asistidas y su primer 10K",
+      "green_ref": null,
+      "tema_central": "progreso real",
+      "tema": "Post de celebración de una victoria real de la comunidad: cómo la constancia y la progresión llevan a una socia de no poder colgarse a sus primeras dominadas y a correr 10 kilómetros.",
+      "publico": "Ana",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Celebrar los logros alcanzados dentro del estudio reforzando el valor de la metodología DOPA, estimulando al menos 30 comentarios de apoyo entre la comunidad.",
+      "mensaje_clave": "El verdadero progreso ocurre cuando no te rindes y tienes a un equipo que cree en tu potencial más que tú misma.",
+      "angulo": "Inspiración deportiva auténtica: el poder de la progresión metodológica paso a paso.",
+      "puntos_clave": [
+        "Hace 6 meses llegó buscando solo una clase funcional por aplicación.",
+        "Con constancia y técnica supervisada hoy domina ejercicios de tracción y completó su primera carrera de 10K.",
+        "En DOPA los resultados no se miden en calorías quemadas, sino en capacidades conquistadas."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Foto de una mujer ejecutando una dominada asistida en rack con banda elástica, mostrando tensión muscular en espalda y hombros con luz de atardecer filtrada."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P10",
+      "fecha_sugerida": "2026-11-19",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Temas a tocar: Qué incluye la membresía directa (acceso ilimitado, coach, eventos, opción nutrición) y ahorro de $599",
+      "green_ref": null,
+      "tema_central": "membresía directa",
+      "tema": "Carrusel transparente y detallado con todo lo que incluye ser socio de membresía directa en DOPA MX y por qué te conviene activar tu pase este mes.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Detonar al menos 5 cierres de membresía directa antes del fin de semana mediante el enlace al WhatsApp de recepción.",
+      "mensaje_clave": "Más que un acceso, tu membresía directa es tu pase integral a una metodología con seguimiento, eventos y nutrición.",
+      "angulo": "Claridad y transparencia en el retorno de valor de cada peso invertido en tu bienestar.",
+      "puntos_clave": [
+        "Acceso ilimitado a todas las sesiones de lunes a viernes (06:00-10:00 y 18:30-20:30) y sábados (08:00-09:30).",
+        "Seguimiento personalizado de técnica, evaluaciones de movilidad y acceso preferencial a eventos y retos (Deka, Cosmic Run).",
+        "Opción integral de Membresía con Nutrición ($2,999) y beneficio de inscripción gratis ($599 de ahorro) vigente hasta el 30 de noviembre."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Composición limpia con foto base de un espacio de entrenamiento con barras olímpicas ordenadas y caja de texto con diseño editorial nítido listando los pilares de la membresía."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P11",
+      "fecha_sugerida": "2026-11-20",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Voz de la comunidad: Dejar de sentirse de visita y unirse a la tribu",
+      "green_ref": null,
+      "tema_central": "comunidad DOPA",
+      "tema": "Historia interactiva con sticker de encuesta dirigida a usuarios de plataformas preguntando si ya se sienten parte del equipo o aún sienten que vienen de paso.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Interacción y comunidad",
+      "objetivo": "Abrir conversaciones en DM con usuarios de agregadores para resolver sus dudas y conectar con ellos personalmente, logrando más de 40 respuestas.",
+      "mensaje_clave": "En DOPA nadie entrena solo ni como un número más: aquí eres parte de la tribu desde el primer día.",
+      "angulo": "Cercanía y empatía comunitaria invitando a la conversación sincera.",
+      "puntos_clave": [
+        "¿Vienes por TotalPass o Fitpass pero ya tienes tu horario fijo de la semana?",
+        "Sticker de encuesta: 'Ya me siento de la tribu' vs 'Todavía me siento de visita'.",
+        "Respuesta por DM explicando cómo sumarse a los grupos de eventos y dinámicas."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Detalle de dos personas chocando las manos amistosamente después de una serie pesada en piso de hule, con sticker de interacción centrado."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P12",
+      "fecha_sugerida": "2026-11-24",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Diferenciadores del negocio y Buyer Persona Ana: espacio seguro sin juicios y aforo limitado a 15-20 personas",
+      "green_ref": null,
+      "tema_central": "espacio seguro",
+      "tema": "Post sobre la cultura de DOPA: un espacio donde puedes ponerte tu top, sudar al máximo y exigirte sin miradas incómodas, juicios ni filas para los aparatos.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Atraer a profesionistas de 28 a 42 años que buscan un estudio serio, eficiente y sin saturación, generando al menos 50 compartidos.",
+      "mensaje_clave": "Entrenar sin filas, sin miradas incómodas y en exactamente 60 minutos: así se vive DOPA.",
+      "angulo": "El valor del espacio seguro, la eficiencia del tiempo y el respeto al entrenamiento enfocado.",
+      "puntos_clave": [
+        "Aforo estrictamente limitado a 15-20 personas por hora: sin turnos ni esperas.",
+        "Un entorno respetuoso donde la única competencia es contra tus marcas anteriores.",
+        "Sesiones diseñadas con intención atlética para aprovechar cada minuto del día."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer en top deportivo concentrada ajustando los seguros de una barra con discos, en un ambiente iluminado de forma elegante y cálida, reflejando seguridad y determinación."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P13",
+      "fecha_sugerida": "2026-11-25",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Lo que aprendimos: Coaches en acción (Dani, Ámbar, Leo) y seguimiento personalizado que genera retención",
+      "green_ref": null,
+      "tema_central": "coaches DOPA",
+      "tema": "Carrusel de presentación del rol de los coaches en piso: la diferencia entre alguien que solo pone un cronómetro y entrenadores que corrigen tu postura en cada repetición.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Reforzar la confianza de los socios directos actuales y consolidar su lealtad hacia el equipo de entrenadores.",
+      "mensaje_clave": "Un buen coach no te cansa por cansarte; te enseña a moverte mejor para que seas más fuerte cada mes.",
+      "angulo": "Autoridad técnica y calidad humana del equipo de coacheo de DOPA.",
+      "puntos_clave": [
+        "Correcciones posturales en vivo adaptadas tanto para quien busca rendimiento como para quien cuida su espalda.",
+        "Programación estructurada por bloques semanales, evitando la improvisación.",
+        "Un equipo multidisciplinario con especialidad en fuerza híbrida y fisioterapia."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Coach atento en cuclillas al lado de un socio que realiza un remo con barra, señalando con la mano la alineación correcta de la espalda, en encuadre cálido y profesional."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P14",
+      "fecha_sugerida": "2026-11-26",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G2",
+      "tema_central": "técnica y prevención",
+      "tema": "Carrusel técnico enfocado en cómo ajustar la profundidad y carga en la sentadilla para proteger rodillas y cadera según tu fisonomía y edad.",
+      "publico": "Rosa",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Eliminar la objeción del miedo a lesionarse en mujeres de más de 45 años y principiantes, acumulando más de 35 guardados.",
+      "mensaje_clave": "No existe un solo tipo de sentadilla: el ejercicio se adapta a tu cuerpo, no tu cuerpo al ejercicio.",
+      "angulo": "Seguridad biomecánica y accesibilidad técnica sin importar la experiencia previa.",
+      "puntos_clave": [
+        "Ajustes de apertura de pies y uso de elevación en talones si falta movilidad de tobillo.",
+        "Uso de caja o banco para aprender el patrón sin miedo a desbalancearse.",
+        "Cómo el coach supervisa las progresiones técnicas para garantizar cero dolor articular."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer adulta sonriendo mientras ejecuta una sentadilla controlada sobre un cajón con una mancuerna ligera al pecho, mostrando una postura cómoda y asistida."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P15",
+      "fecha_sugerida": "2026-11-27",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Prioridad secundaria y oferta activa: Reforzar permanencia y aviso de último fin de semana de la promoción",
+      "green_ref": null,
+      "tema_central": "comunidad DOPA",
+      "tema": "Secuencia de historias agradeciendo a los socios directos actuales y recordando que quedan solo 3 días para que usuarios de plataformas aprovechen la inscripción gratis de $599.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Reconocer a la base de socios directos que hacen posible el estudio y generar urgencia final en los usuarios de agregadores indecisos.",
+      "mensaje_clave": "Gracias a quienes hacen de DOPA su casa todos los días; si aún entrenas por plataforma, este fin de semana tienes tu lugar esperándote sin inscripción.",
+      "angulo": "Agradecimiento sincero a la comunidad fundadora y llamado cálido de bienvenida final.",
+      "puntos_clave": [
+        "Mención especial a los 30 socios directos que lideran la cultura de superación en cada clase.",
+        "Recordatorio de vigencia: la inscripción sin costo ($599 de descuento) termina este lunes 30.",
+        "Sticker de mensaje directo para solicitar el cambio de modalidad en 2 minutos."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Collage dinámico de historias con fotos espontáneas de clases grupales matutinas con sonrisas y esfuerzo compartido, con tipografía dorada destacando el agradecimiento."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P16",
+      "fecha_sugerida": "2026-11-30",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Oferta comercial: Cierre de la promoción de cambio a membresía directa (30 de noviembre)",
+      "green_ref": null,
+      "tema_central": "membresía directa",
+      "tema": "Publicación de cierre definitivo de la promoción de noviembre: último día para integrarse como socio directo de DOPA ahorrando los $599 de inscripción.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Concretar las últimas 3 conversiones para alcanzar o superar la meta mensual de 10 nuevos socios directos.",
+      "mensaje_clave": "Hoy es el último día para dar el paso a membresía directa con inscripción totalmente gratis ($599 de ahorro).",
+      "angulo": "Cierre de ciclo y llamado directo a la acción: consolida tu compromiso con tu salud antes de que termine el mes.",
+      "puntos_clave": [
+        "Últimas horas para aprovechar la inscripción sin costo en planes mensual, trimestral, semestral o anual.",
+        "Acceso ilimitado garantizado a todas las sesiones grupales de fuerza y acondicionamiento.",
+        "Escribe al WhatsApp 56 5149 3075 o visita dopa.mx hoy antes de las 21:00 hrs."
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Composición de impacto sobre base fotográfica oscura y cálida con un atleta mirando al frente con expresión resuelta, con tipografía en bloque degradado que anuncia 'Último día: tu inscripción gratis'."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    }
+  ]
+}

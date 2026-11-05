@@ -1,0 +1,468 @@
+{
+  "mes": "2026-11",
+  "objetivo_del_mes": "Reactivar a socios que redujeron o pausaron su asistencia tras la competencia Deka y el puente de Día de Muertos, eliminando la culpa y el miedo a haber perdido condición física, mientras se moviliza a la comunidad actual para atraer a un amigo al Cosmic Run de noviembre.",
+  "estrategia_del_mes": "La estrategia concentra el 46.7% del esfuerzo en fidelización y reactivación mediante validación empática, ciencia de memoria muscular (T1 y T2) y el acompañamiento biomecánico del equipo de coaches, disipando la pena de regresar. En paralelo, se construye una secuencia gradual para el Cosmic Run del 21 de noviembre (descubrimiento, consideración y conversión) incentivando que cada socio traiga a un amigo gratis. Se incorporan contenidos green de descanso (G3) y hábitos (G4) junto a un caso de éxito de movilidad articular para ofrecer variedad y reforzar la confianza sin saturar comercialmente la parrilla.",
+  "mezcla_por_etapa": {
+    "descubrimiento": 2,
+    "consideracion": 4,
+    "conversion": 2,
+    "fidelizacion": 7
+  },
+  "mezcla_de_objetivos": {
+    "Reconocimiento de marca": 2,
+    "Atención y confianza": 3,
+    "Interacción y comunidad": 1,
+    "Conversión": 2,
+    "Retención y lealtad": 7
+  },
+  "criterio_de_volumen": "Se establecen 15 piezas en total (10 posts/carruseles en feed y 5 historias) distribuidas de forma continua respetando el límite operativo de producción y las fechas a evitar (lunes 2 y lunes 16 de noviembre). La distribución por etapas sigue de forma cercana el estándar para 'Retener o reactivar socios' (referencia 15% descubrimiento, 25% consideración, 15% conversión y 45% fidelización), asignando 7 piezas a fidelización (46.7%), 4 a consideración (26.7%), 2 a conversión (13.3%) y 2 a descubrimiento (13.3%). Se asegura que todas las semanas mantengan entre 2 y 4 publicaciones en feed de lunes a viernes.",
+  "supuestos": [
+    "Se asume que la hidratación con Habits para el Cosmic Run del 21 de noviembre queda confirmada previo a la publicación de la semana 4.",
+    "Se asume que los socios directos cuentan con acceso a WhatsApp de DOPA para confirmar su asistencia y registrar a sus amigos de forma directa.",
+    "El horario en los días feriados se comunicará oportunamente vía historias de acuerdo con la confirmación de la dirección general."
+  ],
+  "fuentes_de_conocimiento": [
+    "Buyer personas › RESUMEN COMPARATIVO DE PERSONAS (parte 1 de 2)",
+    "Buyer personas › FICHA DE BUYER PERSONA #2: ROSA MARTÍNEZ › F. Objeciones y Barreras de Compra",
+    "Brief de negocio › 1. Historia y Origen del Negocio › Hitos importantes en su trayectoria",
+    "Brief de negocio › 2. Misión, Visión y Valores › Visión — Hacia dónde van"
+  ],
+  "piezas": [
+    {
+      "id": "2026-11-P01",
+      "fecha_sugerida": "2026-11-03",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Fechas para comunicar: Martes 3 de noviembre: regreso después del puente y horarios regulares",
+      "green_ref": null,
+      "tema_central": "regreso al entrenamiento",
+      "tema": "Historia de bienvenida de regreso tras el puente de Día de Muertos recordando horarios habituales y validando que en DOPA se retoma el ritmo con gusto y sin reproches.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Reactivar la asistencia presencial desde el primer día hábil tras el puente, logrando que al menos 15 socios confirmen o asistan a su clase de turno.",
+      "mensaje_clave": "Aquí no juzgamos tus días de descanso: tus estaciones y tu comunidad te esperan para retomar tu ritmo con energía.",
+      "angulo": "Bienvenida cálida y cero culpas para reiniciar la semana.",
+      "puntos_clave": [
+        "Reanudación de horarios regulares: turnos matutinos de 06:00 a 10:00 y vespertinos de 18:30 a 20:30",
+        "Recordatorio de que una pausa festiva no borra tu constancia",
+        "Invitación directa a reservar tu lugar en dopa.mx o WhatsApp"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Estación de entrenamiento funcional ordenada con mancuernas y kettlebells bajo luz matutina cálida, para transmitir apertura y preparación del espacio."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P02",
+      "fecha_sugerida": "2026-11-04",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T2",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "regreso al entrenamiento",
+      "tema": "Post reflexivo que aborda la pena y la frustración que sienten los socios al regresar tras varias semanas sin entrenar, normalizando las dudas y devolviendo la confianza.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Desactivar el freno emocional de 'me da pena volver' logrando al menos 20 guardados y 5 comentarios de socios compartiendo su sentir.",
+      "mensaje_clave": "Sentir que te cuesta volver es completamente normal; lo valioso no es no haber parado, sino regresar a un espacio que te cuida.",
+      "angulo": "Validar la vulnerabilidad y desmontar la exigencia destructiva.",
+      "puntos_clave": [
+        "Tener dudas sobre si podrás rendir igual tras una pausa es un proceso mental natural",
+        "La memoria muscular está intacta aunque el primer día se sienta retador",
+        "En DOPA nadie te juzga por los días que faltaste: cada regreso es celebrado"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Atleta femenina sentada en una banca atándose las agujetas con semblante reflexivo pero determinado, para transmitir autenticidad y el momento previo a retomar el entrenamiento."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P03",
+      "fecha_sugerida": "2026-11-05",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "tema_aprobado",
+      "tema_ref": "T1",
+      "elemento_del_brief": null,
+      "green_ref": null,
+      "tema_central": "regreso al entrenamiento",
+      "tema": "Carrusel educativo que explica la ciencia de la memoria muscular y adaptaciones neuromusculares: cómo el cuerpo recupera entre el 80% y 90% de su nivel en pocas semanas.",
+      "publico": "Ambas",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Educar a la comunidad y alcanzar nuevas cuentas interesadas en entrenamiento con base fisiológica, alcanzando más de 30 compartidos y 40 guardados.",
+      "mensaje_clave": "Tu esfuerzo previo no desapareció: la memoria muscular y tu sistema neuromuscular te permiten recuperar tu fuerza en 4 a 8 semanas progresivas.",
+      "angulo": "Fisiología del ejercicio explicada de forma clara y esperanzadora.",
+      "puntos_clave": [
+        "Los núcleos celulares ganados durante el entrenamiento de fuerza permanecen en las fibras musculares",
+        "Con un regreso a frecuencia moderada, recuperas del 80% al 90% de tu condición física en 4 a 8 semanas",
+        "La clave es no exigirle al cuerpo el peso máximo el primer día, sino reactivar los patrones de movimiento"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Persona realizando remo con mancuerna con técnica impecable bajo iluminación cálida de estudio, para reflejar concentración y estímulo de fuerza bien ejecutado."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P04",
+      "fecha_sugerida": "2026-11-09",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Victoria reciente: Socia de 52 años recuperó la movilidad del hombro trabajando con Leo y ya entrena empuje sin dolor",
+      "green_ref": null,
+      "tema_central": "salud articular",
+      "tema": "Post de testimonio enfocado en la recuperación de movilidad de hombro de una socia de 52 años gracias al trabajo guiado con el coach Leo, demostrando que entrenar fuerza cura y no lastima.",
+      "publico": "Rosa",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Reforzar el sentido de orgullo y pertenencia de la comunidad madura, detonando al menos 15 comentarios de felicitación y 3 consultas por DM sobre adaptación de lesiones.",
+      "mensaje_clave": "Con la técnica adecuada y acompañamiento fisioterapéutico, volver a moverte sin dolor y entrenar fuerza a los 50+ es completamente posible.",
+      "angulo": "Victoria comunitaria real: del dolor articular a la fuerza conquistada.",
+      "puntos_clave": [
+        "A los 52 años, recuperar la movilidad de hombro y volver a hacer ejercicios de empuje sin molestias",
+        "La importancia de entrenar bajo la guía de coaches con enfoque biomecánico y de fisioterapia",
+        "La fuerza no es exclusiva de jóvenes ni de atletas: es medicina preventiva para la longevidad"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer madura de unos 50 años sonriendo satisfecha tras completar un ejercicio de press con mancuerna liviana, acompañada por la mirada atenta de su instructor."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P05",
+      "fecha_sugerida": "2026-11-10",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Temas que quieres tocar: Cómo regresar después de dos o tres semanas sin entrenar sin lastimarte: progresiones y regresiones, con Leo como voz técnica",
+      "green_ref": null,
+      "tema_central": "regreso al entrenamiento",
+      "tema": "Carrusel técnico con la voz del coach Leo explicando progresiones y regresiones prácticas para reincorporarse al ejercicio de fuerza tras 2 a 3 semanas de inactividad de forma segura.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Disipar el miedo a lastimarse en el retorno al entrenamiento, logrando al menos 35 guardados y motivando a 5 socios inactivos a programar su reincorporación.",
+      "mensaje_clave": "No necesitas volver a tu peso máximo para que el entrenamiento cuente: adaptar el ejercicio es la marca de quien entrena con inteligencia.",
+      "angulo": "Criterio técnico de fisioterapia aplicada al entrenamiento diario.",
+      "puntos_clave": [
+        "Regresiones útiles: ajustar el rango de movimiento o usar apoyo en la sentadilla antes de cargar barra",
+        "Control del volumen: comenzar con series de aclimatación y cargas submáximas durante los primeros 7 a 10 días",
+        "La supervisión del coach en piso para corregir postura y seleccionar la variante adecuada a tu estado actual"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Entrenador en postura de corrección técnica señalando la posición de la cadera de una persona en sentadilla asistida, transmitiendo cuidado profesional y atención minuciosa."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P06",
+      "fecha_sugerida": "2026-11-12",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": null,
+      "green_ref": "G3",
+      "tema_central": "recuperación y descanso",
+      "tema": "Post informativo sobre recuperación activa que enseña a distinguir entre el cansancio muscular natural tras retomar el ejercicio y una señal de alerta articular que requiere pausa.",
+      "publico": "Ana",
+      "etapa_embudo": "descubrimiento",
+      "tipo_objetivo": "Reconocimiento de marca",
+      "objetivo": "Posicionar a DOPA como referente de entrenamiento consciente y seguro, incrementando el alcance orgánico en un 15% respecto a posts informativos estándar.",
+      "mensaje_clave": "Sentir que tus músculos trabajaron es parte del progreso; aprender a escuchar a tus articulaciones es lo que te mantiene entrenando toda la vida.",
+      "angulo": "Educación corporal para entrenar duro sin romperte.",
+      "puntos_clave": [
+        "Diferencia entre fatiga muscular difusa a las 24-48 horas y un pinchazo articular agudo",
+        "El papel fundamental de la hidratación y el sueño de calidad en la reparación del tejido",
+        "Cómo el descanso planificado potencia tus marcas de fuerza en lugar de frenarlas"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Atleta descansando en el suelo sobre un tapete haciendo movilidad de cadera con respiración profunda, en un entorno sereno con luz natural."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P07",
+      "fecha_sugerida": "2026-11-13",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Cosmic Run de noviembre (sábado 21 de noviembre, 07:00, gratis para socios y amigo invitado, calentamiento de Ámbar)",
+      "green_ref": null,
+      "tema_central": "Cosmic Run",
+      "tema": "Carrusel de lanzamiento de la edición de noviembre del Cosmic Run, anunciando la ruta de 5 km, el calentamiento musical guiado por Ámbar y la dinámica de invitar a un amigo gratis.",
+      "publico": "Ambas",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Interacción y comunidad",
+      "objetivo": "Generar entusiasmo en la comunidad y provocar que al menos 25 socios etiqueten en comentarios al amigo que planean llevar a correr o caminar.",
+      "mensaje_clave": "El entrenamiento sabe mejor cuando lo compartes: corre, trota o camina 5 km con tu tribu y trae a tu compañero favorito sin costo.",
+      "angulo": "Comunidad, running urbano accesible y fiesta de movimiento para todos los niveles.",
+      "puntos_clave": [
+        "Sábado 21 de noviembre a las 07:00 am; punto de salida y meta en DOPA",
+        "Distancia de 5 km accesible para todos: corriendo a tu ritmo o caminando",
+        "Calentamiento especial con música a cargo de la coach Ámbar antes de arrancar",
+        "Totalmente gratis para socios de DOPA y su amigo invitado"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Grupo diverso de corredores trotando juntos por una avenida arbolada en las primeras luces de la mañana, riendo y chocando las manos para transmitir compañerismo."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P08",
+      "fecha_sugerida": "2026-11-17",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Cosmic Run de noviembre - Cupo 30 personas, reservas por WhatsApp 56 5149 3075 o dopa.mx",
+      "green_ref": null,
+      "tema_central": "Cosmic Run",
+      "tema": "Post de convocatoria directa al Cosmic Run del sábado 21 de noviembre, destacando el límite de 30 lugares e invitando a apartar el cupo doble por WhatsApp o plataforma.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Llenar los 30 cupos disponibles para el Cosmic Run registrando al menos 15 parejas (socio + amigo) a través del enlace de WhatsApp o dopa.mx.",
+      "mensaje_clave": "Solo 30 lugares disponibles para rodearte de la mejor energía este sábado: aparta tu lugar y el de tu acompañante antes de que se agoten.",
+      "angulo": "Llamado a la acción claro con sentido de cupo reservado y experiencia compartida.",
+      "puntos_clave": [
+        "Cupo topado estrictamente a 30 participantes para asegurar una experiencia cuidada",
+        "Salida 07:00 am en DOPA para terminar a tiempo de la clase de las 08:00 am",
+        "Aparta tu lugar enviando un WhatsApp al 56 5149 3075 o directo en dopa.mx"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Dos personas ajustándose los cordones de sus tenis listas para correr sobre el asfalto al amanecer, con actitud de complicidad y listas para el desafío."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P09",
+      "fecha_sugerida": "2026-11-18",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "green",
+      "tema_ref": null,
+      "elemento_del_brief": "Meta: Recuperar el promedio de 4 días por semana entre los socios directos",
+      "green_ref": "G4",
+      "tema_central": "constancia y hábitos",
+      "tema": "Carrusel práctico sobre cómo blindar una frecuencia de 4 entrenamientos por semana adaptándola a jornadas laborales demandantes, sin depender de la motivación momentánea.",
+      "publico": "Ana",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Fomentar el hábito de reservar con anticipación los 4 días de entrenamiento semanales, incrementando las reservas en la app en un 20%.",
+      "mensaje_clave": "La constancia no se trata de tener tiempo libre, sino de proteger 60 minutos en tu agenda para tu salud física y mental.",
+      "angulo": "Estrategias de productividad y disciplina para profesionistas con agenda saturada.",
+      "puntos_clave": [
+        "Planificar tus sesiones fijas al inicio de la semana como una reunión de trabajo inamovible",
+        "Aprovechar la puntualidad de sesiones exactas de 60 minutos sin filas ni esperas de aparatos",
+        "La regla de los 4 días: sostener el ritmo es más fácil cuando tu sesión ya está reservada"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Mujer joven profesionista en ropa deportiva revisando su reloj inteligente con sonrisa de satisfacción en un espacio sobrio y funcional tras terminar su entrenamiento."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P10",
+      "fecha_sugerida": "2026-11-19",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Cosmic Run - Qué llevar (tenis, agua) y aliados (Habits hidratación)",
+      "green_ref": null,
+      "tema_central": "Cosmic Run",
+      "tema": "Historia de cuenta regresiva para el Cosmic Run con la lista de verificación indispensable (tenis, termo de agua) y el adelanto de la hidratación de cortesía con Habits al cruzar la meta.",
+      "publico": "Ambas",
+      "etapa_embudo": "conversion",
+      "tipo_objetivo": "Conversión",
+      "objetivo": "Cerrar los últimos 5 cupos vacantes y asegurar que los inscritos confirmen su asistencia con el sticker interactivo de la historia.",
+      "mensaje_clave": "Estamos a 48 horas de correr juntos: prepara tus tenis, tu botella y a tu amigo para una mañana increíble con Habits esperándonos al llegar.",
+      "angulo": "Anticipación, logística clara y confirmación de asistencia.",
+      "puntos_clave": [
+        "Cuenta regresiva: sábado 07:00 am en DOPA",
+        "Checklist: tenis para correr, termo para rellenar y ropa cómoda para el calentamiento musical",
+        "Hidratación y recuperación patrocinada al llegar gracias a nuestros aliados de Habits"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Termo de agua deportivo y tenis para correr colocados sobre el suelo de madera iluminado por luz matutina, listos para la carrera."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P11",
+      "fecha_sugerida": "2026-11-21",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Evento 1: Cosmic Run de noviembre - Sábado 21 de noviembre, 07:00",
+      "green_ref": null,
+      "tema_central": "Cosmic Run",
+      "tema": "Cobertura en historias de la energía del Cosmic Run mostrando la salida en grupo, el ritmo colectivo y la convivencia de socios con sus invitados al cruzar la meta.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Celebrar a los asistentes y generar más de 20 menciones y compartidos orgánicos en historias por parte de socios e invitados.",
+      "mensaje_clave": "Así se vive la comunidad en DOPA: kilómetros compartidos, risas y la satisfacción de empezar el sábado en movimiento.",
+      "angulo": "Comunidad viva, logro colectivo y orgullo de pertenencia.",
+      "puntos_clave": [
+        "Arranque de la ruta con la mejor vibra y música",
+        "El esfuerzo compartido de los 5 km caminando o corriendo",
+        "Bienvenida y brindis de hidratación con Habits al volver a casa en DOPA"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Grupo en ropa deportiva celebrando al aire libre con botellas de agua en alto y rostros sonrientes tras cruzar la meta al amanecer."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P12",
+      "fecha_sugerida": "2026-11-24",
+      "canal": "instagram",
+      "formato": "carrusel",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Prioridad secundaria y Evento 1: Recapitulación del Cosmic Run y acogida a los nuevos amigos invitados",
+      "green_ref": null,
+      "tema_central": "Cosmic Run",
+      "tema": "Carrusel de recapitulación comunitaria del Cosmic Run celebrando la participación de socios y sus amigos invitados, agradeciendo a Habits y reforzando los lazos de tribu.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Mantener alta la temperatura emocional del evento y motivar a al menos 8 de los amigos invitados a preguntar por la membresía directa o su clase de fuerza.",
+      "mensaje_clave": "El sábado demostramos que cuando nos movemos juntos, llegamos más lejos: gracias por abrir la puerta de DOPA a sus amigos.",
+      "angulo": "Celebración de la tribu, gratitud y apertura a nuevos miembros.",
+      "puntos_clave": [
+        "Agradecimiento a los más de 25 participantes que hicieron vibrar las calles de Narvarte",
+        "Mención especial a los amigos que vinieron por primera vez y se sumaron al ritmo de DOPA",
+        "Agradecimiento a Habits por hidratar y cuidar la recuperación de nuestra comunidad"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Foto coral de un grupo deportivo sonriendo y abrazándose tras una sesión matutina de running, transmitiendo calidez comunitaria y sensación de logro."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P13",
+      "fecha_sugerida": "2026-11-25",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Público Rosa y Ana: Invitar a su mamá, abuela o tía a un espacio seguro y sin juicios",
+      "green_ref": null,
+      "tema_central": "comunidad entre generaciones",
+      "tema": "Post dirigido a Ana invitándola a traer a su mamá o familiar madura (perfil Rosa) a entrenar en DOPA, destacando la atención personalizada y el ambiente seguro y libre de intimidaciones.",
+      "publico": "Ana",
+      "etapa_embudo": "consideracion",
+      "tipo_objetivo": "Atención y confianza",
+      "objetivo": "Generar 10 mensajes directos de hijas interesadas en regalarle o coordinar una sesión de adaptación a su mamá en DOPA.",
+      "mensaje_clave": "El mejor regalo que puedes compartir con quien más quieres es un espacio donde entrenar fuerza sea seguro, guiado y sin juicios.",
+      "angulo": "Cuidado familiar, complicidad intergeneracional y desmitificación del gimnasio rudo.",
+      "puntos_clave": [
+        "Un espacio donde tu mamá no se sentirá intimidada ni fuera de lugar",
+        "Coaches con ojo clínico que adaptan cada ejercicio a su rango de movilidad y salud articular",
+        "Entrenar fuerza en familia como la mejor inversión para su independencia y vitalidad"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Dos mujeres de distintas generaciones (alrededor de 35 y 55 años) compartiendo una sonrisa cómplice durante una pausa de estiramiento en un estudio cálido."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P14",
+      "fecha_sugerida": "2026-11-26",
+      "canal": "instagram",
+      "formato": "post",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Prioridad principal: Reactivar a los socios que dejaron de venir desde mediados de octubre",
+      "green_ref": null,
+      "tema_central": "regreso al entrenamiento",
+      "tema": "Post cálido y directo dirigido a los socios que llevan semanas ausentes, asegurándoles que su lugar está listo y que volver solo toma dar el primer paso por la puerta.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Completar la meta del mes logrando que los últimos socios pendientes reactiven su asistencia y reserven sus clases para cerrar noviembre.",
+      "mensaje_clave": "Tu estación de trabajo, tu coach y tu lugar en el equipo siguen aquí esperándote: regresa hoy a tu espacio seguro.",
+      "angulo": "Pertenencia incondicional y puerta abierta sin cuestionamientos.",
+      "puntos_clave": [
+        "No necesitas esperar al lunes ni a enero para reencontrarte con tu rutina",
+        "Ven a tu propio ritmo: una sola sesión basta para recuperar la sensación de estar en casa",
+        "Tu lugar en la pizarra y en la comunidad siempre está reservado para ti"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Espacio de entrenamiento impecable con iluminación suave enfocando una pizarra con nombres y una barra en el soporte, transmitiendo bienvenida y expectativa positiva."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    },
+    {
+      "id": "2026-11-P15",
+      "fecha_sugerida": "2026-11-30",
+      "canal": "instagram",
+      "formato": "historia",
+      "origen_pieza": "brief",
+      "tema_ref": null,
+      "elemento_del_brief": "Prioridad principal: Recuperar el promedio de 4 días por semana y cierre de mes",
+      "green_ref": null,
+      "tema_central": "cierre de mes",
+      "tema": "Historia de cierre mensual reconociendo la constancia de los socios que volvieron a su ritmo de 4 días semanales y dando una bienvenida entusiasta al último mes del año.",
+      "publico": "Ambas",
+      "etapa_embudo": "fidelizacion",
+      "tipo_objetivo": "Retención y lealtad",
+      "objetivo": "Reconocer el esfuerzo colectivo del mes y motivar a que los socios programen su primera semana de diciembre, logrando más de 30 reacciones de apoyo.",
+      "mensaje_clave": "Noviembre fue el mes de regresar y sostenernos juntos: cerramos fuertes y listos para disfrutar diciembre con la misma energía.",
+      "angulo": "Gratitud, reconocimiento al esfuerzo y continuidad hacia el cierre de año.",
+      "puntos_clave": [
+        "Aplauso a todos los que vencieron la inercia y regresaron a entrenar este mes",
+        "Reconocimiento especial a quienes mantuvieron su compromiso de 4 días a la semana",
+        "Listos para un diciembre activo, lleno de salud y comunidad en DOPA"
+      ],
+      "foto_sugerida": {
+        "tipo": "imagen",
+        "idea": "Detalle en primer plano de manos de compañeros chocando los puños tras terminar una sesión de entrenamiento, transmitiendo hermandad y cierre exitoso."
+      },
+      "responsable_aprobacion": "Daniela Melchor",
+      "estado": "pendiente_aprobacion"
+    }
+  ]
+}
