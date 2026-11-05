@@ -71,6 +71,7 @@ from google.adk.runners import InMemoryRunner  # noqa: E402
 from google.genai import types  # noqa: E402
 
 import agent as investigador  # noqa: E402
+import source_text  # noqa: E402
 import tools  # noqa: E402
 from output_checks import (  # noqa: E402
     append_error_log, apply_source_rules, compute_metrics, extract_json, trace_metrics, validate,
@@ -404,6 +405,12 @@ def save_selection(run_dir: Path, decisiones: list[dict], kept: list[dict], sin_
         "seleccion": kept + final.get("seleccion", []) if status == "aprobado" else [],
         "historial": [{k: v for k, v in d.items() if k != "seleccion"} for d in decisiones],
     }
+    if status == "aprobado":
+        # Freeze the text behind each approved source (for the Copywriter to check facts).
+        counts = source_text.attach_source_texts(seleccion["seleccion"], tools.get_backend())
+        if counts["ok"] or counts["error"]:
+            print(f"\nTexto de las fuentes guardado: {counts['ok']} ok"
+                  + (f", {counts['error']} sin texto (queda el fragmento de la búsqueda)" if counts["error"] else ""))
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "seleccion.json").write_text(json.dumps(seleccion, ensure_ascii=False, indent=2), encoding="utf-8")
     if status == "aprobado":
@@ -474,6 +481,8 @@ def main() -> None:
                 break
             # En la última ronda ya no se ofrece otra búsqueda.
             decision = ask_dani(output, ronda, kept, can_search=ronda < MAX_RONDAS)
+            # The search snippet of each chosen topic is in this round's trace: keep it now.
+            source_text.attach_snippets(decision.get("seleccion", []), result["trace"])
             decisiones.append({"ronda": ronda, **decision})
             if decision["accion"] not in ("nueva", "investigar"):
                 break

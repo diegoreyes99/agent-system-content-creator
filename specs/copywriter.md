@@ -13,7 +13,7 @@
 
    | La pieza viene de… | Se adjunta |
    |---|---|
-   | Un tema del Investigador (`tema_ref`) | Lo que dice la fuente, la URL, el tipo de fuente y el **texto del artículo guardado en `seleccion.json`** (ver Pendientes) |
+   | Un tema del Investigador (`tema_ref`) | Lo que dice la fuente, la URL, el tipo de fuente y el **texto del artículo guardado en `seleccion.json`** (`texto_fuente`, o `fragmento_busqueda` si no se pudo extraer) |
    | El brief (`elemento_del_brief`) | Solo la sección del brief que corresponde: condiciones de la oferta, fecha y horario del evento, cupo, costo, cómo apartar lugar |
    | Un contenido green (`green_ref`) | La ficha del tema green, con su regla de no usar cifras |
 
@@ -58,16 +58,32 @@ El Copywriter necesita sobre todo **redactar bien en español de México y soste
 
 - **Casos fijos:** piezas reales tomadas de parrillas aprobadas de los evals del Estratega, cubriendo los tres formatos, los dos públicos, las cuatro etapas y los tres orígenes (tema del Investigador, brief y green), más casos difíciles: fuente de competidor, oferta con condiciones y pieza con comentario de Dani.
 - **Métricas automáticas** (sección 10.4): hashtags, CTA presente, primera línea, largos, datos sin respaldo, menciones a competidores, JSON válido, costo.
-- **Rúbrica humana (borrador, 1 a 3):** voz de marca, naturalidad (suena a CDMX), tono adecuado al público, fidelidad a los datos, CTA acorde al objetivo, gancho de la primera línea, e imágenes por lámina coherentes con el texto y con la idea visual del Estratega.
+- **Rúbrica humana:** 7 criterios de 1 a 3, cada uno anclado en los documentos de negocio del RAG (ver sección "Rúbrica").
 - **Métrica automática extra:** `copy_in` e `imagen_por_lamina` con el mismo número de elementos.
+
+## Rúbrica (borrador 2026-11-05, decisión de Diego: cada criterio se apega a los documentos de negocio)
+
+Cada criterio dice de qué documento sale. El Copywriter recibe esos mismos documentos (por el RAG), así que se le califica con lo que tuvo a la mano. 3 = cumple, 2 = cumple a medias, 1 = no cumple.
+
+| # | Criterio | Fuente | Qué se pregunta |
+|---|---|---|---|
+| 1 | **Personalidad de marca** | Manual §1 *Personalidad de marca*; Brief §10 *Percepción de marca* | ¿Suena **fuerte, enérgica, segura y profesional**? ¿Retadora y aspiracional pero accesible: intensa sin ser agresiva, premium sin intimidar, cálida sin ser casual o desordenada? |
+| 2 | **Valores y manifiesto** | Brief §2 *Valores rectores* y *Manifiesto*; Manual §1 *Valores*, *Manifiesto* y *Diferenciadores* | ¿Transmite disciplina, comunidad, compromiso y entrenar con propósito ("entrenamiento con estructura y comunidad con propósito")? ¿Nada de moda o entretenimiento superficial? |
+| 3 | **Le habla a su público** | Fichas de Ana y Rosa: *D. Objetivos*, *E. Dolores*, *I. Lenguaje y frases textuales*; Manual §1 *A quién le hablamos* | ¿Toca lo que le importa a esa persona (Ana: eficiencia, reto, espacio seguro sin sentirse observada; Rosa: salud, no lastimarse, acompañamiento, sentirse en familia)? ¿Suena a como ellas hablan, sin copiar sus frases? |
+| 4 | **Fidelidad al negocio** | Brief §5 *Servicios y tarifas*, §13 y el brief del mes; Fichas *F. Objeciones* (respuesta de DOPA); fuente del tema | ¿Cada dato (precio, horario, cupo, fecha, condición) es correcto? ¿Las objeciones se responden con lo que DOPA de verdad ofrece (aforo de 15–20, estación asignada, coach presente, regresiones y progresiones)? ¿Sin promesas de resultados que no se pueden cumplir? |
+| 5 | **Acción alineada al objetivo** | Fichas *G. Triggers de conversión*; estándares §10.3 (CTA por etapa) | ¿El CTA corresponde a la etapa y al objetivo de la pieza, y apela a lo que mueve a ese público a actuar? |
+| 6 | **Gancho y concisión** | Brief §9 *Qué ha funcionado y qué no* (sin gancho se pierde a la audiencia); estándares §10 (conciso y con impacto) | ¿La primera línea y la portada enganchan? ¿Cada frase aporta, sin relleno? |
+| 7 | **Imagen por lámina** | Manual §5.3 *Fotografía* y §1 *A quién le hablamos*; idea visual del Estratega | ¿Cada imagen va con su texto, sigue la idea visual aprobada y la dirección fotográfica (luz cálida, esfuerzo y comunidad, diversidad real), y se ve intensa para Ana sin dejar de ser cercana para Rosa? |
+
+Las reglas de forma (hashtags, largos, primera línea de 125 caracteres, copy in e imágenes con el mismo número, ningún competidor, ningún dato sin respaldo) las revisa el código, no la rúbrica.
 
 ## Decisiones abiertas (para Diego)
 
 1. ~~Historias sin caption~~ **Decidido (Diego, 2026-11-05):** las historias no llevan copy out; todo su texto va en el copy in, por pantalla.
 2. ~~Largos de referencia~~ **Decidido (Diego, 2026-11-05):** se usan como reglas los límites que vienen de las fuentes; los demás son criterio interno provisional y funcionan como **máximos, no metas**: el texto es conciso, al punto y con impacto, nunca largo solo por llenar.
-3. **Rúbrica:** confirmar los 6 criterios.
+3. **Rúbrica:** propuesta anclada en los documentos de negocio (sección "Rúbrica"); pendiente de confirmar.
 
 ## Pendientes antes de construir
 
-- **Guardar el texto de la fuente al aprobar el tema (cambio en el Investigador):** cuando Dani aprueba un tema, el código descarga el artículo una sola vez y guarda el texto relevante en `seleccion.json`. Así el respaldo queda congelado (igual para el Copywriter, el eval y cualquier revisión) y no depende de que la página siga en línea.
+- ~~Guardar el texto de la fuente al aprobar el tema~~ **Hecho (2026-11-05):** `seleccion.json` trae `fragmento_busqueda` y `texto_fuente` por tema (ver spec del Investigador).
 - Revisar `prompts/copywriter_v2.md` (MVP) como punto de partida del prompt v3.

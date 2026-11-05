@@ -17,5 +17,8 @@
 - **Reintentos (Gemini):** ante 429 (cuota por minuto) o 503 (modelo saturado), cada llamada al modelo se reintenta hasta 5 veces con espera exponencial (5, 10, 20 y 40 s).
 - **Modelo de respaldo automático:** decisión pospuesta (2026-10-22) hasta acercarse a la Fase 6. Opciones evaluadas: otro modelo de Gemini (p. ej. 3.6 Flash, cuota separada) para desarrollo, o un modelo de otro proveedor vía LiteLLM para producción. Hoy el respaldo es manual con `--model local`.
 
+
+- **Texto de la fuente al aprobar (Diego, 2026-11-05):** cuando Dani aprueba los temas, el código (no el agente) guarda en `seleccion.json`, para cada tema con fuente: `fragmento_busqueda` (el fragmento que regresó la búsqueda, tomado de la trayectoria de esa ronda) y `texto_fuente` (el texto del artículo, extraído una sola vez con Tavily Extract y recortado a 6,000 caracteres), con `texto_fuente_estado` y `texto_fuente_fecha`. Así el respaldo queda congelado para el Copywriter, el eval y cualquier revisión, aunque la página cambie o desaparezca. Si la extracción falla, la aprobación sigue y queda el fragmento. Cuesta 1 crédito de Tavily por cada 5 URLs. El Estratega no recibe estos campos (`TOPIC_FIELDS`). Código: `agents/investigador/source_text.py`.
+
 ## Pendientes
 - **Briefs cortos → más temas y más variados (Diego, 2026-10-26, por analizar con calma).** Cuando el brief trae poco contenido, la parrilla del Estratega se repite. Idea: que el Investigador genere más temas (y más variados) en proporción a lo poco que diga el brief, siempre derivados del brief. Antes de cambiar el prompt hay que definir: cómo medir que un brief es "corto", cuántos temas pedir y cómo evitar temas de relleno. Se evalúa con el eval del Estratega (casos `op3_pocos_temas`) y la rúbrica.
