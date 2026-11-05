@@ -51,7 +51,7 @@ DETAIL_COLUMNS = [
     "Puntos clave",         # Estratega: what the piece must say, with its data
     "Copy in",              # Copywriter: text on the image, numbered per slide or screen
     "Imagen por lámina",    # Copywriter: image of each slide or screen, same numbering as Copy in
-    "Copy out",             # Copywriter (caption with its CTA; always has text)
+    "Copy out",             # Copywriter (caption with its CTA; empty in stories, decision 2026-11-05)
     "Diseño",               # Diseñador
 ]
 COLUMNS = MAIN_COLUMNS + DETAIL_COLUMNS

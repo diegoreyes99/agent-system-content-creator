@@ -63,11 +63,24 @@ def build_inputs(brief_text: str, selection_path: Path) -> dict:
         "brief_del_mes": brief_text,
         "temas_aprobados": topics,
         "contexto_operativo": context or "(No disponible: construye el RAG con python rag/build_index.py.)",
-        "estandares_instagram": STANDARDS_FILE.read_text(encoding="utf-8"),
+        "estandares_instagram": estratega_standards(),
         "lineamientos_visuales": visual or "(No disponible: construye el RAG con python rag/build_index.py.)",
         "contenidos_green": GREEN_FILE.read_text(encoding="utf-8") if GREEN_FILE.exists() else "(sin contenidos green)",
         "green_refs": green_refs(),
     }
+
+
+def estratega_standards() -> str:
+    """Sections 1-9 and the sources of instagram_standards.md. Section 10 (text: copy in and
+    copy out) is for the Copywriter; leaving it out (with its sources) keeps the Estratega's
+    input as it was when v11 was evaluated and closed (2026-11-05); only the version line differs."""
+    text = STANDARDS_FILE.read_text(encoding="utf-8")
+    start, end = text.find("## 10. "), text.find("## Fuentes")
+    if not 0 <= start < end:
+        return text
+    sources = [line for line in text[end:].splitlines()
+               if not re.match(r"^(1[2-9]|[2-9]\d)\. ", line)]  # sources 12+ belong to section 10
+    return text[:start] + "\n".join(sources) + "\n"
 
 
 def green_refs() -> list[str]:

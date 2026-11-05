@@ -17,7 +17,7 @@
    | El brief (`elemento_del_brief`) | Solo la sección del brief que corresponde: condiciones de la oferta, fecha y horario del evento, cupo, costo, cómo apartar lugar |
    | Un contenido green (`green_ref`) | La ficha del tema green, con su regla de no usar cifras |
 
-3. **Reglas de texto de Instagram:** la sección 10 de `instagram_standards.md` (largo del caption, primera línea, copy in por formato, CTA por etapa, hashtags).
+3. **Reglas de texto de Instagram:** la sección 10 de `agents/shared/instagram_standards.md` (largo del caption, primera línea, copy in por formato, CTA por etapa, hashtags).
 4. **Herramienta `search_dopa_knowledge`** (RAG, etiquetas `voz`, `audiencia`, `negocio`): la personalidad y el manifiesto de la marca, las frases reales de Ana y Rosa y datos del negocio que necesite. Con tope de llamadas, igual que el Estratega.
 
 ## Salida (JSON por pieza)
@@ -25,7 +25,7 @@
 - `id` de la pieza.
 - `copy_in`: lista de textos, uno por lámina (carrusel) o pantalla (historia); en post único, uno (o vacío si la imagen habla sola).
 - `imagen_por_lamina`: lista con la descripción de la imagen de cada lámina o pantalla, en el mismo orden que `copy_in` (en post, una). **Decisión de Diego, 2026-11-05:** el número de láminas o pantallas depende de cómo el Copywriter reparte el texto, así que él describe la imagen de cada una, en todos los formatos. Parte de la **idea visual** del Estratega (la dirección y el tipo: imagen o gráfico) y de la dirección fotográfica del Manual de Identidad (sección 5.3: luz cálida, esfuerzo y comunidad, diversidad real; se permiten fotos de stock o generadas, sin hacerse pasar por DOPA). Describe qué se ve, no encuadres ni técnica: la ejecución es del Diseñador.
-- `copy_out`: el caption completo con el CTA dentro y los hashtags al final (vacío en historias; ver Decisiones abiertas).
+- `copy_out`: el caption completo con el CTA dentro y los hashtags al final. Las historias no llevan copy out (decisión de Diego, 2026-11-05): su CTA va en el copy in.
 - `cta`: el CTA por separado, para que el código lo revise contra la etapa.
 - `hashtags`: lista de 3 a 5.
 - `datos_usados`: cada cifra, precio, fecha o cupo del texto y de dónde salió (fuente del tema, brief o RAG), para que el código lo verifique.
@@ -63,12 +63,11 @@ El Copywriter necesita sobre todo **redactar bien en español de México y soste
 
 ## Decisiones abiertas (para Diego)
 
-1. **Historias sin caption:** en Instagram las historias no llevan caption. Propuesta: en historias el copy out va vacío y todo el texto va en el copy in (hoy la spec del Estratega dice que el Copy out "siempre tiene texto").
-2. **Largos de referencia:** los rangos de caption y de copy in de la sección 10 son criterio interno; revisar si te hacen sentido.
+1. ~~Historias sin caption~~ **Decidido (Diego, 2026-11-05):** las historias no llevan copy out; todo su texto va en el copy in, por pantalla.
+2. ~~Largos de referencia~~ **Decidido (Diego, 2026-11-05):** se usan como reglas los límites que vienen de las fuentes; los demás son criterio interno provisional y funcionan como **máximos, no metas**: el texto es conciso, al punto y con impacto, nunca largo solo por llenar.
 3. **Rúbrica:** confirmar los 6 criterios.
 
 ## Pendientes antes de construir
 
 - **Guardar el texto de la fuente al aprobar el tema (cambio en el Investigador):** cuando Dani aprueba un tema, el código descarga el artículo una sola vez y guarda el texto relevante en `seleccion.json`. Así el respaldo queda congelado (igual para el Copywriter, el eval y cualquier revisión) y no depende de que la página siga en línea.
-- Mover `instagram_standards.md` a `agents/shared/` e integrar la sección 10 (hoy en `agents/shared/instagram_standards_copy_draft.md`).
 - Revisar `prompts/copywriter_v2.md` (MVP) como punto de partida del prompt v3.
