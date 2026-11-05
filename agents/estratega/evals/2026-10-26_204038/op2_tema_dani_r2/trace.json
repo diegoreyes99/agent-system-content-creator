@@ -310,5 +310,6 @@
   ],
   "latency_s": 14.4709885410266,
   "prompt_tokens": 21440,
-  "completion_tokens": 5511
+  "completion_tokens": 5511,
+  "thinking_tokens": 0
 }

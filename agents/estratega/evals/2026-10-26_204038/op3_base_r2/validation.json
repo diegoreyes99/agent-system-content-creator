@@ -6,6 +6,8 @@
     "json_parsed": 1.0,
     "schema_valid": 0.0,
     "n_errors": 1.0,
+    "n_errores_forma": 1.0,
+    "n_errores_contenido": 0.0,
     "n_piezas": 15.0,
     "n_feed": 12.0,
     "n_historias": 3.0,
@@ -16,6 +18,7 @@
     "n_semanas_sin_feed": 0.0,
     "pct_temas_cubiertos": 1.0,
     "pct_piezas_brief": 0.6666666666666666,
+    "pct_piezas_green": 0.0,
     "pct_etapa_coherente": 0.9333333333333333,
     "desviacion_mezcla": 0.06666666666666667,
     "n_menciones_competidor": 0.0,
@@ -24,12 +27,15 @@
     "pct_consideracion": 0.26666666666666666,
     "pct_conversion": 0.2,
     "pct_fidelizacion": 0.4,
+    "json_reparado": 0.0,
     "n_tool_calls": 4.0,
     "n_calendar_calls": 1.0,
     "n_rag_calls": 3.0,
     "latency_s": 13.33,
     "prompt_tokens": 22500.0,
     "completion_tokens": 4755.0,
+    "thinking_tokens": 0.0,
+    "costo_usd": 0.018638,
     "run_failed": 0.0
   }
 }

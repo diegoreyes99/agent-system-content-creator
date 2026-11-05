@@ -20,8 +20,13 @@ import json
 import random
 import re
 import statistics
+import sys
+from collections import Counter
 from datetime import date
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+import parrilla_sheet  # noqa: E402  (same columns and rows as Dani's Sheet)
 
 CRITERIA = [
     ("coherencia", "Coherencia con el negocio", "¿Toda la parrilla empuja la prioridad y la meta del mes?"),
@@ -51,16 +56,30 @@ def grid_dirs(folder: Path) -> list[Path]:
     return sorted(d for d in folder.iterdir() if d.is_dir() and (d / "output.json").exists())
 
 
+def fixed_sample(dirs: list[Path], sample: int, seed: int) -> list[Path]:
+    """Same grids in every eval: the order comes from the golden set (cases.json x
+    reps), not from the folders that happen to exist. If a chosen run failed (no
+    valid JSON), the next one in that order takes its place."""
+    cases_file = Path(__file__).resolve().parent / "eval_cases" / "cases.json"
+    reps = max((int(d.name.rsplit("_r", 1)[-1]) for d in dirs if "_r" in d.name), default=1)
+    names = [f"{c['case']}_r{r}" for c in json.loads(cases_file.read_text(encoding="utf-8"))["cases"]
+             for r in range(1, reps + 1)] if cases_file.exists() else [d.name for d in dirs]
+    random.Random(seed).shuffle(names)
+    available = {d.name: d for d in dirs}
+    return sorted([available[n] for n in names if n in available][:sample])
+
+
 def export(folder: Path, sample: int, seed: int) -> None:
     from openpyxl import Workbook
     from openpyxl.styles import Alignment, Font, PatternFill
+    from openpyxl.utils import get_column_letter
     from openpyxl.worksheet.datavalidation import DataValidation
 
     dirs = grid_dirs(folder)
     if not dirs:
         raise SystemExit("No hay parrillas con JSON válido en esa carpeta.")
     if len(dirs) > sample:
-        dirs = sorted(random.Random(seed).sample(dirs, sample))
+        dirs = fixed_sample(dirs, sample, seed)
 
     bold, wrap = Font(bold=True), Alignment(wrap_text=True, vertical="top")
     header_fill = PatternFill("solid", fgColor="222222")
@@ -93,11 +112,16 @@ def export(folder: Path, sample: int, seed: int) -> None:
         g = wb.create_sheet(tab)
         g.append(["", "", "", "", "", "← Regresar a Calificaciones"])
         g["F1"].hyperlink, g["F1"].font = f"#'{RATINGS_SHEET}'!A1", Font(color="0563C1", underline="single")
+        refs = Counter(p.get("tema_ref") if p.get("origen_pieza") == "tema_aprobado" else
+                       ("green" if p.get("origen_pieza") == "green" else "brief") for p in pieces)
+        coverage = " · ".join(f"{t['ref']}: {refs.get(t['ref'], 0)}" for t in inputs.get("temas_aprobados", []))
+        coverage += f" · piezas del brief: {refs.get('brief', 0)} · green: {refs.get('green', 0)}"
         context = [
             ("Caso", case_dir.name),
             ("Prioridad del mes", inputs.get("prioridad_principal", "")),
             ("Temas aprobados", "\n".join(f"{t['ref']} ({t.get('origen')}{', ' + t['tipo_fuente'] if t.get('tipo_fuente') else ''}): {t['tema']}"
                                           for t in inputs.get("temas_aprobados", []))),
+            ("Cobertura de temas", coverage),
             ("Fechas del brief", brief_dates(inputs.get("brief_del_mes", ""))),
             ("Estrategia del mes", output.get("estrategia_del_mes", "")),
             ("Criterio de volumen", output.get("criterio_de_volumen", "")),
@@ -109,29 +133,20 @@ def export(folder: Path, sample: int, seed: int) -> None:
             g.append([label, value])
             row = g.max_row
             g.cell(row, 1).font, g.cell(row, 1).fill = bold, label_fill
-            g.merge_cells(start_row=row, start_column=2, end_row=row, end_column=11)
+            g.merge_cells(start_row=row, start_column=2, end_row=row, end_column=len(parrilla_sheet.COLUMNS))
             g.cell(row, 2).alignment = wrap
             g.row_dimensions[row].height = max(18, 15 * (1 + len(str(value)) // 150 + str(value).count("\n")))
         g.append([])
-        cols = ["Fecha", "Día", "Formato", "Etapa del embudo", "Origen", "Tema central", "Tema", "Público",
-                "Tipo de objetivo", "Objetivo", "Mensaje clave", "Recursos visuales"]
-        g.append(cols)
+        # The grid itself: exactly the columns and rows of Dani's Sheet.
+        g.append(parrilla_sheet.COLUMNS)
         for cell in g[g.max_row]:
-            cell.font, cell.fill = header_font, header_fill
+            cell.font, cell.fill, cell.alignment = header_font, header_fill, wrap
         for p in pieces:
-            try:
-                day = WEEKDAYS[date.fromisoformat(p["fecha_sugerida"]).weekday()]
-            except (KeyError, ValueError):
-                day = ""
-            origin = {"tema_aprobado": p.get("tema_ref") or "", "green": f"Green: {p.get('green_ref') or ''}"}.get(
-                p.get("origen_pieza"), f"Brief: {p.get('elemento_del_brief') or ''}")
-            g.append([p.get("fecha_sugerida", ""), day, p.get("formato", ""), STAGES.get(p.get("etapa_embudo"), p.get("etapa_embudo", "")),
-                      origin, p.get("tema_central", ""), p.get("tema", ""), p.get("publico", ""), p.get("tipo_objetivo", ""),
-                      p.get("objetivo", ""), p.get("mensaje_clave", ""), p.get("recursos_visuales", "")])
+            g.append(parrilla_sheet.piece_to_row(p))
             for cell in g[g.max_row]:
                 cell.alignment = wrap
-        for col, width in zip("ABCDEFGHIJKL", [12, 10, 10, 15, 28, 18, 60, 9, 22, 45, 40, 35]):
-            g.column_dimensions[col].width = width
+        for i, width in enumerate(parrilla_sheet.COLUMN_WIDTHS, start=1):
+            g.column_dimensions[get_column_letter(i)].width = max(8, width / 7)
 
         # --- Row in the ratings tab ---
         ws.append([tab, inputs.get("prioridad_principal", ""), len(pieces), len(errors)] + [None] * len(CRITERIA) + [""])

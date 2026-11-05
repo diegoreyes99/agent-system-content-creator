@@ -1,0 +1,43 @@
+{
+  "errors": [
+    "2026-11-P05: 'Tráfico' no corresponde a la etapa 'descubrimiento'",
+    "2026-11-P19: tipo_objetivo 'Reto y lealtad' no está en la lista de referencia",
+    "2026-11-P22: tipo_objetivo 'Reto y lealtad' no está en la lista de referencia"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_errors": 3.0,
+    "n_errores_forma": 3.0,
+    "n_errores_contenido": 0.0,
+    "n_piezas": 21.0,
+    "n_feed": 17.0,
+    "n_historias": 4.0,
+    "n_carruseles": 7.0,
+    "feed_por_semana_min": 4.0,
+    "feed_por_semana_max": 4.0,
+    "feed_por_semana_mean": 4.0,
+    "n_semanas_sin_feed": 0.0,
+    "pct_temas_cubiertos": 1.0,
+    "pct_piezas_brief": 0.47619047619047616,
+    "pct_piezas_green": 0.14285714285714285,
+    "pct_etapa_coherente": 0.8571428571428571,
+    "desviacion_mezcla": 0.12619047619047621,
+    "n_menciones_competidor": 0.0,
+    "n_fuentes_conocimiento": 4.0,
+    "pct_descubrimiento": 0.2857142857142857,
+    "pct_consideracion": 0.38095238095238093,
+    "pct_conversion": 0.23809523809523808,
+    "pct_fidelizacion": 0.09523809523809523,
+    "json_reparado": 0.0,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 26.72,
+    "prompt_tokens": 68089.0,
+    "completion_tokens": 9907.0,
+    "thinking_tokens": 0.0,
+    "costo_usd": 0.045194,
+    "run_failed": 0.0
+  }
+}

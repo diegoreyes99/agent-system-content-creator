@@ -14,7 +14,7 @@ saved in runs/<fecha>/parrilla.json: that is what the Copywriter receives.
 
 Useful options:
   --model-id gemini-3.8-flash   model to use (default ESTRATEGA_MODEL_ID or gemini-3.5-flash-lite)
-  --prompt-version v6           prompt in prompts/estratega_<v>.md
+  --prompt-version v8           prompt in prompts/estratega_<v>.md
   --sheet-tab "2026-11 prueba"  tab name (default: the month)
   --sin-aprobacion              no Sheet, no approval (for quick tests)
   --desde-corrida runs/<fecha>  skip the model: send that run's grid to the Sheet for approval
@@ -64,7 +64,9 @@ import agent as estratega  # noqa: E402
 import pricing  # noqa: E402
 import inputs as estratega_inputs  # noqa: E402
 import tools  # noqa: E402
-from output_checks import append_error_log, compute_metrics, extract_json, trace_metrics, validate  # noqa: E402
+from output_checks import (  # noqa: E402
+    append_error_log, apply_photo_rules, compute_metrics, extract_json, trace_metrics, validate,
+)
 
 ERROR_LOG = HERE / "model_errors.csv"
 APP_NAME = "dopa_estratega"
@@ -110,12 +112,17 @@ async def run_agent(instruction: str, message: str, temperature: float | None) -
 
 
 def evaluate(result: dict, inputs: dict) -> tuple[dict | None, list[str], dict]:
+    repaired: list = []
     try:
-        output = extract_json(result["raw"])
+        output = extract_json(result["raw"], repaired)
         errors = validate(output, inputs)
+        if inputs.get("prompt_version", "v5") >= "v8":
+            result["correcciones_foto"] = apply_photo_rules(output, inputs["brief_del_mes"])
     except (ValueError, json.JSONDecodeError) as exc:
         output, errors = None, [f"JSON no parseable: {exc}"]
     metrics = compute_metrics(output, errors, inputs)
+    metrics["json_reparado"] = 1.0 if repaired else 0.0  # the code fixed a mechanical JSON slip
+    metrics["n_fotos_corregidas"] = float(len(result.get("correcciones_foto") or []))
     metrics.update(trace_metrics(result["trace"]))
     metrics.update({"latency_s": round(result["latency_s"], 2), "prompt_tokens": float(result["prompt_tokens"]),
                     "completion_tokens": float(result["completion_tokens"]),
@@ -135,7 +142,8 @@ def save_run(run_dir: Path, result: dict, output: dict | None, errors: list[str]
         ensure_ascii=False, indent=2, default=str), encoding="utf-8")
     if output is not None:
         (run_dir / "output.json").write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
-    (run_dir / "validation.json").write_text(json.dumps({"errors": errors, "metrics": metrics},
+    (run_dir / "validation.json").write_text(json.dumps({"errors": errors, "metrics": metrics,
+                                                         "correcciones_foto": result.get("correcciones_foto") or []},
                                                         ensure_ascii=False, indent=2), encoding="utf-8")
 
 
@@ -327,7 +335,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Corre el Estratega y lo registra en MLflow.")
     parser.add_argument("--brief", type=Path, required=True)
     parser.add_argument("--seleccion", type=Path, required=True, help="seleccion.json del Investigador")
-    parser.add_argument("--prompt-version", default="v6")
+    parser.add_argument("--prompt-version", default="v8")
     parser.add_argument("--model-id", default=None, help="modelo de Gemini (default gemini-3.5-flash-lite)")
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--sheet-tab", default=None)
@@ -373,6 +381,9 @@ def main() -> None:
             errors, metrics = validation["errors"], validation["metrics"]
             print(f"Usando la parrilla ya generada en {run_dir} (sin llamar al modelo).")
             print_summary(output, errors, metrics, run_dir)
+            for c in result.get("correcciones_foto") or []:
+                print(f"  ! Corregido por el código · {c['id']}: la foto decía '{c['antes']}', pero {c['motivo']}; "
+                      "queda como 'no existe'.")
         else:
             result = loop.run_until_complete(run_agent(instruction, TRIGGER, args.temperature))
             output, errors, metrics = evaluate(result, inputs)

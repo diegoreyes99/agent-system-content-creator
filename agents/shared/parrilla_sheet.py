@@ -20,11 +20,15 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from photo_text import photo_text
+
 load_dotenv(Path(__file__).resolve().parent / ".env")
 
 DEFAULT_KEY_FILE = "~/.config/dopa/google_service_account.json"
 
 # Columns of the grid, in order, and which agent fills each one.
+# The grid's columns: the same in Dani's Sheet and in the eval's rating Excel
+# (decision 2026-11-05: what is rated must be exactly what is delivered).
 COLUMNS = [
     "ID",                   # Estratega
     "Fecha de publicación", # Estratega
@@ -32,17 +36,18 @@ COLUMNS = [
     "Canal",                # Estratega (always Instagram for now)
     "Formato",              # Estratega
     "Tema",                 # Estratega (descriptive: what the piece covers and from which angle)
-    "Etapa del embudo",     # Estratega: descubrimiento, consideración, conversión o fidelización
-    "Objetivo",             # Estratega: "<objective type> — <specific, measurable objective>"
-    "Mensaje clave",        # Estratega
-    "Recursos visuales",    # Estratega: which photos or graphics the piece uses
+    "Público",              # Estratega: Ana, Rosa or Ambas
+    "Objetivo",             # Estratega: "<funnel stage> · <objective type> — <specific objective>"
+    "Mensaje clave",        # Estratega: key message + angle
+    "Puntos clave",         # Estratega: what the piece must say, with its data
+    "Foto sugerida",        # Estratega: the visual and whether it exists, is pending or the Diseñador creates it
     "Copy in",              # Copywriter (text on the image; may be empty)
-    "Copy out",             # Copywriter (caption; always has text)
+    "Copy out",             # Copywriter (caption with its CTA; always has text)
     "Diseño",               # Diseñador
     "Estado",               # Dani (dropdown)
     "Comentarios de Dani",  # Dani
 ]
-COLUMN_WIDTHS = [90, 110, 100, 85, 95, 340, 130, 280, 260, 220, 220, 320, 200, 115, 260]
+COLUMN_WIDTHS = [90, 110, 100, 85, 95, 340, 80, 360, 340, 320, 380, 220, 320, 200, 115, 260]
 
 STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED = "Pendiente", "Aprobado", "Cambios", "Descartado"
 STATUS_OPTIONS = [STATUS_PENDING, STATUS_APPROVED, STATUS_CHANGES, STATUS_DISCARDED]
@@ -102,28 +107,42 @@ def weekday_es(iso_date: str) -> str:
 
 
 def _objective_text(piece: dict) -> str:
-    """The Estratega writes the objective type (from the reference list in
-    instagram_standards.md) and a specific objective; the sheet shows both."""
+    """Funnel stage, objective type and specific objective in one column:
+    "Conversión · Generación de leads — que principiantes escriban por WhatsApp…"."""
+    stage = FUNNEL_STAGES.get(str(piece.get("etapa_embudo", "")).strip().lower(), str(piece.get("etapa_embudo", "")).strip())
     kind, detail = str(piece.get("tipo_objetivo", "")).strip(), str(piece.get("objetivo", "")).strip()
-    return f"{kind} — {detail}" if kind and detail else kind or detail
+    head = " · ".join(x for x in (stage, kind) if x)
+    return f"{head} — {detail}" if head and detail else head or detail
+
+
+def _message_text(piece: dict) -> str:
+    """Key message and angle in one column."""
+    message, angle = str(piece.get("mensaje_clave", "")).strip(), str(piece.get("angulo", "")).strip()
+    return f"{message}\nÁngulo: {angle}" if message and angle else message or angle
+
+
+def _points_text(piece: dict) -> str:
+    points = piece.get("puntos_clave")
+    if isinstance(points, list):
+        return "\n".join(f"• {x}" for x in points)
+    return str(points or "")
 
 
 def piece_to_row(piece: dict) -> list[str]:
-    """One grid piece (agent JSON) to one sheet row, in COLUMNS order."""
+    """One grid piece (agent JSON) to one row, in COLUMNS order. Used by the Sheet and the eval Excel."""
     status = str(piece.get("estado", "pendiente_aprobacion"))
     fecha = str(piece.get("fecha_sugerida", ""))
+    audience = str(piece.get("publico", ""))
     return [
         str(piece.get("id", "")), fecha, weekday_es(fecha),
         str(piece.get("canal", "")), str(piece.get("formato", "")), str(piece.get("tema", "")),
-        FUNNEL_STAGES.get(str(piece.get("etapa_embudo", "")).strip().lower(), str(piece.get("etapa_embudo", ""))),
-        _objective_text(piece),
-        str(piece.get("mensaje_clave", "")),
-        str(piece.get("recursos_visuales", "")),
+        "Ana" if audience == "Hija de Rosa" else audience,
+        _objective_text(piece), _message_text(piece), _points_text(piece),
+        photo_text(piece.get("foto_sugerida")),
         str(piece.get("copy_in", "")), str(piece.get("copy_out", "")), str(piece.get("diseno", "")),
         _STATUS_FROM_JSON.get(status, status if status in STATUS_OPTIONS else STATUS_PENDING),
         str(piece.get("comentarios_dani", "")),
     ]
-
 
 def tab_url(spreadsheet, worksheet) -> str:
     return f"https://docs.google.com/spreadsheets/d/{spreadsheet.id}/edit#gid={worksheet.id}"

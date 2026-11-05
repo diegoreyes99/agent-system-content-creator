@@ -1,0 +1,41 @@
+{
+  "errors": [
+    "2026-11-P13: tipo_objetivo 'Reto y fidelización' no está en la lista de referencia"
+  ],
+  "metrics": {
+    "json_parsed": 1.0,
+    "schema_valid": 0.0,
+    "n_errors": 1.0,
+    "n_errores_forma": 1.0,
+    "n_errores_contenido": 0.0,
+    "n_piezas": 15.0,
+    "n_feed": 15.0,
+    "n_historias": 0.0,
+    "n_carruseles": 9.0,
+    "feed_por_semana_min": 3.0,
+    "feed_por_semana_max": 4.0,
+    "feed_por_semana_mean": 3.75,
+    "n_semanas_sin_feed": 0.0,
+    "pct_temas_cubiertos": 1.0,
+    "pct_piezas_brief": 0.4,
+    "pct_piezas_green": 0.06666666666666667,
+    "pct_etapa_coherente": 0.9333333333333333,
+    "desviacion_mezcla": 0.1166666666666667,
+    "n_menciones_competidor": 0.0,
+    "n_fuentes_conocimiento": 4.0,
+    "pct_descubrimiento": 0.3333333333333333,
+    "pct_consideracion": 0.4,
+    "pct_conversion": 0.2,
+    "pct_fidelizacion": 0.06666666666666667,
+    "json_reparado": 1.0,
+    "n_tool_calls": 4.0,
+    "n_calendar_calls": 1.0,
+    "n_rag_calls": 3.0,
+    "latency_s": 20.23,
+    "prompt_tokens": 68732.0,
+    "completion_tokens": 7103.0,
+    "thinking_tokens": 0.0,
+    "costo_usd": 0.038377,
+    "run_failed": 0.0
+  }
+}

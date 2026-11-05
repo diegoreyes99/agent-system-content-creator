@@ -13,7 +13,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 FORMATS = {"post", "carrusel", "historia"}
 FEED_FORMATS = {"post", "carrusel"}
-AUDIENCES = {"Ana", "Rosa", "Ambas", "Hija de Rosa"}
+AUDIENCES = {"Ana", "Rosa", "Ambas", "Hija de Rosa"}  # "Hija de Rosa" only existed in prompts v6-v7
+AUDIENCES_V8 = {"Ana", "Rosa", "Ambas"}  # from v8 the daughter is "Ana" (decision 2026-11-05)
 ORIGINS = {"tema_aprobado", "brief", "green"}
 STATES = {"pendiente_aprobacion", "aprobado", "descartado"}
 
@@ -42,15 +43,86 @@ PIECE_KEYS = ("id", "fecha_sugerida", "canal", "formato", "origen_pieza", "tema_
               "tema", "publico", "etapa_embudo", "tipo_objetivo", "objetivo", "mensaje_clave",
               "responsable_aprobacion", "estado")
 PIECE_KEYS_V6 = ("green_ref", "recursos_visuales")  # required from prompt v6 on
+PIECE_KEYS_V7 = ("angulo", "puntos_clave", "cta", "foto_sugerida")  # required from prompt v7 on
 
 
-def extract_json(raw: str) -> dict:
-    """The JSON object in the model's answer, even inside ```json fences or with text around it."""
+def required_piece_keys(version: str) -> tuple:
+    """v6 added green_ref and recursos_visuales; v7 angle, key points, CTA and suggested photo;
+    v8 merged the visual fields into one structured foto_sugerida (no recursos_visuales)."""
+    keys = PIECE_KEYS
+    if version >= "v6":
+        keys += ("green_ref",) + (("recursos_visuales",) if version < "v8" else ())
+    if version >= "v7":
+        keys += PIECE_KEYS_V7 if version < "v8" else tuple(k for k in PIECE_KEYS_V7 if k != "cta")
+    return keys
+
+
+PHOTO_TYPES = {"foto", "grafico"}
+PHOTO_STATUSES = {"existe", "pendiente", "no_existe"}
+# Words that mean a photo that does not exist yet: from v7 on it belongs in foto_sugerida, not in recursos_visuales.
+PHOTO_REQUEST_MARKERS = ("pendiente", "por tomar", "sesión nueva", "nueva sesión", "agendar", "tomar foto")
+
+
+def _scan(line: str, stack: list, in_string: bool) -> bool:
+    """Updates the open containers after reading one line; returns whether a string is still open."""
+    escaped = False
+    for ch in line:
+        if in_string:
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == '"':
+                in_string = False
+        elif ch == '"':
+            in_string = True
+        elif ch in "{[":
+            stack.append(ch)
+        elif ch in "}]" and stack:
+            stack.pop()
+    return in_string
+
+
+def repair_json(text: str) -> str:
+    """Fixes the mechanical slips the light model makes in long JSON outputs
+    (eval 2026-10-26): a key without its opening quote (`puntos_clave": [`, `$tema: "…"`),
+    a list without its key (only puntos_clave is a list inside a piece) and a stray
+    string alone on a line inside an object (`"post",`). Each line is fixed before it
+    is scanned, so a broken quote never confuses what comes after it."""
+    stack: list = []
+    in_string = False
+    fixed = []
+    for line in text.split("\n"):
+        if not in_string and stack and stack[-1] == "{":
+            # Key without quotes or with junk before it: puntos_clave": / $tema: / 'tema':
+            match = re.match(r'^(\s*)[$\']?([A-Za-z_][A-Za-z0-9_]*)["\']?\s*:(.*)$', line)
+            if match and not line.lstrip().startswith('"'):
+                line = f'{match.group(1)}"{match.group(2)}":{match.group(3)}'
+            # A list with no key inside a piece: puntos_clave is the only list field of a piece.
+            if re.match(r'^\s*\[\s*$', line):
+                line = line.replace("[", '"puntos_clave": [', 1)
+            # A bare string inside an object is not valid JSON: drop it.
+            if re.match(r'^\s*"[^"]*"\s*,?\s*$', line):
+                continue
+        in_string = _scan(line, stack, in_string)
+        fixed.append(line)
+    return "\n".join(fixed)
+
+
+def extract_json(raw: str, repaired: list | None = None) -> dict:
+    """The JSON object in the model's answer, even inside ```json fences or with text around it.
+    If it does not parse, tries repair_json() once; pass a list as `repaired` to learn if it was needed."""
     fenced = re.search(r"```(?:json)?\s*(\{.*\})\s*```", raw, flags=re.S)
     text = fenced.group(1) if fenced else raw[raw.find("{"): raw.rfind("}") + 1]
     if not text.strip():
         raise ValueError("no hay un objeto JSON en la respuesta")
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        result = json.loads(repair_json(text))  # if this also fails, the original error is reported upstream
+        if repaired is not None:
+            repaired.append(True)
+        return result
 
 
 def _competitor_names() -> list[str]:
@@ -108,7 +180,8 @@ def validate(output: dict, inputs: dict) -> list[str]:
             errors.append(f"pieza {i}: no es un objeto")
             continue
         pid = p.get("id", f"#{i}")
-        required = PIECE_KEYS + (PIECE_KEYS_V6 if inputs.get("prompt_version", "v5") >= "v6" else ())
+        version = inputs.get("prompt_version", "v5")
+        required = required_piece_keys(version)
         missing = [k for k in required if k not in p]
         if missing:
             errors.append(f"{pid}: faltan {missing}")
@@ -134,7 +207,7 @@ def validate(output: dict, inputs: dict) -> list[str]:
             errors.append(f"{pid}: pieza del negocio sin elemento_del_brief")
         elif origin == "green" and p.get("green_ref") not in inputs.get("green_refs", []):
             errors.append(f"{pid}: green_ref '{p.get('green_ref')}' no es un contenido green")
-        if p.get("publico") not in AUDIENCES:
+        if p.get("publico") not in (AUDIENCES_V8 if inputs.get("prompt_version", "v5") >= "v8" else AUDIENCES):
             errors.append(f"{pid}: público '{p.get('publico')}' inválido")
         stage, kind = p.get("etapa_embudo"), p.get("tipo_objetivo")
         if stage not in STAGE_OBJECTIVES:
@@ -143,6 +216,21 @@ def validate(output: dict, inputs: dict) -> list[str]:
             errors.append(f"{pid}: tipo_objetivo '{kind}' no está en la lista de referencia")
         elif stage in STAGE_OBJECTIVES and kind not in STAGE_OBJECTIVES[stage]:
             errors.append(f"{pid}: '{kind}' no corresponde a la etapa '{stage}'")
+        if version >= "v8":
+            photo = p.get("foto_sugerida")
+            if not isinstance(photo, dict) or photo.get("tipo") not in PHOTO_TYPES or not str(photo.get("idea") or "").strip():
+                errors.append(f"{pid}: foto_sugerida debe traer tipo (foto o grafico) e idea")
+            elif photo.get("tipo") == "foto" and photo.get("disponibilidad") not in PHOTO_STATUSES:
+                errors.append(f"{pid}: disponibilidad de la foto '{photo.get('disponibilidad')}' inválida")
+        if version == "v7":
+            visuals = str(p.get("recursos_visuales") or "").lower()
+            if any(m in visuals for m in PHOTO_REQUEST_MARKERS):
+                errors.append(f"{pid}: recursos_visuales incluye una foto que no existe; va en foto_sugerida ('{p.get('recursos_visuales')}')")
+
+        if version >= "v7":
+            points = p.get("puntos_clave")
+            if "puntos_clave" in p and (not isinstance(points, list) or not 2 <= len(points) <= 4):
+                errors.append(f"{pid}: puntos_clave debe ser una lista de 2 a 4")
         if p.get("estado") not in STATES:
             errors.append(f"{pid}: estado '{p.get('estado')}' inválido")
         if p.get("estado") == "aprobado" and not p.get("_aprobado_por_dani"):
@@ -182,6 +270,47 @@ CONTENT_ERROR_MARKERS = ("no es de", "sin ninguna pieza", "competidor", "sin pub
 def split_errors(errors: list[str]) -> tuple[list[str], list[str]]:
     content = [e for e in errors if any(m in e for m in CONTENT_ERROR_MARKERS)]
     return [e for e in errors if e not in content], content
+
+
+def _plain(text: str) -> str:
+    """Lowercase, no accents, no quotes or markdown, single spaces: to find a quote inside the brief."""
+    import unicodedata
+
+    text = unicodedata.normalize("NFKD", str(text).lower())
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = re.sub(r"[*_`«»\"“”'‘’]", "", text)
+    return re.sub(r"\s+", " ", text).strip(" .")
+
+
+def apply_photo_rules(output: dict | None, brief_text: str) -> list[dict]:
+    """Code rule (prompt v8): a photo is "existe" or "pendiente" only if its respaldo_brief
+    really is in the brief and, if pending, the shoot is before the piece is published.
+    Otherwise it becomes "no_existe" (Dani decides). Changes `output` in place and
+    returns one correction per change, to log every time the model got it wrong."""
+    if not output:
+        return []
+    brief = _plain(brief_text)
+    corrections = []
+    for p in output.get("piezas") or []:
+        photo = p.get("foto_sugerida") if isinstance(p, dict) else None
+        if not isinstance(photo, dict) or photo.get("tipo") != "foto" or photo.get("disponibilidad") not in ("existe", "pendiente"):
+            continue
+        reason = None
+        support = _plain(photo.get("respaldo_brief") or "")
+        if len(support) < 8 or support not in brief:
+            reason = "la frase de respaldo no está en el brief"
+        elif photo["disponibilidad"] == "pendiente":
+            try:
+                if date.fromisoformat(str(photo.get("fecha_toma"))) >= date.fromisoformat(str(p.get("fecha_sugerida"))):
+                    reason = "la sesión de fotos es el mismo día o después de la publicación"
+            except ValueError:
+                reason = "la foto pendiente no tiene una fecha de sesión válida"
+        if reason:
+            corrections.append({"id": p.get("id"), "antes": photo["disponibilidad"], "motivo": reason,
+                                "respaldo": photo.get("respaldo_brief")})
+            photo.update({"disponibilidad": "no_existe", "respaldo_brief": None, "fecha_toma": None,
+                          "corregido_por_codigo": reason})
+    return corrections
 
 
 def compute_metrics(output: dict | None, errors: list[str], inputs: dict) -> dict[str, float]:
@@ -236,6 +365,12 @@ def compute_metrics(output: dict | None, errors: list[str], inputs: dict) -> dic
     }
     for stage, share in stage_share.items():
         metrics[f"pct_{stage}"] = share
+    photos = [p.get("foto_sugerida") for p in pieces if isinstance(p.get("foto_sugerida"), dict)]
+    if photos:
+        metrics["n_fotos_existen"] = float(sum(1 for f in photos if f.get("tipo") == "foto" and f.get("disponibilidad") == "existe"))
+        metrics["n_fotos_pendientes"] = float(sum(1 for f in photos if f.get("tipo") == "foto" and f.get("disponibilidad") == "pendiente"))
+        metrics["n_fotos_no_existen"] = float(sum(1 for f in photos if f.get("tipo") == "foto" and f.get("disponibilidad") == "no_existe"))
+        metrics["n_graficos"] = float(sum(1 for f in photos if f.get("tipo") == "grafico"))
     return metrics
 
 

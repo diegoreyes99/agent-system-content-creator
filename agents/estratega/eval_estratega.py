@@ -33,9 +33,10 @@ import run_estratega as single  # noqa: E402  (loads .env, ADK and the agent)
 
 CASES_FILE = HERE / "eval_cases" / "cases.json"
 SUMMARY_METRICS = [
-    "schema_valid", "n_errors", "n_errores_forma", "n_errores_contenido", "n_piezas", "n_feed", "n_historias", "feed_por_semana_mean",
+    "schema_valid", "json_reparado", "n_errors", "n_errores_forma", "n_errores_contenido", "n_piezas", "n_feed", "n_historias", "feed_por_semana_mean",
     "feed_por_semana_max", "n_semanas_sin_feed", "pct_temas_cubiertos", "pct_piezas_brief", "pct_piezas_green", "pct_etapa_coherente",
-    "desviacion_mezcla", "n_menciones_competidor", "n_rag_calls", "n_calendar_calls",
+    "desviacion_mezcla", "n_menciones_competidor", "n_fotos_corregidas", "n_fotos_existen",
+    "n_fotos_pendientes", "n_fotos_no_existen", "n_graficos", "n_rag_calls", "n_calendar_calls",
     "latency_s", "prompt_tokens", "completion_tokens", "thinking_tokens", "costo_usd",
 ]
 
@@ -159,7 +160,7 @@ async def run_eval(args, cases: list[dict]) -> None:
     print(f"\n=== Resumen ({len(rows)} corridas, {(time.perf_counter() - started) / 60:.1f} min) ===")
     for key in ("useful_run_rate", "useful_content_rate", "run_failed_rate"):
         print(f"  {key:<26}{summary[key]:.0%}")
-    for key in ("n_errores_forma", "n_errores_contenido", "n_piezas", "n_historias", "feed_por_semana_mean", "pct_temas_cubiertos", "pct_piezas_brief",
+    for key in ("json_reparado", "n_errores_forma", "n_errores_contenido", "n_piezas", "n_historias", "feed_por_semana_mean", "pct_temas_cubiertos", "pct_piezas_brief",
                 "pct_etapa_coherente", "desviacion_mezcla", "n_rag_calls", "latency_s"):
         if f"{key}_mean" in summary:
             print(f"  {key:<26}promedio {summary[f'{key}_mean']:.2f} · desv {summary[f'{key}_std']:.2f} · "
@@ -171,7 +172,7 @@ async def run_eval(args, cases: list[dict]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Evalúa el Estratega contra el golden set.")
-    parser.add_argument("--prompt-version", default="v6")
+    parser.add_argument("--prompt-version", default="v8")
     parser.add_argument("--model-id", default=None)
     parser.add_argument("--temperature", type=float, default=None)
     parser.add_argument("--reps", type=int, default=2)

@@ -202,7 +202,7 @@ Respuesta:
 
 **Fotos disponibles este mes:**
 <!--
-Describe qué fotos hay (ej.: "sesión de Mike del evento Deka, 40 fotos").
+Describe qué fotos hay (ej.: "sesión de Mike del evento Deka, 40 fotos"). Solo las que ya existen: los agentes trabajan con lo disponible y no planean sesiones nuevas.
 El link a Drive es para el equipo humano: hoy los agentes no pueden abrirlo.
 -->
 Respuesta:
